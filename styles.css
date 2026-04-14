@@ -1,0 +1,389 @@
+/* ==========================================
+   CONFIGURACIÓN BASE
+   ========================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #0E0E0E;
+    color: aliceblue;
+    overflow-x: hidden;
+    line-height: 1.6;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem; /* Tamaño base general un poco más grande */
+}
+ 
+a {
+    color: aliceblue;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+ul { list-style: none; }
+
+.conteiner {
+   width: 95%;
+   max-width: 1500px; /* Un poco más ancho para PC */
+   margin: auto;
+}
+
+/* ==========================================
+   NAVEGACIÓN PC (Más Grande)
+   ========================================== */
+.nav-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 140px; /* Nav más alta */
+    padding: 30px 0;
+}
+
+.nav-brand {
+    width: 110px; /* Logo más grande */
+    height: auto;
+}
+
+.nav-main ul.nav-menu {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.nav-main ul li {
+    padding: 0 40px; 
+    position: relative;
+}
+
+.nav-main ul li a {
+    font-size: 2.5rem; 
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.nav-main ul li a:hover {
+    color: #ffde59;
+}
+
+/* --- DROPDOWN --- */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #111;
+    min-width: 250px;
+    max-height: 500px;
+    overflow-y: auto;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    border: 1px solid #333;
+    padding: 15px 0;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.5);
+}
+
+.dropdown-content li {
+    padding: 0 !important;
+    width: 100%;
+}
+
+.dropdown-content li a {
+    font-size: 1.5rem !important; 
+    padding: 12px 20px;
+    display: block;
+    text-align: left;
+    border-bottom: 1px solid #222;
+}
+
+.dropdown-content li a:hover {
+    background-color: #222;
+    color: #ffde59;
+}
+
+/* Mostrar dropdown al pasar mouse (Solo en PC) */
+@media (min-width: 700px) {
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+}
+
+.nav-separator { border: 0; border-top: 2px solid #333; margin-bottom: 20px; }
+
+.bienvenida {
+    width: 100%; 
+    height: auto; 
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    background: #000; 
+}
+
+.bienvenida-img {
+    max-width: 100%; 
+    height: auto;   
+    display: block;
+}
+
+.intro-texto {
+    text-align: center;
+    margin: 60px 0;
+}
+
+.intro-texto p { 
+    font-size: 3.5rem; 
+    line-height: 1.2;
+    color: aliceblue;
+    max-width: 90%; 
+    margin: auto;
+}
+
+.avisos {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 50px; 
+    margin: 70px 0;
+    padding: 0 20px;
+}
+
+.aviso-item {
+    text-align: left;
+}
+
+.avisos img { 
+    width: 100%; 
+    height: 180px; 
+    object-fit: contain; 
+    margin-bottom: 25px; 
+    display: block;
+}
+
+.avisos p { 
+    font-size: 2rem; 
+    line-height: 1.5;
+}
+
+/* CONTACTO */
+.social { margin: 100px 0; text-align: center; }
+.social p { font-size: 4rem; color: #ffde59; margin-bottom: 40px; }
+
+.links { display: flex; justify-content: center; gap: 60px; }
+
+.social-icon i { font-size: 6rem; transition: 0.3s ease; color: aliceblue; } 
+
+.social-icon:hover i {
+    color: #ffde59;
+    transform: scale(1.1); 
+}
+
+
+.catalogo {
+    margin: 80px 0;
+}
+
+/* TITULO */
+.catalogo h2 {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #ffde59;
+    letter-spacing: 2px;
+}
+
+/* ==========================================
+   GRID DE PRODUCTOS 
+   ========================================== */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 20px; 
+    padding: 20px;
+    margin: 0; 
+    width: 100%;
+}
+
+/*(TARJETA)*/
+.product-item {
+    background: #111; 
+    border: 1px solid #333; 
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden; 
+    padding: 10px; 
+}
+.product-item:hover {
+    border-color: #ffde59; 
+    transform: translateY(-5px); 
+    box-shadow: 0 5px 15px rgba(255, 222, 89, 0.2); 
+}
+
+.product-img-wrapper {
+    width: 100%;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.product-img {
+    max-width: 90%; 
+    max-height: 90%;
+    object-fit: contain; 
+    transition: 0.4s ease;
+}
+
+.product-item:hover .product-img {
+    transform: scale(1.08);
+}
+
+.product-info {
+    text-align: center;
+    width: 100%;
+    padding: 0 5px; 
+}
+
+.product-name {
+    font-size: 1.1rem;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+
+    white-space: normal; 
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.product-quality {
+    font-size: 0.9rem !important;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+.product-price {
+    font-size: 1.3rem !important;
+    color: #ffde59; 
+    font-weight: bold;
+}
+/* ==========================================
+   RESPONSIVE MÓVIL COMPLETO - SAUCE STORE
+   ========================================== */
+@media (max-width: 700px) {
+    body { font-size: 1.1rem; }
+
+    .conteiner { width: 92%; }
+
+    /* NAVEGACIÓN MÓVIL */
+    .nav-main {
+        flex-direction: column; 
+        height: auto; 
+        padding: 20px 0;
+    }
+
+    .nav-brand { width: 90px; margin-bottom: 20px; }
+
+    .nav-main ul.nav-menu {
+        flex-direction: column; 
+        width: 100%;
+    }
+
+    .nav-main ul li {
+        padding: 15px 0; 
+        width: 100%; 
+        text-align: center;
+        border-bottom: 1px solid #222;
+    }
+
+    .nav-main ul li a { font-size: 1.8rem; } 
+
+    /* DROPDOWN MÓVIL */
+    .dropdown-content {
+        position: static;
+        width: 100%; 
+        background: #181818; 
+        border: none;
+        max-height: 350px; 
+        margin-top: 15px;
+        transform: none;
+    }
+
+    .dropdown-content li a {
+        font-size: 1.4rem !important; 
+        padding: 15px 0;
+        text-align: center;
+        border-left: none;
+        border-bottom: 1px solid #333;
+    }
+
+    /* SECCIONES DE TEXTO */
+    .bienvenida { margin-bottom: 30px; }
+    .intro-texto { margin: 40px 0; }
+    .intro-texto p { font-size: 2.2rem; }
+
+    /* AVISOS Y SOCIAL */
+    .avisos { 
+        grid-template-columns: 1fr; 
+        gap: 30px; 
+        padding: 0;
+    }
+    .avisos img { height: 120px; }
+    .aviso-item h3 { font-size: 1.8rem; }
+    .avisos p { font-size: 1.4rem; }
+    .social { margin: 60px 0; }
+    .social p { font-size: 3rem; }
+    .links { gap: 40px; flex-wrap: wrap; }
+    .social-icon i { font-size: 4.5rem; }
+
+    /* ==========================================
+       1. CATÁLOGO PRINCIPAL (2 COLUMNAS)
+       Para que se vean 2 pares por fila
+       ========================================== */
+    .product-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 12px !important;
+        padding: 10px !important;
+        margin: 0 !important;
+        width: 100% !important;
+    }
+
+    .product-item {
+        width: 100% !important;
+        padding: 8px !important;
+    }
+
+    .product-img-wrapper {
+        height: 180px !important; 
+    }
+
+    .product-name { font-size: 1.1rem !important; }
+    .product-price { font-size: 1.3rem !important; }
+
+    /*GALERÍA DE DETALLES */
+    .product-grid-detail {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important; 
+        gap: 10px !important;
+        padding: 10px !important;
+        width: 100% !important;
+    }
+
+    .detail-thumb {
+        height: 280px !important; 
+        width: 100% !important;
+        background: #111;
+    }
+
+    .detail-thumb img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important; 
+    }
+
+} 
