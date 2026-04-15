@@ -9,7 +9,6 @@
 <body>
 
 <style>
-
     .caps-section {
         display: flex;
         justify-content: center;
@@ -110,6 +109,16 @@
         border-radius: 10px;
         color: #ccc;
         border: 1px solid #222;
+        font-size: 0.9rem;
+    }
+
+    .caps-section .price-item.header {
+        background: transparent;
+        border: none;
+        font-weight: bold;
+        color: #888;
+        padding: 5px 20px;
+        text-transform: uppercase;
     }
 
     .caps-section .price-item.featured {
@@ -120,6 +129,14 @@
     .caps-section .price-item .value {
         font-weight: bold;
         color: #fff;
+        text-align: right;
+    }
+
+    .caps-section .collab-note {
+        font-size: 0.8rem;
+        color: #666;
+        margin-top: 20px;
+        font-style: italic;
     }
 </style>
 
@@ -150,19 +167,19 @@
                 </div>
                 <div class="price-item featured">
                     <span class="label">Mayoreo (5 piezas)</span>
-                    <span class="value">$640</span>
+                    <span class="value">$600</span>
                 </div>
                 <div class="price-item">
                     <span class="label">Mayoreo (10 piezas)</span>
-                    <span class="value">$580</span>
-                </div>
-                <div class="price-item">
-                    <span class="label">Mayoreo (15 piezas)</span>
                     <span class="value">$550</span>
                 </div>
                 <div class="price-item">
-                    <span class="label">Mayoreo (20+ piezas)</span>
+                    <span class="label">Mayoreo (15 piezas)</span>
                     <span class="value">$520</span>
+                </div>
+                <div class="price-item featured" style="border-color: #d4af37;">
+                    <span class="label" style="color: #d4af37;">Mayoreo (20+ piezas)</span>
+                    <span class="value">$480</span>
                 </div>
             </div>
         </div>
