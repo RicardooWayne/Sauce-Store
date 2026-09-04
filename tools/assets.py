@@ -103,7 +103,17 @@ def report_bg(src):
     return hexc
 
 
-def do_video(src, name, height=800):
+def do_video(src, name, max_alto=720):
+    """Comprime el video para web sin perder calidad visible.
+
+    Son animaciones 2D de colores planos, que comprimen muchisimo mejor que
+    video real. Las claves:
+      - NUNCA agrandar: si el original ya es de 720p, se deja en 720p.
+        (Antes se escalaba a 800 de alto, o sea se agrandaba, y por eso pesaba
+        el triple sin verse mejor.)
+      - '-tune animation' en h264: ajusta el codificador justo para dibujos.
+      - CRF mas alto del que usarias en video real; en dibujo plano no se nota.
+    """
     if not src.exists():
         print("  !! falta", src.name)
         return
@@ -111,13 +121,17 @@ def do_video(src, name, height=800):
     mp4 = VID_OUT / f"{name}.mp4"
     webm = VID_OUT / f"{name}.webm"
     jpg = VID_OUT / f"{name}.jpg"
-    vf = f"scale=-2:{height}:flags=lanczos"
+
+    # Reduce solo si el original es mas alto que max_alto; nunca agranda.
+    vf = f"scale=-2:'min({max_alto},ih)':flags=lanczos"
+
     run([FF, "-y", "-i", str(src), "-an", "-vf", vf, "-c:v", "libx264",
-         "-profile:v", "high", "-crf", "17", "-pix_fmt", "yuv420p",
-         "-movflags", "+faststart", str(mp4)])
+         "-tune", "animation", "-profile:v", "high", "-crf", "24",
+         "-pix_fmt", "yuv420p", "-movflags", "+faststart", str(mp4)])
     run([FF, "-y", "-i", str(src), "-an", "-vf", vf, "-c:v", "libvpx-vp9",
-         "-b:v", "0", "-crf", "20", "-row-mt", "1", "-pix_fmt", "yuv420p", str(webm)])
-    run([FF, "-y", "-i", str(src), "-vf", vf, "-frames:v", "1", "-q:v", "2", str(jpg)])
+         "-b:v", "0", "-crf", "34", "-row-mt", "1", "-deadline", "good",
+         "-cpu-used", "2", "-pix_fmt", "yuv420p", str(webm)])
+    run([FF, "-y", "-i", str(src), "-vf", vf, "-frames:v", "1", "-q:v", "3", str(jpg)])
     for f in (webm, mp4, jpg):
         print(f"  {f.name}  {f.stat().st_size // 1024} KB")
 

@@ -226,7 +226,10 @@ body.menu-open .mobile-menu{transform:translateY(0)}
 .saludo{background:var(--cream-2);color:var(--cream-ink);
   display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:clamp(20px,5vw,60px);
   padding:clamp(40px,7vh,90px) var(--pad)}
-.saludo-video video{width:100%;height:auto;display:block}
+/* El video del saludo es de 480px de origen: se le pone tope para que no se
+   agrande mas alla de su resolucion real y se vea nitido. */
+.saludo-video{display:flex;justify-content:center}
+.saludo-video video{width:100%;max-width:520px;height:auto;display:block}
 .saludo-copy h2{font-size:clamp(30px,5vw,64px);margin-bottom:18px}
 .saludo-copy p{color:var(--cream-ink-dim);max-width:38ch;margin-bottom:26px}
 .saludo-copy .hero-cta{border-color:var(--cream-ink)}
