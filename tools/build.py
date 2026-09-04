@@ -75,6 +75,11 @@ ARCHIVE_EXACT = [
     "DolceGabanna.html", "Fendi.html", "Gallery.html", "Hellstar.html",
     "PalmAngels.html", "sp5der.html", "AJ4Retro-Bred-Reimagined.html",
     "Amiri", "Ami",  # archivos raros sin extension
+    # Paginas huerfanas: quedaron del sitio viejo, ninguna categoria las enlaza
+    # y varias tienen imagenes rotas. Se archivan para no publicarlas.
+    "AJ1TravisPink.html", "Balenciaga-X-Adidas-T-Shirt.html",
+    "Bape-Camo-BBlack-Full-Zip.html", "Bape-Crocs-Azules.html",
+    "Bape-Short-Camo-Blue.html", "Burberry-Sueter1.html",
 ]
 
 SIZE_RE = re.compile(
@@ -141,6 +146,18 @@ def parse_sizes(meta, category):
                 return SIZE_LADDER[i:j + 1]
 
     return []
+
+
+def webp(src):
+    """Devuelve la version .webp si ya existe en disco; si no, la original.
+
+    Asi el sitio sirve fotos ligeras sin romperse si alguna todavia no se ha
+    convertido (ver tools/optimize-images.py).
+    """
+    if not src:
+        return src
+    alt = re.sub(r"\.(png|jpe?g)$", ".webp", src, flags=re.I)
+    return alt if alt != src and (ROOT / alt).exists() else src
 
 
 def product_id(detail_href, name):
@@ -235,6 +252,9 @@ def build_catalog():
                 p["gallery"] = parse_gallery(SRC / p["detail"])
             if not p["gallery"] and p["portada"]:
                 p["gallery"] = [p["portada"]]
+            # A partir de aqui todo usa las versiones ligeras si ya existen
+            p["portada"] = webp(p["portada"])
+            p["gallery"] = [webp(s) for s in p["gallery"]]
             p["category"] = title
             p["category_slug"] = slug
             # id unico: varios productos sin pagina de detalle comparten nombre
@@ -341,7 +361,7 @@ def nav(cats):
 
 def footer():
     return f"""<footer class="site-footer">
-  <img class="foot-mascot" src="img/mascota-320.png" alt="Sauce Store" loading="lazy">
+  <img class="foot-mascot" src="{webp('img/mascota-320.png')}" alt="Sauce Store" loading="lazy">
   <p class="foot-word">SAUCE&nbsp;STORE</p>
   <p class="foot-note">Catalogo visual. Para pedidos, contactanos.</p>
   <div class="foot-links">
@@ -683,7 +703,7 @@ def render_ticket(cats):
   <div class="ticket-wrap" id="ticketWrap" hidden>
     <section class="ticket">
       <div class="tk-head">
-        <img class="tk-star" src="img/mascota-320.png" alt="Sauce Store">
+        <img class="tk-star" src="{webp('img/mascota-320.png')}" alt="Sauce Store">
         <p class="tk-brand">SAUCE&nbsp;STORE</p>
         <p class="tk-folio" id="tkFolio">—</p>
         <p class="tk-date" id="tkDate"></p>
