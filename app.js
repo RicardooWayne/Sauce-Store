@@ -76,28 +76,6 @@
     document.querySelectorAll("video").forEach(function (v) { vio.observe(v); });
   }
 
-  /* Cuadro de referencias: una a la vez, va rotando sola */
-  var refImg = document.getElementById("refRotator");
-  var refData = document.getElementById("refData");
-  var refCount = document.getElementById("refCount");
-  if (refImg && refData && !reduce) {
-    var refList = JSON.parse(refData.textContent);
-    var refIdx = 0;
-    if (refList.length > 1) {
-      setInterval(function () {
-        refIdx = (refIdx + 1) % refList.length;
-        refImg.style.opacity = "0";
-        setTimeout(function () {
-          refImg.src = refList[refIdx];
-          refImg.style.opacity = "1";
-          if (refCount) {
-            refCount.textContent = String(refIdx + 1).padStart(2, "0") + "/" + String(refList.length).padStart(2, "0");
-          }
-        }, 400);
-      }, 3200);
-    }
-  }
-
   /* Riel horizontal de categorías: flechas + arrastrar con mouse + rueda */
   var rail = document.getElementById("catRail");
   if (rail) {
@@ -147,6 +125,11 @@
         t.classList.add("is-active");
       });
     });
+  }
+
+  /* Lightbox de referencias (portada) */
+  if (window.GLightbox && document.querySelector(".ref-item")) {
+    GLightbox({ selector: ".ref-item", loop: true, touchNavigation: true });
   }
 
   /* Lightbox (GLightbox) */
