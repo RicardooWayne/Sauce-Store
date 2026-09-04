@@ -76,6 +76,43 @@
     document.querySelectorAll("video").forEach(function (v) { vio.observe(v); });
   }
 
+  /* Riel horizontal de categorías: flechas + arrastrar con mouse + rueda */
+  var rail = document.getElementById("catRail");
+  if (rail) {
+    var step = function () { return Math.round(rail.clientWidth * 0.85); };
+    document.querySelectorAll("[data-rail]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        rail.scrollBy({ left: btn.dataset.rail === "next" ? step() : -step() });
+      });
+    });
+    rail.addEventListener("wheel", function (e) {
+      if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
+        rail.scrollLeft += e.deltaY;
+        e.preventDefault();
+      }
+    }, { passive: false });
+    var dragging = false, startX = 0, startScroll = 0, moved = false;
+    rail.addEventListener("pointerdown", function (e) {
+      dragging = true; moved = false;
+      startX = e.clientX; startScroll = rail.scrollLeft;
+      rail.classList.add("dragging");
+    });
+    window.addEventListener("pointermove", function (e) {
+      if (!dragging) return;
+      var dx = e.clientX - startX;
+      if (Math.abs(dx) > 4) moved = true;
+      rail.scrollLeft = startScroll - dx;
+    });
+    window.addEventListener("pointerup", function () {
+      dragging = false;
+      rail.classList.remove("dragging");
+    });
+    // evita que un arrastre dispare el link de la tarjeta
+    rail.addEventListener("click", function (e) {
+      if (moved) { e.preventDefault(); e.stopPropagation(); moved = false; }
+    }, true);
+  }
+
   /* Galería de detalle */
   var main = document.getElementById("gMain");
   if (main) {

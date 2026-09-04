@@ -84,63 +84,69 @@
 
   <section class="categories" id="catalogo">
     <div class="sec-head reveal"><h2>Categorias</h2><span>14</span></div>
-    <div class="cat-grid">
-    <a class="cat-tile reveal" style="--d:0.00s" href="Jordan1.html">
-      <div class="ct-media"><img loading="lazy" src="img/Jordan-1/Fragment-design-union-portada.png" alt="Jordan 1"></div>
-      <div class="ct-label"><span>Jordan 1</span><i>&rarr;</i></div>
-    </a>
-    <a class="cat-tile reveal" style="--d:0.04s" href="jordan3.html">
-      <div class="ct-media"><img loading="lazy" src="img/Jordan-3/AJ3-White-Cement.portada.png" alt="Jordan 3"></div>
-      <div class="ct-label"><span>Jordan 3</span><i>&rarr;</i></div>
-    </a>
-    <a class="cat-tile reveal" style="--d:0.08s" href="jordan4.html">
-      <div class="ct-media"><img loading="lazy" src="img/Jordan-4/AJ4-ToroRojo.portada.png" alt="Jordan 4"></div>
-      <div class="ct-label"><span>Jordan 4</span><i>&rarr;</i></div>
-    </a>
-    <a class="cat-tile reveal" style="--d:0.12s" href="jordan5.html">
-      <div class="ct-media"><img loading="lazy" src="img/Jordan-5/AJ5-Universitary-Black-Blue.portada.png" alt="Jordan 5"></div>
-      <div class="ct-label"><span>Jordan 5</span><i>&rarr;</i></div>
-    </a>
-    <a class="cat-tile reveal" style="--d:0.16s" href="jordan6.html">
-      <div class="ct-media"><img loading="lazy" src="img/Jordan-6/AJ6-Infrared-Salesman.portada.png" alt="Jordan 6"></div>
-      <div class="ct-label"><span>Jordan 6</span><i>&rarr;</i></div>
-    </a>
-    <a class="cat-tile reveal" style="--d:0.20s" href="jordan10.html">
-      <div class="ct-media"><img loading="lazy" src="img/Jordan-10/AJ10-Retro-Shadow.portada.png" alt="Jordan 10"></div>
-      <div class="ct-label"><span>Jordan 10</span><i>&rarr;</i></div>
-    </a>
-    <a class="cat-tile reveal" style="--d:0.24s" href="jordan11.html">
-      <div class="ct-media"><img loading="lazy" src="img/Jordan-11/AJ11-Universitary-Blue.portada.png" alt="Jordan 11"></div>
-      <div class="ct-label"><span>Jordan 11</span><i>&rarr;</i></div>
-    </a>
-    <a class="cat-tile reveal" style="--d:0.28s" href="Amiri.html">
-      <div class="ct-media"><img loading="lazy" src="img/Amiri/Amiri-Playera.portada.png" alt="Amiri"></div>
-      <div class="ct-label"><span>Amiri</span><i>&rarr;</i></div>
-    </a>
-    <a class="cat-tile reveal" style="--d:0.32s" href="Balenciaga.html">
-      <div class="ct-media"><img loading="lazy" src="img/Balenciaga/Balenciaga-Pants1.portada.png" alt="Balenciaga"></div>
-      <div class="ct-label"><span>Balenciaga</span><i>&rarr;</i></div>
-    </a>
-    <a class="cat-tile reveal" style="--d:0.36s" href="Bape.html">
-      <div class="ct-media"><img loading="lazy" src="img/Bape/Bape-Camo-Black.portada.png" alt="Bape"></div>
-      <div class="ct-label"><span>Bape</span><i>&rarr;</i></div>
-    </a>
-    <a class="cat-tile reveal" style="--d:0.40s" href="Burberry.html">
-      <div class="ct-media"><img loading="lazy" src="img/Burberry/Burberry-Short-Negro-Blanco.portada.png" alt="Burberry"></div>
-      <div class="ct-label"><span>Burberry</span><i>&rarr;</i></div>
-    </a>
-    <a class="cat-tile reveal" style="--d:0.44s" href="Supreme.html">
-      <div class="ct-media"><img loading="lazy" src="img/Supreme/Supreme-Jeans.portada.png" alt="Supreme"></div>
-      <div class="ct-label"><span>Supreme</span><i>&rarr;</i></div>
-    </a>
-    <a class="cat-tile reveal" style="--d:0.48s" href="ChromeHeartsRopa.html">
-      <div class="ct-media"><img loading="lazy" src="img/Chrome-Hearts-Ropa/CH-Sudadera.portada.png" alt="Chrome Hearts"></div>
-      <div class="ct-label"><span>Chrome Hearts</span><i>&rarr;</i></div>
-    </a>
-    <a class="cat-tile reveal" style="--d:0.52s" href="ChromeHearts.html">
-      <div class="ct-media"><img loading="lazy" src="img/Chrome-Hearts-Cadenas/CH1.jpeg" alt="Chrome Hearts Cadenas"></div>
-      <div class="ct-label"><span>Chrome Hearts Cadenas</span><i>&rarr;</i></div>
-    </a>
+    <div class="cat-rail-wrap reveal">
+      <button class="rail-arrow rail-prev" data-rail="prev" aria-label="Anterior">&#8592;</button>
+      <div class="cat-rail" id="catRail">
+        <div class="cat-track">
+      <a class="cat-tile" href="Jordan1.html">
+        <div class="ct-media"><img loading="lazy" src="img/Jordan-1/Fragment-design-union-portada.png" alt="Jordan 1"></div>
+        <div class="ct-label"><span>Jordan 1</span><i>&rarr;</i></div>
+      </a>
+      <a class="cat-tile" href="jordan3.html">
+        <div class="ct-media"><img loading="lazy" src="img/Jordan-3/AJ3-White-Cement.portada.png" alt="Jordan 3"></div>
+        <div class="ct-label"><span>Jordan 3</span><i>&rarr;</i></div>
+      </a>
+      <a class="cat-tile" href="jordan4.html">
+        <div class="ct-media"><img loading="lazy" src="img/Jordan-4/AJ4-ToroRojo.portada.png" alt="Jordan 4"></div>
+        <div class="ct-label"><span>Jordan 4</span><i>&rarr;</i></div>
+      </a>
+      <a class="cat-tile" href="jordan5.html">
+        <div class="ct-media"><img loading="lazy" src="img/Jordan-5/AJ5-Universitary-Black-Blue.portada.png" alt="Jordan 5"></div>
+        <div class="ct-label"><span>Jordan 5</span><i>&rarr;</i></div>
+      </a>
+      <a class="cat-tile" href="jordan6.html">
+        <div class="ct-media"><img loading="lazy" src="img/Jordan-6/AJ6-Infrared-Salesman.portada.png" alt="Jordan 6"></div>
+        <div class="ct-label"><span>Jordan 6</span><i>&rarr;</i></div>
+      </a>
+      <a class="cat-tile" href="jordan10.html">
+        <div class="ct-media"><img loading="lazy" src="img/Jordan-10/AJ10-Retro-Shadow.portada.png" alt="Jordan 10"></div>
+        <div class="ct-label"><span>Jordan 10</span><i>&rarr;</i></div>
+      </a>
+      <a class="cat-tile" href="jordan11.html">
+        <div class="ct-media"><img loading="lazy" src="img/Jordan-11/AJ11-Universitary-Blue.portada.png" alt="Jordan 11"></div>
+        <div class="ct-label"><span>Jordan 11</span><i>&rarr;</i></div>
+      </a>
+      <a class="cat-tile" href="Amiri.html">
+        <div class="ct-media"><img loading="lazy" src="img/Amiri/Amiri-Playera.portada.png" alt="Amiri"></div>
+        <div class="ct-label"><span>Amiri</span><i>&rarr;</i></div>
+      </a>
+      <a class="cat-tile" href="Balenciaga.html">
+        <div class="ct-media"><img loading="lazy" src="img/Balenciaga/Balenciaga-Pants1.portada.png" alt="Balenciaga"></div>
+        <div class="ct-label"><span>Balenciaga</span><i>&rarr;</i></div>
+      </a>
+      <a class="cat-tile" href="Bape.html">
+        <div class="ct-media"><img loading="lazy" src="img/Bape/Bape-Camo-Black.portada.png" alt="Bape"></div>
+        <div class="ct-label"><span>Bape</span><i>&rarr;</i></div>
+      </a>
+      <a class="cat-tile" href="Burberry.html">
+        <div class="ct-media"><img loading="lazy" src="img/Burberry/Burberry-Short-Negro-Blanco.portada.png" alt="Burberry"></div>
+        <div class="ct-label"><span>Burberry</span><i>&rarr;</i></div>
+      </a>
+      <a class="cat-tile" href="Supreme.html">
+        <div class="ct-media"><img loading="lazy" src="img/Supreme/Supreme-Jeans.portada.png" alt="Supreme"></div>
+        <div class="ct-label"><span>Supreme</span><i>&rarr;</i></div>
+      </a>
+      <a class="cat-tile" href="ChromeHeartsRopa.html">
+        <div class="ct-media"><img loading="lazy" src="img/Chrome-Hearts-Ropa/CH-Sudadera.portada.png" alt="Chrome Hearts"></div>
+        <div class="ct-label"><span>Chrome Hearts</span><i>&rarr;</i></div>
+      </a>
+      <a class="cat-tile" href="ChromeHearts.html">
+        <div class="ct-media"><img loading="lazy" src="img/Chrome-Hearts-Cadenas/CH1.jpeg" alt="Chrome Hearts Cadenas"></div>
+        <div class="ct-label"><span>Chrome Hearts Cadenas</span><i>&rarr;</i></div>
+      </a>
+        </div>
+      </div>
+      <button class="rail-arrow rail-next" data-rail="next" aria-label="Siguiente">&#8594;</button>
     </div>
   </section>
 
@@ -161,7 +167,7 @@
 
   <section class="referencias">
     <div class="sec-head reveal"><h2>Referencias</h2><span>50</span></div>
-    <p class="ref-note reveal">Capturas reales tomadas de nuestro Instagram — pedidos ya entregados.</p>
+    <p class="ref-note reveal">Capturas reales tomadas de nuestro Instagram — pedidos ya entregados. (Anteriormente fuimos caps west, solo cambiamos el nombre)</p>
     <div class="marquee ">
       <div class="marquee-track"><a class="ref-item" href="img/referencias-web/refe-1.jpg" data-gallery="referencias"><img loading="lazy" src="img/referencias-web/refe-1.jpg" alt="Referencia Sauce Store"></a><a class="ref-item" href="img/referencias-web/refe-2.jpg" data-gallery="referencias"><img loading="lazy" src="img/referencias-web/refe-2.jpg" alt="Referencia Sauce Store"></a><a class="ref-item" href="img/referencias-web/refe-3.jpg" data-gallery="referencias"><img loading="lazy" src="img/referencias-web/refe-3.jpg" alt="Referencia Sauce Store"></a><a class="ref-item" href="img/referencias-web/refe-4.jpg" data-gallery="referencias"><img loading="lazy" src="img/referencias-web/refe-4.jpg" alt="Referencia Sauce Store"></a><a class="ref-item" href="img/referencias-web/refe-5.jpg" data-gallery="referencias"><img loading="lazy" src="img/referencias-web/refe-5.jpg" alt="Referencia Sauce Store"></a><a class="ref-item" href="img/referencias-web/refe-6.jpg" data-gallery="referencias"><img loading="lazy" src="img/referencias-web/refe-6.jpg" alt="Referencia Sauce Store"></a><a class="ref-item" href="img/referencias-web/refe-7.jpg" data-gallery="referencias"><img loading="lazy" src="img/referencias-web/refe-7.jpg" alt="Referencia Sauce Store"></a><a class="ref-item" href="img/referencias-web/refe-8.jpg" data-gallery="referencias"><img loading="lazy" src="img/referencias-web/refe-8.jpg" alt="Referencia Sauce Store"></a><a class="ref-item" href="img/referencias-web/refe-9.jpg" data-gallery="referencias"><img loading="lazy" src="img/referencias-web/refe-9.jpg" alt="Referencia Sauce Store"></a><a class="ref-item" href="img/referencias-web/refe-10.jpg" data-gallery="referencias"><img loading="lazy" src="img/referencias-web/refe-10.jpg" alt="Referencia Sauce Store"></a><a class="ref-item" href="img/referencias-web/refe-11.jpg" data-gallery="referencias"><img loading="lazy" src="img/referencias-web/refe-11.jpg" alt="Referencia Sauce Store"></a><a class="ref-item" href="img/referencias-web/refe-12.jpg" data-gallery="referencias"><img loading="lazy" src="img/referencias-web/refe-12.jpg" alt="Referencia Sauce Store"></a><a class="ref-item" href="img/referencias-web/refe-13.jpg" data-gallery="referencias"><img loading="lazy" src="img/referencias-web/refe-13.jpg" alt="Referencia Sauce Store"></a><a class="ref-item" href="img/referencias-web/refe-14.jpg" data-gallery="referencias"><img loading="lazy" src="img/referencias-web/refe-14.jpg" alt="Referencia Sauce Store"></a><a class="ref-item" href="img/referencias-web/refe-15.jpg" data-gallery="referencias"><img loading="lazy" src="img/referencias-web/refe-15.jpg" alt="Referencia Sauce Store"></a><a class="ref-item" href="img/referencias-web/refe-16.jpg" data-gallery="referencias"><img loading="lazy" src="img/referencias-web/refe-16.jpg" alt="Referencia Sauce Store"></a><a class="ref-item" href="img/referencias-web/refe-17.jpg" data-gallery="referencias"><img loading="lazy" src="img/referencias-web/refe-17.jpg" alt="Referencia Sauce Store"></a><a class="ref-item" href="img/referencias-web/refe-18.jpg" data-gallery="referencias"><img loading="lazy" src="img/referencias-web/refe-18.jpg" alt="Referencia Sauce Store"></a><a class="ref-item" href="img/referencias-web/refe-19.jpg" data-gallery="referencias"><img loading="lazy" src="img/referencias-web/refe-19.jpg" alt="Referencia Sauce Store"></a><a class="ref-item" href="img/referencias-web/refe-20.jpg" data-gallery="referencias"><img loading="lazy" src="img/referencias-web/refe-20.jpg" alt="Referencia Sauce Store"></a><a class="ref-item" href="img/referencias-web/refe-21.jpg" data-gallery="referencias"><img loading="lazy" src="img/referencias-web/refe-21.jpg" alt="Referencia Sauce Store"></a><a class="ref-item" href="img/referencias-web/refe-22.jpg" data-gallery="referencias"><img loading="lazy" src="img/referencias-web/refe-22.jpg" alt="Referencia Sauce Store"></a><a class="ref-item" href="img/referencias-web/refe-23.jpg" data-gallery="referencias"><img loading="lazy" src="img/referencias-web/refe-23.jpg" alt="Referencia Sauce Store"></a><a class="ref-item" href="img/referencias-web/refe-24.jpg" data-gallery="referencias"><img loading="lazy" src="img/referencias-web/refe-24.jpg" alt="Referencia Sauce Store"></a><a class="ref-item" href="img/referencias-web/refe-25.jpg" data-gallery="referencias"><img loading="lazy" src="img/referencias-web/refe-25.jpg" alt="Referencia Sauce Store"></a><a class="ref-item" href="img/referencias-web/refe-1.jpg" data-gallery="referencias"><img loading="lazy" src="img/referencias-web/refe-1.jpg" alt="Referencia Sauce Store"></a><a class="ref-item" href="img/referencias-web/refe-2.jpg" data-gallery="referencias"><img loading="lazy" src="img/referencias-web/refe-2.jpg" alt="Referencia Sauce Store"></a><a class="ref-item" href="img/referencias-web/refe-3.jpg" data-gallery="referencias"><img loading="lazy" src="img/referencias-web/refe-3.jpg" alt="Referencia Sauce Store"></a><a class="ref-item" href="img/referencias-web/refe-4.jpg" data-gallery="referencias"><img loading="lazy" src="img/referencias-web/refe-4.jpg" alt="Referencia Sauce Store"></a><a class="ref-item" href="img/referencias-web/refe-5.jpg" data-gallery="referencias"><img loading="lazy" src="img/referencias-web/refe-5.jpg" alt="Referencia Sauce Store"></a><a class="ref-item" href="img/referencias-web/refe-6.jpg" data-gallery="referencias"><img loading="lazy" src="img/referencias-web/refe-6.jpg" alt="Referencia Sauce Store"></a><a class="ref-item" href="img/referencias-web/refe-7.jpg" data-gallery="referencias"><img loading="lazy" src="img/referencias-web/refe-7.jpg" alt="Referencia Sauce Store"></a><a class="ref-item" href="img/referencias-web/refe-8.jpg" data-gallery="referencias"><img loading="lazy" src="img/referencias-web/refe-8.jpg" alt="Referencia Sauce Store"></a><a class="ref-item" href="img/referencias-web/refe-9.jpg" data-gallery="referencias"><img loading="lazy" src="img/referencias-web/refe-9.jpg" alt="Referencia Sauce Store"></a><a class="ref-item" href="img/referencias-web/refe-10.jpg" data-gallery="referencias"><img loading="lazy" src="img/referencias-web/refe-10.jpg" alt="Referencia Sauce Store"></a><a class="ref-item" href="img/referencias-web/refe-11.jpg" data-gallery="referencias"><img loading="lazy" src="img/referencias-web/refe-11.jpg" alt="Referencia Sauce Store"></a><a class="ref-item" href="img/referencias-web/refe-12.jpg" data-gallery="referencias"><img loading="lazy" src="img/referencias-web/refe-12.jpg" alt="Referencia Sauce Store"></a><a class="ref-item" href="img/referencias-web/refe-13.jpg" data-gallery="referencias"><img loading="lazy" src="img/referencias-web/refe-13.jpg" alt="Referencia Sauce Store"></a><a class="ref-item" href="img/referencias-web/refe-14.jpg" data-gallery="referencias"><img loading="lazy" src="img/referencias-web/refe-14.jpg" alt="Referencia Sauce Store"></a><a class="ref-item" href="img/referencias-web/refe-15.jpg" data-gallery="referencias"><img loading="lazy" src="img/referencias-web/refe-15.jpg" alt="Referencia Sauce Store"></a><a class="ref-item" href="img/referencias-web/refe-16.jpg" data-gallery="referencias"><img loading="lazy" src="img/referencias-web/refe-16.jpg" alt="Referencia Sauce Store"></a><a class="ref-item" href="img/referencias-web/refe-17.jpg" data-gallery="referencias"><img loading="lazy" src="img/referencias-web/refe-17.jpg" alt="Referencia Sauce Store"></a><a class="ref-item" href="img/referencias-web/refe-18.jpg" data-gallery="referencias"><img loading="lazy" src="img/referencias-web/refe-18.jpg" alt="Referencia Sauce Store"></a><a class="ref-item" href="img/referencias-web/refe-19.jpg" data-gallery="referencias"><img loading="lazy" src="img/referencias-web/refe-19.jpg" alt="Referencia Sauce Store"></a><a class="ref-item" href="img/referencias-web/refe-20.jpg" data-gallery="referencias"><img loading="lazy" src="img/referencias-web/refe-20.jpg" alt="Referencia Sauce Store"></a><a class="ref-item" href="img/referencias-web/refe-21.jpg" data-gallery="referencias"><img loading="lazy" src="img/referencias-web/refe-21.jpg" alt="Referencia Sauce Store"></a><a class="ref-item" href="img/referencias-web/refe-22.jpg" data-gallery="referencias"><img loading="lazy" src="img/referencias-web/refe-22.jpg" alt="Referencia Sauce Store"></a><a class="ref-item" href="img/referencias-web/refe-23.jpg" data-gallery="referencias"><img loading="lazy" src="img/referencias-web/refe-23.jpg" alt="Referencia Sauce Store"></a><a class="ref-item" href="img/referencias-web/refe-24.jpg" data-gallery="referencias"><img loading="lazy" src="img/referencias-web/refe-24.jpg" alt="Referencia Sauce Store"></a><a class="ref-item" href="img/referencias-web/refe-25.jpg" data-gallery="referencias"><img loading="lazy" src="img/referencias-web/refe-25.jpg" alt="Referencia Sauce Store"></a></div>
     </div>

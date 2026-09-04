@@ -181,8 +181,17 @@ body.menu-open .mobile-menu{transform:translateY(0)}
   border-bottom:1px solid var(--line);padding-bottom:18px;margin-bottom:34px}
 .sec-head h2{font-size:clamp(20px,2.6vw,30px);letter-spacing:.06em}
 .sec-head span{color:var(--ink-faint);font-size:13px;letter-spacing:.2em}
-.cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:var(--line)}
-.cat-tile{position:relative;background:var(--bg);aspect-ratio:3/4;overflow:hidden}
+/* Riel horizontal: para que agregar categorias nunca alargue la portada */
+.cat-rail-wrap{position:relative}
+.cat-rail{overflow-x:auto;overflow-y:hidden;scroll-snap-type:x proximity;
+  scroll-behavior:smooth;scrollbar-width:none;-ms-overflow-style:none;cursor:grab;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 1.5%,#000 98.5%,transparent);
+  mask-image:linear-gradient(90deg,transparent,#000 1.5%,#000 98.5%,transparent)}
+.cat-rail::-webkit-scrollbar{display:none}
+.cat-rail.dragging{cursor:grabbing;scroll-snap-type:none}
+.cat-track{display:flex;gap:2px;background:var(--line);width:max-content}
+.cat-tile{position:relative;background:var(--bg);overflow:hidden;flex:0 0 auto;
+  width:clamp(210px,24vw,300px);aspect-ratio:3/4;scroll-snap-align:start}
 .ct-media{position:absolute;inset:0}
 .ct-media img{width:100%;height:100%;object-fit:cover;
   transition:transform .8s var(--ease),filter .5s var(--ease);filter:grayscale(.25) contrast(1.03)}
@@ -193,6 +202,16 @@ body.menu-open .mobile-menu{transform:translateY(0)}
   background:linear-gradient(0deg,rgba(14,14,14,.85),transparent)}
 .ct-label i{font-style:normal;color:var(--accent);transition:transform .3s var(--ease)}
 .cat-tile:hover .ct-label i{transform:translateX(6px)}
+
+.rail-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:5;
+  width:46px;height:46px;border-radius:50%;background:rgba(14,14,14,.75);
+  border:1px solid var(--line);backdrop-filter:blur(4px);color:var(--ink);
+  display:flex;align-items:center;justify-content:center;font-size:18px;
+  cursor:pointer;transition:.25s var(--ease)}
+.rail-arrow:hover{border-color:var(--accent);color:var(--accent)}
+.rail-prev{left:-8px}
+.rail-next{right:-8px}
+@media (max-width:900px){.rail-arrow{display:none}}
 
 /* =====================================================================
    SALUDO
@@ -329,7 +348,6 @@ main{padding-top:0}
    RESPONSIVE
    ===================================================================== */
 @media (max-width:1100px){
-  .cat-grid{grid-template-columns:repeat(3,1fr)}
   .product-grid{grid-template-columns:repeat(3,1fr)}
   .avisos{grid-template-columns:repeat(2,1fr)}
   .rel-strip{grid-template-columns:repeat(4,1fr)}
@@ -344,10 +362,10 @@ main{padding-top:0}
   .g-thumbs{grid-template-columns:repeat(4,1fr)}
 }
 @media (max-width:600px){
-  .cat-grid{grid-template-columns:repeat(2,1fr)}
   .product-grid{grid-template-columns:repeat(2,1fr)}
   .avisos{grid-template-columns:1fr}
   .rel-strip{grid-template-columns:repeat(3,1fr)}
   .hero{align-items:center}
   .hero-scroll{display:none}
+  .cat-tile{width:60vw}
 }

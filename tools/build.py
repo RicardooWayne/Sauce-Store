@@ -401,7 +401,7 @@ def render_referencias():
     tracks = "\n".join(row_html(r, i == 1) for i, r in enumerate(rows) if r)
     return f"""  <section class="referencias">
     <div class="sec-head reveal"><h2>Referencias</h2><span>{len(files)}</span></div>
-    <p class="ref-note reveal">Capturas reales tomadas de nuestro Instagram — pedidos ya entregados.</p>
+    <p class="ref-note reveal">Capturas reales tomadas de nuestro Instagram — pedidos ya entregados. (Anteriormente fuimos caps west, solo cambiamos el nombre)</p>
 {tracks}
   </section>
 """
@@ -417,10 +417,10 @@ def render_index(cats):
             if p["portada"]:
                 img = p["portada"]
                 break
-        tiles.append(f"""    <a class="cat-tile reveal" style="--d:{i*0.04:.2f}s" href="{c['slug']}">
-      <div class="ct-media"><img loading="lazy" src="{img}" alt="{c['title']}"></div>
-      <div class="ct-label"><span>{c['title']}</span><i>&rarr;</i></div>
-    </a>""")
+        tiles.append(f"""      <a class="cat-tile" href="{c['slug']}">
+        <div class="ct-media"><img loading="lazy" src="{img}" alt="{c['title']}"></div>
+        <div class="ct-label"><span>{c['title']}</span><i>&rarr;</i></div>
+      </a>""")
     tiles_html = "\n".join(tiles)
 
     return f"""{head("Sauce Store — Catalogo", "Sauce Store: tenis y ropa. Catalogo visual con fotos reales.")}
@@ -447,8 +447,14 @@ def render_index(cats):
 
   <section class="categories" id="catalogo">
     <div class="sec-head reveal"><h2>Categorias</h2><span>{len(real)}</span></div>
-    <div class="cat-grid">
+    <div class="cat-rail-wrap reveal">
+      <button class="rail-arrow rail-prev" data-rail="prev" aria-label="Anterior">&#8592;</button>
+      <div class="cat-rail" id="catRail">
+        <div class="cat-track">
 {tiles_html}
+        </div>
+      </div>
+      <button class="rail-arrow rail-next" data-rail="next" aria-label="Siguiente">&#8594;</button>
     </div>
   </section>
 
