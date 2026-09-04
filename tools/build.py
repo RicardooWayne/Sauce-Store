@@ -377,7 +377,12 @@ def render_detail(p, cat, cats):
 {footer()}"""
 
 
-def render_referencias():
+REF_NOTE = ("Capturas reales tomadas de nuestro Instagram — pedidos ya entregados. "
+            "(Anteriormente fuimos Caps West, solo cambiamos el nombre)")
+
+
+def render_ref_box():
+    """Cuadro que va al lado del statement: una referencia a la vez, va rotando."""
     folder = ROOT / "img" / "referencias-web"
     if not folder.exists():
         return ""
@@ -385,26 +390,14 @@ def render_referencias():
                     key=lambda p: int(re.sub(r"\D", "", p.stem) or 0))
     if not files:
         return ""
-    mid = (len(files) + 1) // 2
-    rows = [files[:mid], files[mid:]]
-
-    def row_html(items, rev):
-        cards = "".join(
-            f'<a class="ref-item" href="img/referencias-web/{f.name}" '
-            f'data-gallery="referencias"><img loading="lazy" src="img/referencias-web/{f.name}" alt="Referencia Sauce Store"></a>'
-            for f in items)
-        cls = "marquee-rev" if rev else ""
-        return f"""    <div class="marquee {cls}">
-      <div class="marquee-track">{cards}{cards}</div>
+    paths = [f"img/referencias-web/{f.name}" for f in files]
+    total = str(len(paths)).zfill(2)
+    return f"""    <div class="ref-box">
+      <p class="ref-kicker">Entregas reales <b id="refCount">01/{total}</b></p>
+      <div class="ref-frame"><img id="refRotator" src="{paths[0]}" alt="Referencia Sauce Store"></div>
+      <p class="ref-note">{REF_NOTE}</p>
+      <script id="refData" type="application/json">{json.dumps(paths)}</script>
     </div>"""
-
-    tracks = "\n".join(row_html(r, i == 1) for i, r in enumerate(rows) if r)
-    return f"""  <section class="referencias">
-    <div class="sec-head reveal"><h2>Referencias</h2><span>{len(files)}</span></div>
-    <p class="ref-note reveal">Capturas reales tomadas de nuestro Instagram — pedidos ya entregados. (Anteriormente fuimos caps west, solo cambiamos el nombre)</p>
-{tracks}
-  </section>
-"""
 
 
 def render_index(cats):
@@ -443,6 +436,7 @@ def render_index(cats):
   <section class="statement reveal">
     <p>No somos otra tienda.<br>Cada modelo se elige a mano, se fotografia real
        y se entrega como se ve. <b>Esto es Sauce&nbsp;Store.</b></p>
+{render_ref_box()}
   </section>
 
   <section class="categories" id="catalogo">
@@ -473,7 +467,6 @@ def render_index(cats):
     </div>
   </section>
 
-{render_referencias()}
   <section class="avisos reveal">
     <div class="aviso">
       <h3>Proceso de compra</h3>
