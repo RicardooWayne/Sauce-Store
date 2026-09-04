@@ -25,8 +25,17 @@ que a ti no te llega el aviso. Nadie pierde su pedido, simplemente no te enteras
    ```
    https://api.telegram.org/botTU_TOKEN/getUpdates
    ```
+   > Es normal que el token vaya en la URL, es la única forma con este método.
+   > Solo no tomes captura de esta pantalla ni la compartas: ahí se ve completo.
+   > Si ya lo hiciste, no pasa nada — al terminar haz `/revoke` en BotFather y
+   > te da uno nuevo.
+
 4. Busca en el texto algo como `"chat":{"id":123456789,`
    👉 **Ese número es tu `TELEGRAM_CHAT_ID`.**
+
+   ¿Te sale `{"ok":true,"result":[]}` (vacío)? Es porque el bot todavía no
+   recibe mensajes. Vuelve al paso 2: búscalo en Telegram, dale **Iniciar** y
+   mándale un `hola`. Luego recarga esta página.
 
 > ¿Quieres que los pedidos lleguen a un grupo con tu equipo? Crea el grupo, mete al
 > bot, manda un mensaje en el grupo y repite el paso 3. El id del grupo es negativo
