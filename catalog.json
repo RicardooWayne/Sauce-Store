@@ -23,7 +23,22 @@
      "img/Jordan-1/JD8.png"
     ],
     "category": "Jordan 1",
-    "category_slug": "Jordan1.html"
+    "category_slug": "Jordan1.html",
+    "id": "jordan1-fragmentxdesign",
+    "price_num": 2850,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan Union LA x Fragment",
@@ -43,7 +58,22 @@
      "img/Jordan-1/UnionLAF8.png"
     ],
     "category": "Jordan 1",
-    "category_slug": "Jordan1.html"
+    "category_slug": "Jordan1.html",
+    "id": "jordanunionlaf",
+    "price_num": 2850,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 1 Union",
@@ -63,7 +93,22 @@
      "img/Jordan-1/UXJ8.png"
     ],
     "category": "Jordan 1",
-    "category_slug": "Jordan1.html"
+    "category_slug": "Jordan1.html",
+    "id": "jordanunion",
+    "price_num": 2850,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 1 Chicago Low",
@@ -83,7 +128,22 @@
      "img/Jordan-1/AJ1CL8.png"
     ],
     "category": "Jordan 1",
-    "category_slug": "Jordan1.html"
+    "category_slug": "Jordan1.html",
+    "id": "aj1chicagolow",
+    "price_num": 2250,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 1 Fragment High",
@@ -103,7 +163,22 @@
      "img/Jordan-1/AJ1F8.png"
     ],
     "category": "Jordan 1",
-    "category_slug": "Jordan1.html"
+    "category_slug": "Jordan1.html",
+    "id": "aj1fragmenthigh",
+    "price_num": 2800,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 1 Union Low",
@@ -123,7 +198,22 @@
      "img/Jordan-1/AJ1UL8.png"
     ],
     "category": "Jordan 1",
-    "category_slug": "Jordan1.html"
+    "category_slug": "Jordan1.html",
+    "id": "unionaj1low",
+    "price_num": 2800,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 1 Travis X Fragment Low",
@@ -143,7 +233,22 @@
      "img/Jordan-1/AJ1-FXT8.png"
     ],
     "category": "Jordan 1",
-    "category_slug": "Jordan1.html"
+    "category_slug": "Jordan1.html",
+    "id": "aj1fragmentxtravis",
+    "price_num": 2800,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 1 LA Chicago Union",
@@ -162,7 +267,22 @@
      "img/Jordan-1/AJ1-ULAC7.png"
     ],
     "category": "Jordan 1",
-    "category_slug": "Jordan1.html"
+    "category_slug": "Jordan1.html",
+    "id": "unionxjordan1lachicago",
+    "price_num": 2850,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 1 Travis Scott Medium Olive",
@@ -182,7 +302,22 @@
      "img/Jordan-1/AJ1-TSMO8.png"
     ],
     "category": "Jordan 1",
-    "category_slug": "Jordan1.html"
+    "category_slug": "Jordan1.html",
+    "id": "travisscottxairjordan1lowmediumolive",
+    "price_num": 2800,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 1 Travis Scott Canary Yellow",
@@ -202,7 +337,22 @@
      "img/Jordan-1/AJ1-TSCY8.png"
     ],
     "category": "Jordan 1",
-    "category_slug": "Jordan1.html"
+    "category_slug": "Jordan1.html",
+    "id": "travisscottxairjordan1lowcanaryyellow",
+    "price_num": 2800,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 1 Travis Scott low brown",
@@ -222,7 +372,22 @@
      "img/Jordan-1/AJ1-TSB8.png"
     ],
     "category": "Jordan 1",
-    "category_slug": "Jordan1.html"
+    "category_slug": "Jordan1.html",
+    "id": "aj1travisscottbrown",
+    "price_num": 2800,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 1 Retro OG Dark Mocha",
@@ -242,7 +407,22 @@
      "img/Jordan-1/AJ1-RHDM8.png"
     ],
     "category": "Jordan 1",
-    "category_slug": "Jordan1.html"
+    "category_slug": "Jordan1.html",
+    "id": "aj1retroogdarkhighmocha",
+    "price_num": 2850,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 1 Black Phantom",
@@ -261,7 +441,22 @@
      "img/Jordan-1/AJ1-BP7.png"
     ],
     "category": "Jordan 1",
-    "category_slug": "Jordan1.html"
+    "category_slug": "Jordan1.html",
+    "id": "aj1blackphantom",
+    "price_num": 2800,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 1 Reverse Mocha",
@@ -280,7 +475,22 @@
      "img/Jordan-1/AJ1-TSRM7.png"
     ],
     "category": "Jordan 1",
-    "category_slug": "Jordan1.html"
+    "category_slug": "Jordan1.html",
+    "id": "aj1travisreversemocha",
+    "price_num": 2800,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 1 Velvet Brown",
@@ -299,7 +509,22 @@
      "img/Jordan-1/AJ1-VB7.png"
     ],
     "category": "Jordan 1",
-    "category_slug": "Jordan1.html"
+    "category_slug": "Jordan1.html",
+    "id": "aj1travisvelvetbrown",
+    "price_num": 2800,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 1 Lost And Found",
@@ -319,7 +544,22 @@
      "img/Jordan-1/AJ1-LAF8.png"
     ],
     "category": "Jordan 1",
-    "category_slug": "Jordan1.html"
+    "category_slug": "Jordan1.html",
+    "id": "aj1lostandfound",
+    "price_num": 2800,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 1 Off White X Jordan Chicago",
@@ -339,7 +579,22 @@
      "img/Jordan-1/AJ1-OFFJC8.png"
     ],
     "category": "Jordan 1",
-    "category_slug": "Jordan1.html"
+    "category_slug": "Jordan1.html",
+    "id": "aj1offwhitejordanchicago",
+    "price_num": 2850,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 1 Off White X Jordan UNC",
@@ -358,7 +613,22 @@
      "img/Jordan-1/AJ1-OFFUNC8.png"
     ],
     "category": "Jordan 1",
-    "category_slug": "Jordan1.html"
+    "category_slug": "Jordan1.html",
+    "id": "aj1offwhiteunc",
+    "price_num": 2850,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 1 X Union NGR",
@@ -387,7 +657,22 @@
      "img/Jordan-1/AJ1-UNRG17.png"
     ],
     "category": "Jordan 1",
-    "category_slug": "Jordan1.html"
+    "category_slug": "Jordan1.html",
+    "id": "jordan-1-x-union-ngr",
+    "price_num": 2850,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 1 X A Ma Maniére",
@@ -407,7 +692,22 @@
      "img/Jordan-1/AJ1-AMM8.png"
     ],
     "category": "Jordan 1",
-    "category_slug": "Jordan1.html"
+    "category_slug": "Jordan1.html",
+    "id": "aj1amamani-re",
+    "price_num": 2850,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 1 X Travis Scott High",
@@ -427,7 +727,22 @@
      "img/Jordan-1/AJ1-TSH8.png"
     ],
     "category": "Jordan 1",
-    "category_slug": "Jordan1.html"
+    "category_slug": "Jordan1.html",
+    "id": "aj1travisscotthigh",
+    "price_num": 2950,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 1 X Travis Scott Fragment High",
@@ -447,7 +762,22 @@
      "img/Jordan-1/AJ1-TSXFH8.png"
     ],
     "category": "Jordan 1",
-    "category_slug": "Jordan1.html"
+    "category_slug": "Jordan1.html",
+    "id": "aj1travisscottxfragmenthigh",
+    "price_num": 2950,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 1 X Off White High White",
@@ -467,7 +797,22 @@
      "img/Jordan-1/AJ1-OWW8.png"
     ],
     "category": "Jordan 1",
-    "category_slug": "Jordan1.html"
+    "category_slug": "Jordan1.html",
+    "id": "aj1offwhitehighwhite",
+    "price_num": 2850,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    }
   ]
  },
@@ -494,7 +839,22 @@
      "img/Jordan-3/AJ3-WC7.png"
     ],
     "category": "Jordan 3",
-    "category_slug": "jordan3.html"
+    "category_slug": "jordan3.html",
+    "id": "aj3-whitecement",
+    "price_num": 2850,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 3 Air Rare",
@@ -516,7 +876,22 @@
      "img/Jordan-3/AJ3-RA10.png"
     ],
     "category": "Jordan 3",
-    "category_slug": "jordan3.html"
+    "category_slug": "jordan3.html",
+    "id": "aj3airrare",
+    "price_num": 2850,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 3 Pure Money",
@@ -536,7 +911,22 @@
      "img/Jordan-3/AJ3-PM8.png"
     ],
     "category": "Jordan 3",
-    "category_slug": "jordan3.html"
+    "category_slug": "jordan3.html",
+    "id": "aj3puremoney",
+    "price_num": 2850,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 3 Craft Ivory",
@@ -556,7 +946,22 @@
      "img/Jordan-3/AJ3-CI8.png"
     ],
     "category": "Jordan 3",
-    "category_slug": "jordan3.html"
+    "category_slug": "jordan3.html",
+    "id": "aj3craftivory",
+    "price_num": 2850,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 3 Retro Black Cat",
@@ -576,7 +981,22 @@
      "img/Jordan-3/AJ3-BC8.png"
     ],
     "category": "Jordan 3",
-    "category_slug": "jordan3.html"
+    "category_slug": "jordan3.html",
+    "id": "aj3blackcat",
+    "price_num": 2900,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 3 Black Cement",
@@ -596,7 +1016,22 @@
      "img/Jordan-3/AJ3-BLC8.png"
     ],
     "category": "Jordan 3",
-    "category_slug": "jordan3.html"
+    "category_slug": "jordan3.html",
+    "id": "aj3blackcement",
+    "price_num": 2900,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    }
   ]
  },
@@ -624,7 +1059,22 @@
      "img/Jordan-4/AJ4-TRR8.png"
     ],
     "category": "Jordan 4",
-    "category_slug": "jordan4.html"
+    "category_slug": "jordan4.html",
+    "id": "aj4tororojoretro",
+    "price_num": 2850,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 4 Military Black",
@@ -652,7 +1102,22 @@
      "img/Jordan-4/AJ4-MB16.png"
     ],
     "category": "Jordan 4",
-    "category_slug": "jordan4.html"
+    "category_slug": "jordan4.html",
+    "id": "aj4militaryblack",
+    "price_num": 2850,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 4 Cayon Purple",
@@ -672,7 +1137,22 @@
      "img/Jordan-4/AJ4-CP8.png"
     ],
     "category": "Jordan 4",
-    "category_slug": "jordan4.html"
+    "category_slug": "jordan4.html",
+    "id": "aj4-cayonpurple",
+    "price_num": 2850,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 4 Cave Stone",
@@ -692,7 +1172,22 @@
      "img/Jordan-4/AJ4-CS8.png"
     ],
     "category": "Jordan 4",
-    "category_slug": "jordan4.html"
+    "category_slug": "jordan4.html",
+    "id": "aj4-cavestone",
+    "price_num": 2850,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 4 Black Cat",
@@ -715,7 +1210,22 @@
      "img/Jordan-4/AJ4-BC11.png"
     ],
     "category": "Jordan 4",
-    "category_slug": "jordan4.html"
+    "category_slug": "jordan4.html",
+    "id": "aj4-blackcat",
+    "price_num": 2900,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 4 Undefeated",
@@ -738,7 +1248,22 @@
      "img/Jordan-4/AJ4-U11.png"
     ],
     "category": "Jordan 4",
-    "category_slug": "jordan4.html"
+    "category_slug": "jordan4.html",
+    "id": "aj4-undefeated",
+    "price_num": 2850,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 4 Varsity Red",
@@ -758,7 +1283,22 @@
      "img/Jordan-4/AJ4-VR8.png"
     ],
     "category": "Jordan 4",
-    "category_slug": "jordan4.html"
+    "category_slug": "jordan4.html",
+    "id": "aj4-varsityred",
+    "price_num": 2850,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 4 Fire Red",
@@ -777,7 +1317,22 @@
      "img/Jordan-4/AJ4-FR8.png"
     ],
     "category": "Jordan 4",
-    "category_slug": "jordan4.html"
+    "category_slug": "jordan4.html",
+    "id": "aj4-firered",
+    "price_num": 2850,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 4 Naby SB",
@@ -797,7 +1352,22 @@
      "img/Jordan-4/AJ4-Navy8.png"
     ],
     "category": "Jordan 4",
-    "category_slug": "jordan4.html"
+    "category_slug": "jordan4.html",
+    "id": "aj4nabysb",
+    "price_num": 2800,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 4 Brick By Brick",
@@ -817,7 +1387,22 @@
      "img/Jordan-4/AJ4-BBB8.png"
     ],
     "category": "Jordan 4",
-    "category_slug": "jordan4.html"
+    "category_slug": "jordan4.html",
+    "id": "aj4-brickbybrick",
+    "price_num": 2850,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 4 Rare Air",
@@ -837,7 +1422,22 @@
      "img/Jordan-4/AJ4-RA8.png"
     ],
     "category": "Jordan 4",
-    "category_slug": "jordan4.html"
+    "category_slug": "jordan4.html",
+    "id": "aj4-rareair",
+    "price_num": 2850,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 4 Travis Scott Cactus Jack",
@@ -857,7 +1457,22 @@
      "img/Jordan-4/AJ4-TSCJ8.png"
     ],
     "category": "Jordan 4",
-    "category_slug": "jordan4.html"
+    "category_slug": "jordan4.html",
+    "id": "aj4-travisscottcactusjack",
+    "price_num": 2850,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 4 Retro Infrared",
@@ -877,7 +1492,22 @@
      "img/Jordan-4/AJ4-RI8.png"
     ],
     "category": "Jordan 4",
-    "category_slug": "jordan4.html"
+    "category_slug": "jordan4.html",
+    "id": "aj4-retroinfrared",
+    "price_num": 2850,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 4 Grey",
@@ -897,7 +1527,22 @@
      "img/Jordan-4/AJ4-G8.png"
     ],
     "category": "Jordan 4",
-    "category_slug": "jordan4.html"
+    "category_slug": "jordan4.html",
+    "id": "aj4-grey",
+    "price_num": 2850,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 4 Retro Thunder",
@@ -915,7 +1560,22 @@
      "img/Jordan-4/AJ4-RT7.png"
     ],
     "category": "Jordan 4",
-    "category_slug": "jordan4.html"
+    "category_slug": "jordan4.html",
+    "id": "aj4-retrothunder",
+    "price_num": 2850,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 4 Retro Bred",
@@ -935,7 +1595,22 @@
      "img/Jordan-4/AJ4-RB8.png"
     ],
     "category": "Jordan 4",
-    "category_slug": "jordan4.html"
+    "category_slug": "jordan4.html",
+    "id": "aj4-retro-bred",
+    "price_num": 2850,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 4 Pure Money",
@@ -954,7 +1629,22 @@
      "img/Jordan-4/AJ4-PM7.png"
     ],
     "category": "Jordan 4",
-    "category_slug": "jordan4.html"
+    "category_slug": "jordan4.html",
+    "id": "aj4-pure-money",
+    "price_num": 2850,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 4 Retro Thunder Red",
@@ -974,7 +1664,22 @@
      "img/Jordan-4/AJ4-RTR8.png"
     ],
     "category": "Jordan 4",
-    "category_slug": "jordan4.html"
+    "category_slug": "jordan4.html",
+    "id": "aj4-retrothunderred",
+    "price_num": 2850,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 4 Retro Universitary Blue",
@@ -994,7 +1699,22 @@
      "img/Jordan-4/AJ4-RUB8.png"
     ],
     "category": "Jordan 4",
-    "category_slug": "jordan4.html"
+    "category_slug": "jordan4.html",
+    "id": "aj4-retro-universitary-blue",
+    "price_num": 2850,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 4 Retro Tour Yellow",
@@ -1014,7 +1734,22 @@
      "img/Jordan-4/AJ4-RTY8.png"
     ],
     "category": "Jordan 4",
-    "category_slug": "jordan4.html"
+    "category_slug": "jordan4.html",
+    "id": "aj4retrotouryellow",
+    "price_num": 2850,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 4 Midnight Navy",
@@ -1034,7 +1769,22 @@
      "img/Jordan-4/AJ4-MN8.png"
     ],
     "category": "Jordan 4",
-    "category_slug": "jordan4.html"
+    "category_slug": "jordan4.html",
+    "id": "aj4-retro-midnight-navy",
+    "price_num": 2850,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 4 White Cement",
@@ -1054,7 +1804,22 @@
      "img/Jordan-4/AJ4-WC8.png"
     ],
     "category": "Jordan 4",
-    "category_slug": "jordan4.html"
+    "category_slug": "jordan4.html",
+    "id": "aj4-white-cement",
+    "price_num": 2850,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 4 Metallic Gold",
@@ -1074,7 +1839,22 @@
      "img/Jordan-4/AJ4-MG8.png"
     ],
     "category": "Jordan 4",
-    "category_slug": "jordan4.html"
+    "category_slug": "jordan4.html",
+    "id": "aj4-metallic-gold",
+    "price_num": 2850,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 4 What The",
@@ -1094,7 +1874,22 @@
      "img/Jordan-4/AJ4-WT8.png"
     ],
     "category": "Jordan 4",
-    "category_slug": "jordan4.html"
+    "category_slug": "jordan4.html",
+    "id": "aj4-what-the",
+    "price_num": 2850,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 4 White Oreo",
@@ -1114,7 +1909,22 @@
      "img/Jordan-4/AJ4-WO8.png"
     ],
     "category": "Jordan 4",
-    "category_slug": "jordan4.html"
+    "category_slug": "jordan4.html",
+    "id": "aj4-white-oreo",
+    "price_num": 2850,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 4 Taupe Haze",
@@ -1134,7 +1944,22 @@
      "img/Jordan-4/AJ4-TH8.png"
     ],
     "category": "Jordan 4",
-    "category_slug": "jordan4.html"
+    "category_slug": "jordan4.html",
+    "id": "aj4-taupe-haze",
+    "price_num": 2850,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 4 Red Cement",
@@ -1154,7 +1979,22 @@
      "img/Jordan-4/AJ4-RC8.png"
     ],
     "category": "Jordan 4",
-    "category_slug": "jordan4.html"
+    "category_slug": "jordan4.html",
+    "id": "aj4-red-cement",
+    "price_num": 2850,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 4 Pine Green",
@@ -1174,7 +2014,22 @@
      "img/Jordan-4/AJ4-PR8.png"
     ],
     "category": "Jordan 4",
-    "category_slug": "jordan4.html"
+    "category_slug": "jordan4.html",
+    "id": "aj4-pine-green",
+    "price_num": 2850,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 4 Retro White Thunder",
@@ -1194,7 +2049,22 @@
      "img/Jordan-4/AJ4-WTR8.png"
     ],
     "category": "Jordan 4",
-    "category_slug": "jordan4.html"
+    "category_slug": "jordan4.html",
+    "id": "aj4-white-thunder-retro",
+    "price_num": 2850,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 4 Oxidized Green",
@@ -1214,7 +2084,22 @@
      "img/Jordan-4/AJ4-OG8.png"
     ],
     "category": "Jordan 4",
-    "category_slug": "jordan4.html"
+    "category_slug": "jordan4.html",
+    "id": "aj4-oxidized-green",
+    "price_num": 2850,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 4 Military Blue",
@@ -1234,7 +2119,22 @@
      "img/Jordan-4/AJ4-MBR8.png"
     ],
     "category": "Jordan 4",
-    "category_slug": "jordan4.html"
+    "category_slug": "jordan4.html",
+    "id": "aj4-military-blue-retro",
+    "price_num": 2850,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 4 Bred Reimagined",
@@ -1253,7 +2153,22 @@
      "img/Jordan-4/AJ4-RBR7.png"
     ],
     "category": "Jordan 4",
-    "category_slug": "jordan4.html"
+    "category_slug": "jordan4.html",
+    "id": "aj4-retro-bred-reimagined",
+    "price_num": 2850,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 4 Retro Fear",
@@ -1273,7 +2188,22 @@
      "img/Jordan-4/AJ4-RF8.png"
     ],
     "category": "Jordan 4",
-    "category_slug": "jordan4.html"
+    "category_slug": "jordan4.html",
+    "id": "aj4-retro-fear",
+    "price_num": 2850,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    }
   ]
  },
@@ -1301,7 +2231,22 @@
      "img/Jordan-5/AJ5-BBU8.png"
     ],
     "category": "Jordan 5",
-    "category_slug": "jordan5.html"
+    "category_slug": "jordan5.html",
+    "id": "aj5-black-universitary-blue",
+    "price_num": 2850,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 5 Metallic White",
@@ -1321,7 +2266,22 @@
      "img/Jordan-5/AJ5-MW8.png"
     ],
     "category": "Jordan 5",
-    "category_slug": "jordan5.html"
+    "category_slug": "jordan5.html",
+    "id": "aj5-metallic-white",
+    "price_num": 2899,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 5 Wolf Grey",
@@ -1341,7 +2301,22 @@
      "img/Jordan-5/AJ5-WG8.png"
     ],
     "category": "Jordan 5",
-    "category_slug": "jordan5.html"
+    "category_slug": "jordan5.html",
+    "id": "aj5-wolf-grey",
+    "price_num": 2850,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 5 Tokyo T23",
@@ -1361,7 +2336,22 @@
      "img/Jordan-5/AJ5-23T8.png"
     ],
     "category": "Jordan 5",
-    "category_slug": "jordan5.html"
+    "category_slug": "jordan5.html",
+    "id": "aj5-tokyo-t23",
+    "price_num": 2850,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 5 Fire Red",
@@ -1381,7 +2371,22 @@
      "img/Jordan-5/AJ5-FR8.png"
     ],
     "category": "Jordan 5",
-    "category_slug": "jordan5.html"
+    "category_slug": "jordan5.html",
+    "id": "aj5-fire-red",
+    "price_num": 2850,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 5 Retro Grape",
@@ -1401,7 +2406,22 @@
      "img/Jordan-5/AJ5-RG8.png"
     ],
     "category": "Jordan 5",
-    "category_slug": "jordan5.html"
+    "category_slug": "jordan5.html",
+    "id": "aj5-retro-grape",
+    "price_num": 2899,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 5 Black Metallic Reimagined",
@@ -1421,7 +2441,22 @@
      "img/Jordan-5/AJ5-BMR8.png"
     ],
     "category": "Jordan 5",
-    "category_slug": "jordan5.html"
+    "category_slug": "jordan5.html",
+    "id": "aj5-black-metallic-reimagined",
+    "price_num": 2899,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 5 X Off White",
@@ -1441,7 +2476,22 @@
      "img/Jordan-5/AJ5-OffW8.png"
     ],
     "category": "Jordan 5",
-    "category_slug": "jordan5.html"
+    "category_slug": "jordan5.html",
+    "id": "aj5-off-white",
+    "price_num": 2999,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 5 Sail Off White",
@@ -1461,7 +2511,22 @@
      "img/Jordan-5/AJ5-SOW8.png"
     ],
     "category": "Jordan 5",
-    "category_slug": "jordan5.html"
+    "category_slug": "jordan5.html",
+    "id": "aj5-sail-off-white",
+    "price_num": 2999,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 5 Awake NY",
@@ -1481,7 +2546,22 @@
      "img/Jordan-5/AJ5-ANY8.png"
     ],
     "category": "Jordan 5",
-    "category_slug": "jordan5.html"
+    "category_slug": "jordan5.html",
+    "id": "aj5-awake-ny",
+    "price_num": 2800,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    }
   ]
  },
@@ -1509,7 +2589,22 @@
      "img/Jordan-6/AJ6-IS8.png"
     ],
     "category": "Jordan 6",
-    "category_slug": "jordan6.html"
+    "category_slug": "jordan6.html",
+    "id": "aj6-ifrared-salesman",
+    "price_num": 2550,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 6 Travis Scott British Khaki",
@@ -1529,7 +2624,22 @@
      "img/Jordan-6/AJ6-TSBK8.png"
     ],
     "category": "Jordan 6",
-    "category_slug": "jordan6.html"
+    "category_slug": "jordan6.html",
+    "id": "aj6-travis-scott-british-khaki",
+    "price_num": 2550,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 6 Olive Travis Scott",
@@ -1549,7 +2659,22 @@
      "img/Jordan-6/AJ6-OTS8.png"
     ],
     "category": "Jordan 6",
-    "category_slug": "jordan6.html"
+    "category_slug": "jordan6.html",
+    "id": "aj6-olvie-travis-scott",
+    "price_num": 2550,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "Jordan 6 Retro Olympic",
@@ -1569,7 +2694,22 @@
      "img/Jordan-6/AJ6-RO8.png"
     ],
     "category": "Jordan 6",
-    "category_slug": "jordan6.html"
+    "category_slug": "jordan6.html",
+    "id": "aj6-retro-olympic",
+    "price_num": 2750,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    }
   ]
  },
@@ -1597,7 +2737,22 @@
      "img/Jordan-10/AJ10-RS8.png"
     ],
     "category": "Jordan 10",
-    "category_slug": "jordan10.html"
+    "category_slug": "jordan10.html",
+    "id": "aj10-retro-shadow",
+    "price_num": 2580,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    }
   ]
  },
@@ -1625,7 +2780,22 @@
      "img/Jordan-11/AJ11-UB8.png"
     ],
     "category": "Jordan 11",
-    "category_slug": "jordan11.html"
+    "category_slug": "jordan11.html",
+    "id": "aj11-universitary-blue",
+    "price_num": 2600,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "AJ11 Retro Jubilee",
@@ -1645,7 +2815,22 @@
      "img/Jordan-11/AJ11-RJ8.png"
     ],
     "category": "Jordan 11",
-    "category_slug": "jordan11.html"
+    "category_slug": "jordan11.html",
+    "id": "aj11-retro-jubilee",
+    "price_num": 2600,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "AJ11 Gamma Blue",
@@ -1665,7 +2850,22 @@
      "img/Jordan-11/AJ11-GB8.png"
     ],
     "category": "Jordan 11",
-    "category_slug": "jordan11.html"
+    "category_slug": "jordan11.html",
+    "id": "aj11-gamma-blue",
+    "price_num": 2600,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "AJ11 Rare Air",
@@ -1685,7 +2885,22 @@
      "img/Jordan-11/AJ11-RA8.png"
     ],
     "category": "Jordan 11",
-    "category_slug": "jordan11.html"
+    "category_slug": "jordan11.html",
+    "id": "aj11-rare-air",
+    "price_num": 2600,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "AJ11 Cool Grey",
@@ -1704,7 +2919,22 @@
      "img/Jordan-11/AJ11-CG7.png"
     ],
     "category": "Jordan 11",
-    "category_slug": "jordan11.html"
+    "category_slug": "jordan11.html",
+    "id": "aj11-cool-grey",
+    "price_num": 2600,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "AJ11 Retro Low Bred",
@@ -1724,7 +2954,22 @@
      "img/Jordan-11/AJ11-RLDB8.png"
     ],
     "category": "Jordan 11",
-    "category_slug": "jordan11.html"
+    "category_slug": "jordan11.html",
+    "id": "aj11-retro-low-bred",
+    "price_num": 2600,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "AJ11 Retro Low Diffused Blue",
@@ -1744,7 +2989,22 @@
      "img/Jordan-11/AJ11-RLDB8.png"
     ],
     "category": "Jordan 11",
-    "category_slug": "jordan11.html"
+    "category_slug": "jordan11.html",
+    "id": "aj11-retro-low-difussed-blue",
+    "price_num": 2600,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "AJ11 Legends Blue",
@@ -1764,7 +3024,22 @@
      "img/Jordan-11/AJ11-LB8.png"
     ],
     "category": "Jordan 11",
-    "category_slug": "jordan11.html"
+    "category_slug": "jordan11.html",
+    "id": "aj11-legends-blue",
+    "price_num": 2600,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "AJ11 Retro Gratitude",
@@ -1784,7 +3059,22 @@
      "img/Jordan-11/AJ11-G8.png"
     ],
     "category": "Jordan 11",
-    "category_slug": "jordan11.html"
+    "category_slug": "jordan11.html",
+    "id": "aj11-gratitude",
+    "price_num": 2600,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "AJ11 Space Jam",
@@ -1804,7 +3094,22 @@
      "img/Jordan-11/AJ11-SJ8.png"
     ],
     "category": "Jordan 11",
-    "category_slug": "jordan11.html"
+    "category_slug": "jordan11.html",
+    "id": "aj11-space-jam",
+    "price_num": 2600,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "AJ11 Cap And Gown",
@@ -1824,7 +3129,22 @@
      "img/Jordan-11/AJ11-CAG8.png"
     ],
     "category": "Jordan 11",
-    "category_slug": "jordan11.html"
+    "category_slug": "jordan11.html",
+    "id": "aj11-cap-and-gown",
+    "price_num": 2600,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "AJ11 Retro Bred",
@@ -1844,7 +3164,22 @@
      "img/Jordan-11/AJ11-RB8.png"
     ],
     "category": "Jordan 11",
-    "category_slug": "jordan11.html"
+    "category_slug": "jordan11.html",
+    "id": "aj11-retro-bred",
+    "price_num": 2600,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "AJ11 Retro Concord",
@@ -1864,7 +3199,22 @@
      "img/Jordan-11/AJ11-RC8.png"
     ],
     "category": "Jordan 11",
-    "category_slug": "jordan11.html"
+    "category_slug": "jordan11.html",
+    "id": "aj11-retro-concord",
+    "price_num": 2600,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    },
    {
     "name": "AJ11 Retro Cherry",
@@ -1884,7 +3234,22 @@
      "img/Jordan-11/AJ11-RC8.png"
     ],
     "category": "Jordan 11",
-    "category_slug": "jordan11.html"
+    "category_slug": "jordan11.html",
+    "id": "aj11-retro-cherry",
+    "price_num": 2600,
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
    }
   ]
  },
@@ -1912,7 +3277,15 @@
      "img/Amiri/Amiri-PL8.png"
     ],
     "category": "Amiri",
-    "category_slug": "Amiri.html"
+    "category_slug": "Amiri.html",
+    "id": "amiri-playera",
+    "price_num": 1150,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL"
+    ]
    },
    {
     "name": "Hoodie Amiri",
@@ -1932,7 +3305,15 @@
      "img/Amiri/Amiri-H8.png"
     ],
     "category": "Amiri",
-    "category_slug": "Amiri.html"
+    "category_slug": "Amiri.html",
+    "id": "amiri-hoodie",
+    "price_num": 1350,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL"
+    ]
    },
    {
     "name": "A M I",
@@ -1952,7 +3333,15 @@
      "img/Amiri/Amiri-Ami8.png"
     ],
     "category": "Amiri",
-    "category_slug": "Amiri.html"
+    "category_slug": "Amiri.html",
+    "id": "amiri-ami",
+    "price_num": 1350,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL"
+    ]
    },
    {
     "name": "Amiri Chamarra",
@@ -1970,7 +3359,16 @@
      "img/Amiri/Amiri-C6.png"
     ],
     "category": "Amiri",
-    "category_slug": "Amiri.html"
+    "category_slug": "Amiri.html",
+    "id": "amiri-chamarra",
+    "price_num": 1450,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL",
+     "XXL"
+    ]
    },
    {
     "name": "Amiri Short",
@@ -1990,7 +3388,16 @@
      "img/Amiri/Amiri-S8.png"
     ],
     "category": "Amiri",
-    "category_slug": "Amiri.html"
+    "category_slug": "Amiri.html",
+    "id": "amiri-short",
+    "price_num": 1400,
+    "size_options": [
+     "30",
+     "32",
+     "34",
+     "36",
+     "38"
+    ]
    },
    {
     "name": "Amiri Short 1",
@@ -2010,7 +3417,16 @@
      "img/Amiri/Amiri-S08.png"
     ],
     "category": "Amiri",
-    "category_slug": "Amiri.html"
+    "category_slug": "Amiri.html",
+    "id": "amiri-short1",
+    "price_num": 1400,
+    "size_options": [
+     "30",
+     "32",
+     "34",
+     "36",
+     "38"
+    ]
    },
    {
     "name": "Amiri Short 2",
@@ -2030,7 +3446,16 @@
      "img/Amiri/Amiri-S008.png"
     ],
     "category": "Amiri",
-    "category_slug": "Amiri.html"
+    "category_slug": "Amiri.html",
+    "id": "amiri-short2",
+    "price_num": 1400,
+    "size_options": [
+     "30",
+     "32",
+     "34",
+     "36",
+     "38"
+    ]
    },
    {
     "name": "Amiri Short 3",
@@ -2050,7 +3475,16 @@
      "img/Amiri/Amiri-S0008.png"
     ],
     "category": "Amiri",
-    "category_slug": "Amiri.html"
+    "category_slug": "Amiri.html",
+    "id": "amiri-short3",
+    "price_num": 1400,
+    "size_options": [
+     "30",
+     "32",
+     "34",
+     "36",
+     "38"
+    ]
    },
    {
     "name": "Amiri Pants Azul Negro Rosa Crema",
@@ -2075,7 +3509,15 @@
      "img/Amiri/Amiri-Pants13.png"
     ],
     "category": "Amiri",
-    "category_slug": "Amiri.html"
+    "category_slug": "Amiri.html",
+    "id": "amiri-pants-azul-negro-rosa-crema",
+    "price_num": 1350,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL"
+    ]
    },
    {
     "name": "Amiri Pantalón",
@@ -2092,7 +3534,16 @@
      "img/Amiri/Amiri-P5.png"
     ],
     "category": "Amiri",
-    "category_slug": "Amiri.html"
+    "category_slug": "Amiri.html",
+    "id": "amiri-pantalon",
+    "price_num": 1350,
+    "size_options": [
+     "30",
+     "32",
+     "34",
+     "36",
+     "38"
+    ]
    },
    {
     "name": "Amiri Pantalón 1",
@@ -2105,7 +3556,16 @@
      "img/Amiri/Amiri-P01.png"
     ],
     "category": "Amiri",
-    "category_slug": "Amiri.html"
+    "category_slug": "Amiri.html",
+    "id": "amiri-pantalon1",
+    "price_num": 1350,
+    "size_options": [
+     "30",
+     "32",
+     "34",
+     "36",
+     "38"
+    ]
    },
    {
     "name": "Amiri Pantalón 2",
@@ -2118,7 +3578,16 @@
      "img/Amiri/Amiri-P001.png"
     ],
     "category": "Amiri",
-    "category_slug": "Amiri.html"
+    "category_slug": "Amiri.html",
+    "id": "amiri-pantalon2",
+    "price_num": 1400,
+    "size_options": [
+     "30",
+     "32",
+     "34",
+     "36",
+     "38"
+    ]
    },
    {
     "name": "Amiri Pantalón 3",
@@ -2131,7 +3600,16 @@
      "img/Amiri/Amiri-P0001.png"
     ],
     "category": "Amiri",
-    "category_slug": "Amiri.html"
+    "category_slug": "Amiri.html",
+    "id": "amiri-pantalon3",
+    "price_num": 1400,
+    "size_options": [
+     "30",
+     "32",
+     "34",
+     "36",
+     "38"
+    ]
    },
    {
     "name": "Amiri Pantalón 4",
@@ -2144,7 +3622,16 @@
      "img/Amiri/Amiri-P00001.png"
     ],
     "category": "Amiri",
-    "category_slug": "Amiri.html"
+    "category_slug": "Amiri.html",
+    "id": "amiri-pantalon4",
+    "price_num": 1400,
+    "size_options": [
+     "30",
+     "32",
+     "34",
+     "36",
+     "38"
+    ]
    },
    {
     "name": "Amiri Pantalón 5",
@@ -2157,7 +3644,16 @@
      "img/Amiri/Amiri-P000001.png"
     ],
     "category": "Amiri",
-    "category_slug": "Amiri.html"
+    "category_slug": "Amiri.html",
+    "id": "amiri-pantalon5",
+    "price_num": 1400,
+    "size_options": [
+     "30",
+     "32",
+     "34",
+     "36",
+     "38"
+    ]
    },
    {
     "name": "Amiri Pantalón 6",
@@ -2170,7 +3666,16 @@
      "img/Amiri/Amiri-P0000001.png"
     ],
     "category": "Amiri",
-    "category_slug": "Amiri.html"
+    "category_slug": "Amiri.html",
+    "id": "amiri-pantalon6",
+    "price_num": 1400,
+    "size_options": [
+     "30",
+     "32",
+     "34",
+     "36",
+     "38"
+    ]
    },
    {
     "name": "Amiri Pantalón 7",
@@ -2190,7 +3695,16 @@
      "img/Amiri/Amiri-PA8.png"
     ],
     "category": "Amiri",
-    "category_slug": "Amiri.html"
+    "category_slug": "Amiri.html",
+    "id": "amiri-pantalon7",
+    "price_num": 1450,
+    "size_options": [
+     "30",
+     "32",
+     "34",
+     "36",
+     "38"
+    ]
    },
    {
     "name": "Amiri Pantalón 8",
@@ -2210,7 +3724,16 @@
      "img/Amiri/Amiri-PA08.png"
     ],
     "category": "Amiri",
-    "category_slug": "Amiri.html"
+    "category_slug": "Amiri.html",
+    "id": "amiri-pantalon8",
+    "price_num": 1450,
+    "size_options": [
+     "30",
+     "32",
+     "34",
+     "36",
+     "38"
+    ]
    },
    {
     "name": "Amiri Pantalón 9",
@@ -2230,7 +3753,16 @@
      "img/Amiri/Amiri-PA008.png"
     ],
     "category": "Amiri",
-    "category_slug": "Amiri.html"
+    "category_slug": "Amiri.html",
+    "id": "amiri-pantalon9",
+    "price_num": 1450,
+    "size_options": [
+     "30",
+     "32",
+     "34",
+     "36",
+     "38"
+    ]
    },
    {
     "name": "Amiri Pantalón 10",
@@ -2250,7 +3782,16 @@
      "img/Amiri/Amiri-PA0008.png"
     ],
     "category": "Amiri",
-    "category_slug": "Amiri.html"
+    "category_slug": "Amiri.html",
+    "id": "amiri-pantalon10",
+    "price_num": 1450,
+    "size_options": [
+     "30",
+     "32",
+     "34",
+     "36",
+     "38"
+    ]
    },
    {
     "name": "Amiri Pantalón 11",
@@ -2270,7 +3811,16 @@
      "img/Amiri/Amiri-PA00008.png"
     ],
     "category": "Amiri",
-    "category_slug": "Amiri.html"
+    "category_slug": "Amiri.html",
+    "id": "amiri-pantalon11",
+    "price_num": 1450,
+    "size_options": [
+     "30",
+     "32",
+     "34",
+     "36",
+     "38"
+    ]
    },
    {
     "name": "Amiri Pantalón 12",
@@ -2290,7 +3840,16 @@
      "img/Amiri/Amiri-PA000008.png"
     ],
     "category": "Amiri",
-    "category_slug": "Amiri.html"
+    "category_slug": "Amiri.html",
+    "id": "amiri-pantalon12",
+    "price_num": 1450,
+    "size_options": [
+     "30",
+     "32",
+     "34",
+     "36",
+     "38"
+    ]
    },
    {
     "name": "Amiri Pantalón 13",
@@ -2310,7 +3869,16 @@
      "img/Amiri/Amiri-PA0000008.png"
     ],
     "category": "Amiri",
-    "category_slug": "Amiri.html"
+    "category_slug": "Amiri.html",
+    "id": "amiri-pantalon13",
+    "price_num": 1450,
+    "size_options": [
+     "30",
+     "32",
+     "34",
+     "36",
+     "38"
+    ]
    },
    {
     "name": "Amiri Pantalón 14",
@@ -2330,7 +3898,16 @@
      "img/Amiri/Amiri-PA00000008.png"
     ],
     "category": "Amiri",
-    "category_slug": "Amiri.html"
+    "category_slug": "Amiri.html",
+    "id": "amiri-pantalon14",
+    "price_num": 1450,
+    "size_options": [
+     "30",
+     "32",
+     "34",
+     "36",
+     "38"
+    ]
    },
    {
     "name": "Amiri Pantalón 15",
@@ -2350,7 +3927,16 @@
      "img/Amiri/AMIRI-PAN8.png"
     ],
     "category": "Amiri",
-    "category_slug": "Amiri.html"
+    "category_slug": "Amiri.html",
+    "id": "amiri-pantalon15",
+    "price_num": 1450,
+    "size_options": [
+     "30",
+     "32",
+     "34",
+     "36",
+     "38"
+    ]
    },
    {
     "name": "Amiri Pantalón 16",
@@ -2370,7 +3956,16 @@
      "img/Amiri/AMIRI-PAN08.png"
     ],
     "category": "Amiri",
-    "category_slug": "Amiri.html"
+    "category_slug": "Amiri.html",
+    "id": "amiri-pantalon16",
+    "price_num": 1450,
+    "size_options": [
+     "30",
+     "32",
+     "34",
+     "36",
+     "38"
+    ]
    },
    {
     "name": "Amiri Pantalón 17",
@@ -2390,7 +3985,16 @@
      "img/Amiri/AMIRI-PAN008.png"
     ],
     "category": "Amiri",
-    "category_slug": "Amiri.html"
+    "category_slug": "Amiri.html",
+    "id": "amiri-pantalon17",
+    "price_num": 1450,
+    "size_options": [
+     "30",
+     "32",
+     "34",
+     "36",
+     "38"
+    ]
    },
    {
     "name": "Amiri Pantalón 18",
@@ -2410,7 +4014,16 @@
      "img/Amiri/AMIRI-PAN0008.png"
     ],
     "category": "Amiri",
-    "category_slug": "Amiri.html"
+    "category_slug": "Amiri.html",
+    "id": "amiri-pantalon18",
+    "price_num": 1450,
+    "size_options": [
+     "30",
+     "32",
+     "34",
+     "36",
+     "38"
+    ]
    },
    {
     "name": "Amiri Pantalón 19",
@@ -2430,7 +4043,16 @@
      "img/Amiri/AMIRI-PAN00008.png"
     ],
     "category": "Amiri",
-    "category_slug": "Amiri.html"
+    "category_slug": "Amiri.html",
+    "id": "amiri-pantalon19",
+    "price_num": 1450,
+    "size_options": [
+     "30",
+     "32",
+     "34",
+     "36",
+     "38"
+    ]
    },
    {
     "name": "Amiri Pantalón 20",
@@ -2449,7 +4071,16 @@
      "img/Amiri/AMIRI-PAN000007.png"
     ],
     "category": "Amiri",
-    "category_slug": "Amiri.html"
+    "category_slug": "Amiri.html",
+    "id": "amiri-pantalon20",
+    "price_num": 1450,
+    "size_options": [
+     "30",
+     "32",
+     "34",
+     "36",
+     "38"
+    ]
    }
   ]
  },
@@ -2477,7 +4108,15 @@
      "img/Balenciaga/Balenciaga-P8.png"
     ],
     "category": "Balenciaga",
-    "category_slug": "Balenciaga.html"
+    "category_slug": "Balenciaga.html",
+    "id": "balenciaga-pants1",
+    "price_num": 1250,
+    "size_options": [
+     "M",
+     "L",
+     "XL",
+     "XXL"
+    ]
    },
    {
     "name": "Balenciaga Pants 2",
@@ -2497,7 +4136,15 @@
      "img/Balenciaga/Balenciaga-P08.png"
     ],
     "category": "Balenciaga",
-    "category_slug": "Balenciaga.html"
+    "category_slug": "Balenciaga.html",
+    "id": "balenciaga-pants2",
+    "price_num": 1250,
+    "size_options": [
+     "M",
+     "L",
+     "XL",
+     "XXL"
+    ]
    },
    {
     "name": "Balenciaga Pants 3",
@@ -2517,7 +4164,15 @@
      "img/Balenciaga/Balenciaga-P008.png"
     ],
     "category": "Balenciaga",
-    "category_slug": "Balenciaga.html"
+    "category_slug": "Balenciaga.html",
+    "id": "balenciaga-pants3",
+    "price_num": 1250,
+    "size_options": [
+     "M",
+     "L",
+     "XL",
+     "XXL"
+    ]
    },
    {
     "name": "Balenciaga Short",
@@ -2537,7 +4192,15 @@
      "img/Balenciaga/Balenciaga-S8.png"
     ],
     "category": "Balenciaga",
-    "category_slug": "Balenciaga.html"
+    "category_slug": "Balenciaga.html",
+    "id": "balenciaga-short",
+    "price_num": 1200,
+    "size_options": [
+     "M",
+     "L",
+     "XL",
+     "XXL"
+    ]
    },
    {
     "name": "Balenciaga Short 1",
@@ -2557,7 +4220,15 @@
      "img/Balenciaga/Balenciaga-S08.png"
     ],
     "category": "Balenciaga",
-    "category_slug": "Balenciaga.html"
+    "category_slug": "Balenciaga.html",
+    "id": "balenciaga-short1",
+    "price_num": 1200,
+    "size_options": [
+     "M",
+     "L",
+     "XL",
+     "XXL"
+    ]
    },
    {
     "name": "Balenciaga Short 2",
@@ -2577,7 +4248,15 @@
      "img/Balenciaga/Balenciaga-S008.png"
     ],
     "category": "Balenciaga",
-    "category_slug": "Balenciaga.html"
+    "category_slug": "Balenciaga.html",
+    "id": "balenciaga-short2",
+    "price_num": 1200,
+    "size_options": [
+     "M",
+     "L",
+     "XL",
+     "XXL"
+    ]
    },
    {
     "name": "Balenciaga X Adidas",
@@ -2601,7 +4280,16 @@
      "img/Balenciaga/Balenciaga-XA12.png"
     ],
     "category": "Balenciaga",
-    "category_slug": "Balenciaga.html"
+    "category_slug": "Balenciaga.html",
+    "id": "balenciaga-x-adidas",
+    "price_num": 1200,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL",
+     "XXL"
+    ]
    },
    {
     "name": "Balenciaga X Adidas Sudadera",
@@ -2625,7 +4313,14 @@
      "img/Balenciaga/Balenciaga-SXA12.png"
     ],
     "category": "Balenciaga",
-    "category_slug": "Balenciaga.html"
+    "category_slug": "Balenciaga.html",
+    "id": "balenciaga-sudadera-x-adidas",
+    "price_num": 1300,
+    "size_options": [
+     "S",
+     "M",
+     "L"
+    ]
    },
    {
     "name": "Balenciaga Playera 1",
@@ -2645,7 +4340,16 @@
      "img/Balenciaga/Balenciaga-BP8.png"
     ],
     "category": "Balenciaga",
-    "category_slug": "Balenciaga.html"
+    "category_slug": "Balenciaga.html",
+    "id": "balenciaga-playera1",
+    "price_num": 1200,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL",
+     "XXL"
+    ]
    },
    {
     "name": "Balenciaga Long Sleeve",
@@ -2663,7 +4367,16 @@
      "img/Balenciaga/Balenciaga-LS6.png"
     ],
     "category": "Balenciaga",
-    "category_slug": "Balenciaga.html"
+    "category_slug": "Balenciaga.html",
+    "id": "balenciaga-long-sleeve",
+    "price_num": 1250,
+    "size_options": [
+     "M",
+     "L",
+     "XL",
+     "XXL",
+     "3XL"
+    ]
    },
    {
     "name": "Balenciaga Long Sleeve 1",
@@ -2683,7 +4396,15 @@
      "img/Balenciaga/Balenciaga-LS08.png"
     ],
     "category": "Balenciaga",
-    "category_slug": "Balenciaga.html"
+    "category_slug": "Balenciaga.html",
+    "id": "balenciaga-long-sleeve1",
+    "price_num": 1350,
+    "size_options": [
+     "XS",
+     "S",
+     "M",
+     "L"
+    ]
    },
    {
     "name": "Balenciaga Long Sleeve 2",
@@ -2703,7 +4424,15 @@
      "img/Balenciaga/Balenciaga-LS008.png"
     ],
     "category": "Balenciaga",
-    "category_slug": "Balenciaga.html"
+    "category_slug": "Balenciaga.html",
+    "id": "balenciaga-long-sleeve2",
+    "price_num": 1350,
+    "size_options": [
+     "XS",
+     "S",
+     "M",
+     "L"
+    ]
    },
    {
     "name": "Balenciaga Long Sleeve 3",
@@ -2723,7 +4452,15 @@
      "img/Balenciaga/Balenciaga-LS0008.png"
     ],
     "category": "Balenciaga",
-    "category_slug": "Balenciaga.html"
+    "category_slug": "Balenciaga.html",
+    "id": "balenciaga-long-sleeve3",
+    "price_num": 1450,
+    "size_options": [
+     "XS",
+     "S",
+     "M",
+     "L"
+    ]
    },
    {
     "name": "Balenciaga Long Sleeve 4",
@@ -2743,7 +4480,15 @@
      "img/Balenciaga/Balenciaga-LS00008.png"
     ],
     "category": "Balenciaga",
-    "category_slug": "Balenciaga.html"
+    "category_slug": "Balenciaga.html",
+    "id": "balenciaga-long-sleeve4",
+    "price_num": 1350,
+    "size_options": [
+     "XS",
+     "S",
+     "M",
+     "L"
+    ]
    },
    {
     "name": "Balenciaga Long Sleeve Ramnstein",
@@ -2762,7 +4507,15 @@
      "img/Balenciaga/Balenciaga-LSR7.png"
     ],
     "category": "Balenciaga",
-    "category_slug": "Balenciaga.html"
+    "category_slug": "Balenciaga.html",
+    "id": "balenciaga-long-sleeve5",
+    "price_num": 1350,
+    "size_options": [
+     "XS",
+     "S",
+     "M",
+     "L"
+    ]
    },
    {
     "name": "Balenciaga Long Sleeve Rosa y Negro",
@@ -2784,7 +4537,15 @@
      "img/Balenciaga/Balenciaga-LSRN10.png"
     ],
     "category": "Balenciaga",
-    "category_slug": "Balenciaga.html"
+    "category_slug": "Balenciaga.html",
+    "id": "balenciaga-long-sleeve-rosa-negro",
+    "price_num": 1350,
+    "size_options": [
+     "XS",
+     "S",
+     "M",
+     "L"
+    ]
    },
    {
     "name": "Balenciaga Camisa Manga Larga",
@@ -2803,7 +4564,16 @@
      "img/Balenciaga/Balenciaga-CML7.png"
     ],
     "category": "Balenciaga",
-    "category_slug": "Balenciaga.html"
+    "category_slug": "Balenciaga.html",
+    "id": "balenciaga-camisa-manga-larga",
+    "price_num": 1200,
+    "size_options": [
+     "M",
+     "L",
+     "XL",
+     "XXL",
+     "3XL"
+    ]
    },
    {
     "name": "Balenciaga Camisa",
@@ -2822,7 +4592,15 @@
      "img/Balenciaga/Balenciaga-C7.png"
     ],
     "category": "Balenciaga",
-    "category_slug": "Balenciaga.html"
+    "category_slug": "Balenciaga.html",
+    "id": "balenciaga-camisa",
+    "price_num": 1200,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL"
+    ]
    },
    {
     "name": "Balenciaga camisa 2",
@@ -2841,7 +4619,15 @@
      "img/Balenciaga/Balenciaga-C07.png"
     ],
     "category": "Balenciaga",
-    "category_slug": "Balenciaga.html"
+    "category_slug": "Balenciaga.html",
+    "id": "balenciaga-camisa2",
+    "price_num": 1200,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL"
+    ]
    },
    {
     "name": "Balenciaga camisa 3",
@@ -2860,7 +4646,15 @@
      "img/Balenciaga/Balenciaga-C007.png"
     ],
     "category": "Balenciaga",
-    "category_slug": "Balenciaga.html"
+    "category_slug": "Balenciaga.html",
+    "id": "balenciaga-camisa3",
+    "price_num": 1250,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL"
+    ]
    },
    {
     "name": "Balenciaga camisa 4",
@@ -2879,7 +4673,15 @@
      "img/Balenciaga/Balenciaga-C0007.png"
     ],
     "category": "Balenciaga",
-    "category_slug": "Balenciaga.html"
+    "category_slug": "Balenciaga.html",
+    "id": "balenciaga-camisa4",
+    "price_num": 1200,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL"
+    ]
    },
    {
     "name": "Balenciaga camisa 5",
@@ -2898,7 +4700,15 @@
      "img/Balenciaga/Balenciaga-C00007.png"
     ],
     "category": "Balenciaga",
-    "category_slug": "Balenciaga.html"
+    "category_slug": "Balenciaga.html",
+    "id": "balenciaga-camisa5",
+    "price_num": 1200,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL"
+    ]
    },
    {
     "name": "Balenciaga camisa 6",
@@ -2917,7 +4727,16 @@
      "img/Balenciaga/Balenciaga-C000007.png"
     ],
     "category": "Balenciaga",
-    "category_slug": "Balenciaga.html"
+    "category_slug": "Balenciaga.html",
+    "id": "balenciaga-camisa6",
+    "price_num": 1450,
+    "size_options": [
+     "XS",
+     "S",
+     "M",
+     "L",
+     "XL"
+    ]
    },
    {
     "name": "Balenciaga camisa Blanca Y Negra",
@@ -2937,7 +4756,15 @@
      "img/Balenciaga/Balenciaga-CBN8.png"
     ],
     "category": "Balenciaga",
-    "category_slug": "Balenciaga.html"
+    "category_slug": "Balenciaga.html",
+    "id": "balenciaga-camisa-blanca-negra",
+    "price_num": 1250,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL"
+    ]
    },
    {
     "name": "Balenciaga camisa Sunglasses",
@@ -2957,7 +4784,15 @@
      "img/Balenciaga/Balenciaga-CS8.png"
     ],
     "category": "Balenciaga",
-    "category_slug": "Balenciaga.html"
+    "category_slug": "Balenciaga.html",
+    "id": "balenciaga-camisa-sunglasses",
+    "price_num": 1250,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL"
+    ]
    },
    {
     "name": "Balenciaga Isabelle Playera",
@@ -2977,7 +4812,15 @@
      "img/Balenciaga/Balenciaga-IP8.png"
     ],
     "category": "Balenciaga",
-    "category_slug": "Balenciaga.html"
+    "category_slug": "Balenciaga.html",
+    "id": "balenciaga-isabelle-playera",
+    "price_num": 1250,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL"
+    ]
    },
    {
     "name": "Balenciaga Playera Mangas Largas",
@@ -2997,7 +4840,16 @@
      "img/Balenciaga/Balenciaga-PML8.png"
     ],
     "category": "Balenciaga",
-    "category_slug": "Balenciaga.html"
+    "category_slug": "Balenciaga.html",
+    "id": "balenciaga-playera-mangas-largas",
+    "price_num": 1350,
+    "size_options": [
+     "XS",
+     "S",
+     "M",
+     "L",
+     "XL"
+    ]
    },
    {
     "name": "Balenciaga Hoodie Negra, blanca y azul",
@@ -3018,7 +4870,15 @@
      "img/Balenciaga/Balenciaga-HNBA9.png"
     ],
     "category": "Balenciaga",
-    "category_slug": "Balenciaga.html"
+    "category_slug": "Balenciaga.html",
+    "id": "balenciaga-hoodie-negra-blanca-azul",
+    "price_num": 1400,
+    "size_options": [
+     "XS",
+     "S",
+     "M",
+     "L"
+    ]
    },
    {
     "name": "Balenciaga Hoodie One Like Two",
@@ -3038,7 +4898,15 @@
      "img/Balenciaga/Balenciaga-HOLT8.png"
     ],
     "category": "Balenciaga",
-    "category_slug": "Balenciaga.html"
+    "category_slug": "Balenciaga.html",
+    "id": "balenciaga-hoodie-one-like-two",
+    "price_num": 1450,
+    "size_options": [
+     "XS",
+     "S",
+     "M",
+     "L"
+    ]
    },
    {
     "name": "Balenciaga Hoodie 1",
@@ -3058,7 +4926,15 @@
      "img/Balenciaga/Balenciaga-H8.png"
     ],
     "category": "Balenciaga",
-    "category_slug": "Balenciaga.html"
+    "category_slug": "Balenciaga.html",
+    "id": "balenciaga-hoodie1",
+    "price_num": 1450,
+    "size_options": [
+     "XS",
+     "S",
+     "M",
+     "L"
+    ]
    },
    {
     "name": "Balenciaga Hoodie 2",
@@ -3078,7 +4954,15 @@
      "img/Balenciaga/Balenciaga-H008.png"
     ],
     "category": "Balenciaga",
-    "category_slug": "Balenciaga.html"
+    "category_slug": "Balenciaga.html",
+    "id": "balenciaga-hoodie2",
+    "price_num": 1670,
+    "size_options": [
+     "XS",
+     "S",
+     "M",
+     "L"
+    ]
    },
    {
     "name": "Balenciaga Zip",
@@ -3098,7 +4982,15 @@
      "img/Balenciaga/Balenciaga-Z8.png"
     ],
     "category": "Balenciaga",
-    "category_slug": "Balenciaga.html"
+    "category_slug": "Balenciaga.html",
+    "id": "balenciaga-zip",
+    "price_num": 1670,
+    "size_options": [
+     "XS",
+     "S",
+     "M",
+     "L"
+    ]
    },
    {
     "name": "Balenciaga Sueter",
@@ -3118,7 +5010,16 @@
      "img/Balenciaga/Balenciaga-SU8.png"
     ],
     "category": "Balenciaga",
-    "category_slug": "Balenciaga.html"
+    "category_slug": "Balenciaga.html",
+    "id": "balenciaga-sueter",
+    "price_num": 1350,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL",
+     "XXL"
+    ]
    }
   ]
  },
@@ -3151,7 +5052,16 @@
      "img/Bape/Bape-CB13.png"
     ],
     "category": "Bape",
-    "category_slug": "Bape.html"
+    "category_slug": "Bape.html",
+    "id": "bape-camo-black-shark-full-zip-ss23",
+    "price_num": 3650,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL",
+     "XXL"
+    ]
    },
    {
     "name": "Bape Camo Green Full Zip",
@@ -3176,7 +5086,16 @@
      "img/Bape/Bape-CG13.png"
     ],
     "category": "Bape",
-    "category_slug": "Bape.html"
+    "category_slug": "Bape.html",
+    "id": "bape-camo-green-shark-full-zip",
+    "price_num": 3650,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL",
+     "XXL"
+    ]
    },
    {
     "name": "Bape Camo Yellow Full Zip",
@@ -3201,7 +5120,16 @@
      "img/Bape/Bape-CY13.png"
     ],
     "category": "Bape",
-    "category_slug": "Bape.html"
+    "category_slug": "Bape.html",
+    "id": "bape-camo-yellow-shark-full-zip",
+    "price_num": 3650,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL",
+     "XXL"
+    ]
    },
    {
     "name": "Bape Camo Purple Full Zip",
@@ -3226,7 +5154,16 @@
      "img/Bape/Bape-CP13.png"
     ],
     "category": "Bape",
-    "category_slug": "Bape.html"
+    "category_slug": "Bape.html",
+    "id": "bape-camo-purple-shark-full-zip",
+    "price_num": 3650,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL",
+     "XXL"
+    ]
    },
    {
     "name": "Bape X Ovo",
@@ -3251,7 +5188,16 @@
      "img/Bape/Bape-O13.png"
     ],
     "category": "Bape",
-    "category_slug": "Bape.html"
+    "category_slug": "Bape.html",
+    "id": "bape-x-ovo-shark-full-zip",
+    "price_num": 3650,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL",
+     "XXL"
+    ]
    },
    {
     "name": "Bape Camo Red Full Zip",
@@ -3276,7 +5222,16 @@
      "img/Bape/Bape-CR13.png"
     ],
     "category": "Bape",
-    "category_slug": "Bape.html"
+    "category_slug": "Bape.html",
+    "id": "bape-camo-red-full-zip-ss22",
+    "price_num": 3650,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL",
+     "XXL"
+    ]
    },
    {
     "name": "Bape Camo Navy Full Zip",
@@ -3300,7 +5255,16 @@
      "img/Bape/Bape-BNC12.png"
     ],
     "category": "Bape",
-    "category_slug": "Bape.html"
+    "category_slug": "Bape.html",
+    "id": "bape-camo-nnavy-full-zip",
+    "price_num": 3650,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL",
+     "XXL"
+    ]
    },
    {
     "name": "Bape Space White Full Zip",
@@ -3325,7 +5289,16 @@
      "img/Bape/Bape-SW13.png"
     ],
     "category": "Bape",
-    "category_slug": "Bape.html"
+    "category_slug": "Bape.html",
+    "id": "bape-space-white-full-zip",
+    "price_num": 3850,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL",
+     "XXL"
+    ]
    },
    {
     "name": "Bape Space Black Full Zip",
@@ -3350,7 +5323,16 @@
      "img/Bape/Bape-SB13.png"
     ],
     "category": "Bape",
-    "category_slug": "Bape.html"
+    "category_slug": "Bape.html",
+    "id": "bape-space-black-full-zip",
+    "price_num": 3850,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL",
+     "XXL"
+    ]
    },
    {
     "name": "Bape Camo Green Shark Full Zip",
@@ -3375,7 +5357,16 @@
      "img/Bape/Bape-BCG13.png"
     ],
     "category": "Bape",
-    "category_slug": "Bape.html"
+    "category_slug": "Bape.html",
+    "id": "bape-camo-ggreen-shark-full-zip",
+    "price_num": 3650,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL",
+     "XXL"
+    ]
    },
    {
     "name": "Bape Camo Purple Shark Full Zip 2",
@@ -3400,7 +5391,16 @@
      "img/Bape/Bape-BP13.png"
     ],
     "category": "Bape",
-    "category_slug": "Bape.html"
+    "category_slug": "Bape.html",
+    "id": "bape-camo-ppurple-full-zip",
+    "price_num": 3650,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL",
+     "XXL"
+    ]
    },
    {
     "name": "Bape Multi Camo Full Zip",
@@ -3425,7 +5425,16 @@
      "img/Bape/Bape-MC13.png"
     ],
     "category": "Bape",
-    "category_slug": "Bape.html"
+    "category_slug": "Bape.html",
+    "id": "bape-multi-camo-full-zip",
+    "price_num": 3650,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL",
+     "XXL"
+    ]
    },
    {
     "name": "Bape Full Black Full Zip",
@@ -3450,7 +5459,16 @@
      "img/Bape/Bape-BFB13.png"
     ],
     "category": "Bape",
-    "category_slug": "Bape.html"
+    "category_slug": "Bape.html",
+    "id": "bape-full-black-full-zip",
+    "price_num": 3650,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL",
+     "XXL"
+    ]
    },
    {
     "name": "Bape Short Black",
@@ -3475,7 +5493,16 @@
      "img/Bape/Bape-BSB13.png"
     ],
     "category": "Bape",
-    "category_slug": "Bape.html"
+    "category_slug": "Bape.html",
+    "id": "bape-black-short",
+    "price_num": 1950,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL",
+     "XXL"
+    ]
    },
    {
     "name": "Bape Short Camo Red",
@@ -3500,7 +5527,16 @@
      "img/Bape/Bape-BSR13.png"
     ],
     "category": "Bape",
-    "category_slug": "Bape.html"
+    "category_slug": "Bape.html",
+    "id": "bape-short-camo-red",
+    "price_num": 1950,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL",
+     "XXL"
+    ]
    },
    {
     "name": "Bape Short Camo Purple",
@@ -3525,7 +5561,16 @@
      "img/Bape/Bape-BSP13.png"
     ],
     "category": "Bape",
-    "category_slug": "Bape.html"
+    "category_slug": "Bape.html",
+    "id": "bape-short-camo-purple",
+    "price_num": 1950,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL",
+     "XXL"
+    ]
    },
    {
     "name": "Bape Short Camo Navy Blue",
@@ -3550,7 +5595,16 @@
      "img/Bape/Bape-NB13.png"
     ],
     "category": "Bape",
-    "category_slug": "Bape.html"
+    "category_slug": "Bape.html",
+    "id": "bape-short-camo-navy-blue",
+    "price_num": 1950,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL",
+     "XXL"
+    ]
    },
    {
     "name": "Bape Short Camo Black",
@@ -3571,7 +5625,16 @@
      "img/Bape/Bape-CSB9.png"
     ],
     "category": "Bape",
-    "category_slug": "Bape.html"
+    "category_slug": "Bape.html",
+    "id": "bape-short-camo-black",
+    "price_num": 1950,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL",
+     "XXL"
+    ]
    },
    {
     "name": "Bape Short Camo Black",
@@ -3592,7 +5655,16 @@
      "img/Bape/Bape-CSB9.png"
     ],
     "category": "Bape",
-    "category_slug": "Bape.html"
+    "category_slug": "Bape.html",
+    "id": "bape-short-camo-black-2",
+    "price_num": 1950,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL",
+     "XXL"
+    ]
    },
    {
     "name": "Bape Short Camo Green",
@@ -3617,7 +5689,16 @@
      "img/Bape/Bape-SCG13.png"
     ],
     "category": "Bape",
-    "category_slug": "Bape.html"
+    "category_slug": "Bape.html",
+    "id": "bape-short-camo-green",
+    "price_num": 1950,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL",
+     "XXL"
+    ]
    },
    {
     "name": "Bape Short Camo White",
@@ -3642,7 +5723,16 @@
      "img/Bape/Bape-SCW13.png"
     ],
     "category": "Bape",
-    "category_slug": "Bape.html"
+    "category_slug": "Bape.html",
+    "id": "bape-short-camo-white",
+    "price_num": 1950,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL",
+     "XXL"
+    ]
    },
    {
     "name": "Bape Short Camo Pink",
@@ -3667,7 +5757,16 @@
      "img/Bape/Bape-SCP13.png"
     ],
     "category": "Bape",
-    "category_slug": "Bape.html"
+    "category_slug": "Bape.html",
+    "id": "bape-short-camo-pink",
+    "price_num": 1950,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL",
+     "XXL"
+    ]
    }
   ]
  },
@@ -3695,7 +5794,15 @@
      "img/Burberry/Burberry-SNB8.png"
     ],
     "category": "Burberry",
-    "category_slug": "Burberry.html"
+    "category_slug": "Burberry.html",
+    "id": "burberry-short-negro-blanco",
+    "price_num": 1250,
+    "size_options": [
+     "M",
+     "L",
+     "XL",
+     "XXL"
+    ]
    },
    {
     "name": "Burberry Short Blanco Y Negro",
@@ -3715,7 +5822,15 @@
      "img/Burberry/Burberry-SBN8.png"
     ],
     "category": "Burberry",
-    "category_slug": "Burberry.html"
+    "category_slug": "Burberry.html",
+    "id": "burberry-short-blanco-negro",
+    "price_num": 1250,
+    "size_options": [
+     "M",
+     "L",
+     "XL",
+     "XXL"
+    ]
    },
    {
     "name": "Burberry Bermuda Cafe Y Azul",
@@ -3735,7 +5850,15 @@
      "img/Burberry/Burberry-BBCA8.png"
     ],
     "category": "Burberry",
-    "category_slug": "Burberry.html"
+    "category_slug": "Burberry.html",
+    "id": "burberry-bermuda-cafe-azul",
+    "price_num": 1250,
+    "size_options": [
+     "M",
+     "L",
+     "XL",
+     "XXL"
+    ]
    },
    {
     "name": "Burberry Polo Blanca",
@@ -3755,7 +5878,16 @@
      "img/Burberry/Burberry-PB8.png"
     ],
     "category": "Burberry",
-    "category_slug": "Burberry.html"
+    "category_slug": "Burberry.html",
+    "id": "burberry-polo-blanca",
+    "price_num": 1250,
+    "size_options": [
+     "M",
+     "L",
+     "XL",
+     "XXL",
+     "3XL"
+    ]
    },
    {
     "name": "Burberry Polo Negro",
@@ -3775,7 +5907,16 @@
      "img/Burberry/Burberry-PN8.png"
     ],
     "category": "Burberry",
-    "category_slug": "Burberry.html"
+    "category_slug": "Burberry.html",
+    "id": "burberry-polo-negra",
+    "price_num": 1250,
+    "size_options": [
+     "M",
+     "L",
+     "XL",
+     "XXL",
+     "3XL"
+    ]
    },
    {
     "name": "Burberry Cuadros Blancos Polo",
@@ -3795,7 +5936,16 @@
      "img/Burberry/Burberry-CBP8.png"
     ],
     "category": "Burberry",
-    "category_slug": "Burberry.html"
+    "category_slug": "Burberry.html",
+    "id": "burberry-cuadros-blancos-polo",
+    "price_num": 1250,
+    "size_options": [
+     "M",
+     "L",
+     "XL",
+     "XXL",
+     "3XL"
+    ]
    },
    {
     "name": "Burberry Sueter",
@@ -3815,7 +5965,15 @@
      "img/Burberry/Burberry-S8.png"
     ],
     "category": "Burberry",
-    "category_slug": "Burberry.html"
+    "category_slug": "Burberry.html",
+    "id": "burberry-sueter",
+    "price_num": 1500,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL"
+    ]
    },
    {
     "name": "Burberry Cardigan",
@@ -3835,7 +5993,16 @@
      "img/Burberry/Burberry-C8.png"
     ],
     "category": "Burberry",
-    "category_slug": "Burberry.html"
+    "category_slug": "Burberry.html",
+    "id": "burberry-cardigan",
+    "price_num": 1550,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL",
+     "XXL"
+    ]
    },
    {
     "name": "Burberry Sueter Negro",
@@ -3854,7 +6021,16 @@
      "img/Burberry/Burberry-SN7.png"
     ],
     "category": "Burberry",
-    "category_slug": "Burberry.html"
+    "category_slug": "Burberry.html",
+    "id": "burberry-sueter-negro",
+    "price_num": 1500,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL",
+     "XXL"
+    ]
    },
    {
     "name": "Burberry Conjunto",
@@ -3876,7 +6052,10 @@
      "img/Burberry/Burberry-C010.png"
     ],
     "category": "Burberry",
-    "category_slug": "Burberry.html"
+    "category_slug": "Burberry.html",
+    "id": "burberry-conjunto1",
+    "price_num": 1480,
+    "size_options": []
    },
    {
     "name": "Burberry Camisa Manga Larga",
@@ -3895,7 +6074,10 @@
      "img/Burberry/Burberry-CML7.png"
     ],
     "category": "Burberry",
-    "category_slug": "Burberry.html"
+    "category_slug": "Burberry.html",
+    "id": "burberry-camisa-manga-larga",
+    "price_num": 1250,
+    "size_options": []
    },
    {
     "name": "Burberry Pants Blanco Negro",
@@ -3908,7 +6090,16 @@
      "img/Burberry/Burberry-Pants.portada.png"
     ],
     "category": "Burberry",
-    "category_slug": "Burberry.html"
+    "category_slug": "Burberry.html",
+    "id": "burberry-pants-blanco-negro",
+    "price_num": 1260,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL",
+     "XXL"
+    ]
    }
   ]
  },
@@ -3935,7 +6126,15 @@
      "img/Supreme/Supreme-J7.png"
     ],
     "category": "Supreme",
-    "category_slug": "Supreme.html"
+    "category_slug": "Supreme.html",
+    "id": "supreme-jeans",
+    "price_num": 1650,
+    "size_options": [
+     "30",
+     "32",
+     "34",
+     "36"
+    ]
    },
    {
     "name": "Supreme Pantalon",
@@ -3955,7 +6154,15 @@
      "img/Supreme/Supreme-PS8.png"
     ],
     "category": "Supreme",
-    "category_slug": "Supreme.html"
+    "category_slug": "Supreme.html",
+    "id": "supreme-pantalon",
+    "price_num": 2399,
+    "size_options": [
+     "30",
+     "32",
+     "34",
+     "36"
+    ]
    },
    {
     "name": "Supreme Pantalon Negro",
@@ -3975,7 +6182,15 @@
      "img/Supreme/Supreme-PSN8.png"
     ],
     "category": "Supreme",
-    "category_slug": "Supreme.html"
+    "category_slug": "Supreme.html",
+    "id": "supreme-pantalon-negro",
+    "price_num": 1800,
+    "size_options": [
+     "30",
+     "32",
+     "34",
+     "36"
+    ]
    },
    {
     "name": "Supreme Frank Frazetta",
@@ -3994,7 +6209,15 @@
      "img/Supreme/Supreme-FF7.png"
     ],
     "category": "Supreme",
-    "category_slug": "Supreme.html"
+    "category_slug": "Supreme.html",
+    "id": "supreme-frank-frazetta",
+    "price_num": 2100,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL"
+    ]
    },
    {
     "name": "Supreme Maison Margiela",
@@ -4014,7 +6237,15 @@
      "img/Supreme/Supreme-MM8.png"
     ],
     "category": "Supreme",
-    "category_slug": "Supreme.html"
+    "category_slug": "Supreme.html",
+    "id": "supreme-maison-margiela",
+    "price_num": 2100,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL"
+    ]
    },
    {
     "name": "Supreme Michael Jackson",
@@ -4034,7 +6265,15 @@
      "img/Supreme/Supreme-MJ8.png"
     ],
     "category": "Supreme",
-    "category_slug": "Supreme.html"
+    "category_slug": "Supreme.html",
+    "id": "supreme-michael-jackson",
+    "price_num": 2100,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL"
+    ]
    },
    {
     "name": "Supreme Skull Pile",
@@ -4054,7 +6293,15 @@
      "img/Supreme/Supreme-SP8.png"
     ],
     "category": "Supreme",
-    "category_slug": "Supreme.html"
+    "category_slug": "Supreme.html",
+    "id": "supreme-skull-pile",
+    "price_num": 2100,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL"
+    ]
    },
    {
     "name": "Supreme Leather",
@@ -4074,7 +6321,15 @@
      "img/Supreme/Supreme-SL8.png"
     ],
     "category": "Supreme",
-    "category_slug": "Supreme.html"
+    "category_slug": "Supreme.html",
+    "id": "supreme-leather",
+    "price_num": 2350,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL"
+    ]
    },
    {
     "name": "Supreme 3 Colorway MM",
@@ -4095,7 +6350,15 @@
      "img/Supreme/Supreme-3MM9.png"
     ],
     "category": "Supreme",
-    "category_slug": "Supreme.html"
+    "category_slug": "Supreme.html",
+    "id": "supreme-3-colorway-maison-margiela",
+    "price_num": 1999,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL"
+    ]
    },
    {
     "name": "Supreme Hoodie Y Pantalón",
@@ -4115,7 +6378,10 @@
      "img/Supreme/Supreme-HP8.png"
     ],
     "category": "Supreme",
-    "category_slug": "Supreme.html"
+    "category_slug": "Supreme.html",
+    "id": "supreme-hoodie-pantalon",
+    "price_num": 2700,
+    "size_options": []
    },
    {
     "name": "Supreme Chamarra",
@@ -4135,7 +6401,15 @@
      "img/Supreme/Supreme-SC8.png"
     ],
     "category": "Supreme",
-    "category_slug": "Supreme.html"
+    "category_slug": "Supreme.html",
+    "id": "supreme-chamarra",
+    "price_num": 2750,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL"
+    ]
    },
    {
     "name": "Supreme Chamarra 1",
@@ -4155,7 +6429,15 @@
      "img/Supreme/Supreme-C08.png"
     ],
     "category": "Supreme",
-    "category_slug": "Supreme.html"
+    "category_slug": "Supreme.html",
+    "id": "supreme-chamarra1",
+    "price_num": 2800,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL"
+    ]
    },
    {
     "name": "Supreme Hoodie Realtree",
@@ -4175,7 +6457,15 @@
      "img/Supreme/Supreme-SHR8.png"
     ],
     "category": "Supreme",
-    "category_slug": "Supreme.html"
+    "category_slug": "Supreme.html",
+    "id": "supreme-hoodie-realtree",
+    "price_num": 1999,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL"
+    ]
    },
    {
     "name": "Supreme X Fox Chaqueta",
@@ -4195,7 +6485,15 @@
      "img/Supreme/Supreme-XFC8.png"
     ],
     "category": "Supreme",
-    "category_slug": "Supreme.html"
+    "category_slug": "Supreme.html",
+    "id": "supreme-x-fox-chaqueta",
+    "price_num": 3050,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL"
+    ]
    },
    {
     "name": "Supreme X Fox",
@@ -4213,7 +6511,15 @@
      "img/Supreme/Supreme-SF6.jpeg"
     ],
     "category": "Supreme",
-    "category_slug": "Supreme.html"
+    "category_slug": "Supreme.html",
+    "id": "supreme-x-fox",
+    "price_num": 2200,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL"
+    ]
    },
    {
     "name": "Supreme X New Era",
@@ -4233,7 +6539,12 @@
      "img/Supreme/Supreme-SXN8.png"
     ],
     "category": "Supreme",
-    "category_slug": "Supreme.html"
+    "category_slug": "Supreme.html",
+    "id": "supreme-x-new-era",
+    "price_num": 1350,
+    "size_options": [
+     "Unitalla"
+    ]
    },
    {
     "name": "Supreme X True Polo",
@@ -4253,7 +6564,15 @@
      "img/Supreme/Supreme-TP8.png"
     ],
     "category": "Supreme",
-    "category_slug": "Supreme.html"
+    "category_slug": "Supreme.html",
+    "id": "supreme-x-true-polo",
+    "price_num": 1700,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL"
+    ]
    },
    {
     "name": "Supreme Hoodie AOI",
@@ -4273,7 +6592,15 @@
      "img/Supreme/Supreme-AOI8.png"
     ],
     "category": "Supreme",
-    "category_slug": "Supreme.html"
+    "category_slug": "Supreme.html",
+    "id": "supreme-hoodie-aoi",
+    "price_num": 1850,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL"
+    ]
    },
    {
     "name": "Supreme X Umbro",
@@ -4293,7 +6620,15 @@
      "img/Supreme/Supreme-SXU8.png"
     ],
     "category": "Supreme",
-    "category_slug": "Supreme.html"
+    "category_slug": "Supreme.html",
+    "id": "supreme-x-umbro",
+    "price_num": 2050,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL"
+    ]
    },
    {
     "name": "Supreme X Umbro Short",
@@ -4313,7 +6648,15 @@
      "img/Supreme/Supreme-XUS8.png"
     ],
     "category": "Supreme",
-    "category_slug": "Supreme.html"
+    "category_slug": "Supreme.html",
+    "id": "supreme-x-umbro-short",
+    "price_num": 1700,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL"
+    ]
    },
    {
     "name": "Supreme X Umbro Short",
@@ -4333,7 +6676,15 @@
      "img/Supreme/Supreme-XUS8.png"
     ],
     "category": "Supreme",
-    "category_slug": "Supreme.html"
+    "category_slug": "Supreme.html",
+    "id": "supreme-x-umbro-short-2",
+    "price_num": 1700,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL"
+    ]
    },
    {
     "name": "Supreme Chamarra Roja Y Mezclilla",
@@ -4353,7 +6704,15 @@
      "img/Supreme/Supreme-CRM8.png"
     ],
     "category": "Supreme",
-    "category_slug": "Supreme.html"
+    "category_slug": "Supreme.html",
+    "id": "supreme-chamarra-roja-mezclilla",
+    "price_num": 2700,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL"
+    ]
    }
   ]
  },
@@ -4381,7 +6740,15 @@
      "img/Chrome-Hearts-Ropa/CH-S8.png"
     ],
     "category": "Chrome Hearts",
-    "category_slug": "ChromeHeartsRopa.html"
+    "category_slug": "ChromeHeartsRopa.html",
+    "id": "ch-sudadera",
+    "price_num": 2350,
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL"
+    ]
    }
   ]
  },
@@ -4402,7 +6769,12 @@
      "img/Chrome-Hearts-Cadenas/CH1.jpeg"
     ],
     "category": "Chrome Hearts Cadenas",
-    "category_slug": "ChromeHearts.html"
+    "category_slug": "ChromeHearts.html",
+    "id": "chrome-hearts-cadena-full-set",
+    "price_num": 1200,
+    "size_options": [
+     "Unitalla"
+    ]
    },
    {
     "name": "Chrome Hearts Cadena Full Set",
@@ -4415,7 +6787,12 @@
      "img/Chrome-Hearts-Cadenas/CH2.jpg"
     ],
     "category": "Chrome Hearts Cadenas",
-    "category_slug": "ChromeHearts.html"
+    "category_slug": "ChromeHearts.html",
+    "id": "chrome-hearts-cadena-full-set-2",
+    "price_num": 1200,
+    "size_options": [
+     "Unitalla"
+    ]
    },
    {
     "name": "Chrome Hearts Cadena Full Set",
@@ -4428,7 +6805,12 @@
      "img/Chrome-Hearts-Cadenas/CH3.jpg"
     ],
     "category": "Chrome Hearts Cadenas",
-    "category_slug": "ChromeHearts.html"
+    "category_slug": "ChromeHearts.html",
+    "id": "chrome-hearts-cadena-full-set-3",
+    "price_num": 1200,
+    "size_options": [
+     "Unitalla"
+    ]
    },
    {
     "name": "Chrome Hearts Cadena Full Set",
@@ -4441,7 +6823,12 @@
      "img/Chrome-Hearts-Cadenas/CH4.jpg"
     ],
     "category": "Chrome Hearts Cadenas",
-    "category_slug": "ChromeHearts.html"
+    "category_slug": "ChromeHearts.html",
+    "id": "chrome-hearts-cadena-full-set-4",
+    "price_num": 1200,
+    "size_options": [
+     "Unitalla"
+    ]
    },
    {
     "name": "Chrome Hearts Cadena Full Set",
@@ -4454,7 +6841,12 @@
      "img/Chrome-Hearts-Cadenas/CH5.jpg"
     ],
     "category": "Chrome Hearts Cadenas",
-    "category_slug": "ChromeHearts.html"
+    "category_slug": "ChromeHearts.html",
+    "id": "chrome-hearts-cadena-full-set-5",
+    "price_num": 1200,
+    "size_options": [
+     "Unitalla"
+    ]
    },
    {
     "name": "Chrome Hearts Cadena Full Set",
@@ -4467,7 +6859,12 @@
      "img/Chrome-Hearts-Cadenas/CH6.jpg"
     ],
     "category": "Chrome Hearts Cadenas",
-    "category_slug": "ChromeHearts.html"
+    "category_slug": "ChromeHearts.html",
+    "id": "chrome-hearts-cadena-full-set-6",
+    "price_num": 1200,
+    "size_options": [
+     "Unitalla"
+    ]
    },
    {
     "name": "Chrome Hearts Cadena Full Set",
@@ -4480,7 +6877,12 @@
      "img/Chrome-Hearts-Cadenas/CH7.jpg"
     ],
     "category": "Chrome Hearts Cadenas",
-    "category_slug": "ChromeHearts.html"
+    "category_slug": "ChromeHearts.html",
+    "id": "chrome-hearts-cadena-full-set-7",
+    "price_num": 1200,
+    "size_options": [
+     "Unitalla"
+    ]
    },
    {
     "name": "Chrome Hearts Cadena Full Set",
@@ -4493,7 +6895,12 @@
      "img/Chrome-Hearts-Cadenas/CH8.jpg"
     ],
     "category": "Chrome Hearts Cadenas",
-    "category_slug": "ChromeHearts.html"
+    "category_slug": "ChromeHearts.html",
+    "id": "chrome-hearts-cadena-full-set-8",
+    "price_num": 1200,
+    "size_options": [
+     "Unitalla"
+    ]
    },
    {
     "name": "Chrome Hearts Cadena Full Set",
@@ -4506,7 +6913,12 @@
      "img/Chrome-Hearts-Cadenas/CH9.jpg"
     ],
     "category": "Chrome Hearts Cadenas",
-    "category_slug": "ChromeHearts.html"
+    "category_slug": "ChromeHearts.html",
+    "id": "chrome-hearts-cadena-full-set-9",
+    "price_num": 1200,
+    "size_options": [
+     "Unitalla"
+    ]
    },
    {
     "name": "Chrome Hearts Cadena Full Set",
@@ -4519,7 +6931,12 @@
      "img/Chrome-Hearts-Cadenas/CH10.jpg"
     ],
     "category": "Chrome Hearts Cadenas",
-    "category_slug": "ChromeHearts.html"
+    "category_slug": "ChromeHearts.html",
+    "id": "chrome-hearts-cadena-full-set-10",
+    "price_num": 1200,
+    "size_options": [
+     "Unitalla"
+    ]
    },
    {
     "name": "Chrome Hearts Cadena Full Set",
@@ -4532,7 +6949,12 @@
      "img/Chrome-Hearts-Cadenas/CH11.jpg"
     ],
     "category": "Chrome Hearts Cadenas",
-    "category_slug": "ChromeHearts.html"
+    "category_slug": "ChromeHearts.html",
+    "id": "chrome-hearts-cadena-full-set-11",
+    "price_num": 1200,
+    "size_options": [
+     "Unitalla"
+    ]
    }
   ]
  },
@@ -4554,7 +6976,12 @@
      "img/Stock/Dandy-Hats-R2.jpeg"
     ],
     "category": "Stock",
-    "category_slug": "Stock.html"
+    "category_slug": "Stock.html",
+    "id": "dandy-hats-rodeo",
+    "price_num": 650,
+    "size_options": [
+     "Unitalla"
+    ]
    },
    {
     "name": "Dandy Hats Storm",
@@ -4568,7 +6995,12 @@
      "img/Stock/Dandy-Hats-S2.jpeg"
     ],
     "category": "Stock",
-    "category_slug": "Stock.html"
+    "category_slug": "Stock.html",
+    "id": "dandy-hats-storm",
+    "price_num": 650,
+    "size_options": [
+     "Unitalla"
+    ]
    },
    {
     "name": "Barbas X Baez",
@@ -4582,7 +7014,12 @@
      "img/Stock/Barbas-X-Baez-BXB2.jpeg"
     ],
     "category": "Stock",
-    "category_slug": "Stock.html"
+    "category_slug": "Stock.html",
+    "id": "barbas-x-baez",
+    "price_num": 650,
+    "size_options": [
+     "Unitalla"
+    ]
    },
    {
     "name": "New Era Arizona",
@@ -4596,7 +7033,12 @@
      "img/Stock/New-Era-SA2.jpeg"
     ],
     "category": "Stock",
-    "category_slug": "Stock.html"
+    "category_slug": "Stock.html",
+    "id": "new-era-snapback-arizona",
+    "price_num": 400,
+    "size_options": [
+     "Unitalla"
+    ]
    },
    {
     "name": "New Era Athletics",
@@ -4610,7 +7052,12 @@
      "img/Stock/New-Era-AS2.jpeg"
     ],
     "category": "Stock",
-    "category_slug": "Stock.html"
+    "category_slug": "Stock.html",
+    "id": "new-era-snapback-athletics",
+    "price_num": 400,
+    "size_options": [
+     "Unitalla"
+    ]
    },
    {
     "name": "New Era Rayos Azul Cielo",
@@ -4623,7 +7070,13 @@
      "img/Stock/New-Era-RAC1.jpeg"
     ],
     "category": "Stock",
-    "category_slug": "Stock.html"
+    "category_slug": "Stock.html",
+    "id": "new-era-rayos-azul-cielo",
+    "price_num": 400,
+    "size_options": [
+     "7 1/8",
+     "7 1/4"
+    ]
    },
    {
     "name": "New Era Blue Jays",
@@ -4637,7 +7090,12 @@
      "img/Stock/New-Era-BJ2.jpeg"
     ],
     "category": "Stock",
-    "category_slug": "Stock.html"
+    "category_slug": "Stock.html",
+    "id": "new-era-blue-jays",
+    "price_num": 400,
+    "size_options": [
+     "7 1/8"
+    ]
    },
    {
     "name": "New Era X Fear Of God",
@@ -4651,7 +7109,12 @@
      "img/Stock/New-Era-FOG2.jpeg"
     ],
     "category": "Stock",
-    "category_slug": "Stock.html"
+    "category_slug": "Stock.html",
+    "id": "new-era-fear-of-god",
+    "price_num": 400,
+    "size_options": [
+     "7 3/8"
+    ]
    },
    {
     "name": "New Era Rayos Azul Marino",
@@ -4665,7 +7128,12 @@
      "img/Stock/New-Era-RAM2.jpeg"
     ],
     "category": "Stock",
-    "category_slug": "Stock.html"
+    "category_slug": "Stock.html",
+    "id": "new-era-rayos-azul-marino",
+    "price_num": 400,
+    "size_options": [
+     "7 3/8"
+    ]
    },
    {
     "name": "New Era Angels",
@@ -4679,7 +7147,12 @@
      "img/Stock/New-Era-AG2.jpeg"
     ],
     "category": "Stock",
-    "category_slug": "Stock.html"
+    "category_slug": "Stock.html",
+    "id": "new-era-angels",
+    "price_num": 400,
+    "size_options": [
+     "7 1/4"
+    ]
    },
    {
     "name": "New Era White Sox",
@@ -4693,7 +7166,12 @@
      "img/Stock/New-Era-WS2.jpeg"
     ],
     "category": "Stock",
-    "category_slug": "Stock.html"
+    "category_slug": "Stock.html",
+    "id": "new-era-white-sox",
+    "price_num": 400,
+    "size_options": [
+     "7 1/4"
+    ]
    },
    {
     "name": "New Era Ohtani",
@@ -4707,7 +7185,12 @@
      "img/Stock/New-Era-Ohtani2.jpeg"
     ],
     "category": "Stock",
-    "category_slug": "Stock.html"
+    "category_slug": "Stock.html",
+    "id": "new-era-ohtani",
+    "price_num": 400,
+    "size_options": [
+     "7 3/8"
+    ]
    },
    {
     "name": "New Era Supreme",
@@ -4721,7 +7204,12 @@
      "img/Stock/New-Era-S2.jpeg"
     ],
     "category": "Stock",
-    "category_slug": "Stock.html"
+    "category_slug": "Stock.html",
+    "id": "new-era-supreme",
+    "price_num": 400,
+    "size_options": [
+     "7"
+    ]
    },
    {
     "name": "New Era Yankees",
@@ -4735,7 +7223,12 @@
      "img/Stock/New-Era-WS2.jpeg"
     ],
     "category": "Stock",
-    "category_slug": "Stock.html"
+    "category_slug": "Stock.html",
+    "id": "new-era-yankees",
+    "price_num": 400,
+    "size_options": [
+     "7 1/2"
+    ]
    },
    {
     "name": "New Era NZMU",
@@ -4749,7 +7242,12 @@
      "img/Stock/New-Era-NZMU2.jpeg"
     ],
     "category": "Stock",
-    "category_slug": "Stock.html"
+    "category_slug": "Stock.html",
+    "id": "new-era-nzmu",
+    "price_num": 400,
+    "size_options": [
+     "7 1/4"
+    ]
    }
   ]
  }

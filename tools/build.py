@@ -81,6 +81,74 @@ SIZE_RE = re.compile(
     r"talla|x?xs|x?xl|\bs a\b|\bm a\b|\d\s?pz|\bpz\b|\d/\d|^\s*\d|\ba \d|snap", re.I)
 
 # ----------------------------------------------------------------------------
+# Tallas y precios (para el carrito / sistema de tickets)
+# ----------------------------------------------------------------------------
+# Escalera de tallas de ropa, en orden. Se usa para expandir rangos "S a XXL".
+SIZE_LADDER = ["XS", "S", "M", "L", "XL", "XXL", "3XL"]
+SIZE_ALIASES = {"XXXL": "3XL", "2XL": "XXL"}
+# Los tenis no traen talla en el catalogo: se usa la escalera MX estandar.
+SNEAKER_SIZES = ["25", "25.5", "26", "26.5", "27", "27.5",
+                 "28", "28.5", "29", "29.5", "30"]
+UNITALLA = ["Unitalla"]
+
+
+def parse_price(text):
+    """'$2,850 MXN C/U' -> 2850. Devuelve 0 si no hay numero."""
+    m = re.search(r"([\d][\d,]*)", text or "")
+    return int(m.group(1).replace(",", "")) if m else 0
+
+
+def _norm_size(tok):
+    tok = tok.strip().upper().replace(".", "")
+    return SIZE_ALIASES.get(tok, tok)
+
+
+def parse_sizes(meta, category):
+    """Convierte el texto de tallas del catalogo en una lista de opciones."""
+    raw = (meta or "").strip()
+
+    # Sin dato: tenis -> escalera MX; lo demas -> unitalla
+    if not raw:
+        return SNEAKER_SIZES[:] if "Jordan" in category else UNITALLA[:]
+
+    low = raw.lower()
+
+    # Caso mixto (conjunto hoodie + pantalon): no se puede partir en una lista
+    if ":" in raw:
+        return []
+
+    # Unitalla / piezas sueltas / snapbacks
+    if re.search(r"unitalla|\bpz\b|snap", low):
+        return UNITALLA[:]
+
+    # Tallas de gorra: "7", "7 1/8", "7 1/8 Y 7 1/4"
+    if re.match(r"^\s*7(\s|$|/|\s*\d/\d)", raw):
+        return [t.strip(" .") for t in re.split(r"\s+y\s+", raw, flags=re.I) if t.strip(" .")]
+
+    # Lista numerica de pantalon: "30-32-34-36-38" o "30, 32, 34, 36, 38."
+    nums = re.findall(r"\b(\d{2})\b", raw)
+    if len(nums) >= 2 and not re.search(r"[a-z]", low.replace("talla", "")):
+        return nums
+
+    # Rango de ropa: "Talla S a XXL", "S a XL", "S-XL", "Talla xs a L"
+    m = re.search(r"(x{0,3}s|m|l|x{0,2}l|3xl)\s*(?:a|-|hasta)\s*(x{0,3}s|m|l|x{0,2}l|3xl)",
+                  low.replace("talla", ""), re.I)
+    if m:
+        a, b = _norm_size(m.group(1)), _norm_size(m.group(2))
+        if a in SIZE_LADDER and b in SIZE_LADDER:
+            i, j = SIZE_LADDER.index(a), SIZE_LADDER.index(b)
+            if i <= j:
+                return SIZE_LADDER[i:j + 1]
+
+    return []
+
+
+def product_id(detail_href, name):
+    """Id estable por producto: el nombre del archivo de detalle, o el nombre."""
+    base = detail_href or name
+    return slugify(re.sub(r"\.html$", "", base))
+
+# ----------------------------------------------------------------------------
 # Parsing
 # ----------------------------------------------------------------------------
 def _find(pat, text, default=""):
@@ -155,6 +223,7 @@ def snapshot():
 def build_catalog():
     snapshot()
     cats = []
+    seen_ids = {}
     for slug, title, group, folder in CATEGORIES:
         path = SRC / slug
         if not path.exists():
@@ -168,6 +237,13 @@ def build_catalog():
                 p["gallery"] = [p["portada"]]
             p["category"] = title
             p["category_slug"] = slug
+            # id unico: varios productos sin pagina de detalle comparten nombre
+            # (p.ej. las 11 cadenas Chrome Hearts), asi que se numeran.
+            base_id = product_id(p["detail"], p["name"])
+            seen_ids[base_id] = seen_ids.get(base_id, 0) + 1
+            p["id"] = base_id if seen_ids[base_id] == 1 else f"{base_id}-{seen_ids[base_id]}"
+            p["price_num"] = parse_price(p["price"])
+            p["size_options"] = parse_sizes(p["sizes"], title)
         cats.append({"slug": slug, "title": title, "group": group,
                      "folder": folder, "products": products})
     return cats
@@ -235,6 +311,10 @@ def nav(cats):
       </button>
       <a href="{IG}" target="_blank" rel="noopener">Instagram</a>
       <a href="{WA}" target="_blank" rel="noopener" class="ha-wa">WhatsApp</a>
+      <a class="cart-btn" href="carrito.html" aria-label="Carrito">
+        <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 4h2l2.4 11.2a1 1 0 0 0 1 .8h8.5a1 1 0 0 0 1-.8L20 7H6"/><circle cx="10" cy="20" r="1.3"/><circle cx="17" cy="20" r="1.3"/></svg>
+        <span class="cart-count" id="cartCount" hidden>0</span>
+      </a>
       <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
   </div>
@@ -277,6 +357,7 @@ def footer():
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.6.2/fuse.min.js"></script>
 <script src="app.js"></script>
 <script src="search.js"></script>
+<script src="cart.js"></script>
 </body>
 </html>"""
 
@@ -300,7 +381,12 @@ def render_category(cat, cats):
         if p["detail"]:
             cards.append(f'<a class="product-card reveal" style="--d:{i%12*0.03:.2f}s" href="{p["detail"]}">\n{inner}\n</a>')
         else:
-            cards.append(f'<div class="product-card reveal no-link" style="--d:{i%12*0.03:.2f}s">\n{inner}\n</div>')
+            # Sin pagina de detalle: el boton de carrito va en la tarjeta misma
+            size = (p["size_options"] or ["Unitalla"])[0]
+            btn = (f'<button class="pc-add" data-id="{p["id"]}" data-name="{p["name"]}"'
+                   f' data-price="{p["price_num"]}" data-img="{img}" data-size="{size}">'
+                   f'Agregar al carrito</button>')
+            cards.append(f'<div class="product-card reveal no-link" style="--d:{i%12*0.03:.2f}s">\n{inner}\n{btn}\n</div>')
     grid = "\n".join(cards)
     n = len(cat["products"])
     return f"""{head(cat['title'] + " — Sauce Store", "Catalogo " + cat['title'] + " en Sauce Store.")}
@@ -340,6 +426,30 @@ def render_detail(p, cat, cats):
         f'<a class="rel-card" href="{o["detail"]}"><img loading="lazy" src="{o["portada"] or (o["gallery"][0] if o["gallery"] else "")}" alt="{o["name"]}"><span>{o["name"]}</span></a>'
         for o in others)
 
+    # Selector de talla + agregar al carrito
+    opts = p.get("size_options") or []
+    if opts:
+        chips = "".join(
+            f'<button type="button" class="size-chip" data-size="{s}">{s}</button>'
+            for s in opts)
+        size_block = f"""      <div class="d-sizes">
+        <p class="d-sizes-label">Elige tu talla <b class="size-req">*</b></p>
+        <div class="size-chips" id="sizeChips">{chips}</div>
+      </div>"""
+    else:
+        # Producto sin lista de tallas (p.ej. conjuntos): talla libre
+        hint = p["sizes"] or "Indica tu talla"
+        size_block = f"""      <div class="d-sizes">
+        <p class="d-sizes-label">Indica tu talla <b class="size-req">*</b></p>
+        <input class="size-free" id="sizeFree" type="text" maxlength="40" placeholder="{hint}">
+      </div>"""
+
+    cart_block = f"""{size_block}
+      <button class="d-cta" id="addToCart"
+              data-id="{p['id']}" data-name="{p['name']}"
+              data-price="{p['price_num']}" data-img="{main_img}">Agregar al carrito</button>
+      <a class="d-cta d-cta-alt" href="{WA}" target="_blank" rel="noopener">Preguntar por este modelo</a>"""
+
     return f"""{head(p['name'] + " — Sauce Store", p['name'] + " — " + cat['title'] + " en Sauce Store.")}
 {nav(cats)}
 <main class="detail-page">
@@ -359,7 +469,7 @@ def render_detail(p, cat, cats):
       <p class="d-kicker">{cat['title']}</p>
       <h1 class="d-name">{p['name']}</h1>
       <div class="d-rows">{meta_rows}</div>
-      <a class="d-cta" href="{WA}" target="_blank" rel="noopener">Preguntar por este modelo</a>
+{cart_block}
       <div class="d-notes">
         <p>&#8226; Realiza tu pedido con el 50% y liquida al recibir (entrega en GDL, si eres de otro estado puedes hacer lo mismo pero pagas $200 de re envio).</p>
         <p>&#8226; Envios GRATIS directamente a tu casa: se liquida el total y llega por paqueteria a tu domicilio (TODO MÉXICO).</p>
@@ -373,6 +483,233 @@ def render_detail(p, cat, cats):
 {rel}
     </div>
   </section>
+</main>
+{footer()}"""
+
+
+ESTADOS_MX = [
+    "Aguascalientes", "Baja California", "Baja California Sur", "Campeche",
+    "Chiapas", "Chihuahua", "Ciudad de Mexico", "Coahuila", "Colima", "Durango",
+    "Estado de Mexico", "Guanajuato", "Guerrero", "Hidalgo", "Jalisco",
+    "Michoacan", "Morelos", "Nayarit", "Nuevo Leon", "Oaxaca", "Puebla",
+    "Queretaro", "Quintana Roo", "San Luis Potosi", "Sinaloa", "Sonora",
+    "Tabasco", "Tamaulipas", "Tlaxcala", "Veracruz", "Yucatan", "Zacatecas",
+]
+
+
+def render_carrito(cats):
+    return f"""{head("Carrito — Sauce Store", "Tu carrito en Sauce Store.")}
+{nav(cats)}
+<main class="cat-page">
+  <section class="cat-hero">
+    <p class="cat-kicker">Tu pedido</p>
+    <h1 class="cat-title">Carrito</h1>
+    <p class="cat-count" id="cartSummary">Cargando…</p>
+  </section>
+
+  <div class="cart-layout">
+    <section class="cart-items" id="cartItems"></section>
+    <aside class="cart-side" id="cartSide" hidden>
+      <div class="d-rows">
+        <div class="d-row"><span>Productos</span><b id="sumCount">0</b></div>
+        <div class="d-row"><span>Subtotal</span><b id="sumTotal">$0 MXN</b></div>
+      </div>
+      <a class="d-cta" href="checkout.html">Finalizar pedido</a>
+      <div class="d-notes">
+        <p>&#8226; El siguiente paso es elegir apartado o liquidar, y llenar tus datos.</p>
+        <p>&#8226; No se cobra nada en la pagina: se genera un ticket y te contactamos.</p>
+      </div>
+    </aside>
+  </div>
+
+  <div class="cart-empty" id="cartEmpty" hidden>
+    <p>Tu carrito esta vacio.</p>
+    <a class="hero-cta" href="index.html">Ver catalogo</a>
+  </div>
+</main>
+{footer()}"""
+
+
+def render_checkout(cats):
+    estados = "".join(f'<option value="{e}">{e}</option>' for e in ESTADOS_MX)
+    return f"""{head("Finalizar pedido — Sauce Store", "Genera tu ticket de pedido.")}
+{nav(cats)}
+<main class="cat-page">
+  <section class="cat-hero">
+    <p class="cat-kicker">Paso final</p>
+    <h1 class="cat-title">Tu pedido</h1>
+  </section>
+
+  <form class="checkout" id="checkoutForm" novalidate>
+    <div class="co-main">
+      <section class="co-block">
+        <h2 class="co-title"><span>01</span> Como quieres pagarlo</h2>
+        <div class="co-options">
+          <label class="co-opt">
+            <input type="radio" name="modo" value="apartado" checked>
+            <span class="co-opt-body">
+              <b>Apartado del 50%</b>
+              <i>Pagas la mitad ahora y liquidas al recibir.</i>
+            </span>
+          </label>
+          <label class="co-opt">
+            <input type="radio" name="modo" value="liquidar">
+            <span class="co-opt-body">
+              <b>Liquidar pedido</b>
+              <i>Pagas el total y el envio va gratis a tu casa.</i>
+            </span>
+          </label>
+        </div>
+      </section>
+
+      <section class="co-block">
+        <h2 class="co-title"><span>02</span> Como lo recibes</h2>
+        <div class="co-options">
+          <label class="co-opt">
+            <input type="radio" name="entrega" value="gdl" checked>
+            <span class="co-opt-body">
+              <b>Entrega en Guadalajara</b>
+              <i>Nos ponemos de acuerdo por WhatsApp. Sin costo.</i>
+            </span>
+          </label>
+          <label class="co-opt">
+            <input type="radio" name="entrega" value="envio">
+            <span class="co-opt-body">
+              <b>Envio a domicilio</b>
+              <i id="envioNota">Gratis si liquidas. Con apartado se suman $200 de reenvio.</i>
+            </span>
+          </label>
+        </div>
+      </section>
+
+      <section class="co-block">
+        <h2 class="co-title"><span>03</span> Tus datos</h2>
+        <div class="co-grid">
+          <label class="co-field">
+            <span>Nombre completo *</span>
+            <input type="text" name="nombre" maxlength="80" required>
+          </label>
+          <label class="co-field">
+            <span>WhatsApp (10 digitos) *</span>
+            <input type="tel" name="whatsapp" maxlength="20" inputmode="numeric"
+                   placeholder="33 1234 5678" required>
+          </label>
+        </div>
+
+        <div class="co-address" id="coAddress" hidden>
+          <p class="co-sub">Direccion de envio</p>
+          <div class="co-grid">
+            <label class="co-field">
+              <span>Estado *</span>
+              <select name="estado"><option value="">Elige…</option>{estados}</select>
+            </label>
+            <label class="co-field">
+              <span>Ciudad *</span>
+              <input type="text" name="ciudad" maxlength="80">
+            </label>
+            <label class="co-field">
+              <span>Calle *</span>
+              <input type="text" name="calle" maxlength="120">
+            </label>
+            <label class="co-field">
+              <span>Colonia *</span>
+              <input type="text" name="colonia" maxlength="80">
+            </label>
+            <label class="co-field">
+              <span>Numero ext. e int. *</span>
+              <input type="text" name="numero" maxlength="40" placeholder="Ext. 123, Int. 4B">
+            </label>
+            <label class="co-field">
+              <span>Entre calles *</span>
+              <input type="text" name="entrecalles" maxlength="120">
+            </label>
+            <label class="co-field">
+              <span>Codigo postal</span>
+              <input type="text" name="cp" maxlength="8" inputmode="numeric">
+            </label>
+            <label class="co-field">
+              <span>Referencias (opcional)</span>
+              <input type="text" name="referencias" maxlength="120" placeholder="Casa blanca, porton negro…">
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <section class="co-block">
+        <h2 class="co-title"><span>04</span> Metodo de pago</h2>
+        <p class="co-hint">No se cobra nada aqui. Es solo para saber como vas a pagar.</p>
+        <div class="co-options co-options-3">
+          <label class="co-opt">
+            <input type="radio" name="pago" value="transferencia" checked>
+            <span class="co-opt-body"><b>Transferencia</b><i>Sin comision.</i></span>
+          </label>
+          <label class="co-opt">
+            <input type="radio" name="pago" value="oxxo">
+            <span class="co-opt-body"><b>Deposito OXXO</b><i>Sin comision.</i></span>
+          </label>
+          <label class="co-opt">
+            <input type="radio" name="pago" value="tarjeta">
+            <span class="co-opt-body"><b>Tarjeta</b><i>Se agrega 5% de comision.</i></span>
+          </label>
+        </div>
+      </section>
+
+      <!-- anti-spam: invisible para personas -->
+      <div class="hp-field" aria-hidden="true">
+        <label>No llenar<input type="text" name="apellido2" tabindex="-1" autocomplete="off"></label>
+      </div>
+    </div>
+
+    <aside class="co-side">
+      <p class="co-side-title">Resumen</p>
+      <div class="co-lines" id="coLines"></div>
+      <div class="d-rows" id="coTotals"></div>
+      <button type="submit" class="d-cta" id="coSubmit">Generar mi ticket</button>
+      <p class="co-error" id="coError" hidden></p>
+      <div class="d-notes">
+        <p>&#8226; Al generar el ticket nos llega tu pedido y te escribimos por WhatsApp.</p>
+        <p>&#8226; Las tallas estan sujetas a disponibilidad; te confirmamos antes de cobrar.</p>
+      </div>
+    </aside>
+  </form>
+</main>
+{footer()}"""
+
+
+def render_ticket(cats):
+    return f"""{head("Tu ticket — Sauce Store", "Ticket de tu pedido en Sauce Store.")}
+{nav(cats)}
+<main class="cat-page">
+  <div class="ticket-wrap" id="ticketWrap" hidden>
+    <section class="ticket">
+      <div class="tk-head">
+        <img class="tk-star" src="img/mascota-320.png" alt="Sauce Store">
+        <p class="tk-brand">SAUCE&nbsp;STORE</p>
+        <p class="tk-folio" id="tkFolio">—</p>
+        <p class="tk-date" id="tkDate"></p>
+      </div>
+      <div class="tk-body">
+        <div class="tk-lines" id="tkLines"></div>
+        <div class="d-rows" id="tkTotals"></div>
+        <div class="tk-client" id="tkClient"></div>
+      </div>
+      <div class="tk-foot">
+        <p id="tkPayNote"></p>
+        <p class="tk-small">Guarda una captura de este ticket. Te contactamos por WhatsApp
+           para confirmar tallas y darte los datos de pago.</p>
+      </div>
+    </section>
+    <div class="tk-actions">
+      <a class="d-cta" href="{WA}" target="_blank" rel="noopener">Ir al WhatsApp</a>
+      <button class="d-cta d-cta-alt" onclick="window.print()">Imprimir / Guardar PDF</button>
+      <a class="tk-link" href="index.html">Volver al catalogo</a>
+    </div>
+  </div>
+
+  <div class="cart-empty" id="ticketEmpty">
+    <p>No hay ningun ticket para mostrar.</p>
+    <a class="hero-cta" href="index.html">Ver catalogo</a>
+  </div>
 </main>
 {footer()}"""
 
@@ -401,7 +738,7 @@ def render_referencias():
     tracks = "\n".join(row_html(r, i == 1) for i, r in enumerate(rows) if r)
     return f"""  <section class="referencias">
     <div class="sec-head reveal"><h2>Referencias</h2><span>{len(files)}</span></div>
-    <p class="ref-note reveal">Capturas reales tomadas de nuestro Instagram — pedidos ya entregados. (Anteriormente fuimos caps west, solo cambiamos el nombre)</p>
+    <p class="ref-note reveal">Capturas reales tomadas de nuestro Instagram en destacadas — pedidos ya entregados. (Anteriormente fuimos caps west, solo cambiamos el nombre)</p>
 {tracks}
   </section>
 """
@@ -434,14 +771,14 @@ def render_index(cats):
       </video>
     </div>
     <div class="hero-copy">
-      <p class="hero-tag">Tenis y ropa seleccionada &#8212; fotos reales, sin adornos.</p>
+      <p class="hero-tag">Tenis y ropa seleccionada &#8212; fotos reales, sin sorpresas.</p>
       <a href="#catalogo" class="hero-cta">Ver catalogo</a>
     </div>
     <div class="hero-scroll">Scroll</div>
   </section>
 
   <section class="statement reveal">
-    <p>No somos otra tienda.<br>Cada modelo se elige a mano, se fotografia real
+    <p>No somos otra tienda.<br>Cada modelo se elige por la mejor calidad, se fotografia real
        y se entrega como se ve. <b>Esto es Sauce&nbsp;Store.</b></p>
   </section>
 
@@ -467,8 +804,7 @@ def render_index(cats):
     </div>
     <div class="saludo-copy">
       <h2>Conocenos</h2>
-      <p>Somos de Guadalajara. Atendemos por WhatsApp e Instagram, mandamos QC de
-         cada par y hacemos envios a todo Mexico.</p>
+      <p>Somos de Guadalajara, enviamos a TODO MÉXICO. Atendemos por WhatsApp e Instagram, contamos con más de 2 años trabajando y +200 referencias nos respaldan.</p>
       <a href="{WA}" target="_blank" rel="noopener" class="hero-cta">Escribenos</a>
     </div>
   </section>
@@ -478,13 +814,13 @@ def render_index(cats):
     <div class="aviso">
       <h3>Proceso de compra</h3>
       <p>Elige tu modelo y crea tu ticket de compra en el carrito. 
-      Nosotros de contactaremos para enviarte las formas de pago disponibles.
+      Nosotros te contactaremos para enviarte las formas de pago disponibles.
        </p>
     </div>
     <div class="aviso">
       <h3>Tiempo de entrega</h3>
-      <p>Catalogo: 10 a 15 dias despues del QC. Stock: entrega al dia siguiente o
-         al momento por Uber / paqueteria.</p>
+      <p>Catalogo: 10 a 15 dias despues del QC. Stock: entrega al dia siguiente en persona o
+     por Uber / paqueteria.</p>
     </div>
     <div class="aviso">
       <h3>Pagos</h3>
@@ -562,6 +898,32 @@ def main():
 
     (ROOT / "index.html").write_text(render_index(cats), encoding="utf-8")
     written += 1
+
+    # Paginas del sistema de tickets
+    for fname, fn in (("carrito.html", render_carrito),
+                      ("checkout.html", render_checkout),
+                      ("ticket.html", render_ticket)):
+        (ROOT / fname).write_text(fn(cats), encoding="utf-8")
+        written += 1
+
+    # productos.json: lo consume el carrito (frontend) y la validacion (backend).
+    # El navegador NUNCA manda precios; se resuelven siempre contra este archivo.
+    productos = {}
+    for c in cats:
+        for p in c["products"]:
+            productos[p["id"]] = {
+                "name": p["name"],
+                "cat": c["title"],
+                "price": p["price_num"],
+                "sizes": p["size_options"],
+                "img": p["portada"] or (p["gallery"][0] if p["gallery"] else ""),
+                "url": p["detail"],
+            }
+    (ROOT / "productos.json").write_text(
+        json.dumps(productos, ensure_ascii=False), encoding="utf-8")
+    sin_talla = [k for k, v in productos.items() if not v["sizes"]]
+    print(f"  productos.json -> {len(productos)} productos"
+          f" ({len(sin_talla)} con talla libre)")
 
     # Indice para el buscador (nombre + alias de marca para tolerar errores de tipeo)
     search_docs = []

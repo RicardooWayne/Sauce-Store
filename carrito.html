@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carrito — Sauce Store</title>
+<meta name="description" content="Tu carrito en Sauce Store.">
+<link rel="icon" href="img/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a class="wordmark" href="index.html">SAUCE&nbsp;STORE<i>&#9733;</i></a>
+    <nav class="nav-desktop">
+      <div class="nav-group">
+        <button class="nav-trigger" aria-expanded="false">Tenis</button>
+        <div class="nav-panel"><div class="nav-panel-inner"><a href="Jordan1.html">Jordan 1</a><a href="jordan3.html">Jordan 3</a><a href="jordan4.html">Jordan 4</a><a href="jordan5.html">Jordan 5</a><a href="jordan6.html">Jordan 6</a><a href="jordan10.html">Jordan 10</a><a href="jordan11.html">Jordan 11</a></div></div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-trigger" aria-expanded="false">Ropa</button>
+        <div class="nav-panel"><div class="nav-panel-inner"><a href="Amiri.html">Amiri</a><a href="Balenciaga.html">Balenciaga</a><a href="Bape.html">Bape</a><a href="Burberry.html">Burberry</a><a href="Supreme.html">Supreme</a><a href="ChromeHeartsRopa.html">Chrome Hearts</a></div></div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-trigger" aria-expanded="false">Accesorios</button>
+        <div class="nav-panel"><div class="nav-panel-inner"><a href="ChromeHearts.html">Chrome Hearts Cadenas</a></div></div>
+      </div>
+      <a class="nav-flat" href="Stock.html">Stock</a>
+    </nav>
+    <div class="header-actions">
+      <button class="search-btn" id="searchBtn" aria-label="Buscar">
+        <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.2" y2="16.2"/></svg>
+      </button>
+      <a href="https://www.instagram.com/sauceestore" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://chat.whatsapp.com/GamukaM3CgJKFZLSQMU4uy" target="_blank" rel="noopener" class="ha-wa">WhatsApp</a>
+      <a class="cart-btn" href="carrito.html" aria-label="Carrito">
+        <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 4h2l2.4 11.2a1 1 0 0 0 1 .8h8.5a1 1 0 0 0 1-.8L20 7H6"/><circle cx="10" cy="20" r="1.3"/><circle cx="17" cy="20" r="1.3"/></svg>
+        <span class="cart-count" id="cartCount" hidden>0</span>
+      </a>
+      <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mm-inner">
+<div class="m-group"><span>Tenis</span><a href="Jordan1.html">Jordan 1</a><a href="jordan3.html">Jordan 3</a><a href="jordan4.html">Jordan 4</a><a href="jordan5.html">Jordan 5</a><a href="jordan6.html">Jordan 6</a><a href="jordan10.html">Jordan 10</a><a href="jordan11.html">Jordan 11</a></div>
+<div class="m-group"><span>Ropa</span><a href="Amiri.html">Amiri</a><a href="Balenciaga.html">Balenciaga</a><a href="Bape.html">Bape</a><a href="Burberry.html">Burberry</a><a href="Supreme.html">Supreme</a><a href="ChromeHeartsRopa.html">Chrome Hearts</a></div>
+<div class="m-group"><span>Accesorios</span><a href="ChromeHearts.html">Chrome Hearts Cadenas</a></div>
+<div class="m-group"><a href="Stock.html">Stock</a></div>
+    <div class="m-social">
+      <a href="https://www.instagram.com/sauceestore" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://chat.whatsapp.com/GamukaM3CgJKFZLSQMU4uy" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+</div>
+<div class="search-overlay" id="searchOverlay">
+  <div class="search-box">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.2" y2="16.2"/></svg>
+    <input type="text" id="searchInput" placeholder="Busca tu marca o modelo — Jordan, Balenciaga, Bape..." autocomplete="off" spellcheck="false">
+    <button class="search-close" id="searchClose" aria-label="Cerrar">&times;</button>
+  </div>
+  <div class="search-hint" id="searchHint">Escribe una marca (aunque tenga una falta de ortografia) o el nombre de un modelo.</div>
+  <div class="search-results" id="searchResults"></div>
+</div>
+<main class="cat-page">
+  <section class="cat-hero">
+    <p class="cat-kicker">Tu pedido</p>
+    <h1 class="cat-title">Carrito</h1>
+    <p class="cat-count" id="cartSummary">Cargando…</p>
+  </section>
+
+  <div class="cart-layout">
+    <section class="cart-items" id="cartItems"></section>
+    <aside class="cart-side" id="cartSide" hidden>
+      <div class="d-rows">
+        <div class="d-row"><span>Productos</span><b id="sumCount">0</b></div>
+        <div class="d-row"><span>Subtotal</span><b id="sumTotal">$0 MXN</b></div>
+      </div>
+      <a class="d-cta" href="checkout.html">Finalizar pedido</a>
+      <div class="d-notes">
+        <p>&#8226; El siguiente paso es elegir apartado o liquidar, y llenar tus datos.</p>
+        <p>&#8226; No se cobra nada en la pagina: se genera un ticket y te contactamos.</p>
+      </div>
+    </aside>
+  </div>
+
+  <div class="cart-empty" id="cartEmpty" hidden>
+    <p>Tu carrito esta vacio.</p>
+    <a class="hero-cta" href="index.html">Ver catalogo</a>
+  </div>
+</main>
+<footer class="site-footer">
+  <img class="foot-mascot" src="img/mascota-320.png" alt="Sauce Store" loading="lazy">
+  <p class="foot-word">SAUCE&nbsp;STORE</p>
+  <p class="foot-note">Catalogo visual. Para pedidos, contactanos.</p>
+  <div class="foot-links">
+    <a href="https://www.instagram.com/sauceestore" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://chat.whatsapp.com/GamukaM3CgJKFZLSQMU4uy" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+  <p class="foot-copy">&copy; Sauce Store</p>
+</footer>
+<a class="wa-float" href="https://chat.whatsapp.com/GamukaM3CgJKFZLSQMU4uy" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.9-4.44 9.9-9.9S17.5 2 12.04 2zm5.8 14.01c-.24.68-1.4 1.3-1.94 1.35-.5.05-1.13.24-3.66-.77-3.08-1.22-5.06-4.36-5.22-4.56-.15-.2-1.25-1.66-1.25-3.17 0-1.51.79-2.25 1.07-2.56.28-.31.61-.38.81-.38.2 0 .41 0 .58.01.19.01.44-.07.69.53.24.6.83 2.06.9 2.21.07.15.12.32.02.52-.1.2-.15.32-.3.5-.15.18-.31.4-.44.53-.15.15-.3.31-.13.6.17.29.76 1.25 1.63 2.03 1.12 1 2.06 1.31 2.35 1.46.29.15.46.12.63-.07.17-.2.73-.85.93-1.14.2-.29.39-.24.66-.15.27.1 1.71.81 2 .96.29.15.49.22.56.34.07.12.07.7-.17 1.38z"/></svg>
+</a>
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.6.2/fuse.min.js"></script>
+<script src="app.js"></script>
+<script src="search.js"></script>
+<script src="cart.js"></script>
+</body>
+</html>
