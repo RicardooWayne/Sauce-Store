@@ -148,6 +148,11 @@ def parse_sizes(meta, category):
     return []
 
 
+def webp_path(src):
+    """Ruta .webp equivalente (no comprueba si existe)."""
+    return re.sub(r"\.(png|jpe?g)$", ".webp", src or "", flags=re.I)
+
+
 def webp(src):
     """Devuelve la version .webp si ya existe en disco; si no, la original.
 
@@ -156,7 +161,7 @@ def webp(src):
     """
     if not src:
         return src
-    alt = re.sub(r"\.(png|jpe?g)$", ".webp", src, flags=re.I)
+    alt = webp_path(src)
     return alt if alt != src and (ROOT / alt).exists() else src
 
 
@@ -216,7 +221,9 @@ def parse_gallery(path: Path):
             if src not in seen:
                 seen.add(src)
                 out.append(src)
-    return [s for s in out if (ROOT / s).exists()]  # descarta imagenes rotas
+    # Descarta imagenes rotas. Cuenta como valida si existe el original O su
+    # version .webp (los originales pueden estar fuera del proyecto).
+    return [s for s in out if (ROOT / s).exists() or (ROOT / webp_path(s)).exists()]
 
 
 def snapshot():
