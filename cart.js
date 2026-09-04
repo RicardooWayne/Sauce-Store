@@ -389,6 +389,9 @@
     }
     document.getElementById("tkClient").innerHTML = cli;
 
+    var print = document.getElementById("tkPrint");
+    if (print) print.addEventListener("click", function () { window.print(); });
+
     document.getElementById("tkPayNote").textContent = data.modo === "apartado"
       ? "Apartado: pagas " + money(t.ahora) + " ahora y " + money(t.resta) + " al recibir."
       : "Pedido liquidado: " + money(t.ahora) + ". Envio gratis a tu domicilio.";

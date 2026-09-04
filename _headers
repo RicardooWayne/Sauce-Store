@@ -1,0 +1,28 @@
+# Cabeceras de seguridad — Cloudflare Pages las aplica automaticamente.
+# No tocar salvo que se agregue un servicio externo nuevo (ver Content-Security-Policy).
+
+/*
+  # Nadie puede meter tu sitio dentro de un iframe (evita clickjacking:
+  # que alguien te clone la pagina y capture clics de tus clientes).
+  X-Frame-Options: DENY
+
+  # El navegador respeta el tipo de archivo declarado y no "adivina".
+  X-Content-Type-Options: nosniff
+
+  # Obliga HTTPS por un ano, incluso si alguien escribe http://
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+
+  # No filtra la direccion completa de tu sitio a paginas externas.
+  Referrer-Policy: strict-origin-when-cross-origin
+
+  # Apaga permisos que este sitio no necesita.
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
+
+  # La defensa principal contra XSS: define exactamente de donde puede cargar
+  # cada cosa. Si un atacante lograra inyectar un script, el navegador se
+  # niega a ejecutarlo porque no viene de un origen permitido.
+  #   script-src  -> solo tus archivos + las 2 librerias (lightbox y buscador)
+  #   style-src   -> 'unsafe-inline' es necesario por los style="--d:.." de las animaciones
+  #   connect-src -> el formulario de pedidos solo puede hablar con tu propio sitio
+  #   frame-ancestors 'none' -> refuerza el X-Frame-Options
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data:; media-src 'self'; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'

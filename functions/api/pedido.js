@@ -21,6 +21,8 @@ const COMISION_TARJETA = 0.05;
 const MAX_ITEMS = 30;
 const MAX_QTY = 10;
 const MIN_MS = 3000; // llenar el formulario en menos de 3s = bot
+const MAX_PEDIDOS_VENTANA = 8;  // pedidos permitidos por IP...
+const VENTANA_SEG = 600;        // ...cada 10 minutos
 
 const MODOS = ["apartado", "liquidar"];
 const ENTREGAS = ["gdl", "envio"];
@@ -87,6 +89,13 @@ export async function onRequestPost(context) {
   if (clean(body.hp, 50)) return json({ ok: true, ticket: null }); // honeypot
   if (typeof body.ms === "number" && body.ms < MIN_MS)
     return bad("Formulario enviado demasiado rapido.");
+
+  // Freno por IP: evita que alguien inunde el Telegram con pedidos falsos.
+  // Usa el cache de Cloudflare como contador (no necesita base de datos).
+  const ip = request.headers.get("CF-Connecting-IP") || "0.0.0.0";
+  if (!(await underLimit(ip))) {
+    return json({ error: "Demasiados pedidos seguidos. Espera unos minutos." }, 429);
+  }
 
   /* ---------- campos de seleccion ---------- */
   const modo = MODOS.includes(body.modo) ? body.modo : null;
@@ -181,6 +190,30 @@ export async function onRequestPost(context) {
   await Promise.allSettled([notifyTelegram(env, ticket), saveToSheet(env, ticket)]);
 
   return json({ ok: true, ticket });
+}
+
+/**
+ * Limite por IP usando el cache de Cloudflare como contador.
+ * Guarda cuantos pedidos lleva esa IP en la ventana actual; si se pasa,
+ * rechaza. No necesita base de datos ni configuracion extra.
+ */
+async function underLimit(ip, max = MAX_PEDIDOS_VENTANA, ventanaSeg = VENTANA_SEG) {
+  try {
+    const cache = caches.default;
+    const key = new Request(`https://ratelimit.local/pedido/${encodeURIComponent(ip)}`);
+    const hit = await cache.match(key);
+    const n = hit ? parseInt(await hit.text(), 10) || 0 : 0;
+    if (n >= max) return false;
+    await cache.put(
+      key,
+      new Response(String(n + 1), {
+        headers: { "Cache-Control": `max-age=${ventanaSeg}` },
+      })
+    );
+    return true;
+  } catch {
+    return true; // si el cache falla, no bloqueamos pedidos legitimos
+  }
 }
 
 async function notifyTelegram(env, t) {

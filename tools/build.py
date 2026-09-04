@@ -370,7 +370,7 @@ def footer():
     return f"""<footer class="site-footer">
   <img class="foot-mascot" src="{webp('img/mascota-320.png')}" alt="Sauce Store" loading="lazy">
   <p class="foot-word">SAUCE&nbsp;STORE</p>
-  <p class="foot-note">Catalogo visual. Para pedidos, contactanos.</p>
+  <p class="foot-note">Puedes generar tu pedido con un solo ticket, sin pagos en la web.</p>
   <div class="foot-links">
     <a href="{IG}" target="_blank" rel="noopener">Instagram</a>
     <a href="{WA}" target="_blank" rel="noopener">WhatsApp</a>
@@ -728,7 +728,7 @@ def render_ticket(cats):
     </section>
     <div class="tk-actions">
       <a class="d-cta" href="{WA}" target="_blank" rel="noopener">Ir al WhatsApp</a>
-      <button class="d-cta d-cta-alt" onclick="window.print()">Imprimir / Guardar PDF</button>
+      <button class="d-cta d-cta-alt" id="tkPrint">Imprimir / Guardar PDF</button>
       <a class="tk-link" href="index.html">Volver al catalogo</a>
     </div>
   </div>
@@ -736,6 +736,20 @@ def render_ticket(cats):
   <div class="cart-empty" id="ticketEmpty">
     <p>No hay ningun ticket para mostrar.</p>
     <a class="hero-cta" href="index.html">Ver catalogo</a>
+  </div>
+</main>
+{footer()}"""
+
+
+def render_404(cats):
+    return f"""{head("Pagina no encontrada — Sauce Store", "Esta pagina no existe.")}
+{nav(cats)}
+<main class="cat-page">
+  <div class="cart-empty">
+    <p class="cat-kicker">Error 404</p>
+    <h1 class="cat-title" style="margin:10px 0 18px">Aqui no hay nada</h1>
+    <p>La pagina que buscas no existe o se movio.</p>
+    <a class="hero-cta" href="index.html">Volver al catalogo</a>
   </div>
 </main>
 {footer()}"""
@@ -929,7 +943,8 @@ def main():
     # Paginas del sistema de tickets
     for fname, fn in (("carrito.html", render_carrito),
                       ("checkout.html", render_checkout),
-                      ("ticket.html", render_ticket)):
+                      ("ticket.html", render_ticket),
+                      ("404.html", render_404)):
         (ROOT / fname).write_text(fn(cats), encoding="utf-8")
         written += 1
 

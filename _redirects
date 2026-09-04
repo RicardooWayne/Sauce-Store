@@ -1,0 +1,10 @@
+# Cloudflare Pages publica TODO el repositorio, incluidas carpetas internas.
+# Estas reglas las bloquean para que no queden a la vista de cualquiera.
+#
+# No son secretos, pero le dan a un atacante el mapa completo de como esta
+# hecho el sitio (validaciones, nombres de variables, integraciones).
+
+/tools/*     /404.html   404
+/_source/*   /404.html   404
+/_archivo/*  /404.html   404
+/catalog.json  /404.html 404
