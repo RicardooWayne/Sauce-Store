@@ -122,11 +122,35 @@ def do_video(src, name, height=800):
         print(f"  {f.name}  {f.stat().st_size // 1024} KB")
 
 
+REF_SRC = ROOT / "img" / "REFERENCIAS"
+REF_OUT = ROOT / "img" / "referencias-web"
+
+
+def do_referencias():
+    if not REF_SRC.exists():
+        print("  !! falta img/REFERENCIAS/")
+        return
+    REF_OUT.mkdir(parents=True, exist_ok=True)
+    files = sorted(
+        REF_SRC.glob("*.*"),
+        key=lambda p: int("".join(ch for ch in p.stem if ch.isdigit()) or 0))
+    for i, f in enumerate(files, 1):
+        im = Image.open(f).convert("RGB")
+        im.thumbnail((760, 1400), Image.LANCZOS)
+        out = REF_OUT / f"refe-{i}.jpg"
+        im.save(out, "JPEG", quality=82, optimize=True)
+    total = sum(p.stat().st_size for p in REF_OUT.glob("*.jpg")) // 1024
+    print(f"  {len(files)} referencias -> img/referencias-web/  ({total} KB)")
+
+
 def main():
     args = sys.argv[1:]
     if not args or "mascot" in args:
         print("Mascota:")
         do_mascot()
+    if not args or "referencias" in args:
+        print("Referencias:")
+        do_referencias()
     if not args or "video" in args:
         print("Fondo de los videos:")
         report_bg(INTRO_SRC)

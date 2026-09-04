@@ -46,6 +46,25 @@ CATEGORIES = [
 
 MENU_LABELS = {"tenis": "Tenis", "ropa": "Ropa", "accesorios": "Accesorios", "stock": "Stock"}
 
+# Alias/variantes por categoria para que el buscador tolere errores de escritura
+BRAND_ALIASES = {
+    "Jordan 1": "jordan jordans jordanes air jordan aj1 aj 1 jordan1 chandal tenis",
+    "Jordan 3": "jordan jordans jordanes air jordan aj3 aj 3 jordan3 tenis",
+    "Jordan 4": "jordan jordans jordanes air jordan aj4 aj 4 jordan4 tenis",
+    "Jordan 5": "jordan jordans jordanes air jordan aj5 aj 5 jordan5 tenis",
+    "Jordan 6": "jordan jordans jordanes air jordan aj6 aj 6 jordan6 tenis",
+    "Jordan 10": "jordan jordans jordanes air jordan aj10 aj 10 jordan10 tenis",
+    "Jordan 11": "jordan jordans jordanes air jordan aj11 aj 11 jordan11 tenis",
+    "Amiri": "amiri amirii amiry ammiri amiris ropa",
+    "Balenciaga": "balenciaga balensiaga valenciaga balen balencia balensiaga ropa",
+    "Bape": "bape bathing ape baep bapee a bathing ape ropa",
+    "Burberry": "burberry burberi barberry burbery burverry ropa",
+    "Supreme": "supreme suprem supremo supremme sup ropa",
+    "Chrome Hearts": "chrome hearts chromehearts cromo cross ch sudadera ropa",
+    "Chrome Hearts Cadenas": "chrome hearts cadenas chromehearts cadena cross ch joyeria plata collar accesorio",
+    "Stock": "stock disponible inmediato entrega gorras cachuchas",
+}
+
 # Archivos a mover a _archivo/ (marcas descartadas + placeholders vacios)
 ARCHIVE_GLOBS = [
     "Gucci*.html", "GucciOffTheGrid.html", "NewEra.html", "New-Era-*.html",
@@ -188,7 +207,7 @@ def nav(cats):
             f'<a href="{c["slug"]}">{c["title"]}</a>' for c in groups[g])
         blocks.append(f"""      <div class="nav-group">
         <button class="nav-trigger" aria-expanded="false">{MENU_LABELS[g]}</button>
-        <div class="nav-panel">{links}</div>
+        <div class="nav-panel"><div class="nav-panel-inner">{links}</div></div>
       </div>""")
     blocks.append('      <a class="nav-flat" href="Stock.html">Stock</a>')
     nav_html = "\n".join(blocks)
@@ -211,6 +230,9 @@ def nav(cats):
 {nav_html}
     </nav>
     <div class="header-actions">
+      <button class="search-btn" id="searchBtn" aria-label="Buscar">
+        <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.2" y2="16.2"/></svg>
+      </button>
       <a href="{IG}" target="_blank" rel="noopener">Instagram</a>
       <a href="{WA}" target="_blank" rel="noopener" class="ha-wa">WhatsApp</a>
       <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
@@ -225,6 +247,15 @@ def nav(cats):
       <a href="{WA}" target="_blank" rel="noopener">WhatsApp</a>
     </div>
   </div>
+</div>
+<div class="search-overlay" id="searchOverlay">
+  <div class="search-box">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.2" y2="16.2"/></svg>
+    <input type="text" id="searchInput" placeholder="Busca tu marca o modelo — Jordan, Balenciaga, Bape..." autocomplete="off" spellcheck="false">
+    <button class="search-close" id="searchClose" aria-label="Cerrar">&times;</button>
+  </div>
+  <div class="search-hint" id="searchHint">Escribe una marca (aunque tenga una falta de ortografia) o el nombre de un modelo.</div>
+  <div class="search-results" id="searchResults"></div>
 </div>"""
 
 
@@ -243,7 +274,9 @@ def footer():
   <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.9-4.44 9.9-9.9S17.5 2 12.04 2zm5.8 14.01c-.24.68-1.4 1.3-1.94 1.35-.5.05-1.13.24-3.66-.77-3.08-1.22-5.06-4.36-5.22-4.56-.15-.2-1.25-1.66-1.25-3.17 0-1.51.79-2.25 1.07-2.56.28-.31.61-.38.81-.38.2 0 .41 0 .58.01.19.01.44-.07.69.53.24.6.83 2.06.9 2.21.07.15.12.32.02.52-.1.2-.15.32-.3.5-.15.18-.31.4-.44.53-.15.15-.3.31-.13.6.17.29.76 1.25 1.63 2.03 1.12 1 2.06 1.31 2.35 1.46.29.15.46.12.63-.07.17-.2.73-.85.93-1.14.2-.29.39-.24.66-.15.27.1 1.71.81 2 .96.29.15.49.22.56.34.07.12.07.7-.17 1.38z"/></svg>
 </a>
 <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.6.2/fuse.min.js"></script>
 <script src="app.js"></script>
+<script src="search.js"></script>
 </body>
 </html>"""
 
@@ -328,9 +361,9 @@ def render_detail(p, cat, cats):
       <div class="d-rows">{meta_rows}</div>
       <a class="d-cta" href="{WA}" target="_blank" rel="noopener">Preguntar por este modelo</a>
       <div class="d-notes">
-        <p>&#8226; Encarga con el 70% y liquida al recibir (entrega en GDL).</p>
-        <p>&#8226; Envios directos: se liquida el total, llega por paqueteria.</p>
-        <p>&#8226; Catalogo: 10 a 15 dias despues del QC con fotos reales.</p>
+        <p>&#8226; Realiza tu pedido con el 50% y liquida al recibir (entrega en GDL, si eres de otro estado puedes hacer lo mismo pero pagas $200 de re envio).</p>
+        <p>&#8226; Envios GRATIS directamente a tu casa: se liquida el total y llega por paqueteria a tu domicilio (TODO MÉXICO).</p>
+        <p>&#8226; 10 a 15 dias despues del QC con fotos reales.</p>
       </div>
     </section>
   </div>
@@ -342,6 +375,36 @@ def render_detail(p, cat, cats):
   </section>
 </main>
 {footer()}"""
+
+
+def render_referencias():
+    folder = ROOT / "img" / "referencias-web"
+    if not folder.exists():
+        return ""
+    files = sorted(folder.glob("refe-*.jpg"),
+                    key=lambda p: int(re.sub(r"\D", "", p.stem) or 0))
+    if not files:
+        return ""
+    mid = (len(files) + 1) // 2
+    rows = [files[:mid], files[mid:]]
+
+    def row_html(items, rev):
+        cards = "".join(
+            f'<a class="ref-item" href="img/referencias-web/{f.name}" '
+            f'data-gallery="referencias"><img loading="lazy" src="img/referencias-web/{f.name}" alt="Referencia Sauce Store"></a>'
+            for f in items)
+        cls = "marquee-rev" if rev else ""
+        return f"""    <div class="marquee {cls}">
+      <div class="marquee-track">{cards}{cards}</div>
+    </div>"""
+
+    tracks = "\n".join(row_html(r, i == 1) for i, r in enumerate(rows) if r)
+    return f"""  <section class="referencias">
+    <div class="sec-head reveal"><h2>Referencias</h2><span>{len(files)}</span></div>
+    <p class="ref-note reveal">Capturas reales tomadas de nuestro Instagram — pedidos ya entregados.</p>
+{tracks}
+  </section>
+"""
 
 
 def render_index(cats):
@@ -404,11 +467,13 @@ def render_index(cats):
     </div>
   </section>
 
+{render_referencias()}
   <section class="avisos reveal">
     <div class="aviso">
       <h3>Proceso de compra</h3>
-      <p>Elige tu modelo y pregunta por las tallas. Entrega en GDL: encarga con el
-         70% y liquida al recibir. Envios directos: se liquida el total.</p>
+      <p>Elige tu modelo y crea tu ticket de compra en el carrito. 
+      Nosotros de contactaremos para enviarte las formas de pago disponibles.
+       </p>
     </div>
     <div class="aviso">
       <h3>Tiempo de entrega</h3>
@@ -422,8 +487,9 @@ def render_index(cats):
     </div>
     <div class="aviso">
       <h3>Reembolsos</h3>
-      <p>Producto distinto, danado o problemas de aduana: se reenvia el par antes
-         que un reembolso. No hay cambios por error de talla.</p>
+      <p>Producto distinto, dañado o problemas de aduana: se reenvia el par antes
+         que un reembolso.
+         </p>
     </div>
   </section>
 </main>
@@ -490,6 +556,25 @@ def main():
 
     (ROOT / "index.html").write_text(render_index(cats), encoding="utf-8")
     written += 1
+
+    # Indice para el buscador (nombre + alias de marca para tolerar errores de tipeo)
+    search_docs = []
+    for c in cats:
+        alias = BRAND_ALIASES.get(c["title"], "")
+        for p in c["products"]:
+            if not p["detail"]:
+                continue
+            search_docs.append({
+                "name": p["name"],
+                "cat": c["title"],
+                "url": p["detail"],
+                "img": p["portada"] or (p["gallery"][0] if p["gallery"] else ""),
+                "price": p["price"],
+                "kw": alias,
+            })
+    (ROOT / "search.json").write_text(
+        json.dumps(search_docs, ensure_ascii=False), encoding="utf-8")
+    print(f"  search.json -> {len(search_docs)} productos indexados")
 
     print(f"\nOK: {written} HTML escritos | {total_p} productos | {total_g} imagenes")
 

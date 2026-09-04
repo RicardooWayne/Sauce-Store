@@ -26,19 +26,17 @@
     });
   }
 
-  /* Dropdowns de nav en táctil */
+  /* Dropdowns de nav en táctil (en desktop ya abren solos con :hover) */
   document.querySelectorAll(".nav-trigger").forEach(function (btn) {
     btn.addEventListener("click", function (e) {
       var panel = btn.nextElementSibling;
       if (!panel) return;
-      var open = panel.style.opacity === "1";
+      var open = panel.classList.contains("force-open");
       document.querySelectorAll(".nav-panel").forEach(function (p) {
-        p.style.opacity = ""; p.style.visibility = ""; p.style.transform = "";
+        p.classList.remove("force-open");
       });
       if (!open) {
-        panel.style.opacity = "1";
-        panel.style.visibility = "visible";
-        panel.style.transform = "translateX(-50%) translateY(0)";
+        panel.classList.add("force-open");
         btn.setAttribute("aria-expanded", "true");
       } else {
         btn.setAttribute("aria-expanded", "false");
@@ -48,7 +46,7 @@
   });
   document.addEventListener("click", function () {
     document.querySelectorAll(".nav-panel").forEach(function (p) {
-      p.style.opacity = ""; p.style.visibility = ""; p.style.transform = "";
+      p.classList.remove("force-open");
     });
   });
 
@@ -90,6 +88,11 @@
         t.classList.add("is-active");
       });
     });
+  }
+
+  /* Lightbox de referencias (portada) */
+  if (window.GLightbox && document.querySelector(".ref-item")) {
+    GLightbox({ selector: ".ref-item", loop: true, touchNavigation: true });
   }
 
   /* Lightbox (GLightbox) */
