@@ -1,153 +1,189 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sauce Store. - Catalogo</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sauce Store — Catalogo</title>
+<meta name="description" content="Sauce Store: tenis y ropa. Catalogo visual con fotos reales.">
+<link rel="icon" href="img/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="conteiner">
-        <nav class="nav-main"> 
-             <a href="index.html">
-                <img src="img/logo-sauce-store.png" alt="Sauce Store LOGO" class="nav-brand">
-             </a>
-             
-             <ul class="nav-menu">
-                <li class="dropdown">
-                    <a href="javascript:void(0)" onclick="toggleMenu('menu-gorras')">Gorras.</a>
-                    <ul class="dropdown-content" id="menu-gorras">
-                        <li><a href="NewEra.html">New Era</a></li>
-                        <li><a href="Dandy-Barbas.html">Dandy/barbas</a></li>
-                    </ul>
-                </li>
-
-<li class="dropdown">
-                    <a href="javascript:void(0)" onclick="toggleMenu('menu-ropa', 'btn-ropa')" id="btn-ropa">Ropa.</a>
-                    <ul class="dropdown-content" id="menu-ropa">
-                        <li><a href="Gucci.html">Gucci</a></li>
-                        <li><a href="Burberry.html">Burberry</a></li>
-                        <li><a href="Balenciaga.html">Balenciaga</a></li>
-                        <li><a href="Amiri.html">Amiri</a></li>
-                        <li><a href="Bape.html">Bape</a></li>
-                        <li><a href="Supreme.html">Supreme</a></li>
-                        <li><a href="ChromeHeartsRopa.html">Chrome Hearts</a></li>
-                        
-                    </ul>
-                </li>
-
-<li class="dropdown">
-                    <a href="javascript:void(0)" onclick="toggleMenu('menu-tenis')">Tenis.</a>
-                    <ul class="dropdown-content" id="menu-tenis">
-                        <li><a href="Jordan1.html">Jordan 1</a></li>
-                        <li><a href="jordan3.html">Jordan 3</a></li>
-                        <li><a href="jordan4.html">Jordan 4</a></li>
-                        <li><a href="jordan5.html">Jordan 5</a></li>
-                        <li><a href="jordan6.html">Jordan 6</a></li>
-                        <li><a href="jordan10.html">Jordan 10</a></li>
-                        <li><a href="jordan11.html">Jordan 11</a></li>
-                        
-                    </ul>
-                </li>
-                
-                <li class="dropdown">
-                    <a href="javascript:void(0)" onclick="toggleMenu('menu-accesorios')">Accesorios.</a>
-                    <ul class="dropdown-content" id="menu-accesorios">
-                        <li><a href="ChromeHearts.html">Chrome Hearts</a></li>
-                    </ul>
-                </li>
-
-                <li><a href="Stock.html">Stock.</a></li>
-             </ul> 
-        </nav>
-        
-        <hr class="nav-separator">
-
-        <header class="bienvenida">
-            <img src="img/bienvenidalogo.png" alt="Bienvenido Sauce Store" class="bienvenida-img">
-        </header>
-
-        <div class="intro-texto"> 
-            <p>Esta página solo funciona como catálogo. Lo que puedes ver aquí son algunos de nuestros productos disponibles con fotos reales, al ser únicamente una página visual, tendrás que contactarnos para poder realizar tu pedido.</p>
-        </div>  
-
-        <div class="avisos"> 
-            <div class="aviso-item">
-                <img src="img/proceso-de-compra.png" alt="Proceso de compra.">
-                <p>
-                    • Elige tu modelo y pregunta por las tallas disponibles. <br>
-                    • <b>Entrega en GDL:</b> Encarga con el 70% y liquida al recibir. <br>
-                    • <b>Envíos directos:</b> Se liquida el total, llega por paquetería a tu domicilio.
-                </p>
-            </div> 
-
-            <div class="aviso-item">
-                <img src="img/tiempo-de-entrega.png" alt="Tiempo de entrega.">
-                <p>
-                    • <b>Catálogo:</b> De 10 a 15 días después del QC (fotos reales). <br>
-                    • <b>Stock:</b> Entrega al día siguiente (personal) al momento por uber, o paqueteria de tu preferencia, puedes apartar con el 10% durante una semana.<br>
-                    • <b>Envíos Stock:</b> DHL ($170) | Estafeta ($150).
-                </p>
-            </div> 
-                
-            <div class="aviso-item">
-                <img src="img/pagos.png" alt="Pagos.">
-                <p>
-                    • <b>MÉTODOS:</b> Transferencia, depósito OXXO o Tarjeta (+5%). <br>
-                    • <b>Entregas GDL:</b> Efectivo, tarjeta débito/crédito y vales. <br>
-                    • <b>⚠️ IMPORTANTE:</b> Pagos con tarjeta incluyen comisión del 5%.
-                </p>
-            </div> 
-
-            <div class="aviso-item">
-                <img src="img/reembolsos.png" alt="Reembolsos.">
-                <p>
-                    • <b>CASOS:</b> Producto distinto, dañado o problemas de aduana. <br>
-                    • <b>SOLUCIÓN:</b> Reenvío del par antes que un reembolso. <br>
-                    • <i>No hay cambios por error en talla.</i>
-                </p>
-            </div> 
-        </div> 
-
-        <section class="social">
-            <p>Contáctanos aquí.</p>
-            <div class="links">
-                <a href="https://www.instagram.com/sauceestore" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
-                <a href="https://chat.whatsapp.com/DtUb1tZR3zfA3AHu2H0pth?mode=gi_t" class="social-icon"><i class="fab fa-whatsapp"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
-            </div>
-        </section>
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a class="wordmark" href="index.html">SAUCE&nbsp;STORE<i>&#9733;</i></a>
+    <nav class="nav-desktop">
+      <div class="nav-group">
+        <button class="nav-trigger" aria-expanded="false">Tenis</button>
+        <div class="nav-panel"><a href="Jordan1.html">Jordan 1</a><a href="jordan3.html">Jordan 3</a><a href="jordan4.html">Jordan 4</a><a href="jordan5.html">Jordan 5</a><a href="jordan6.html">Jordan 6</a><a href="jordan10.html">Jordan 10</a><a href="jordan11.html">Jordan 11</a></div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-trigger" aria-expanded="false">Ropa</button>
+        <div class="nav-panel"><a href="Amiri.html">Amiri</a><a href="Balenciaga.html">Balenciaga</a><a href="Bape.html">Bape</a><a href="Burberry.html">Burberry</a><a href="Supreme.html">Supreme</a><a href="ChromeHeartsRopa.html">Chrome Hearts</a></div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-trigger" aria-expanded="false">Accesorios</button>
+        <div class="nav-panel"><a href="ChromeHearts.html">Chrome Hearts Cadenas</a></div>
+      </div>
+      <a class="nav-flat" href="Stock.html">Stock</a>
+    </nav>
+    <div class="header-actions">
+      <a href="https://www.instagram.com/sauceestore" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://chat.whatsapp.com/GamukaM3CgJKFZLSQMU4uy" target="_blank" rel="noopener" class="ha-wa">WhatsApp</a>
+      <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mm-inner">
+<div class="m-group"><span>Tenis</span><a href="Jordan1.html">Jordan 1</a><a href="jordan3.html">Jordan 3</a><a href="jordan4.html">Jordan 4</a><a href="jordan5.html">Jordan 5</a><a href="jordan6.html">Jordan 6</a><a href="jordan10.html">Jordan 10</a><a href="jordan11.html">Jordan 11</a></div>
+<div class="m-group"><span>Ropa</span><a href="Amiri.html">Amiri</a><a href="Balenciaga.html">Balenciaga</a><a href="Bape.html">Bape</a><a href="Burberry.html">Burberry</a><a href="Supreme.html">Supreme</a><a href="ChromeHeartsRopa.html">Chrome Hearts</a></div>
+<div class="m-group"><span>Accesorios</span><a href="ChromeHearts.html">Chrome Hearts Cadenas</a></div>
+<div class="m-group"><a href="Stock.html">Stock</a></div>
+    <div class="m-social">
+      <a href="https://www.instagram.com/sauceestore" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://chat.whatsapp.com/GamukaM3CgJKFZLSQMU4uy" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+</div>
+<main>
+  <section class="hero" id="hero">
+    <div class="hero-video">
+      <video autoplay muted loop playsinline poster="img/video/intro.jpg">
+        <source src="img/video/intro.webm" type="video/webm">
+        <source src="img/video/intro.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="hero-copy">
+      <p class="hero-tag">Tenis y ropa seleccionada &#8212; fotos reales, sin adornos.</p>
+      <a href="#catalogo" class="hero-cta">Ver catalogo</a>
+    </div>
+    <div class="hero-scroll">Scroll</div>
+  </section>
 
-    <script>
-        function toggleMenu(menuId) {
-            // Cerramos otros dropdowns abiertos
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            for (var i = 0; i < dropdowns.length; i++) {
-                if (dropdowns[i].id !== menuId) {
-                    dropdowns[i].style.display = "none";
-                }
-            }
-            // Abrimos/cerramos el seleccionado
-            var menu = document.getElementById(menuId);
-            if (menu.style.display === "block") {
-                menu.style.display = "none";
-            } else {
-                menu.style.display = "block";
-            }
-        }
+  <section class="statement reveal">
+    <p>No somos otra tienda.<br>Cada modelo se elige a mano, se fotografia real
+       y se entrega como se ve. <b>Esto es Sauce&nbsp;Store.</b></p>
+  </section>
 
-        // Cerrar menús al hacer clic fuera
-        window.onclick = function(event) {
-            if (!event.target.matches('.dropdown a')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                for (var i = 0; i < dropdowns.length; i++) {
-                    dropdowns[i].style.display = "none";
-                }
-            }
-        }
-    </script>
+  <section class="categories" id="catalogo">
+    <div class="sec-head reveal"><h2>Categorias</h2><span>14</span></div>
+    <div class="cat-grid">
+    <a class="cat-tile reveal" style="--d:0.00s" href="Jordan1.html">
+      <div class="ct-media"><img loading="lazy" src="img/Jordan-1/Fragment-design-union-portada.png" alt="Jordan 1"></div>
+      <div class="ct-label"><span>Jordan 1</span><i>&rarr;</i></div>
+    </a>
+    <a class="cat-tile reveal" style="--d:0.04s" href="jordan3.html">
+      <div class="ct-media"><img loading="lazy" src="img/Jordan-3/AJ3-White-Cement.portada.png" alt="Jordan 3"></div>
+      <div class="ct-label"><span>Jordan 3</span><i>&rarr;</i></div>
+    </a>
+    <a class="cat-tile reveal" style="--d:0.08s" href="jordan4.html">
+      <div class="ct-media"><img loading="lazy" src="img/Jordan-4/AJ4-ToroRojo.portada.png" alt="Jordan 4"></div>
+      <div class="ct-label"><span>Jordan 4</span><i>&rarr;</i></div>
+    </a>
+    <a class="cat-tile reveal" style="--d:0.12s" href="jordan5.html">
+      <div class="ct-media"><img loading="lazy" src="img/Jordan-5/AJ5-Universitary-Black-Blue.portada.png" alt="Jordan 5"></div>
+      <div class="ct-label"><span>Jordan 5</span><i>&rarr;</i></div>
+    </a>
+    <a class="cat-tile reveal" style="--d:0.16s" href="jordan6.html">
+      <div class="ct-media"><img loading="lazy" src="img/Jordan-6/AJ6-Infrared-Salesman.portada.png" alt="Jordan 6"></div>
+      <div class="ct-label"><span>Jordan 6</span><i>&rarr;</i></div>
+    </a>
+    <a class="cat-tile reveal" style="--d:0.20s" href="jordan10.html">
+      <div class="ct-media"><img loading="lazy" src="img/Jordan-10/AJ10-Retro-Shadow.portada.png" alt="Jordan 10"></div>
+      <div class="ct-label"><span>Jordan 10</span><i>&rarr;</i></div>
+    </a>
+    <a class="cat-tile reveal" style="--d:0.24s" href="jordan11.html">
+      <div class="ct-media"><img loading="lazy" src="img/Jordan-11/AJ11-Universitary-Blue.portada.png" alt="Jordan 11"></div>
+      <div class="ct-label"><span>Jordan 11</span><i>&rarr;</i></div>
+    </a>
+    <a class="cat-tile reveal" style="--d:0.28s" href="Amiri.html">
+      <div class="ct-media"><img loading="lazy" src="img/Amiri/Amiri-Playera.portada.png" alt="Amiri"></div>
+      <div class="ct-label"><span>Amiri</span><i>&rarr;</i></div>
+    </a>
+    <a class="cat-tile reveal" style="--d:0.32s" href="Balenciaga.html">
+      <div class="ct-media"><img loading="lazy" src="img/Balenciaga/Balenciaga-Pants1.portada.png" alt="Balenciaga"></div>
+      <div class="ct-label"><span>Balenciaga</span><i>&rarr;</i></div>
+    </a>
+    <a class="cat-tile reveal" style="--d:0.36s" href="Bape.html">
+      <div class="ct-media"><img loading="lazy" src="img/Bape/Bape-Camo-Black.portada.png" alt="Bape"></div>
+      <div class="ct-label"><span>Bape</span><i>&rarr;</i></div>
+    </a>
+    <a class="cat-tile reveal" style="--d:0.40s" href="Burberry.html">
+      <div class="ct-media"><img loading="lazy" src="img/Burberry/Burberry-Short-Negro-Blanco.portada.png" alt="Burberry"></div>
+      <div class="ct-label"><span>Burberry</span><i>&rarr;</i></div>
+    </a>
+    <a class="cat-tile reveal" style="--d:0.44s" href="Supreme.html">
+      <div class="ct-media"><img loading="lazy" src="img/Supreme/Supreme-Jeans.portada.png" alt="Supreme"></div>
+      <div class="ct-label"><span>Supreme</span><i>&rarr;</i></div>
+    </a>
+    <a class="cat-tile reveal" style="--d:0.48s" href="ChromeHeartsRopa.html">
+      <div class="ct-media"><img loading="lazy" src="img/Chrome-Hearts-Ropa/CH-Sudadera.portada.png" alt="Chrome Hearts"></div>
+      <div class="ct-label"><span>Chrome Hearts</span><i>&rarr;</i></div>
+    </a>
+    <a class="cat-tile reveal" style="--d:0.52s" href="ChromeHearts.html">
+      <div class="ct-media"><img loading="lazy" src="img/Chrome-Hearts-Cadenas/CH1.jpeg" alt="Chrome Hearts Cadenas"></div>
+      <div class="ct-label"><span>Chrome Hearts Cadenas</span><i>&rarr;</i></div>
+    </a>
+    </div>
+  </section>
+
+  <section class="saludo reveal">
+    <div class="saludo-video">
+      <video autoplay muted loop playsinline poster="img/video/saludo.jpg">
+        <source src="img/video/saludo.webm" type="video/webm">
+        <source src="img/video/saludo.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="saludo-copy">
+      <h2>Conocenos</h2>
+      <p>Somos de Guadalajara. Atendemos por WhatsApp e Instagram, mandamos QC de
+         cada par y hacemos envios a todo Mexico.</p>
+      <a href="https://chat.whatsapp.com/GamukaM3CgJKFZLSQMU4uy" target="_blank" rel="noopener" class="hero-cta">Escribenos</a>
+    </div>
+  </section>
+
+  <section class="avisos reveal">
+    <div class="aviso">
+      <h3>Proceso de compra</h3>
+      <p>Elige tu modelo y pregunta por las tallas. Entrega en GDL: encarga con el
+         70% y liquida al recibir. Envios directos: se liquida el total.</p>
+    </div>
+    <div class="aviso">
+      <h3>Tiempo de entrega</h3>
+      <p>Catalogo: 10 a 15 dias despues del QC. Stock: entrega al dia siguiente o
+         al momento por Uber / paqueteria.</p>
+    </div>
+    <div class="aviso">
+      <h3>Pagos</h3>
+      <p>Transferencia, deposito OXXO o tarjeta (+5%). Entregas en GDL: efectivo,
+         debito/credito y vales.</p>
+    </div>
+    <div class="aviso">
+      <h3>Reembolsos</h3>
+      <p>Producto distinto, danado o problemas de aduana: se reenvia el par antes
+         que un reembolso. No hay cambios por error de talla.</p>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <img class="foot-mascot" src="img/mascota-320.png" alt="Sauce Store" loading="lazy">
+  <p class="foot-word">SAUCE&nbsp;STORE</p>
+  <p class="foot-note">Catalogo visual. Para pedidos, contactanos.</p>
+  <div class="foot-links">
+    <a href="https://www.instagram.com/sauceestore" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://chat.whatsapp.com/GamukaM3CgJKFZLSQMU4uy" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+  <p class="foot-copy">&copy; Sauce Store</p>
+</footer>
+<a class="wa-float" href="https://chat.whatsapp.com/GamukaM3CgJKFZLSQMU4uy" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.9-4.44 9.9-9.9S17.5 2 12.04 2zm5.8 14.01c-.24.68-1.4 1.3-1.94 1.35-.5.05-1.13.24-3.66-.77-3.08-1.22-5.06-4.36-5.22-4.56-.15-.2-1.25-1.66-1.25-3.17 0-1.51.79-2.25 1.07-2.56.28-.31.61-.38.81-.38.2 0 .41 0 .58.01.19.01.44-.07.69.53.24.6.83 2.06.9 2.21.07.15.12.32.02.52-.1.2-.15.32-.3.5-.15.18-.31.4-.44.53-.15.15-.3.31-.13.6.17.29.76 1.25 1.63 2.03 1.12 1 2.06 1.31 2.35 1.46.29.15.46.12.63-.07.17-.2.73-.85.93-1.14.2-.29.39-.24.66-.15.27.1 1.71.81 2 .96.29.15.49.22.56.34.07.12.07.7-.17 1.38z"/></svg>
+</a>
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script src="app.js"></script>
 </body>
 </html>

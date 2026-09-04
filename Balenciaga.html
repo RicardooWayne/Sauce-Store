@@ -1,516 +1,342 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Balenciaga - Sauce Store</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Balenciaga — Sauce Store</title>
+<meta name="description" content="Catalogo Balenciaga en Sauce Store.">
+<link rel="icon" href="img/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<div class="conteiner">
-
-    <section class="catalogo">
-        <h2>Balenciaga.</h2>
-
-        <div class="product-grid">
-
-            <!-- PRODUCTO -->
-<div class="product-item">
-    <a href="Balenciaga-Pants1.html">
-        <div class="product-img-wrapper">
-            <img src="img/Balenciaga/Balenciaga-Pants1.portada.png" class="product-img" alt="Balenciaga Pants 1.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Balenciaga Pants 1.</p>
-        <p class="product-quality">Talla M a XXL</p>
-        <p class="product-price">$1,250 MXN C/U</p>
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a class="wordmark" href="index.html">SAUCE&nbsp;STORE<i>&#9733;</i></a>
+    <nav class="nav-desktop">
+      <div class="nav-group">
+        <button class="nav-trigger" aria-expanded="false">Tenis</button>
+        <div class="nav-panel"><a href="Jordan1.html">Jordan 1</a><a href="jordan3.html">Jordan 3</a><a href="jordan4.html">Jordan 4</a><a href="jordan5.html">Jordan 5</a><a href="jordan6.html">Jordan 6</a><a href="jordan10.html">Jordan 10</a><a href="jordan11.html">Jordan 11</a></div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-trigger" aria-expanded="false">Ropa</button>
+        <div class="nav-panel"><a href="Amiri.html">Amiri</a><a href="Balenciaga.html">Balenciaga</a><a href="Bape.html">Bape</a><a href="Burberry.html">Burberry</a><a href="Supreme.html">Supreme</a><a href="ChromeHeartsRopa.html">Chrome Hearts</a></div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-trigger" aria-expanded="false">Accesorios</button>
+        <div class="nav-panel"><a href="ChromeHearts.html">Chrome Hearts Cadenas</a></div>
+      </div>
+      <a class="nav-flat" href="Stock.html">Stock</a>
+    </nav>
+    <div class="header-actions">
+      <a href="https://www.instagram.com/sauceestore" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://chat.whatsapp.com/GamukaM3CgJKFZLSQMU4uy" target="_blank" rel="noopener" class="ha-wa">WhatsApp</a>
+      <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Balenciaga-Pants2.html">
-        <div class="product-img-wrapper">
-            <img src="img/Balenciaga/Balenciaga-Pants2.portada.png" class="product-img" alt="Balenciaga Pants 2.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Balenciaga Pants 2.</p>
-        <p class="product-quality">Talla M a XXL</p>
-        <p class="product-price">$1,250 MXN C/U</p>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mm-inner">
+<div class="m-group"><span>Tenis</span><a href="Jordan1.html">Jordan 1</a><a href="jordan3.html">Jordan 3</a><a href="jordan4.html">Jordan 4</a><a href="jordan5.html">Jordan 5</a><a href="jordan6.html">Jordan 6</a><a href="jordan10.html">Jordan 10</a><a href="jordan11.html">Jordan 11</a></div>
+<div class="m-group"><span>Ropa</span><a href="Amiri.html">Amiri</a><a href="Balenciaga.html">Balenciaga</a><a href="Bape.html">Bape</a><a href="Burberry.html">Burberry</a><a href="Supreme.html">Supreme</a><a href="ChromeHeartsRopa.html">Chrome Hearts</a></div>
+<div class="m-group"><span>Accesorios</span><a href="ChromeHearts.html">Chrome Hearts Cadenas</a></div>
+<div class="m-group"><a href="Stock.html">Stock</a></div>
+    <div class="m-social">
+      <a href="https://www.instagram.com/sauceestore" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://chat.whatsapp.com/GamukaM3CgJKFZLSQMU4uy" target="_blank" rel="noopener">WhatsApp</a>
     </div>
+  </div>
 </div>
-
-
-<div class="product-item">
-    <a href="Balenciaga-Pants3.html">
-        <div class="product-img-wrapper">
-            <img src="img/Balenciaga/Balenciaga-Pants3.portada.png" class="product-img" alt="Balenciaga Pants 3.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Balenciaga Pants 3.</p>
-        <p class="product-quality">Talla M a XXL</p>
-        <p class="product-price">$1,250 MXN C/U</p>
+<main class="cat-page">
+  <section class="cat-hero reveal">
+    <p class="cat-kicker">Catalogo</p>
+    <h1 class="cat-title">Balenciaga</h1>
+    <p class="cat-count">33 modelos</p>
+  </section>
+  <section class="product-grid">
+<a class="product-card reveal" style="--d:0.00s" href="Balenciaga-Pants1.html">
+    <div class="pc-media"><img loading="lazy" src="img/Balenciaga/Balenciaga-Pants1.portada.png" alt="Balenciaga Pants 1"></div>
+    <div class="pc-info">
+      <p class="pc-name">Balenciaga Pants 1</p>
+      <span class="pc-meta">Talla M a XXL</span>
+      <p class="pc-price">$1,250 MXN C/U</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Balenciaga-Short.html">
-        <div class="product-img-wrapper">
-            <img src="img/Balenciaga/Balenciaga-Short.portada.png" class="product-img" alt="Balenciaga Short.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Balenciaga Short.</p>
-        <p class="product-quality">Talla M a XXL</p>
-        <p class="product-price">$1,200 MXN C/U</p>
+</a>
+<a class="product-card reveal" style="--d:0.03s" href="Balenciaga-Pants2.html">
+    <div class="pc-media"><img loading="lazy" src="img/Balenciaga/Balenciaga-Pants2.portada.png" alt="Balenciaga Pants 2"></div>
+    <div class="pc-info">
+      <p class="pc-name">Balenciaga Pants 2</p>
+      <span class="pc-meta">Talla M a XXL</span>
+      <p class="pc-price">$1,250 MXN C/U</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Balenciaga-Short1.html">
-        <div class="product-img-wrapper">
-            <img src="img/Balenciaga/Balenciaga-Short1.portada.png" class="product-img" alt="Balenciaga Short 1.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Balenciaga Short 1.</p>
-        <p class="product-quality">Talla M a XXL</p>
-        <p class="product-price">$1,200 MXN C/U</p>
+</a>
+<a class="product-card reveal" style="--d:0.06s" href="Balenciaga-Pants3.html">
+    <div class="pc-media"><img loading="lazy" src="img/Balenciaga/Balenciaga-Pants3.portada.png" alt="Balenciaga Pants 3"></div>
+    <div class="pc-info">
+      <p class="pc-name">Balenciaga Pants 3</p>
+      <span class="pc-meta">Talla M a XXL</span>
+      <p class="pc-price">$1,250 MXN C/U</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Balenciaga-Short2.html">
-        <div class="product-img-wrapper">
-            <img src="img/Balenciaga/Balenciaga-Short2.portada.png" class="product-img" alt="Balenciaga Short 2.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Balenciaga Short 2.</p>
-        <p class="product-quality">Talla M a XXL</p>
-        <p class="product-price">$1,200 MXN C/U</p>
+</a>
+<a class="product-card reveal" style="--d:0.09s" href="Balenciaga-Short.html">
+    <div class="pc-media"><img loading="lazy" src="img/Balenciaga/Balenciaga-Short.portada.png" alt="Balenciaga Short"></div>
+    <div class="pc-info">
+      <p class="pc-name">Balenciaga Short</p>
+      <span class="pc-meta">Talla M a XXL</span>
+      <p class="pc-price">$1,200 MXN C/U</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Balenciaga-X-Adidas.html">
-        <div class="product-img-wrapper">
-            <img src="img/Balenciaga/Balenciaga-X-Adidas.portada.png" class="product-img" alt="Balenciaga X Adidas.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Balenciaga X Adidas.</p>
-        <p class="product-quality">Talla S a XXL</p>
-        <p class="product-price">$1,200 MXN C/U</p>
+</a>
+<a class="product-card reveal" style="--d:0.12s" href="Balenciaga-Short1.html">
+    <div class="pc-media"><img loading="lazy" src="img/Balenciaga/Balenciaga-Short1.portada.png" alt="Balenciaga Short 1"></div>
+    <div class="pc-info">
+      <p class="pc-name">Balenciaga Short 1</p>
+      <span class="pc-meta">Talla M a XXL</span>
+      <p class="pc-price">$1,200 MXN C/U</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Balenciaga-Sudadera-X-Adidas.html">
-        <div class="product-img-wrapper">
-            <img src="img/Balenciaga/Balenciaga-Sudadera-X-Adidas.portada.png" class="product-img" alt="Balenciaga Sudadera X Adidas.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Balenciaga X Adidas Sudadera.</p>
-        <p class="product-quality">Talla S a L</p>
-        <p class="product-price">$1,300 MXN C/U</p>
+</a>
+<a class="product-card reveal" style="--d:0.15s" href="Balenciaga-Short2.html">
+    <div class="pc-media"><img loading="lazy" src="img/Balenciaga/Balenciaga-Short2.portada.png" alt="Balenciaga Short 2"></div>
+    <div class="pc-info">
+      <p class="pc-name">Balenciaga Short 2</p>
+      <span class="pc-meta">Talla M a XXL</span>
+      <p class="pc-price">$1,200 MXN C/U</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Balenciaga-Playera1.html">
-        <div class="product-img-wrapper">
-            <img src="img/Balenciaga/Balenciaga-Playera1.portada.png" class="product-img" alt="Balenciaga Playera 1.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Balenciaga Playera 1.</p>
-        <p class="product-quality">Talla S a XXL</p>
-        <p class="product-price">$1,200 MXN </p>
+</a>
+<a class="product-card reveal" style="--d:0.18s" href="Balenciaga-X-Adidas.html">
+    <div class="pc-media"><img loading="lazy" src="img/Balenciaga/Balenciaga-X-Adidas.portada.png" alt="Balenciaga X Adidas"></div>
+    <div class="pc-info">
+      <p class="pc-name">Balenciaga X Adidas</p>
+      <span class="pc-meta">Talla S a XXL</span>
+      <p class="pc-price">$1,200 MXN C/U</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Balenciaga-Long-Sleeve.html">
-        <div class="product-img-wrapper">
-            <img src="img/Balenciaga/Balenciaga-Long-Sleeve.portada.png" class="product-img" alt="Balenciaga Long Sleeve.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Balenciaga Long Sleeve.</p>
-        <p class="product-quality">Talla M a 3XL</p>
-        <p class="product-price">$1,250 MXN C/U </p>
+</a>
+<a class="product-card reveal" style="--d:0.21s" href="Balenciaga-Sudadera-X-Adidas.html">
+    <div class="pc-media"><img loading="lazy" src="img/Balenciaga/Balenciaga-Sudadera-X-Adidas.portada.png" alt="Balenciaga X Adidas Sudadera"></div>
+    <div class="pc-info">
+      <p class="pc-name">Balenciaga X Adidas Sudadera</p>
+      <span class="pc-meta">Talla S a L</span>
+      <p class="pc-price">$1,300 MXN C/U</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Balenciaga-Long-Sleeve1.html">
-        <div class="product-img-wrapper">
-            <img src="img/Balenciaga/Balenciaga-Long-Sleeve1.portada.png" class="product-img" alt="Balenciaga Long Sleeve 1.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Balenciaga Long Sleeve 1.</p>
-        <p class="product-quality">Talla XS a L</p>
-        <p class="product-price">$1,350 MXN</p>
+</a>
+<a class="product-card reveal" style="--d:0.24s" href="Balenciaga-Playera1.html">
+    <div class="pc-media"><img loading="lazy" src="img/Balenciaga/Balenciaga-Playera1.portada.png" alt="Balenciaga Playera 1"></div>
+    <div class="pc-info">
+      <p class="pc-name">Balenciaga Playera 1</p>
+      <span class="pc-meta">Talla S a XXL</span>
+      <p class="pc-price">$1,200 MXN</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Balenciaga-Long-Sleeve2.html">
-        <div class="product-img-wrapper">
-            <img src="img/Balenciaga/Balenciaga-Long-Sleeve2.portada.png" class="product-img" alt="Balenciaga Long Sleeve 2.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Balenciaga Long Sleeve 2.</p>
-        <p class="product-quality">Talla XS a L</p>
-        <p class="product-price">$1,350 MXN </p>
+</a>
+<a class="product-card reveal" style="--d:0.27s" href="Balenciaga-Long-Sleeve.html">
+    <div class="pc-media"><img loading="lazy" src="img/Balenciaga/Balenciaga-Long-Sleeve.portada.png" alt="Balenciaga Long Sleeve"></div>
+    <div class="pc-info">
+      <p class="pc-name">Balenciaga Long Sleeve</p>
+      <span class="pc-meta">Talla M a 3XL</span>
+      <p class="pc-price">$1,250 MXN C/U</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Balenciaga-Long-Sleeve3.html">
-        <div class="product-img-wrapper">
-            <img src="img/Balenciaga/Balenciaga-Long-Sleeve3.portada.png" class="product-img" alt="Balenciaga Long Sleeve 3.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Balenciaga Long Sleeve 3.</p>
-        <p class="product-quality">Talla xs a L</p>
-        <p class="product-price">$1,450 MXN </p>
+</a>
+<a class="product-card reveal" style="--d:0.30s" href="Balenciaga-Long-Sleeve1.html">
+    <div class="pc-media"><img loading="lazy" src="img/Balenciaga/Balenciaga-Long-Sleeve1.portada.png" alt="Balenciaga Long Sleeve 1"></div>
+    <div class="pc-info">
+      <p class="pc-name">Balenciaga Long Sleeve 1</p>
+      <span class="pc-meta">Talla XS a L</span>
+      <p class="pc-price">$1,350 MXN</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Balenciaga-Long-Sleeve4.html">
-        <div class="product-img-wrapper">
-            <img src="img/Balenciaga/Balenciaga-Long-Sleeve4.portada.png" class="product-img" alt="Balenciaga Long Sleeve 3.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Balenciaga Long Sleeve 4.</p>
-        <p class="product-quality">Talla XS a L</p>
-        <p class="product-price">$1,350 MXN </p>
+</a>
+<a class="product-card reveal" style="--d:0.33s" href="Balenciaga-Long-Sleeve2.html">
+    <div class="pc-media"><img loading="lazy" src="img/Balenciaga/Balenciaga-Long-Sleeve2.portada.png" alt="Balenciaga Long Sleeve 2"></div>
+    <div class="pc-info">
+      <p class="pc-name">Balenciaga Long Sleeve 2</p>
+      <span class="pc-meta">Talla XS a L</span>
+      <p class="pc-price">$1,350 MXN</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Balenciaga-Long-Sleeve5.html">
-        <div class="product-img-wrapper">
-            <img src="img/Balenciaga/Balenciaga-Long-Sleeve5.portada.png" class="product-img" alt="Balenciaga Long Sleeve 3.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Balenciaga Long Sleeve Ramnstein.</p>
-        <p class="product-quality">Talla XS a L</p>
-        <p class="product-price">$1,350 MXN</p>
+</a>
+<a class="product-card reveal" style="--d:0.00s" href="Balenciaga-Long-Sleeve3.html">
+    <div class="pc-media"><img loading="lazy" src="img/Balenciaga/Balenciaga-Long-Sleeve3.portada.png" alt="Balenciaga Long Sleeve 3"></div>
+    <div class="pc-info">
+      <p class="pc-name">Balenciaga Long Sleeve 3</p>
+      <span class="pc-meta">Talla xs a L</span>
+      <p class="pc-price">$1,450 MXN</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Balenciaga-Long-Sleeve-Rosa-Negro.html">
-        <div class="product-img-wrapper">
-            <img src="img/Balenciaga/Balenciaga-Long-Sleeve-Rosa-Negro.portada.png" class="product-img" alt="Balenciaga Long Sleeve Rosa y Negro.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Balenciaga Long Sleeve Rosa y Negro..</p>
-        <p class="product-quality">Talla XS a L</p>
-        <p class="product-price">$1,350 MXN C/U</p>
+</a>
+<a class="product-card reveal" style="--d:0.03s" href="Balenciaga-Long-Sleeve4.html">
+    <div class="pc-media"><img loading="lazy" src="img/Balenciaga/Balenciaga-Long-Sleeve4.portada.png" alt="Balenciaga Long Sleeve 4"></div>
+    <div class="pc-info">
+      <p class="pc-name">Balenciaga Long Sleeve 4</p>
+      <span class="pc-meta">Talla XS a L</span>
+      <p class="pc-price">$1,350 MXN</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Balenciaga-Camisa-Manga-Larga.html">
-        <div class="product-img-wrapper">
-            <img src="img/Balenciaga/Balenciaga-Camisa-Manga-Larga.portada.png" class="product-img" alt="Balenciaga Camisa Manga Larga.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Balenciaga Camisa Manga Larga.</p>
-        <p class="product-quality">Talla M a 3XL</p>
-        <p class="product-price">$1,200 MXN C/U</p>
+</a>
+<a class="product-card reveal" style="--d:0.06s" href="Balenciaga-Long-Sleeve5.html">
+    <div class="pc-media"><img loading="lazy" src="img/Balenciaga/Balenciaga-Long-Sleeve5.portada.png" alt="Balenciaga Long Sleeve Ramnstein"></div>
+    <div class="pc-info">
+      <p class="pc-name">Balenciaga Long Sleeve Ramnstein</p>
+      <span class="pc-meta">Talla XS a L</span>
+      <p class="pc-price">$1,350 MXN</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Balenciaga-Camisa.html">
-        <div class="product-img-wrapper">
-            <img src="img/Balenciaga/Balenciaga-Camisa.portada.png" class="product-img" alt="Balenciaga Camisa.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Balenciaga Camisa.</p>
-        <p class="product-quality">Talla S a XL</p>
-        <p class="product-price">$1,200 MXN</p>
+</a>
+<a class="product-card reveal" style="--d:0.09s" href="Balenciaga-Long-Sleeve-Rosa-Negro.html">
+    <div class="pc-media"><img loading="lazy" src="img/Balenciaga/Balenciaga-Long-Sleeve-Rosa-Negro.portada.png" alt="Balenciaga Long Sleeve Rosa y Negro"></div>
+    <div class="pc-info">
+      <p class="pc-name">Balenciaga Long Sleeve Rosa y Negro</p>
+      <span class="pc-meta">Talla XS a L</span>
+      <p class="pc-price">$1,350 MXN C/U</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Balenciaga-Camisa2.html">
-        <div class="product-img-wrapper">
-            <img src="img/Balenciaga/Balenciaga-Camisa2.portada.png" class="product-img" alt="Balenciaga camisa 2.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Balenciaga camisa 2.</p>
-        <p class="product-quality">Talla S a XL</p>
-        <p class="product-price">$1,200 MXN</p>
+</a>
+<a class="product-card reveal" style="--d:0.12s" href="Balenciaga-Camisa-Manga-Larga.html">
+    <div class="pc-media"><img loading="lazy" src="img/Balenciaga/Balenciaga-Camisa-Manga-Larga.portada.png" alt="Balenciaga Camisa Manga Larga"></div>
+    <div class="pc-info">
+      <p class="pc-name">Balenciaga Camisa Manga Larga</p>
+      <span class="pc-meta">Talla M a 3XL</span>
+      <p class="pc-price">$1,200 MXN C/U</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Balenciaga-Camisa3.html">
-        <div class="product-img-wrapper">
-            <img src="img/Balenciaga/Balenciaga-Camisa3.portada.png" class="product-img" alt="Balenciaga camisa 3.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Balenciaga camisa 3.</p>
-        <p class="product-quality">Talla S a XL</p>
-        <p class="product-price">$1,250 MXN </p>
+</a>
+<a class="product-card reveal" style="--d:0.15s" href="Balenciaga-Camisa.html">
+    <div class="pc-media"><img loading="lazy" src="img/Balenciaga/Balenciaga-Camisa.portada.png" alt="Balenciaga Camisa"></div>
+    <div class="pc-info">
+      <p class="pc-name">Balenciaga Camisa</p>
+      <span class="pc-meta">Talla S a XL</span>
+      <p class="pc-price">$1,200 MXN</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Balenciaga-Camisa4.html">
-        <div class="product-img-wrapper">
-            <img src="img/Balenciaga/Balenciaga-Camisa4.portada.png" class="product-img" alt="Balenciaga camisa 4.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Balenciaga camisa 4.</p>
-        <p class="product-quality">Talla S a XL</p>
-        <p class="product-price">$1,200 MXN </p>
+</a>
+<a class="product-card reveal" style="--d:0.18s" href="Balenciaga-Camisa2.html">
+    <div class="pc-media"><img loading="lazy" src="img/Balenciaga/Balenciaga-Camisa2.portada.png" alt="Balenciaga camisa 2"></div>
+    <div class="pc-info">
+      <p class="pc-name">Balenciaga camisa 2</p>
+      <span class="pc-meta">Talla S a XL</span>
+      <p class="pc-price">$1,200 MXN</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Balenciaga-Camisa5.html">
-        <div class="product-img-wrapper">
-            <img src="img/Balenciaga/Balenciaga-Camisa5.portada.png" class="product-img" alt="Balenciaga camisa 5.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Balenciaga camisa 5.</p>
-        <p class="product-quality">Talla S a XL</p>
-        <p class="product-price">$1,200 MXN </p>
+</a>
+<a class="product-card reveal" style="--d:0.21s" href="Balenciaga-Camisa3.html">
+    <div class="pc-media"><img loading="lazy" src="img/Balenciaga/Balenciaga-Camisa3.portada.png" alt="Balenciaga camisa 3"></div>
+    <div class="pc-info">
+      <p class="pc-name">Balenciaga camisa 3</p>
+      <span class="pc-meta">Talla S a XL</span>
+      <p class="pc-price">$1,250 MXN</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Balenciaga-Camisa6.html">
-        <div class="product-img-wrapper">
-            <img src="img/Balenciaga/Balenciaga-Camisa6.portada.png" class="product-img" alt="Balenciaga camisa 6.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Balenciaga camisa 6.</p>
-        <p class="product-quality">Talla XS a XL</p>
-        <p class="product-price">$1,450 MXN </p>
+</a>
+<a class="product-card reveal" style="--d:0.24s" href="Balenciaga-Camisa4.html">
+    <div class="pc-media"><img loading="lazy" src="img/Balenciaga/Balenciaga-Camisa4.portada.png" alt="Balenciaga camisa 4"></div>
+    <div class="pc-info">
+      <p class="pc-name">Balenciaga camisa 4</p>
+      <span class="pc-meta">Talla S a XL</span>
+      <p class="pc-price">$1,200 MXN</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Balenciaga-Camisa-Blanca-Negra.html">
-        <div class="product-img-wrapper">
-            <img src="img/Balenciaga/Balenciaga-Camisa-Blanca-Negra.portada.png" class="product-img" alt="Balenciaga camisa Blanca Y Negra.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Balenciaga camisa Blanca Y Negra.</p>
-        <p class="product-quality">Talla S a XL</p>
-        <p class="product-price">$1,250 MXN C/U</p>
+</a>
+<a class="product-card reveal" style="--d:0.27s" href="Balenciaga-Camisa5.html">
+    <div class="pc-media"><img loading="lazy" src="img/Balenciaga/Balenciaga-Camisa5.portada.png" alt="Balenciaga camisa 5"></div>
+    <div class="pc-info">
+      <p class="pc-name">Balenciaga camisa 5</p>
+      <span class="pc-meta">Talla S a XL</span>
+      <p class="pc-price">$1,200 MXN</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Balenciaga-Camisa-Sunglasses.html">
-        <div class="product-img-wrapper">
-            <img src="img/Balenciaga/Balenciaga-Camisa-Sunglasses.portada.png" class="product-img" alt="Balenciaga camisa Sunglasses.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Balenciaga camisa Sunglasses.</p>
-        <p class="product-quality">Talla S a XL</p>
-        <p class="product-price">$1,250 MXN </p>
+</a>
+<a class="product-card reveal" style="--d:0.30s" href="Balenciaga-Camisa6.html">
+    <div class="pc-media"><img loading="lazy" src="img/Balenciaga/Balenciaga-Camisa6.portada.png" alt="Balenciaga camisa 6"></div>
+    <div class="pc-info">
+      <p class="pc-name">Balenciaga camisa 6</p>
+      <span class="pc-meta">Talla XS a XL</span>
+      <p class="pc-price">$1,450 MXN</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Balenciaga-Isabelle-Playera.html">
-        <div class="product-img-wrapper">
-            <img src="img/Balenciaga/Balenciaga-Isabelle-Playera.portada.png" class="product-img" alt="Balenciaga Isabelle Playera.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Balenciaga Isabelle Playera.</p>
-        <p class="product-quality">Talla S a XL</p>
-        <p class="product-price">$1,250 MXN </p>
+</a>
+<a class="product-card reveal" style="--d:0.33s" href="Balenciaga-Camisa-Blanca-Negra.html">
+    <div class="pc-media"><img loading="lazy" src="img/Balenciaga/Balenciaga-Camisa-Blanca-Negra.portada.png" alt="Balenciaga camisa Blanca Y Negra"></div>
+    <div class="pc-info">
+      <p class="pc-name">Balenciaga camisa Blanca Y Negra</p>
+      <span class="pc-meta">Talla S a XL</span>
+      <p class="pc-price">$1,250 MXN C/U</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Balenciaga-playera-Mangas-Largas.html">
-        <div class="product-img-wrapper">
-            <img src="img/Balenciaga/Balenciaga-playera-Mangas-Largas.portada.png" class="product-img" alt="Balenciaga Playera Manga Larga.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Balenciaga Playera Mangas Largas.</p>
-        <p class="product-quality">Talla XS a XL</p>
-        <p class="product-price">$1,350 MXN C/U</p>
+</a>
+<a class="product-card reveal" style="--d:0.00s" href="Balenciaga-Camisa-Sunglasses.html">
+    <div class="pc-media"><img loading="lazy" src="img/Balenciaga/Balenciaga-Camisa-Sunglasses.portada.png" alt="Balenciaga camisa Sunglasses"></div>
+    <div class="pc-info">
+      <p class="pc-name">Balenciaga camisa Sunglasses</p>
+      <span class="pc-meta">Talla S a XL</span>
+      <p class="pc-price">$1,250 MXN</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Balenciaga-Hoodie-Negra-Blanca-Azul.html">
-        <div class="product-img-wrapper">
-            <img src="img/Balenciaga/Balenciaga-Hoodie-Negra-Blanca-Azul.portada.png" class="product-img" alt="Balenciaga Hoodie Negra, blanca y azul.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Balenciaga Hoodie Negra, blanca y azul.</p>
-        <p class="product-quality">Talla XS a L</p>
-        <p class="product-price">$1,400 MXN C/U</p>
+</a>
+<a class="product-card reveal" style="--d:0.03s" href="Balenciaga-Isabelle-Playera.html">
+    <div class="pc-media"><img loading="lazy" src="img/Balenciaga/Balenciaga-Isabelle-Playera.portada.png" alt="Balenciaga Isabelle Playera"></div>
+    <div class="pc-info">
+      <p class="pc-name">Balenciaga Isabelle Playera</p>
+      <span class="pc-meta">Talla S a XL</span>
+      <p class="pc-price">$1,250 MXN</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Balenciaga-Hoodie-One-like-Two.html">
-        <div class="product-img-wrapper">
-            <img src="img/Balenciaga/Balenciaga-Hoodie-One-like-Two.portada.png" class="product-img" alt="Balenciaga Hoodie One Like Two.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Balenciaga Hoodie One Like Two.</p>
-        <p class="product-quality">Talla XS a L</p>
-        <p class="product-price">$1,450 MXN</p>
+</a>
+<a class="product-card reveal" style="--d:0.06s" href="Balenciaga-playera-Mangas-Largas.html">
+    <div class="pc-media"><img loading="lazy" src="img/Balenciaga/Balenciaga-playera-Mangas-Largas.portada.png" alt="Balenciaga Playera Mangas Largas"></div>
+    <div class="pc-info">
+      <p class="pc-name">Balenciaga Playera Mangas Largas</p>
+      <span class="pc-meta">Talla XS a XL</span>
+      <p class="pc-price">$1,350 MXN C/U</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Balenciaga-Hoodie1.html">
-        <div class="product-img-wrapper">
-            <img src="img/Balenciaga/Balenciaga-Hoodie1.portada.png" class="product-img" alt="Balenciaga Hoodie 1.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Balenciaga Hoodie 1.</p>
-        <p class="product-quality">Talla XS a L</p>
-        <p class="product-price">$1,450 MXN </p>
+</a>
+<a class="product-card reveal" style="--d:0.09s" href="Balenciaga-Hoodie-Negra-Blanca-Azul.html">
+    <div class="pc-media"><img loading="lazy" src="img/Balenciaga/Balenciaga-Hoodie-Negra-Blanca-Azul.portada.png" alt="Balenciaga Hoodie Negra, blanca y azul"></div>
+    <div class="pc-info">
+      <p class="pc-name">Balenciaga Hoodie Negra, blanca y azul</p>
+      <span class="pc-meta">Talla XS a L</span>
+      <p class="pc-price">$1,400 MXN C/U</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Balenciaga-Hoodie2.html">
-        <div class="product-img-wrapper">
-            <img src="img/Balenciaga/Balenciaga-Hoodie2.portada.png" class="product-img" alt="Balenciaga Hoodie 2.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Balenciaga Hoodie 2.</p>
-        <p class="product-quality">Talla XS a L</p>
-        <p class="product-price">$1,670 MXN </p>
+</a>
+<a class="product-card reveal" style="--d:0.12s" href="Balenciaga-Hoodie-One-like-Two.html">
+    <div class="pc-media"><img loading="lazy" src="img/Balenciaga/Balenciaga-Hoodie-One-like-Two.portada.png" alt="Balenciaga Hoodie One Like Two"></div>
+    <div class="pc-info">
+      <p class="pc-name">Balenciaga Hoodie One Like Two</p>
+      <span class="pc-meta">Talla XS a L</span>
+      <p class="pc-price">$1,450 MXN</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Balenciaga-Zip.html">
-        <div class="product-img-wrapper">
-            <img src="img/Balenciaga/Balenciaga-Zip.portada.png" class="product-img" alt="Balenciaga Zip.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Balenciaga Zip.</p>
-        <p class="product-quality">Talla XS a L</p>
-        <p class="product-price">$1,670 MXN </p>
+</a>
+<a class="product-card reveal" style="--d:0.15s" href="Balenciaga-Hoodie1.html">
+    <div class="pc-media"><img loading="lazy" src="img/Balenciaga/Balenciaga-Hoodie1.portada.png" alt="Balenciaga Hoodie 1"></div>
+    <div class="pc-info">
+      <p class="pc-name">Balenciaga Hoodie 1</p>
+      <span class="pc-meta">Talla XS a L</span>
+      <p class="pc-price">$1,450 MXN</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Balenciaga-Sueter.html">
-        <div class="product-img-wrapper">
-            <img src="img/Balenciaga/Balenciaga-Sueter.portada.png" class="product-img" alt="Balenciaga Sueter.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Balenciaga Sueter.</p>
-        <p class="product-quality">Talla S a XXL</p>
-        <p class="product-price">$1,350 MXN </p>
+</a>
+<a class="product-card reveal" style="--d:0.18s" href="Balenciaga-Hoodie2.html">
+    <div class="pc-media"><img loading="lazy" src="img/Balenciaga/Balenciaga-Hoodie2.portada.png" alt="Balenciaga Hoodie 2"></div>
+    <div class="pc-info">
+      <p class="pc-name">Balenciaga Hoodie 2</p>
+      <span class="pc-meta">Talla XS a L</span>
+      <p class="pc-price">$1,670 MXN</p>
     </div>
-</div>
-
-
-            </body>
-            </html>
-
+</a>
+<a class="product-card reveal" style="--d:0.21s" href="Balenciaga-Zip.html">
+    <div class="pc-media"><img loading="lazy" src="img/Balenciaga/Balenciaga-Zip.portada.png" alt="Balenciaga Zip"></div>
+    <div class="pc-info">
+      <p class="pc-name">Balenciaga Zip</p>
+      <span class="pc-meta">Talla XS a L</span>
+      <p class="pc-price">$1,670 MXN</p>
+    </div>
+</a>
+<a class="product-card reveal" style="--d:0.24s" href="Balenciaga-Sueter.html">
+    <div class="pc-media"><img loading="lazy" src="img/Balenciaga/Balenciaga-Sueter.portada.png" alt="Balenciaga Sueter"></div>
+    <div class="pc-info">
+      <p class="pc-name">Balenciaga Sueter</p>
+      <span class="pc-meta">Talla S a XXL</span>
+      <p class="pc-price">$1,350 MXN</p>
+    </div>
+</a>
+  </section>
+</main>
+<footer class="site-footer">
+  <img class="foot-mascot" src="img/mascota-320.png" alt="Sauce Store" loading="lazy">
+  <p class="foot-word">SAUCE&nbsp;STORE</p>
+  <p class="foot-note">Catalogo visual. Para pedidos, contactanos.</p>
+  <div class="foot-links">
+    <a href="https://www.instagram.com/sauceestore" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://chat.whatsapp.com/GamukaM3CgJKFZLSQMU4uy" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+  <p class="foot-copy">&copy; Sauce Store</p>
+</footer>
+<a class="wa-float" href="https://chat.whatsapp.com/GamukaM3CgJKFZLSQMU4uy" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.9-4.44 9.9-9.9S17.5 2 12.04 2zm5.8 14.01c-.24.68-1.4 1.3-1.94 1.35-.5.05-1.13.24-3.66-.77-3.08-1.22-5.06-4.36-5.22-4.56-.15-.2-1.25-1.66-1.25-3.17 0-1.51.79-2.25 1.07-2.56.28-.31.61-.38.81-.38.2 0 .41 0 .58.01.19.01.44-.07.69.53.24.6.83 2.06.9 2.21.07.15.12.32.02.52-.1.2-.15.32-.3.5-.15.18-.31.4-.44.53-.15.15-.3.31-.13.6.17.29.76 1.25 1.63 2.03 1.12 1 2.06 1.31 2.35 1.46.29.15.46.12.63-.07.17-.2.73-.85.93-1.14.2-.29.39-.24.66-.15.27.1 1.71.81 2 .96.29.15.49.22.56.34.07.12.07.7-.17 1.38z"/></svg>
+</a>
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

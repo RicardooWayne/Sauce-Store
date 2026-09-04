@@ -1,469 +1,318 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amiri - Sauce Store</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amiri — Sauce Store</title>
+<meta name="description" content="Catalogo Amiri en Sauce Store.">
+<link rel="icon" href="img/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<div class="conteiner">
-
-    <section class="catalogo">
-        <h2>Amiri.</h2>
-
-        <div class="product-grid">
-
-            <!-- PRODUCTO -->
-<div class="product-item">
-    <a href="Amiri-Playera.html">
-        <div class="product-img-wrapper">
-            <img src="img/Amiri/Amiri-Playera.portada.png" class="product-img" alt="Playera Amiri.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Playera Amiri.</p>
-        <p class="product-quality">Talla S a XL</p>
-        <p class="product-price">$1,150 MXN C/U </p>
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a class="wordmark" href="index.html">SAUCE&nbsp;STORE<i>&#9733;</i></a>
+    <nav class="nav-desktop">
+      <div class="nav-group">
+        <button class="nav-trigger" aria-expanded="false">Tenis</button>
+        <div class="nav-panel"><a href="Jordan1.html">Jordan 1</a><a href="jordan3.html">Jordan 3</a><a href="jordan4.html">Jordan 4</a><a href="jordan5.html">Jordan 5</a><a href="jordan6.html">Jordan 6</a><a href="jordan10.html">Jordan 10</a><a href="jordan11.html">Jordan 11</a></div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-trigger" aria-expanded="false">Ropa</button>
+        <div class="nav-panel"><a href="Amiri.html">Amiri</a><a href="Balenciaga.html">Balenciaga</a><a href="Bape.html">Bape</a><a href="Burberry.html">Burberry</a><a href="Supreme.html">Supreme</a><a href="ChromeHeartsRopa.html">Chrome Hearts</a></div>
+      </div>
+      <div class="nav-group">
+        <button class="nav-trigger" aria-expanded="false">Accesorios</button>
+        <div class="nav-panel"><a href="ChromeHearts.html">Chrome Hearts Cadenas</a></div>
+      </div>
+      <a class="nav-flat" href="Stock.html">Stock</a>
+    </nav>
+    <div class="header-actions">
+      <a href="https://www.instagram.com/sauceestore" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://chat.whatsapp.com/GamukaM3CgJKFZLSQMU4uy" target="_blank" rel="noopener" class="ha-wa">WhatsApp</a>
+      <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Amiri-Hoodie.html">
-        <div class="product-img-wrapper">
-            <img src="img/Amiri/Amiri-Hoodie.portada.png" class="product-img" alt="Hoodie Amiri.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Hoodie Amiri.</p>
-        <p class="product-quality">Talla S a XL</p>
-        <p class="product-price">$1,350 MXN </p>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mm-inner">
+<div class="m-group"><span>Tenis</span><a href="Jordan1.html">Jordan 1</a><a href="jordan3.html">Jordan 3</a><a href="jordan4.html">Jordan 4</a><a href="jordan5.html">Jordan 5</a><a href="jordan6.html">Jordan 6</a><a href="jordan10.html">Jordan 10</a><a href="jordan11.html">Jordan 11</a></div>
+<div class="m-group"><span>Ropa</span><a href="Amiri.html">Amiri</a><a href="Balenciaga.html">Balenciaga</a><a href="Bape.html">Bape</a><a href="Burberry.html">Burberry</a><a href="Supreme.html">Supreme</a><a href="ChromeHeartsRopa.html">Chrome Hearts</a></div>
+<div class="m-group"><span>Accesorios</span><a href="ChromeHearts.html">Chrome Hearts Cadenas</a></div>
+<div class="m-group"><a href="Stock.html">Stock</a></div>
+    <div class="m-social">
+      <a href="https://www.instagram.com/sauceestore" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://chat.whatsapp.com/GamukaM3CgJKFZLSQMU4uy" target="_blank" rel="noopener">WhatsApp</a>
     </div>
+  </div>
 </div>
-
-
-<div class="product-item">
-    <a href="Amiri-Ami.html">
-        <div class="product-img-wrapper">
-            <img src="img/Amiri/Amiri-Ami.portada.png" class="product-img" alt="Ami.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">A M I </p>
-        <p class="product-quality">Talla S a XL</p>
-        <p class="product-price">$1,350 MXN C/U</p>
+<main class="cat-page">
+  <section class="cat-hero reveal">
+    <p class="cat-kicker">Catalogo</p>
+    <h1 class="cat-title">Amiri</h1>
+    <p class="cat-count">30 modelos</p>
+  </section>
+  <section class="product-grid">
+<a class="product-card reveal" style="--d:0.00s" href="Amiri-Playera.html">
+    <div class="pc-media"><img loading="lazy" src="img/Amiri/Amiri-Playera.portada.png" alt="Playera Amiri"></div>
+    <div class="pc-info">
+      <p class="pc-name">Playera Amiri</p>
+      <span class="pc-meta">Talla S a XL</span>
+      <p class="pc-price">$1,150 MXN C/U</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Amiri-Chamarra.html">
-        <div class="product-img-wrapper">
-            <img src="img/Amiri/Amiri-Chamarra.portada.png" class="product-img" alt="Amiri Chamarra.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Amiri Chamarra.</p>
-        <p class="product-quality">Talla S a XXL</p>
-        <p class="product-price">$1,450 MXN</p>
+</a>
+<a class="product-card reveal" style="--d:0.03s" href="Amiri-Hoodie.html">
+    <div class="pc-media"><img loading="lazy" src="img/Amiri/Amiri-Hoodie.portada.png" alt="Hoodie Amiri"></div>
+    <div class="pc-info">
+      <p class="pc-name">Hoodie Amiri</p>
+      <span class="pc-meta">Talla S a XL</span>
+      <p class="pc-price">$1,350 MXN</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Amiri-Short.html">
-        <div class="product-img-wrapper">
-            <img src="img/Amiri/Amiri-Short.portada.png" class="product-img" alt="Amiri Short.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Amiri Short.</p>
-        <p class="product-quality">30, 32, 34, 36, 38.</p>
-        <p class="product-price">$1,400 MXN</p>
+</a>
+<a class="product-card reveal" style="--d:0.06s" href="Amiri-Ami.html">
+    <div class="pc-media"><img loading="lazy" src="img/Amiri/Amiri-Ami.portada.png" alt="A M I"></div>
+    <div class="pc-info">
+      <p class="pc-name">A M I</p>
+      <span class="pc-meta">Talla S a XL</span>
+      <p class="pc-price">$1,350 MXN C/U</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Amiri-Short1.html">
-        <div class="product-img-wrapper">
-            <img src="img/Amiri/Amiri-Short1.portada.png" class="product-img" alt="Amiri Short 1.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Amiri Short 1.</p>
-        <p class="product-quality">30, 32, 34, 36, 38.</p>
-        <p class="product-price">$1,400 MXN</p>
+</a>
+<a class="product-card reveal" style="--d:0.09s" href="Amiri-Chamarra.html">
+    <div class="pc-media"><img loading="lazy" src="img/Amiri/Amiri-Chamarra.portada.png" alt="Amiri Chamarra"></div>
+    <div class="pc-info">
+      <p class="pc-name">Amiri Chamarra</p>
+      <span class="pc-meta">Talla S a XXL</span>
+      <p class="pc-price">$1,450 MXN</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Amiri-Short2.html">
-        <div class="product-img-wrapper">
-            <img src="img/Amiri/Amiri-Short2.portada.png" class="product-img" alt="Amiri Short 2.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Amiri Short 2.</p>
-        <p class="product-quality">30, 32, 34, 36, 38.</p>
-        <p class="product-price">$1,400 MXN</p>
+</a>
+<a class="product-card reveal" style="--d:0.12s" href="Amiri-Short.html">
+    <div class="pc-media"><img loading="lazy" src="img/Amiri/Amiri-Short.portada.png" alt="Amiri Short"></div>
+    <div class="pc-info">
+      <p class="pc-name">Amiri Short</p>
+      <span class="pc-meta">30, 32, 34, 36, 38.</span>
+      <p class="pc-price">$1,400 MXN</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Amiri-Short3.html">
-        <div class="product-img-wrapper">
-            <img src="img/Amiri/Amiri-Short3.portada.png" class="product-img" alt="Amiri Short 3.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Amiri Short 3.</p>
-        <p class="product-quality">30, 32, 34, 36, 38.</p>
-        <p class="product-price">$1,400 MXN</p>
+</a>
+<a class="product-card reveal" style="--d:0.15s" href="Amiri-Short1.html">
+    <div class="pc-media"><img loading="lazy" src="img/Amiri/Amiri-Short1.portada.png" alt="Amiri Short 1"></div>
+    <div class="pc-info">
+      <p class="pc-name">Amiri Short 1</p>
+      <span class="pc-meta">30, 32, 34, 36, 38.</span>
+      <p class="pc-price">$1,400 MXN</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Amiri-Pants-Azul-Negro-Rosa-Crema.html">
-        <div class="product-img-wrapper">
-            <img src="img/Amiri/Amiri-Pants-Azul-Negro-Rosa-Crema.portada.png" class="product-img" alt="Amiri Pants Azul Negro Rosa Crema.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Amiri Pants Azul Negro Rosa Crema.</p>
-        <p class="product-quality">Talla S a XL</p>
-        <p class="product-price">$1,350 MXN C/U</p>
+</a>
+<a class="product-card reveal" style="--d:0.18s" href="Amiri-Short2.html">
+    <div class="pc-media"><img loading="lazy" src="img/Amiri/Amiri-Short2.portada.png" alt="Amiri Short 2"></div>
+    <div class="pc-info">
+      <p class="pc-name">Amiri Short 2</p>
+      <span class="pc-meta">30, 32, 34, 36, 38.</span>
+      <p class="pc-price">$1,400 MXN</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Amiri-Pantalon.html">
-        <div class="product-img-wrapper">
-            <img src="img/Amiri/Amiri-Pantalon.portada.png" class="product-img" alt="Amiri Pantalon.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Amiri Pantalón.</p>
-        <p class="product-quality">30-32-34-36-38</p>
-        <p class="product-price">$1,350 MXN </p>
+</a>
+<a class="product-card reveal" style="--d:0.21s" href="Amiri-Short3.html">
+    <div class="pc-media"><img loading="lazy" src="img/Amiri/Amiri-Short3.portada.png" alt="Amiri Short 3"></div>
+    <div class="pc-info">
+      <p class="pc-name">Amiri Short 3</p>
+      <span class="pc-meta">30, 32, 34, 36, 38.</span>
+      <p class="pc-price">$1,400 MXN</p>
     </div>
-</div>
-
-<div class="product-item">
-    <a href="Amiri-Pantalon1.html">
-        <div class="product-img-wrapper">
-            <img src="img/Amiri/Amiri-Pantalon1.portada.png" class="product-img" alt="Amiri Pantalon1.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Amiri Pantalón 1.</p>
-        <p class="product-quality">30-32-34-36-38</p>
-        <p class="product-price">$1,350 MXN </p>
+</a>
+<a class="product-card reveal" style="--d:0.24s" href="Amiri-Pants-Azul-Negro-Rosa-Crema.html">
+    <div class="pc-media"><img loading="lazy" src="img/Amiri/Amiri-Pants-Azul-Negro-Rosa-Crema.portada.png" alt="Amiri Pants Azul Negro Rosa Crema"></div>
+    <div class="pc-info">
+      <p class="pc-name">Amiri Pants Azul Negro Rosa Crema</p>
+      <span class="pc-meta">Talla S a XL</span>
+      <p class="pc-price">$1,350 MXN C/U</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Amiri-Pantalon2.html">
-        <div class="product-img-wrapper">
-            <img src="img/Amiri/Amiri-Pantalon2.portada.png" class="product-img" alt="Amiri Pantalon2.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Amiri Pantalón 2.</p>
-        <p class="product-quality">30-32-34-36-38</p>
-        <p class="product-price">$1,400 MXN </p>
+</a>
+<a class="product-card reveal" style="--d:0.27s" href="Amiri-Pantalon.html">
+    <div class="pc-media"><img loading="lazy" src="img/Amiri/Amiri-Pantalon.portada.png" alt="Amiri Pantalón"></div>
+    <div class="pc-info">
+      <p class="pc-name">Amiri Pantalón</p>
+      <span class="pc-meta">30-32-34-36-38</span>
+      <p class="pc-price">$1,350 MXN</p>
     </div>
-</div>
-
-
-
-<div class="product-item">
-    <a href="Amiri-Pantalon3.html">
-        <div class="product-img-wrapper">
-            <img src="img/Amiri/Amiri-Pantalon3.portada.png" class="product-img" alt="Amiri Pantalon3.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Amiri Pantalón 3.</p>
-        <p class="product-quality">30-32-34-36-38</p>
-        <p class="product-price">$1,400 MXN </p>
+</a>
+<a class="product-card reveal" style="--d:0.30s" href="Amiri-Pantalon1.html">
+    <div class="pc-media"><img loading="lazy" src="img/Amiri/Amiri-Pantalon1.portada.png" alt="Amiri Pantalón 1"></div>
+    <div class="pc-info">
+      <p class="pc-name">Amiri Pantalón 1</p>
+      <span class="pc-meta">30-32-34-36-38</span>
+      <p class="pc-price">$1,350 MXN</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Amiri-Pantalon4.html">
-        <div class="product-img-wrapper">
-            <img src="img/Amiri/Amiri-Pantalon4.portada.png" class="product-img" alt="Amiri Pantalon4.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Amiri Pantalón 4.</p>
-        <p class="product-quality">30-32-34-36-38</p>
-        <p class="product-price">$1,400 MXN </p>
+</a>
+<a class="product-card reveal" style="--d:0.33s" href="Amiri-Pantalon2.html">
+    <div class="pc-media"><img loading="lazy" src="img/Amiri/Amiri-Pantalon2.portada.png" alt="Amiri Pantalón 2"></div>
+    <div class="pc-info">
+      <p class="pc-name">Amiri Pantalón 2</p>
+      <span class="pc-meta">30-32-34-36-38</span>
+      <p class="pc-price">$1,400 MXN</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Amiri-Pantalon5.html">
-        <div class="product-img-wrapper">
-            <img src="img/Amiri/Amiri-Pantalon5.portada.png" class="product-img" alt="Amiri Pantalon5.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Amiri Pantalón 5.</p>
-        <p class="product-quality">30-32-34-36-38</p>
-        <p class="product-price">$1,400 MXN </p>
+</a>
+<a class="product-card reveal" style="--d:0.00s" href="Amiri-Pantalon3.html">
+    <div class="pc-media"><img loading="lazy" src="img/Amiri/Amiri-Pantalon3.portada.png" alt="Amiri Pantalón 3"></div>
+    <div class="pc-info">
+      <p class="pc-name">Amiri Pantalón 3</p>
+      <span class="pc-meta">30-32-34-36-38</span>
+      <p class="pc-price">$1,400 MXN</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Amiri-Pantalon6.html">
-        <div class="product-img-wrapper">
-            <img src="img/Amiri/Amiri-Pantalon6.portada.png" class="product-img" alt="Amiri Pantalon6.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Amiri Pantalón 6.</p>
-        <p class="product-quality">30-32-34-36-38</p>
-        <p class="product-price">$1,400 MXN </p>
+</a>
+<a class="product-card reveal" style="--d:0.03s" href="Amiri-Pantalon4.html">
+    <div class="pc-media"><img loading="lazy" src="img/Amiri/Amiri-Pantalon4.portada.png" alt="Amiri Pantalón 4"></div>
+    <div class="pc-info">
+      <p class="pc-name">Amiri Pantalón 4</p>
+      <span class="pc-meta">30-32-34-36-38</span>
+      <p class="pc-price">$1,400 MXN</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Amiri-Pantalon7.html">
-        <div class="product-img-wrapper">
-            <img src="img/Amiri/Amiri-Pantalon7.portada.png" class="product-img" alt="Amiri Pantalon7.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Amiri Pantalón 7.</p>
-        <p class="product-quality">30-32-34-36-38</p>
-        <p class="product-price">$1,450 MXN </p>
+</a>
+<a class="product-card reveal" style="--d:0.06s" href="Amiri-Pantalon5.html">
+    <div class="pc-media"><img loading="lazy" src="img/Amiri/Amiri-Pantalon5.portada.png" alt="Amiri Pantalón 5"></div>
+    <div class="pc-info">
+      <p class="pc-name">Amiri Pantalón 5</p>
+      <span class="pc-meta">30-32-34-36-38</span>
+      <p class="pc-price">$1,400 MXN</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Amiri-Pantalon8.html">
-        <div class="product-img-wrapper">
-            <img src="img/Amiri/Amiri-Pantalon8.portada.png" class="product-img" alt="Amiri Pantalon8.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Amiri Pantalón 8.</p>
-        <p class="product-quality">30-32-34-36-38</p>
-        <p class="product-price">$1,450 MXN </p>
+</a>
+<a class="product-card reveal" style="--d:0.09s" href="Amiri-Pantalon6.html">
+    <div class="pc-media"><img loading="lazy" src="img/Amiri/Amiri-Pantalon6.portada.png" alt="Amiri Pantalón 6"></div>
+    <div class="pc-info">
+      <p class="pc-name">Amiri Pantalón 6</p>
+      <span class="pc-meta">30-32-34-36-38</span>
+      <p class="pc-price">$1,400 MXN</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Amiri-Pantalon9.html">
-        <div class="product-img-wrapper">
-            <img src="img/Amiri/Amiri-Pantalon9..portada.png" class="product-img" alt="Amiri Pantalon9.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Amiri Pantalón 9.</p>
-        <p class="product-quality">30-32-34-36-38</p>
-        <p class="product-price">$1,450 MXN </p>
+</a>
+<a class="product-card reveal" style="--d:0.12s" href="Amiri-Pantalon7.html">
+    <div class="pc-media"><img loading="lazy" src="img/Amiri/Amiri-Pantalon7.portada.png" alt="Amiri Pantalón 7"></div>
+    <div class="pc-info">
+      <p class="pc-name">Amiri Pantalón 7</p>
+      <span class="pc-meta">30-32-34-36-38</span>
+      <p class="pc-price">$1,450 MXN</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Amiri-Pantalon10.html">
-        <div class="product-img-wrapper">
-            <img src="img/Amiri/Amiri-Pantalon10.portada.png" class="product-img" alt="Amiri Pantalon10.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Amiri Pantalón 10.</p>
-        <p class="product-quality">30-32-34-36-38</p>
-        <p class="product-price">$1,450 MXN </p>
+</a>
+<a class="product-card reveal" style="--d:0.15s" href="Amiri-Pantalon8.html">
+    <div class="pc-media"><img loading="lazy" src="img/Amiri/Amiri-Pantalon8.portada.png" alt="Amiri Pantalón 8"></div>
+    <div class="pc-info">
+      <p class="pc-name">Amiri Pantalón 8</p>
+      <span class="pc-meta">30-32-34-36-38</span>
+      <p class="pc-price">$1,450 MXN</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Amiri-Pantalon11.html">
-        <div class="product-img-wrapper">
-            <img src="img/Amiri/Amiri-Pantalon11.portada.png" class="product-img" alt="Amiri Pantalon11.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Amiri Pantalón 11.</p>
-        <p class="product-quality">30-32-34-36-38</p>
-        <p class="product-price">$1,450 MXN </p>
+</a>
+<a class="product-card reveal" style="--d:0.18s" href="Amiri-Pantalon9.html">
+    <div class="pc-media"><img loading="lazy" src="img/Amiri/Amiri-Pantalon9..portada.png" alt="Amiri Pantalón 9"></div>
+    <div class="pc-info">
+      <p class="pc-name">Amiri Pantalón 9</p>
+      <span class="pc-meta">30-32-34-36-38</span>
+      <p class="pc-price">$1,450 MXN</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Amiri-Pantalon12.html">
-        <div class="product-img-wrapper">
-            <img src="img/Amiri/Amiri-Pantalon12.portada.png" class="product-img" alt="Amiri Pantalon12.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Amiri Pantalón 12.</p>
-        <p class="product-quality">30-32-34-36-38</p>
-        <p class="product-price">$1,450 MXN </p>
+</a>
+<a class="product-card reveal" style="--d:0.21s" href="Amiri-Pantalon10.html">
+    <div class="pc-media"><img loading="lazy" src="img/Amiri/Amiri-Pantalon10.portada.png" alt="Amiri Pantalón 10"></div>
+    <div class="pc-info">
+      <p class="pc-name">Amiri Pantalón 10</p>
+      <span class="pc-meta">30-32-34-36-38</span>
+      <p class="pc-price">$1,450 MXN</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Amiri-Pantalon13.html">
-        <div class="product-img-wrapper">
-            <img src="img/Amiri/Amiri-Pantalon13.portada.png" class="product-img" alt="Amiri Pantalon13.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Amiri Pantalón 13.</p>
-        <p class="product-quality">30-32-34-36-38</p>
-        <p class="product-price">$1,450 MXN </p>
+</a>
+<a class="product-card reveal" style="--d:0.24s" href="Amiri-Pantalon11.html">
+    <div class="pc-media"><img loading="lazy" src="img/Amiri/Amiri-Pantalon11.portada.png" alt="Amiri Pantalón 11"></div>
+    <div class="pc-info">
+      <p class="pc-name">Amiri Pantalón 11</p>
+      <span class="pc-meta">30-32-34-36-38</span>
+      <p class="pc-price">$1,450 MXN</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Amiri-Pantalon14.html">
-        <div class="product-img-wrapper">
-            <img src="img/Amiri/Amiri-Pantalon14.portada.png" class="product-img" alt="Amiri Pantalon14.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Amiri Pantalón 14.</p>
-        <p class="product-quality">30-32-34-36-38</p>
-        <p class="product-price">$1,450 MXN </p>
+</a>
+<a class="product-card reveal" style="--d:0.27s" href="Amiri-Pantalon12.html">
+    <div class="pc-media"><img loading="lazy" src="img/Amiri/Amiri-Pantalon12.portada.png" alt="Amiri Pantalón 12"></div>
+    <div class="pc-info">
+      <p class="pc-name">Amiri Pantalón 12</p>
+      <span class="pc-meta">30-32-34-36-38</span>
+      <p class="pc-price">$1,450 MXN</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Amiri-Pantalon15.html">
-        <div class="product-img-wrapper">
-            <img src="img/Amiri/Amiri-Pantalon15.portada.png" class="product-img" alt="Amiri Pantalon15.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Amiri Pantalón 15.</p>
-        <p class="product-quality">30-32-34-36-38</p>
-        <p class="product-price">$1,450 MXN </p>
+</a>
+<a class="product-card reveal" style="--d:0.30s" href="Amiri-Pantalon13.html">
+    <div class="pc-media"><img loading="lazy" src="img/Amiri/Amiri-Pantalon13.portada.png" alt="Amiri Pantalón 13"></div>
+    <div class="pc-info">
+      <p class="pc-name">Amiri Pantalón 13</p>
+      <span class="pc-meta">30-32-34-36-38</span>
+      <p class="pc-price">$1,450 MXN</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Amiri-Pantalon16.html">
-        <div class="product-img-wrapper">
-            <img src="img/Amiri/Amiri-Pantalon16.portada.png" class="product-img" alt="Amiri Pantalon16.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Amiri Pantalón 16.</p>
-        <p class="product-quality">30-32-34-36-38</p>
-        <p class="product-price">$1,450 MXN </p>
+</a>
+<a class="product-card reveal" style="--d:0.33s" href="Amiri-Pantalon14.html">
+    <div class="pc-media"><img loading="lazy" src="img/Amiri/Amiri-Pantalon14.portada.png" alt="Amiri Pantalón 14"></div>
+    <div class="pc-info">
+      <p class="pc-name">Amiri Pantalón 14</p>
+      <span class="pc-meta">30-32-34-36-38</span>
+      <p class="pc-price">$1,450 MXN</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Amiri-Pantalon17.html">
-        <div class="product-img-wrapper">
-            <img src="img/Amiri/Amiri-Pantalon17.portada.png" class="product-img" alt="Amiri Pantalon17.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Amiri Pantalón 17.</p>
-        <p class="product-quality">30-32-34-36-38</p>
-        <p class="product-price">$1,450 MXN </p>
+</a>
+<a class="product-card reveal" style="--d:0.00s" href="Amiri-Pantalon15.html">
+    <div class="pc-media"><img loading="lazy" src="img/Amiri/Amiri-Pantalon15.portada.png" alt="Amiri Pantalón 15"></div>
+    <div class="pc-info">
+      <p class="pc-name">Amiri Pantalón 15</p>
+      <span class="pc-meta">30-32-34-36-38</span>
+      <p class="pc-price">$1,450 MXN</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Amiri-Pantalon18.html">
-        <div class="product-img-wrapper">
-            <img src="img/Amiri/Amiri-Pantalon18.portada.png" class="product-img" alt="Amiri Pantalon18.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Amiri Pantalón 18.</p>
-        <p class="product-quality">30-32-34-36-38</p>
-        <p class="product-price">$1,450 MXN </p>
+</a>
+<a class="product-card reveal" style="--d:0.03s" href="Amiri-Pantalon16.html">
+    <div class="pc-media"><img loading="lazy" src="img/Amiri/Amiri-Pantalon16.portada.png" alt="Amiri Pantalón 16"></div>
+    <div class="pc-info">
+      <p class="pc-name">Amiri Pantalón 16</p>
+      <span class="pc-meta">30-32-34-36-38</span>
+      <p class="pc-price">$1,450 MXN</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Amiri-Pantalon19.html">
-        <div class="product-img-wrapper">
-            <img src="img/Amiri/Amiri-Pantalon19.portada.png" class="product-img" alt="Amiri Pantalon19.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Amiri Pantalón 19.</p>
-        <p class="product-quality">30-32-34-36-38</p>
-        <p class="product-price">$1,450 MXN </p>
+</a>
+<a class="product-card reveal" style="--d:0.06s" href="Amiri-Pantalon17.html">
+    <div class="pc-media"><img loading="lazy" src="img/Amiri/Amiri-Pantalon17.portada.png" alt="Amiri Pantalón 17"></div>
+    <div class="pc-info">
+      <p class="pc-name">Amiri Pantalón 17</p>
+      <span class="pc-meta">30-32-34-36-38</span>
+      <p class="pc-price">$1,450 MXN</p>
     </div>
-</div>
-
-
-<div class="product-item">
-    <a href="Amiri-Pantalon20.html">
-        <div class="product-img-wrapper">
-            <img src="img/Amiri/Amiri-Pantalon20.portada.png" class="product-img" alt="Amiri Pantalon20.">
-        </div>
-    </a>
-
-    <div class="product-info">
-        <p class="product-name">Amiri Pantalón 20.</p>
-        <p class="product-quality">30-32-34-36-38</p>
-        <p class="product-price">$1,450 MXN </p>
+</a>
+<a class="product-card reveal" style="--d:0.09s" href="Amiri-Pantalon18.html">
+    <div class="pc-media"><img loading="lazy" src="img/Amiri/Amiri-Pantalon18.portada.png" alt="Amiri Pantalón 18"></div>
+    <div class="pc-info">
+      <p class="pc-name">Amiri Pantalón 18</p>
+      <span class="pc-meta">30-32-34-36-38</span>
+      <p class="pc-price">$1,450 MXN</p>
     </div>
-</div>
-            </body>
-            </html>
-
+</a>
+<a class="product-card reveal" style="--d:0.12s" href="Amiri-Pantalon19.html">
+    <div class="pc-media"><img loading="lazy" src="img/Amiri/Amiri-Pantalon19.portada.png" alt="Amiri Pantalón 19"></div>
+    <div class="pc-info">
+      <p class="pc-name">Amiri Pantalón 19</p>
+      <span class="pc-meta">30-32-34-36-38</span>
+      <p class="pc-price">$1,450 MXN</p>
+    </div>
+</a>
+<a class="product-card reveal" style="--d:0.15s" href="Amiri-Pantalon20.html">
+    <div class="pc-media"><img loading="lazy" src="img/Amiri/Amiri-Pantalon20.portada.png" alt="Amiri Pantalón 20"></div>
+    <div class="pc-info">
+      <p class="pc-name">Amiri Pantalón 20</p>
+      <span class="pc-meta">30-32-34-36-38</span>
+      <p class="pc-price">$1,450 MXN</p>
+    </div>
+</a>
+  </section>
+</main>
+<footer class="site-footer">
+  <img class="foot-mascot" src="img/mascota-320.png" alt="Sauce Store" loading="lazy">
+  <p class="foot-word">SAUCE&nbsp;STORE</p>
+  <p class="foot-note">Catalogo visual. Para pedidos, contactanos.</p>
+  <div class="foot-links">
+    <a href="https://www.instagram.com/sauceestore" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://chat.whatsapp.com/GamukaM3CgJKFZLSQMU4uy" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+  <p class="foot-copy">&copy; Sauce Store</p>
+</footer>
+<a class="wa-float" href="https://chat.whatsapp.com/GamukaM3CgJKFZLSQMU4uy" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.9-4.44 9.9-9.9S17.5 2 12.04 2zm5.8 14.01c-.24.68-1.4 1.3-1.94 1.35-.5.05-1.13.24-3.66-.77-3.08-1.22-5.06-4.36-5.22-4.56-.15-.2-1.25-1.66-1.25-3.17 0-1.51.79-2.25 1.07-2.56.28-.31.61-.38.81-.38.2 0 .41 0 .58.01.19.01.44-.07.69.53.24.6.83 2.06.9 2.21.07.15.12.32.02.52-.1.2-.15.32-.3.5-.15.18-.31.4-.44.53-.15.15-.3.31-.13.6.17.29.76 1.25 1.63 2.03 1.12 1 2.06 1.31 2.35 1.46.29.15.46.12.63-.07.17-.2.73-.85.93-1.14.2-.29.39-.24.66-.15.27.1 1.71.81 2 .96.29.15.49.22.56.34.07.12.07.7-.17 1.38z"/></svg>
+</a>
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
