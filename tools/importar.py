@@ -343,7 +343,9 @@ def main():
 
         extra = json.loads(EXTRA.read_text(encoding="utf-8")) if EXTRA.exists() else {}
         # Si hay subcarpetas, cada una es un modelo; si no, son fotos sueltas.
-        if any(d.is_dir() for d in carpeta.iterdir()):
+        sueltas = [f for f in carpeta.iterdir()
+                   if f.is_file() and f.suffix.lower() in EXTS]
+        if not sueltas and any(d.is_dir() for d in carpeta.iterdir()):
             n, a = importar_carpetas(carpeta, marca, extra, precio_def, tallas_def)
         else:
             n, a = importar_plano(carpeta, marca, extra)
