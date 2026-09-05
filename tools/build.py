@@ -35,6 +35,9 @@ CATEGORIES = [
     ("jordan10.html",         "Jordan 10",             "tenis",      "img/Jordan-10"),
     ("jordan11.html",         "Jordan 11",             "tenis",      "img/Jordan-11"),
     ("RickOwens.html",        "Rick Owens",            "tenis",      "img/Rick-Owens"),
+    ("LouisVuitton.html",     "Louis Vuitton",         "tenis",      "img/Louis-Vuitton"),
+    ("MaisonMargiela.html",   "Maison Margiela",       "tenis",      "img/Maison-Margiela"),
+    ("GoldenGoose.html",      "Golden Goose",          "tenis",      "img/Golden-Goose"),
     ("Amiri.html",            "Amiri",                 "ropa",       "img/Amiri"),
     ("Balenciaga.html",       "Balenciaga",            "ropa",       "img/Balenciaga"),
     ("Bape.html",             "Bape",                  "ropa",       "img/Bape"),
@@ -57,6 +60,9 @@ BRAND_ALIASES = {
     "Jordan 10": "jordan jordans jordanes air jordan aj10 aj 10 jordan10 tenis",
     "Jordan 11": "jordan jordans jordanes air jordan aj11 aj 11 jordan11 tenis",
     "Rick Owens": "rick owens rickowens rick owen ricowens geobasket ramones drkshdw tenis botas",
+    "Louis Vuitton": "louis vuitton lv luis vuitton luisvuitton lv trainer buttersoft skate mules tenis",
+    "Maison Margiela": "maison margiela margiela mm replica maison marguiela tabi tenis",
+    "Golden Goose": "golden goose goldengoose golden gose superstar super star true star tenis",
     "Amiri": "amiri amirii amiry ammiri amiris ropa",
     "Balenciaga": "balenciaga balensiaga valenciaga balen balencia balensiaga ropa",
     "Bape": "bape bathing ape baep bapee a bathing ape ropa",
@@ -334,7 +340,10 @@ def merge_extra(cats):
                 "category": titulo,
                 "category_slug": cat["slug"],
                 "id": product_id(it["detail"], it["name"]),
-                "size_options": (parse_sizes(tallas, titulo, cat["group"])
+                # Si el importador ya trajo la lista de tallas (p.ej. convertidas
+                # de EU a MX), se usa tal cual; si no, se deduce.
+                "size_options": (it.get("sizes")
+                                 or parse_sizes(tallas, titulo, cat["group"])
                                  or default_sizes(titulo, cat["group"])),
             })
             agregados += 1
@@ -513,6 +522,16 @@ def render_category(cat, cats):
 {footer()}"""
 
 
+def size_label(s):
+    """Etiqueta corta del boton: '27.5 MX (43 EU)' -> '27.5'.
+
+    El valor completo viaja en data-size, para que el pedido que llega por
+    Telegram traiga tambien la talla europea.
+    """
+    m = re.match(r"^([\d.]+)\s*MX", s)
+    return m.group(1) if m else s
+
+
 def render_detail(p, cat, cats):
     gallery = p["gallery"] or ([p["portada"]] if p["portada"] else [])
     main_img = gallery[0] if gallery else ""
@@ -539,8 +558,8 @@ def render_detail(p, cat, cats):
     opts = p.get("size_options") or []
     if opts:
         chips = "".join(
-            f'<button type="button" class="size-chip" data-size="{s}">{s}</button>'
-            for s in opts)
+            f'<button type="button" class="size-chip" data-size="{o}">{size_label(o)}</button>'
+            for o in opts)
         size_block = f"""      <div class="d-sizes">
         <p class="d-sizes-label">Elige tu talla <b class="size-req">*</b></p>
         <div class="size-chips" id="sizeChips">{chips}</div>

@@ -12,7 +12,8 @@
     "img/Rick-Owens/rick-owens-geobasket-4.webp"
    ],
    "detail": "p-rick-owens-geobasket.html",
-   "sizes_raw": ""
+   "sizes_raw": "",
+   "sizes": []
   },
   {
    "name": "Rick Owens Low",
@@ -26,7 +27,8 @@
     "img/Rick-Owens/rick-owens-low-4.webp"
    ],
    "detail": "p-rick-owens-low.html",
-   "sizes_raw": ""
+   "sizes_raw": "",
+   "sizes": []
   },
   {
    "name": "Rick Owens Low Negros",
@@ -39,7 +41,8 @@
     "img/Rick-Owens/rick-owens-low-negros-3.webp"
    ],
    "detail": "p-rick-owens-low-negros.html",
-   "sizes_raw": ""
+   "sizes_raw": "",
+   "sizes": []
   },
   {
    "name": "Rick Owens Vintage",
@@ -53,7 +56,8 @@
     "img/Rick-Owens/rick-owens-vintage-4.webp"
    ],
    "detail": "p-rick-owens-vintage.html",
-   "sizes_raw": ""
+   "sizes_raw": "",
+   "sizes": []
   },
   {
    "name": "Rick Owens Vintage Negros",
@@ -67,7 +71,843 @@
     "img/Rick-Owens/rick-owens-vintage-negros-4.webp"
    ],
    "detail": "p-rick-owens-vintage-negros.html",
-   "sizes_raw": ""
+   "sizes_raw": "",
+   "sizes": []
+  }
+ ],
+ "Louis Vuitton": [
+  {
+   "name": "LV Buttersoft Blancos",
+   "price": 3100,
+   "portada": "img/Louis-Vuitton/lv-buttersoft-blancos-portada.webp",
+   "gallery": [
+    "img/Louis-Vuitton/lv-buttersoft-blancos-portada.webp",
+    "img/Louis-Vuitton/lv-buttersoft-blancos-1.webp",
+    "img/Louis-Vuitton/lv-buttersoft-blancos-2.webp",
+    "img/Louis-Vuitton/lv-buttersoft-blancos-3.webp",
+    "img/Louis-Vuitton/lv-buttersoft-blancos-4.webp"
+   ],
+   "detail": "p-lv-buttersoft-blancos.html",
+   "sizes_raw": "",
+   "sizes": [
+    "25 MX (40 EU)",
+    "26 MX (41 EU)",
+    "26.5 MX (42 EU)",
+    "27.5 MX (43 EU)",
+    "28 MX (44 EU)",
+    "29 MX (45 EU)"
+   ]
+  },
+  {
+   "name": "LV Buttersoft Monogram",
+   "price": 3100,
+   "portada": "img/Louis-Vuitton/lv-buttersoft-monogram-portada.webp",
+   "gallery": [
+    "img/Louis-Vuitton/lv-buttersoft-monogram-portada.webp",
+    "img/Louis-Vuitton/lv-buttersoft-monogram-1.webp",
+    "img/Louis-Vuitton/lv-buttersoft-monogram-2.webp",
+    "img/Louis-Vuitton/lv-buttersoft-monogram-3.webp",
+    "img/Louis-Vuitton/lv-buttersoft-monogram-4.webp"
+   ],
+   "detail": "p-lv-buttersoft-monogram.html",
+   "sizes_raw": "",
+   "sizes": [
+    "25 MX (40 EU)",
+    "26 MX (41 EU)",
+    "26.5 MX (42 EU)",
+    "27.5 MX (43 EU)",
+    "28 MX (44 EU)",
+    "29 MX (45 EU)"
+   ]
+  },
+  {
+   "name": "LV Buttersoft Negros",
+   "price": 3100,
+   "portada": "img/Louis-Vuitton/lv-buttersoft-negros-portada.webp",
+   "gallery": [
+    "img/Louis-Vuitton/lv-buttersoft-negros-portada.webp",
+    "img/Louis-Vuitton/lv-buttersoft-negros-1.webp",
+    "img/Louis-Vuitton/lv-buttersoft-negros-2.webp",
+    "img/Louis-Vuitton/lv-buttersoft-negros-3.webp",
+    "img/Louis-Vuitton/lv-buttersoft-negros-4.webp"
+   ],
+   "detail": "p-lv-buttersoft-negros.html",
+   "sizes_raw": "",
+   "sizes": [
+    "25 MX (40 EU)",
+    "26 MX (41 EU)",
+    "26.5 MX (42 EU)",
+    "27.5 MX (43 EU)",
+    "28 MX (44 EU)",
+    "29 MX (45 EU)"
+   ]
+  },
+  {
+   "name": "LV Buttersoft Verdes",
+   "price": 3100,
+   "portada": "img/Louis-Vuitton/lv-buttersoft-verdes-portada.webp",
+   "gallery": [
+    "img/Louis-Vuitton/lv-buttersoft-verdes-portada.webp",
+    "img/Louis-Vuitton/lv-buttersoft-verdes-1.webp",
+    "img/Louis-Vuitton/lv-buttersoft-verdes-2.webp",
+    "img/Louis-Vuitton/lv-buttersoft-verdes-3.webp",
+    "img/Louis-Vuitton/lv-buttersoft-verdes-4.webp"
+   ],
+   "detail": "p-lv-buttersoft-verdes.html",
+   "sizes_raw": "",
+   "sizes": [
+    "25 MX (40 EU)",
+    "26 MX (41 EU)",
+    "26.5 MX (42 EU)",
+    "27.5 MX (43 EU)",
+    "28 MX (44 EU)",
+    "29 MX (45 EU)"
+   ]
+  },
+  {
+   "name": "LV Skate Azul",
+   "price": 3100,
+   "portada": "img/Louis-Vuitton/lv-skate-azul-portada.webp",
+   "gallery": [
+    "img/Louis-Vuitton/lv-skate-azul-portada.webp",
+    "img/Louis-Vuitton/lv-skate-azul-1.webp",
+    "img/Louis-Vuitton/lv-skate-azul-2.webp",
+    "img/Louis-Vuitton/lv-skate-azul-3.webp",
+    "img/Louis-Vuitton/lv-skate-azul-4.webp"
+   ],
+   "detail": "p-lv-skate-azul.html",
+   "sizes_raw": "",
+   "sizes": [
+    "24.5 MX (39 EU)",
+    "25 MX (40 EU)",
+    "26 MX (41 EU)",
+    "26.5 MX (42 EU)",
+    "27.5 MX (43 EU)",
+    "28 MX (44 EU)",
+    "29 MX (45 EU)",
+    "30 MX (46 EU)"
+   ]
+  },
+  {
+   "name": "LV Skate Crema",
+   "price": 3100,
+   "portada": "img/Louis-Vuitton/lv-skate-crema-portada.webp",
+   "gallery": [
+    "img/Louis-Vuitton/lv-skate-crema-portada.webp",
+    "img/Louis-Vuitton/lv-skate-crema-1.webp",
+    "img/Louis-Vuitton/lv-skate-crema-2.webp",
+    "img/Louis-Vuitton/lv-skate-crema-3.webp",
+    "img/Louis-Vuitton/lv-skate-crema-4.webp"
+   ],
+   "detail": "p-lv-skate-crema.html",
+   "sizes_raw": "",
+   "sizes": [
+    "24.5 MX (39 EU)",
+    "25 MX (40 EU)",
+    "26 MX (41 EU)",
+    "26.5 MX (42 EU)",
+    "27.5 MX (43 EU)",
+    "28 MX (44 EU)",
+    "29 MX (45 EU)",
+    "30 MX (46 EU)"
+   ]
+  },
+  {
+   "name": "LV Skate Gris",
+   "price": 3100,
+   "portada": "img/Louis-Vuitton/lv-skate-gris-portada.webp",
+   "gallery": [
+    "img/Louis-Vuitton/lv-skate-gris-portada.webp",
+    "img/Louis-Vuitton/lv-skate-gris-1.webp",
+    "img/Louis-Vuitton/lv-skate-gris-2.webp",
+    "img/Louis-Vuitton/lv-skate-gris-3.webp",
+    "img/Louis-Vuitton/lv-skate-gris-4.webp"
+   ],
+   "detail": "p-lv-skate-gris.html",
+   "sizes_raw": "",
+   "sizes": [
+    "24.5 MX (39 EU)",
+    "25 MX (40 EU)",
+    "26 MX (41 EU)",
+    "26.5 MX (42 EU)",
+    "27.5 MX (43 EU)",
+    "28 MX (44 EU)",
+    "29 MX (45 EU)",
+    "30 MX (46 EU)"
+   ]
+  },
+  {
+   "name": "LV Skate Negros",
+   "price": 3100,
+   "portada": "img/Louis-Vuitton/lv-skate-negros-portada.webp",
+   "gallery": [
+    "img/Louis-Vuitton/lv-skate-negros-portada.webp",
+    "img/Louis-Vuitton/lv-skate-negros-1.webp",
+    "img/Louis-Vuitton/lv-skate-negros-2.webp",
+    "img/Louis-Vuitton/lv-skate-negros-3.webp",
+    "img/Louis-Vuitton/lv-skate-negros-4.webp"
+   ],
+   "detail": "p-lv-skate-negros.html",
+   "sizes_raw": "",
+   "sizes": [
+    "24.5 MX (39 EU)",
+    "25 MX (40 EU)",
+    "26 MX (41 EU)",
+    "26.5 MX (42 EU)",
+    "27.5 MX (43 EU)",
+    "28 MX (44 EU)",
+    "29 MX (45 EU)",
+    "30 MX (46 EU)"
+   ]
+  },
+  {
+   "name": "LV Trainer Azul",
+   "price": 3000,
+   "portada": "img/Louis-Vuitton/lv-trainer-azul-portada.webp",
+   "gallery": [
+    "img/Louis-Vuitton/lv-trainer-azul-portada.webp",
+    "img/Louis-Vuitton/lv-trainer-azul-1.webp",
+    "img/Louis-Vuitton/lv-trainer-azul-2.webp",
+    "img/Louis-Vuitton/lv-trainer-azul-3.webp",
+    "img/Louis-Vuitton/lv-trainer-azul-4.webp"
+   ],
+   "detail": "p-lv-trainer-azul.html",
+   "sizes_raw": "",
+   "sizes": [
+    "22 MX (35 EU)",
+    "23 MX (36 EU)",
+    "23.5 MX (37 EU)",
+    "24 MX (38 EU)",
+    "24.5 MX (39 EU)",
+    "25 MX (40 EU)",
+    "26 MX (41 EU)",
+    "26.5 MX (42 EU)",
+    "27.5 MX (43 EU)",
+    "28 MX (44 EU)",
+    "29 MX (45 EU)",
+    "30 MX (46 EU)"
+   ]
+  },
+  {
+   "name": "LV Trainer Blanco",
+   "price": 3000,
+   "portada": "img/Louis-Vuitton/lv-trainer-blanco-portada.webp",
+   "gallery": [
+    "img/Louis-Vuitton/lv-trainer-blanco-portada.webp",
+    "img/Louis-Vuitton/lv-trainer-blanco-1.webp",
+    "img/Louis-Vuitton/lv-trainer-blanco-2.webp",
+    "img/Louis-Vuitton/lv-trainer-blanco-3.webp",
+    "img/Louis-Vuitton/lv-trainer-blanco-4.webp"
+   ],
+   "detail": "p-lv-trainer-blanco.html",
+   "sizes_raw": "",
+   "sizes": [
+    "22 MX (35 EU)",
+    "23 MX (36 EU)",
+    "23.5 MX (37 EU)",
+    "24 MX (38 EU)",
+    "24.5 MX (39 EU)",
+    "25 MX (40 EU)",
+    "26 MX (41 EU)",
+    "26.5 MX (42 EU)",
+    "27.5 MX (43 EU)",
+    "28 MX (44 EU)",
+    "29 MX (45 EU)",
+    "30 MX (46 EU)"
+   ]
+  },
+  {
+   "name": "LV Trainer Crema",
+   "price": 3000,
+   "portada": "img/Louis-Vuitton/lv-trainer-crema-portada.webp",
+   "gallery": [
+    "img/Louis-Vuitton/lv-trainer-crema-portada.webp",
+    "img/Louis-Vuitton/lv-trainer-crema-1.webp",
+    "img/Louis-Vuitton/lv-trainer-crema-2.webp",
+    "img/Louis-Vuitton/lv-trainer-crema-3.webp",
+    "img/Louis-Vuitton/lv-trainer-crema-4.webp"
+   ],
+   "detail": "p-lv-trainer-crema.html",
+   "sizes_raw": "",
+   "sizes": [
+    "22 MX (35 EU)",
+    "23 MX (36 EU)",
+    "23.5 MX (37 EU)",
+    "24 MX (38 EU)",
+    "24.5 MX (39 EU)",
+    "25 MX (40 EU)",
+    "26 MX (41 EU)",
+    "26.5 MX (42 EU)",
+    "27.5 MX (43 EU)",
+    "28 MX (44 EU)",
+    "29 MX (45 EU)",
+    "30 MX (46 EU)"
+   ]
+  },
+  {
+   "name": "LV Trainer Gris",
+   "price": 3000,
+   "portada": "img/Louis-Vuitton/lv-trainer-gris-portada.webp",
+   "gallery": [
+    "img/Louis-Vuitton/lv-trainer-gris-portada.webp",
+    "img/Louis-Vuitton/lv-trainer-gris-1.webp",
+    "img/Louis-Vuitton/lv-trainer-gris-2.webp",
+    "img/Louis-Vuitton/lv-trainer-gris-3.webp"
+   ],
+   "detail": "p-lv-trainer-gris.html",
+   "sizes_raw": "",
+   "sizes": [
+    "22 MX (35 EU)",
+    "23 MX (36 EU)",
+    "23.5 MX (37 EU)",
+    "24 MX (38 EU)",
+    "24.5 MX (39 EU)",
+    "25 MX (40 EU)",
+    "26 MX (41 EU)",
+    "26.5 MX (42 EU)",
+    "27.5 MX (43 EU)",
+    "28 MX (44 EU)",
+    "29 MX (45 EU)",
+    "30 MX (46 EU)"
+   ]
+  },
+  {
+   "name": "LV Trainer Negros",
+   "price": 3000,
+   "portada": "img/Louis-Vuitton/lv-trainer-negros-portada.webp",
+   "gallery": [
+    "img/Louis-Vuitton/lv-trainer-negros-portada.webp",
+    "img/Louis-Vuitton/lv-trainer-negros-1.webp",
+    "img/Louis-Vuitton/lv-trainer-negros-2.webp",
+    "img/Louis-Vuitton/lv-trainer-negros-3.webp",
+    "img/Louis-Vuitton/lv-trainer-negros-4.webp"
+   ],
+   "detail": "p-lv-trainer-negros.html",
+   "sizes_raw": "",
+   "sizes": [
+    "22 MX (35 EU)",
+    "23 MX (36 EU)",
+    "23.5 MX (37 EU)",
+    "24 MX (38 EU)",
+    "24.5 MX (39 EU)",
+    "25 MX (40 EU)",
+    "26 MX (41 EU)",
+    "26.5 MX (42 EU)",
+    "27.5 MX (43 EU)",
+    "28 MX (44 EU)",
+    "29 MX (45 EU)",
+    "30 MX (46 EU)"
+   ]
+  },
+  {
+   "name": "Louis Vuitton Easy Mules",
+   "price": 2200,
+   "portada": "img/Louis-Vuitton/louis-vuitton-easy-mules-portada.webp",
+   "gallery": [
+    "img/Louis-Vuitton/louis-vuitton-easy-mules-portada.webp",
+    "img/Louis-Vuitton/louis-vuitton-easy-mules-1.webp",
+    "img/Louis-Vuitton/louis-vuitton-easy-mules-2.webp",
+    "img/Louis-Vuitton/louis-vuitton-easy-mules-3.webp",
+    "img/Louis-Vuitton/louis-vuitton-easy-mules-4.webp"
+   ],
+   "detail": "p-louis-vuitton-easy-mules.html",
+   "sizes_raw": "",
+   "sizes": [
+    "24.5 MX (39 EU)",
+    "25 MX (40 EU)",
+    "26 MX (41 EU)",
+    "26.5 MX (42 EU)",
+    "27.5 MX (43 EU)",
+    "28 MX (44 EU)",
+    "29 MX (45 EU)"
+   ]
+  },
+  {
+   "name": "Louis Vuitton Easy Mules Negros",
+   "price": 2200,
+   "portada": "img/Louis-Vuitton/louis-vuitton-easy-mules-negros-portada.webp",
+   "gallery": [
+    "img/Louis-Vuitton/louis-vuitton-easy-mules-negros-portada.webp",
+    "img/Louis-Vuitton/louis-vuitton-easy-mules-negros-1.webp",
+    "img/Louis-Vuitton/louis-vuitton-easy-mules-negros-2.webp",
+    "img/Louis-Vuitton/louis-vuitton-easy-mules-negros-3.webp"
+   ],
+   "detail": "p-louis-vuitton-easy-mules-negros.html",
+   "sizes_raw": "",
+   "sizes": [
+    "24.5 MX (39 EU)",
+    "25 MX (40 EU)",
+    "26 MX (41 EU)",
+    "26.5 MX (42 EU)",
+    "27.5 MX (43 EU)",
+    "28 MX (44 EU)",
+    "29 MX (45 EU)"
+   ]
+  }
+ ],
+ "Maison Margiela": [
+  {
+   "name": "Maison Margiela Replica Cafe",
+   "price": 2300,
+   "portada": "img/Maison-Margiela/maison-margiela-replica-cafe-portada.webp",
+   "gallery": [
+    "img/Maison-Margiela/maison-margiela-replica-cafe-portada.webp",
+    "img/Maison-Margiela/maison-margiela-replica-cafe-1.webp",
+    "img/Maison-Margiela/maison-margiela-replica-cafe-2.webp",
+    "img/Maison-Margiela/maison-margiela-replica-cafe-3.webp",
+    "img/Maison-Margiela/maison-margiela-replica-cafe-4.webp"
+   ],
+   "detail": "p-maison-margiela-replica-cafe.html",
+   "sizes_raw": "",
+   "sizes": [
+    "25 MX (40 EU)",
+    "26 MX (41 EU)",
+    "26.5 MX (42 EU)",
+    "27.5 MX (43 EU)",
+    "28 MX (44 EU)",
+    "29 MX (45 EU)",
+    "30 MX (46 EU)",
+    "30.5 MX (47 EU)"
+   ]
+  },
+  {
+   "name": "Maison Margiela Replica Gris",
+   "price": 2300,
+   "portada": "img/Maison-Margiela/maison-margiela-replica-gris-portada.webp",
+   "gallery": [
+    "img/Maison-Margiela/maison-margiela-replica-gris-portada.webp",
+    "img/Maison-Margiela/maison-margiela-replica-gris-1.webp",
+    "img/Maison-Margiela/maison-margiela-replica-gris-2.webp",
+    "img/Maison-Margiela/maison-margiela-replica-gris-3.webp",
+    "img/Maison-Margiela/maison-margiela-replica-gris-4.webp"
+   ],
+   "detail": "p-maison-margiela-replica-gris.html",
+   "sizes_raw": "",
+   "sizes": [
+    "25 MX (40 EU)",
+    "26 MX (41 EU)",
+    "26.5 MX (42 EU)",
+    "27.5 MX (43 EU)",
+    "28 MX (44 EU)",
+    "29 MX (45 EU)",
+    "30 MX (46 EU)",
+    "30.5 MX (47 EU)"
+   ]
+  },
+  {
+   "name": "Maison Margiela Replica Negros",
+   "price": 2300,
+   "portada": "img/Maison-Margiela/maison-margiela-replica-negros-portada.webp",
+   "gallery": [
+    "img/Maison-Margiela/maison-margiela-replica-negros-portada.webp",
+    "img/Maison-Margiela/maison-margiela-replica-negros-1.webp",
+    "img/Maison-Margiela/maison-margiela-replica-negros-2.webp",
+    "img/Maison-Margiela/maison-margiela-replica-negros-3.webp",
+    "img/Maison-Margiela/maison-margiela-replica-negros-4.webp"
+   ],
+   "detail": "p-maison-margiela-replica-negros.html",
+   "sizes_raw": "",
+   "sizes": [
+    "25 MX (40 EU)",
+    "26 MX (41 EU)",
+    "26.5 MX (42 EU)",
+    "27.5 MX (43 EU)",
+    "28 MX (44 EU)",
+    "29 MX (45 EU)",
+    "30 MX (46 EU)",
+    "30.5 MX (47 EU)"
+   ]
+  },
+  {
+   "name": "Maison Margiela Replica Negros con Gamuza Café",
+   "price": 2300,
+   "portada": "img/Maison-Margiela/maison-margiela-replica-negros-con-gamuza-café-portada.webp",
+   "gallery": [
+    "img/Maison-Margiela/maison-margiela-replica-negros-con-gamuza-café-portada.webp",
+    "img/Maison-Margiela/maison-margiela-replica-negros-con-gamuza-café-1.webp",
+    "img/Maison-Margiela/maison-margiela-replica-negros-con-gamuza-café-2.webp",
+    "img/Maison-Margiela/maison-margiela-replica-negros-con-gamuza-café-3.webp",
+    "img/Maison-Margiela/maison-margiela-replica-negros-con-gamuza-café-4.webp"
+   ],
+   "detail": "p-maison-margiela-replica-negros-con-gamuza-café.html",
+   "sizes_raw": "",
+   "sizes": [
+    "25 MX (40 EU)",
+    "26 MX (41 EU)",
+    "26.5 MX (42 EU)",
+    "27.5 MX (43 EU)",
+    "28 MX (44 EU)",
+    "29 MX (45 EU)",
+    "30 MX (46 EU)",
+    "30.5 MX (47 EU)"
+   ]
+  },
+  {
+   "name": "Maison Margiela Replica Negros Suela de Goma",
+   "price": 2300,
+   "portada": "img/Maison-Margiela/maison-margiela-replica-negros-suela-de-goma-portada.webp",
+   "gallery": [
+    "img/Maison-Margiela/maison-margiela-replica-negros-suela-de-goma-portada.webp",
+    "img/Maison-Margiela/maison-margiela-replica-negros-suela-de-goma-1.webp",
+    "img/Maison-Margiela/maison-margiela-replica-negros-suela-de-goma-2.webp",
+    "img/Maison-Margiela/maison-margiela-replica-negros-suela-de-goma-3.webp",
+    "img/Maison-Margiela/maison-margiela-replica-negros-suela-de-goma-4.webp"
+   ],
+   "detail": "p-maison-margiela-replica-negros-suela-de-goma.html",
+   "sizes_raw": "",
+   "sizes": [
+    "25 MX (40 EU)",
+    "26 MX (41 EU)",
+    "26.5 MX (42 EU)",
+    "27.5 MX (43 EU)",
+    "28 MX (44 EU)",
+    "29 MX (45 EU)",
+    "30 MX (46 EU)",
+    "30.5 MX (47 EU)"
+   ]
+  },
+  {
+   "name": "Maison Margiela Replica Blanco",
+   "price": 2300,
+   "portada": "img/Maison-Margiela/maison-margiela-replica-blanco-portada.webp",
+   "gallery": [
+    "img/Maison-Margiela/maison-margiela-replica-blanco-portada.webp",
+    "img/Maison-Margiela/maison-margiela-replica-blanco-1.webp",
+    "img/Maison-Margiela/maison-margiela-replica-blanco-2.webp",
+    "img/Maison-Margiela/maison-margiela-replica-blanco-3.webp",
+    "img/Maison-Margiela/maison-margiela-replica-blanco-4.webp"
+   ],
+   "detail": "p-maison-margiela-replica-blanco.html",
+   "sizes_raw": "",
+   "sizes": [
+    "25 MX (40 EU)",
+    "26 MX (41 EU)",
+    "26.5 MX (42 EU)",
+    "27.5 MX (43 EU)",
+    "28 MX (44 EU)",
+    "29 MX (45 EU)",
+    "30 MX (46 EU)",
+    "30.5 MX (47 EU)"
+   ]
+  },
+  {
+   "name": "Maison Margiela Replica Marron Oscuro",
+   "price": 2300,
+   "portada": "img/Maison-Margiela/maison-margiela-replica-marron-oscuro-portada.webp",
+   "gallery": [
+    "img/Maison-Margiela/maison-margiela-replica-marron-oscuro-portada.webp",
+    "img/Maison-Margiela/maison-margiela-replica-marron-oscuro-1.webp",
+    "img/Maison-Margiela/maison-margiela-replica-marron-oscuro-2.webp",
+    "img/Maison-Margiela/maison-margiela-replica-marron-oscuro-3.webp",
+    "img/Maison-Margiela/maison-margiela-replica-marron-oscuro-4.webp"
+   ],
+   "detail": "p-maison-margiela-replica-marron-oscuro.html",
+   "sizes_raw": "",
+   "sizes": [
+    "25 MX (40 EU)",
+    "26 MX (41 EU)",
+    "26.5 MX (42 EU)",
+    "27.5 MX (43 EU)",
+    "28 MX (44 EU)",
+    "29 MX (45 EU)",
+    "30 MX (46 EU)",
+    "30.5 MX (47 EU)"
+   ]
+  }
+ ],
+ "Golden Goose": [
+  {
+   "name": "Golden Goose Super Star",
+   "price": 2300,
+   "portada": "img/Golden-Goose/golden-goose-super-star-portada.webp",
+   "gallery": [
+    "img/Golden-Goose/golden-goose-super-star-portada.webp",
+    "img/Golden-Goose/golden-goose-super-star-1.webp",
+    "img/Golden-Goose/golden-goose-super-star-2.webp",
+    "img/Golden-Goose/golden-goose-super-star-3.webp",
+    "img/Golden-Goose/golden-goose-super-star-4.webp"
+   ],
+   "detail": "p-golden-goose-super-star.html",
+   "sizes_raw": "",
+   "sizes": [
+    "22 MX (35 EU)",
+    "23 MX (36 EU)",
+    "23.5 MX (37 EU)",
+    "24 MX (38 EU)",
+    "24.5 MX (39 EU)",
+    "25 MX (40 EU)",
+    "26 MX (41 EU)",
+    "26.5 MX (42 EU)",
+    "27.5 MX (43 EU)",
+    "28 MX (44 EU)",
+    "29 MX (45 EU)"
+   ]
+  },
+  {
+   "name": "Golden Goose Super Star Blancos",
+   "price": 2300,
+   "portada": "img/Golden-Goose/golden-goose-super-star-blancos-portada.webp",
+   "gallery": [
+    "img/Golden-Goose/golden-goose-super-star-blancos-portada.webp",
+    "img/Golden-Goose/golden-goose-super-star-blancos-1.webp",
+    "img/Golden-Goose/golden-goose-super-star-blancos-2.webp",
+    "img/Golden-Goose/golden-goose-super-star-blancos-3.webp",
+    "img/Golden-Goose/golden-goose-super-star-blancos-4.webp"
+   ],
+   "detail": "p-golden-goose-super-star-blancos.html",
+   "sizes_raw": "",
+   "sizes": [
+    "22 MX (35 EU)",
+    "23 MX (36 EU)",
+    "23.5 MX (37 EU)",
+    "24 MX (38 EU)",
+    "24.5 MX (39 EU)",
+    "25 MX (40 EU)",
+    "26 MX (41 EU)",
+    "26.5 MX (42 EU)",
+    "27.5 MX (43 EU)",
+    "28 MX (44 EU)",
+    "29 MX (45 EU)"
+   ]
+  },
+  {
+   "name": "Golden Goose Super Star Gold",
+   "price": 2300,
+   "portada": "img/Golden-Goose/golden-goose-super-star-gold-portada.webp",
+   "gallery": [
+    "img/Golden-Goose/golden-goose-super-star-gold-portada.webp",
+    "img/Golden-Goose/golden-goose-super-star-gold-1.webp",
+    "img/Golden-Goose/golden-goose-super-star-gold-2.webp",
+    "img/Golden-Goose/golden-goose-super-star-gold-3.webp",
+    "img/Golden-Goose/golden-goose-super-star-gold-4.webp"
+   ],
+   "detail": "p-golden-goose-super-star-gold.html",
+   "sizes_raw": "",
+   "sizes": [
+    "22 MX (35 EU)",
+    "23 MX (36 EU)",
+    "23.5 MX (37 EU)",
+    "24 MX (38 EU)",
+    "24.5 MX (39 EU)",
+    "25 MX (40 EU)",
+    "26 MX (41 EU)",
+    "26.5 MX (42 EU)",
+    "27.5 MX (43 EU)",
+    "28 MX (44 EU)",
+    "29 MX (45 EU)"
+   ]
+  },
+  {
+   "name": "Golden Goose Super Star Grey",
+   "price": 2300,
+   "portada": "img/Golden-Goose/golden-goose-super-star-grey-portada.webp",
+   "gallery": [
+    "img/Golden-Goose/golden-goose-super-star-grey-portada.webp",
+    "img/Golden-Goose/golden-goose-super-star-grey-1.webp",
+    "img/Golden-Goose/golden-goose-super-star-grey-2.webp",
+    "img/Golden-Goose/golden-goose-super-star-grey-3.webp"
+   ],
+   "detail": "p-golden-goose-super-star-grey.html",
+   "sizes_raw": "",
+   "sizes": [
+    "22 MX (35 EU)",
+    "23 MX (36 EU)",
+    "23.5 MX (37 EU)",
+    "24 MX (38 EU)",
+    "24.5 MX (39 EU)",
+    "25 MX (40 EU)",
+    "26 MX (41 EU)",
+    "26.5 MX (42 EU)",
+    "27.5 MX (43 EU)",
+    "28 MX (44 EU)",
+    "29 MX (45 EU)"
+   ]
+  },
+  {
+   "name": "Golden Goose Super Star Negros",
+   "price": 2300,
+   "portada": "img/Golden-Goose/golden-goose-super-star-negros-portada.webp",
+   "gallery": [
+    "img/Golden-Goose/golden-goose-super-star-negros-portada.webp",
+    "img/Golden-Goose/golden-goose-super-star-negros-1.webp",
+    "img/Golden-Goose/golden-goose-super-star-negros-2.webp",
+    "img/Golden-Goose/golden-goose-super-star-negros-3.webp",
+    "img/Golden-Goose/golden-goose-super-star-negros-4.webp"
+   ],
+   "detail": "p-golden-goose-super-star-negros.html",
+   "sizes_raw": "",
+   "sizes": [
+    "22 MX (35 EU)",
+    "23 MX (36 EU)",
+    "23.5 MX (37 EU)",
+    "24 MX (38 EU)",
+    "24.5 MX (39 EU)",
+    "25 MX (40 EU)",
+    "26 MX (41 EU)",
+    "26.5 MX (42 EU)",
+    "27.5 MX (43 EU)",
+    "28 MX (44 EU)",
+    "29 MX (45 EU)"
+   ]
+  },
+  {
+   "name": "Golden Goose Super Star Pink",
+   "price": 2300,
+   "portada": "img/Golden-Goose/golden-goose-super-star-pink-portada.webp",
+   "gallery": [
+    "img/Golden-Goose/golden-goose-super-star-pink-portada.webp",
+    "img/Golden-Goose/golden-goose-super-star-pink-1.webp",
+    "img/Golden-Goose/golden-goose-super-star-pink-2.webp",
+    "img/Golden-Goose/golden-goose-super-star-pink-3.webp"
+   ],
+   "detail": "p-golden-goose-super-star-pink.html",
+   "sizes_raw": "",
+   "sizes": [
+    "22 MX (35 EU)",
+    "23 MX (36 EU)",
+    "23.5 MX (37 EU)",
+    "24 MX (38 EU)",
+    "24.5 MX (39 EU)",
+    "25 MX (40 EU)",
+    "26 MX (41 EU)",
+    "26.5 MX (42 EU)",
+    "27.5 MX (43 EU)",
+    "28 MX (44 EU)",
+    "29 MX (45 EU)"
+   ]
+  },
+  {
+   "name": "Golden Goose Super Star Talon Negro",
+   "price": 2300,
+   "portada": "img/Golden-Goose/golden-goose-super-star-talon-negro-portada.webp",
+   "gallery": [
+    "img/Golden-Goose/golden-goose-super-star-talon-negro-portada.webp",
+    "img/Golden-Goose/golden-goose-super-star-talon-negro-1.webp",
+    "img/Golden-Goose/golden-goose-super-star-talon-negro-2.webp",
+    "img/Golden-Goose/golden-goose-super-star-talon-negro-3.webp"
+   ],
+   "detail": "p-golden-goose-super-star-talon-negro.html",
+   "sizes_raw": "",
+   "sizes": [
+    "22 MX (35 EU)",
+    "23 MX (36 EU)",
+    "23.5 MX (37 EU)",
+    "24 MX (38 EU)",
+    "24.5 MX (39 EU)",
+    "25 MX (40 EU)",
+    "26 MX (41 EU)",
+    "26.5 MX (42 EU)",
+    "27.5 MX (43 EU)",
+    "28 MX (44 EU)",
+    "29 MX (45 EU)"
+   ]
+  },
+  {
+   "name": "Golden Goose Super Star Talón Rosa",
+   "price": 2300,
+   "portada": "img/Golden-Goose/golden-goose-super-star-talón-rosa-portada.webp",
+   "gallery": [
+    "img/Golden-Goose/golden-goose-super-star-talón-rosa-portada.webp",
+    "img/Golden-Goose/golden-goose-super-star-talón-rosa-1.webp",
+    "img/Golden-Goose/golden-goose-super-star-talón-rosa-2.webp",
+    "img/Golden-Goose/golden-goose-super-star-talón-rosa-3.webp",
+    "img/Golden-Goose/golden-goose-super-star-talón-rosa-4.webp"
+   ],
+   "detail": "p-golden-goose-super-star-talón-rosa.html",
+   "sizes_raw": "",
+   "sizes": [
+    "22 MX (35 EU)",
+    "23 MX (36 EU)",
+    "23.5 MX (37 EU)",
+    "24 MX (38 EU)",
+    "24.5 MX (39 EU)",
+    "25 MX (40 EU)",
+    "26 MX (41 EU)",
+    "26.5 MX (42 EU)",
+    "27.5 MX (43 EU)",
+    "28 MX (44 EU)",
+    "29 MX (45 EU)"
+   ]
+  },
+  {
+   "name": "Golden Goose True Star",
+   "price": 2300,
+   "portada": "img/Golden-Goose/golden-goose-true-star-portada.webp",
+   "gallery": [
+    "img/Golden-Goose/golden-goose-true-star-portada.webp",
+    "img/Golden-Goose/golden-goose-true-star-1.webp",
+    "img/Golden-Goose/golden-goose-true-star-2.webp",
+    "img/Golden-Goose/golden-goose-true-star-3.webp",
+    "img/Golden-Goose/golden-goose-true-star-4.webp"
+   ],
+   "detail": "p-golden-goose-true-star.html",
+   "sizes_raw": "",
+   "sizes": [
+    "22 MX (35 EU)",
+    "23 MX (36 EU)",
+    "23.5 MX (37 EU)",
+    "24 MX (38 EU)",
+    "24.5 MX (39 EU)",
+    "25 MX (40 EU)",
+    "26 MX (41 EU)",
+    "26.5 MX (42 EU)",
+    "27.5 MX (43 EU)",
+    "28 MX (44 EU)",
+    "29 MX (45 EU)"
+   ]
+  },
+  {
+   "name": "Golden Goose True Star Gold",
+   "price": 2300,
+   "portada": "img/Golden-Goose/golden-goose-true-star-gold-portada.webp",
+   "gallery": [
+    "img/Golden-Goose/golden-goose-true-star-gold-portada.webp",
+    "img/Golden-Goose/golden-goose-true-star-gold-1.webp",
+    "img/Golden-Goose/golden-goose-true-star-gold-2.webp",
+    "img/Golden-Goose/golden-goose-true-star-gold-3.webp"
+   ],
+   "detail": "p-golden-goose-true-star-gold.html",
+   "sizes_raw": "",
+   "sizes": [
+    "22 MX (35 EU)",
+    "23 MX (36 EU)",
+    "23.5 MX (37 EU)",
+    "24 MX (38 EU)",
+    "24.5 MX (39 EU)",
+    "25 MX (40 EU)",
+    "26 MX (41 EU)",
+    "26.5 MX (42 EU)",
+    "27.5 MX (43 EU)",
+    "28 MX (44 EU)",
+    "29 MX (45 EU)"
+   ]
+  },
+  {
+   "name": "Golden Goose True Star Pink",
+   "price": 2300,
+   "portada": "img/Golden-Goose/golden-goose-true-star-pink-portada.webp",
+   "gallery": [
+    "img/Golden-Goose/golden-goose-true-star-pink-portada.webp",
+    "img/Golden-Goose/golden-goose-true-star-pink-1.webp",
+    "img/Golden-Goose/golden-goose-true-star-pink-2.webp",
+    "img/Golden-Goose/golden-goose-true-star-pink-3.webp",
+    "img/Golden-Goose/golden-goose-true-star-pink-4.webp"
+   ],
+   "detail": "p-golden-goose-true-star-pink.html",
+   "sizes_raw": "",
+   "sizes": [
+    "22 MX (35 EU)",
+    "23 MX (36 EU)",
+    "23.5 MX (37 EU)",
+    "24 MX (38 EU)",
+    "24.5 MX (39 EU)",
+    "25 MX (40 EU)",
+    "26 MX (41 EU)",
+    "26.5 MX (42 EU)",
+    "27.5 MX (43 EU)",
+    "28 MX (44 EU)",
+    "29 MX (45 EU)"
+   ]
   }
  ]
 }

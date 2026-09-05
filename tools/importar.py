@@ -53,6 +53,8 @@ CARPETAS = {
     "Jordan 1": "Jordan-1", "Jordan 3": "Jordan-3", "Jordan 4": "Jordan-4",
     "Jordan 5": "Jordan-5", "Jordan 6": "Jordan-6", "Jordan 10": "Jordan-10",
     "Jordan 11": "Jordan-11", "Rick Owens": "Rick-Owens",
+    "Louis Vuitton": "Louis-Vuitton", "Maison Margiela": "Maison-Margiela",
+    "Golden Goose": "Golden-Goose",
     "Amiri": "Amiri", "Balenciaga": "Balenciaga",
     "Bape": "Bape", "Burberry": "Burberry", "Supreme": "Supreme",
     "Chrome Hearts": "Chrome-Hearts-Ropa",
@@ -120,26 +122,74 @@ def leer_carpeta_producto(carpeta):
 # ejemplo:  RICK OWENS GEOBASKET1-$3600.png
 # El numero indica el orden de la galeria; el 1 es la portada.
 # ---------------------------------------------------------------------------
-RE_PLANO = re.compile(r"^(.+?)\s*(\d+)\s*[-–]\s*\$?\s*([\d,]+)$")
+# Equivalencia EU -> MX (tabla Nike Mexico, la estandar para tenis en el pais).
+# Confirmada con el usuario el 2026-09-05.
+EU_A_MX = {
+    35: "22", 36: "23", 37: "23.5", 38: "24", 39: "24.5", 40: "25", 41: "26",
+    42: "26.5", 43: "27.5", 44: "28", 45: "29", 46: "30", 47: "30.5",
+}
 
+# Siglas que se quedan en mayusculas
+SIGLAS = {"LJR", "OG", "QC", "SB", "GG", "NY", "LA", "XL", "TS", "OVO", "AJ", "LV"}
+# Palabras de union que van en minuscula (salvo al inicio)
+MENORES = {"con", "de", "del", "y", "la", "el", "en", "para", "sin", "a"}
 
-def leer_nombre_plano(archivo):
-    """'RICK OWENS GEOBASKET1-$3600.png' -> ('RICK OWENS GEOBASKET', 1, 3600)"""
-    m = RE_PLANO.match(archivo.stem.strip())
-    if not m:
-        return None, None, None
-    nombre = re.sub(r"\s+", " ", m.group(1)).strip(" -")
-    return nombre, int(m.group(2)), int(m.group(3).replace(",", ""))
-
-
-# Siglas que deben quedarse en mayusculas al formatear un nombre
-SIGLAS = {"LJR", "OG", "QC", "SB", "GG", "NY", "LA", "XL", "TS", "OVO", "AJ"}
+# Nombre + numero de foto + precio, tolerante a como se separen:
+#   "LV Buttersoft Blancos1-$3100 TALLAS 40-45 EU"
+#   "Maison Margiela Replica Cafe1 $2300 40 a 47 EU"
+#   "Golden Goose Super Star Blancos1-$2300- TALLAS EU 35-45"
+RE_PRECIO = re.compile(r"\$\s*([\d,]+)")
+RE_NUM_FINAL = re.compile(r"^(.+?)(\d+)$")
+RE_RANGO_EU = re.compile(r"(\d{2})\s*(?:-|a|hasta|to)\s*(\d{2})", re.I)
 
 
 def bonito(nombre):
-    """'RICK OWENS LOW NEGROS' -> 'Rick Owens Low Negros' (respeta siglas)."""
-    return " ".join(w if w.upper() in SIGLAS else w.capitalize()
-                    for w in nombre.split())
+    """'LV SKATE AZUL' -> 'LV Skate Azul'; respeta siglas y palabras de union."""
+    out = []
+    for i, w in enumerate(nombre.split()):
+        if w.upper() in SIGLAS:
+            out.append(w.upper())
+        elif i > 0 and w.lower() in MENORES:
+            out.append(w.lower())
+        elif w.isupper():
+            out.append(w.capitalize())      # "AZUL" -> "Azul"
+        else:
+            out.append(w[0].upper() + w[1:])  # respeta como ya venia escrito
+    return " ".join(out)
+
+
+def tallas_desde_rango(desde, hasta):
+    """EU 40-45 -> ['25 MX (40 EU)', '26 MX (41 EU)', ...].
+
+    Se guarda la talla europea junto a la mexicana para que, al llegar el
+    pedido, se pueda pedir al proveedor con el numero exacto sin convertir
+    de cabeza.
+    """
+    salida = []
+    for eu in range(int(desde), int(hasta) + 1):
+        mx = EU_A_MX.get(eu)
+        salida.append(f"{mx} MX ({eu} EU)" if mx else f"{eu} EU")
+    return salida
+
+
+def leer_nombre_plano(archivo):
+    """Saca (nombre, orden de foto, precio, tallas) del nombre del archivo."""
+    stem = archivo.stem.strip()
+    mp = RE_PRECIO.search(stem)
+    if not mp:
+        return None, None, None, None
+    precio = int(mp.group(1).replace(",", ""))
+
+    antes = stem[:mp.start()].strip(" -")
+    mn = RE_NUM_FINAL.match(antes)
+    if not mn:
+        return None, None, None, None
+    nombre = re.sub(r"\s+", " ", mn.group(1)).strip(" -")
+    orden = int(mn.group(2))
+
+    mr = RE_RANGO_EU.search(stem[mp.end():])
+    tallas = tallas_desde_rango(mr.group(1), mr.group(2)) if mr else []
+    return nombre, orden, precio, tallas
 
 
 def importar_plano(carpeta, marca, extra):
@@ -153,11 +203,11 @@ def importar_plano(carpeta, marca, extra):
     for f in sorted(carpeta.iterdir()):
         if not f.is_file() or f.suffix.lower() not in EXTS:
             continue
-        nombre, orden, precio = leer_nombre_plano(f)
+        nombre, orden, precio, tallas = leer_nombre_plano(f)
         if not nombre:
             problemas.append(f.name)
             continue
-        g = grupos.setdefault(nombre, {"precio": precio, "fotos": []})
+        g = grupos.setdefault(nombre, {"precio": precio, "tallas": tallas, "fotos": []})
         g["fotos"].append((orden, f))
 
     destino_dir = ROOT / "img" / carpeta_img
@@ -183,6 +233,7 @@ def importar_plano(carpeta, marca, extra):
             "gallery": galeria,
             "detail": f"p-{base}.html",
             "sizes_raw": "",
+            "sizes": datos["tallas"],
         }
         lista = extra.setdefault(marca, [])
         previo = next((x for x in lista if x["name"] == titulo), None)
@@ -190,7 +241,8 @@ def importar_plano(carpeta, marca, extra):
             previo.update(registro); actualizados += 1
         else:
             lista.append(registro); nuevos += 1
-        print(f"  {marca:14} {titulo:34} ${datos['precio']:>6,}  {len(galeria)} fotos")
+        t = f"  {len(datos['tallas'])} tallas" if datos["tallas"] else ""
+        print(f"  {marca:16} {titulo:40} ${datos['precio']:>6,}  {len(galeria)} fotos{t}")
 
     for p in problemas:
         print(f"  !! nombre no entendido, se omite: {p}")
