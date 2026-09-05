@@ -192,6 +192,82 @@ def leer_nombre_plano(archivo):
     return nombre, orden, precio, tallas
 
 
+
+def orden_natural(nombre):
+    """Ordena 'foto2' antes que 'foto10' (el orden que espera una persona)."""
+    return [int(t) if t.isdigit() else t.lower()
+            for t in re.split(r"(\d+)", nombre)]
+
+
+def tallas_desde_texto(txt):
+    """'EU 40-45' -> lista MX(EU).  'S a XL' -> se deja tal cual para build.py."""
+    if not txt:
+        return None
+    m = RE_RANGO_EU.search(txt)
+    if m and re.search(r"eu", txt, re.I):
+        return tallas_desde_rango(m.group(1), m.group(2))
+    return None
+
+
+def importar_carpetas(raiz, marca, extra, precio_def=None, tallas_def=None):
+    """Una subcarpeta = un modelo. Las fotos de adentro van en orden natural.
+
+    El nombre de la carpeta puede ser solo el modelo ('Super Star Gold') si se
+    pasan --precio y --tallas, o traer los datos ('Super Star Gold - 2300 - EU 35-45').
+    """
+    carpeta_img = CARPETAS.get(marca)
+    if not carpeta_img:
+        print(f"  !! marca desconocida: '{marca}'")
+        return 0, 0
+
+    destino_dir = ROOT / "img" / carpeta_img
+    destino_dir.mkdir(parents=True, exist_ok=True)
+    nuevos = actualizados = 0
+
+    for sub in sorted([d for d in raiz.iterdir() if d.is_dir()],
+                      key=lambda d: orden_natural(d.name)):
+        nombre, precio, tallas_txt = leer_carpeta_producto(sub)
+        if nombre is None:                      # la carpeta es solo el nombre
+            nombre, precio, tallas_txt = sub.name.strip(), None, ""
+        precio = precio or precio_def
+        if not precio:
+            print(f"  !! sin precio: {sub.name}  (usa --precio o 'Nombre - 2300')")
+            continue
+
+        tallas = tallas_desde_texto(tallas_txt) or tallas_desde_texto(tallas_def) or []
+        fotos = sorted([f for f in sub.iterdir()
+                        if f.is_file() and f.suffix.lower() in EXTS],
+                       key=lambda f: orden_natural(f.name))
+        if not fotos:
+            print(f"  !! sin fotos: {sub.name}")
+            continue
+
+        titulo = bonito(nombre)
+        base = slug(titulo)
+        galeria = []
+        for i, foto in enumerate(fotos):
+            sufijo = "portada" if i == 0 else str(i)
+            salida = destino_dir / f"{base}-{sufijo}.webp"
+            procesar_foto(foto, salida)
+            galeria.append(f"img/{carpeta_img}/{salida.name}")
+
+        registro = {
+            "name": titulo, "price": precio, "portada": galeria[0],
+            "gallery": galeria, "detail": f"p-{base}.html",
+            "sizes_raw": "" if tallas else (tallas_txt or ""), "sizes": tallas,
+        }
+        lista = extra.setdefault(marca, [])
+        previo = next((x for x in lista if x["name"] == titulo), None)
+        if previo:
+            previo.update(registro); actualizados += 1
+        else:
+            lista.append(registro); nuevos += 1
+        t = f"  {len(tallas)} tallas" if tallas else ""
+        print(f"  {marca:16} {titulo:40} ${precio:>6,}  {len(galeria)} fotos{t}")
+
+    return nuevos, actualizados
+
+
 def importar_plano(carpeta, marca, extra):
     """Procesa una carpeta con fotos sueltas y las agrupa por modelo."""
     carpeta_img = CARPETAS.get(marca)
@@ -256,8 +332,21 @@ def main():
         if not carpeta.is_absolute():
             carpeta = ROOT / carpeta
         marca = sys.argv[sys.argv.index("--marca") + 1]
+
+        def opcion(nombre, conv=str):
+            if nombre in sys.argv:
+                return conv(sys.argv[sys.argv.index(nombre) + 1])
+            return None
+
+        precio_def = opcion("--precio", lambda v: int(v.replace("$", "").replace(",", "")))
+        tallas_def = opcion("--tallas")
+
         extra = json.loads(EXTRA.read_text(encoding="utf-8")) if EXTRA.exists() else {}
-        n, a = importar_plano(carpeta, marca, extra)
+        # Si hay subcarpetas, cada una es un modelo; si no, son fotos sueltas.
+        if any(d.is_dir() for d in carpeta.iterdir()):
+            n, a = importar_carpetas(carpeta, marca, extra, precio_def, tallas_def)
+        else:
+            n, a = importar_plano(carpeta, marca, extra)
         EXTRA.write_text(json.dumps(extra, ensure_ascii=False, indent=1), encoding="utf-8")
         print("")
         print(f"Nuevos: {n} | Actualizados: {a}")
