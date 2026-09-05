@@ -54,7 +54,7 @@ CARPETAS = {
     "Jordan 5": "Jordan-5", "Jordan 6": "Jordan-6", "Jordan 10": "Jordan-10",
     "Jordan 11": "Jordan-11", "Rick Owens": "Rick-Owens",
     "Louis Vuitton": "Louis-Vuitton", "Maison Margiela": "Maison-Margiela",
-    "Golden Goose": "Golden-Goose",
+    "Golden Goose": "Golden-Goose", "Prada": "Prada",
     "Amiri": "Amiri", "Balenciaga": "Balenciaga",
     "Bape": "Bape", "Burberry": "Burberry", "Supreme": "Supreme",
     "Chrome Hearts": "Chrome-Hearts-Ropa",
