@@ -108,6 +108,19 @@ def _norm_size(tok):
     return SIZE_ALIASES.get(tok, tok)
 
 
+# Tallas por defecto de los productos que se agregan con tools/importar.py
+ROPA_SIZES = ["S", "M", "L", "XL", "XXL"]
+
+
+def default_sizes(category):
+    """Tallas que se usan cuando el producto nuevo no las especifica."""
+    if "Jordan" in category:
+        return SNEAKER_SIZES[:]
+    if "Cadenas" in category or category == "Stock":
+        return UNITALLA[:]
+    return ROPA_SIZES[:]
+
+
 def parse_sizes(meta, category):
     """Convierte el texto de tallas del catalogo en una lista de opciones."""
     raw = (meta or "").strip()
@@ -273,7 +286,53 @@ def build_catalog():
             p["size_options"] = parse_sizes(p["sizes"], title)
         cats.append({"slug": slug, "title": title, "group": group,
                      "folder": folder, "products": products})
+
+    merge_extra(cats)
     return cats
+
+
+def merge_extra(cats):
+    """Agrega los productos que vienen de tools/importar.py.
+
+    Asi se pueden dar de alta modelos nuevos sin escribir HTML: basta con
+    acomodar las capturas en NUEVOS/ y correr el importador.
+    """
+    archivo = ROOT / "productos-extra.json"
+    if not archivo.exists():
+        return
+    extra = json.loads(archivo.read_text(encoding="utf-8"))
+    por_titulo = {c["title"]: c for c in cats}
+    agregados = 0
+
+    for titulo, items in extra.items():
+        cat = por_titulo.get(titulo)
+        if not cat:
+            print(f"  !! productos-extra: marca desconocida '{titulo}'")
+            continue
+        for it in items:
+            galeria = [g for g in it.get("gallery", []) if (ROOT / g).exists()]
+            if not galeria:
+                print(f"  !! sin fotos en disco: {titulo} / {it['name']}")
+                continue
+            tallas = it.get("sizes_raw", "")
+            cat["products"].append({
+                "name": it["name"],
+                "detail": it["detail"],
+                "portada": it.get("portada") or galeria[0],
+                "price": f"${it['price']:,} MXN",
+                "price_num": it["price"],
+                "sizes": tallas,
+                "quality": "",
+                "gallery": galeria,
+                "category": titulo,
+                "category_slug": cat["slug"],
+                "id": product_id(it["detail"], it["name"]),
+                "size_options": parse_sizes(tallas, titulo) or default_sizes(titulo),
+            })
+            agregados += 1
+
+    if agregados:
+        print(f"  productos-extra -> {agregados} productos agregados")
 
 
 # ----------------------------------------------------------------------------
