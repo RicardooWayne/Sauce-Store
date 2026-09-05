@@ -157,8 +157,37 @@ def do_referencias():
     print(f"  {len(files)} referencias -> img/referencias-web/  ({total} KB)")
 
 
+def do_og_image():
+    """Imagen 1200x630 para la vista previa al compartir el link.
+
+    Es lo que se ve cuando pegas la direccion en WhatsApp, Instagram o Facebook.
+    Sin esto solo aparece la URL pelona.
+    """
+    # Los originales viven fuera del proyecto; se usa la version .webp
+    mascota = next((ROOT / "img" / n for n in
+                    ("mascota.webp", "mascota-768.webp", "mascota.png", "mascota-768.png")
+                    if (ROOT / "img" / n).exists()), None)
+    if not mascota:
+        print("  !! falta la mascota, se omite la portada social")
+        return
+
+    W, H = 1200, 630
+    card = Image.new("RGB", (W, H), (244, 237, 221))   # crema de la marca
+    m = Image.open(mascota).convert("RGBA")
+    m.thumbnail((int(H * 0.78), int(H * 0.78)), Image.LANCZOS)
+    card.paste(m, ((W - m.width) // 2, (H - m.height) // 2 - 24), m)
+
+    out = ROOT / "img" / "og-sauce-store.jpg"
+    card.save(out, "JPEG", quality=88, optimize=True)
+    print(f"  og-sauce-store.jpg  {out.stat().st_size // 1024} KB  ({W}x{H})")
+
+
 def main():
     args = sys.argv[1:]
+    if "og" in args:
+        print("Portada social:")
+        do_og_image()
+        return
     if not args or "mascot" in args:
         print("Mascota:")
         do_mascot()

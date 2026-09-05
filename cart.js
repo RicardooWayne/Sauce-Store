@@ -392,6 +392,7 @@
     var print = document.getElementById("tkPrint");
     if (print) print.addEventListener("click", function () { window.print(); });
 
+    // Liquidar siempre da derecho a envio gratis, sea cliente de GDL o no.
     document.getElementById("tkPayNote").textContent = data.modo === "apartado"
       ? "Apartado: pagas " + money(t.ahora) + " ahora y " + money(t.resta) + " al recibir."
       : "Pedido liquidado: " + money(t.ahora) + ". Envio gratis a tu domicilio.";

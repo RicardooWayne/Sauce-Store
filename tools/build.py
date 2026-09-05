@@ -279,15 +279,30 @@ def build_catalog():
 # ----------------------------------------------------------------------------
 # Plantillas
 # ----------------------------------------------------------------------------
-def head(title, desc=""):
+SITIO = "https://sauce-store-86z.pages.dev"
+
+
+def head(title, desc="", og_img="img/og-sauce-store.jpg"):
+    d = desc or "Sauce Store — tenis y ropa seleccionada, con fotos reales."
     return f"""<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{title}</title>
-<meta name="description" content="{desc or 'Sauce Store — catalogo.'}">
+<meta name="description" content="{d}">
 <link rel="icon" href="img/favicon.svg">
+<!-- Vista previa al compartir el link (WhatsApp, Instagram, Facebook) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sauce Store">
+<meta property="og:locale" content="es_MX">
+<meta property="og:title" content="{title}">
+<meta property="og:description" content="{d}">
+<meta property="og:image" content="{SITIO}/{og_img}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0E0E0E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -375,7 +390,7 @@ def footer():
     <a href="{IG}" target="_blank" rel="noopener">Instagram</a>
     <a href="{WA}" target="_blank" rel="noopener">WhatsApp</a>
   </div>
-  <p class="foot-copy">&copy; Sauce Store</p>
+  <p class="foot-copy">&copy; Sauce Store &#183; <a href="privacidad.html">Privacidad</a></p>
 </footer>
 <a class="wa-float" href="{WA}" target="_blank" rel="noopener" aria-label="WhatsApp">
   <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.9-4.44 9.9-9.9S17.5 2 12.04 2zm5.8 14.01c-.24.68-1.4 1.3-1.94 1.35-.5.05-1.13.24-3.66-.77-3.08-1.22-5.06-4.36-5.22-4.56-.15-.2-1.25-1.66-1.25-3.17 0-1.51.79-2.25 1.07-2.56.28-.31.61-.38.81-.38.2 0 .41 0 .58.01.19.01.44-.07.69.53.24.6.83 2.06.9 2.21.07.15.12.32.02.52-.1.2-.15.32-.3.5-.15.18-.31.4-.44.53-.15.15-.3.31-.13.6.17.29.76 1.25 1.63 2.03 1.12 1 2.06 1.31 2.35 1.46.29.15.46.12.63-.07.17-.2.73-.85.93-1.14.2-.29.39-.24.66-.15.27.1 1.71.81 2 .96.29.15.49.22.56.34.07.12.07.7-.17 1.38z"/></svg>
@@ -741,6 +756,61 @@ def render_ticket(cats):
 {footer()}"""
 
 
+def render_privacidad(cats):
+    return f"""{head("Aviso de privacidad — Sauce Store", "Como usamos tus datos en Sauce Store.")}
+{nav(cats)}
+<main class="cat-page">
+  <section class="cat-hero">
+    <p class="cat-kicker">Legal</p>
+    <h1 class="cat-title">Aviso de privacidad</h1>
+  </section>
+
+  <article class="legal">
+    <p class="legal-intro">En corto: usamos tus datos solo para entregarte tu pedido.
+       No los vendemos ni se los damos a nadie.</p>
+
+    <h2>Que datos pedimos</h2>
+    <p>Cuando generas un ticket de pedido te pedimos <b>tu nombre</b>, <b>tu numero
+       de WhatsApp</b> y, si elegiste envio, <b>tu direccion</b>. Tambien nos dices
+       como piensas pagar, pero eso es solo informativo.</p>
+
+    <h2>Que NO pedimos</h2>
+    <p>No pedimos ni guardamos datos de tarjetas, cuentas bancarias, contrasenas ni
+       identificaciones. En esta pagina no se cobra nada: el pago se acuerda
+       directamente contigo por WhatsApp.</p>
+
+    <h2>Para que los usamos</h2>
+    <p>Unicamente para contactarte, confirmar tallas y disponibilidad, y hacerte
+       llegar tu pedido. Nada mas.</p>
+
+    <h2>Donde quedan guardados</h2>
+    <p>Tu pedido nos llega como mensaje privado y queda anotado en una hoja de
+       control interna, a la que solo tenemos acceso nosotros. Viaja cifrado
+       (HTTPS) desde tu navegador.</p>
+
+    <h2>Con quien los compartimos</h2>
+    <p>Con nadie. La unica excepcion es la paqueteria cuando tu pedido es con
+       envio, porque necesitan la direccion para entregartelo.</p>
+
+    <h2>Cuanto tiempo los conservamos</h2>
+    <p>El tiempo necesario para completar tu pedido y dar seguimiento a cualquier
+       aclaracion posterior.</p>
+
+    <h2>Tus derechos</h2>
+    <p>Puedes pedirnos en cualquier momento que te digamos que datos tuyos tenemos,
+       que los corrijamos o que los borremos. Solo escribenos por WhatsApp y lo
+       hacemos, sin pretextos.</p>
+
+    <h2>Cambios</h2>
+    <p>Si algo de esto cambia, lo actualizamos en esta misma pagina.</p>
+
+    <p class="legal-foot">Sauce Store &#8212; Guadalajara, Jalisco, Mexico.<br>
+       Dudas sobre tus datos: <a href="{WA}" target="_blank" rel="noopener">escribenos por WhatsApp</a>.</p>
+  </article>
+</main>
+{footer()}"""
+
+
 def render_404(cats):
     return f"""{head("Pagina no encontrada — Sauce Store", "Esta pagina no existe.")}
 {nav(cats)}
@@ -944,6 +1014,7 @@ def main():
     for fname, fn in (("carrito.html", render_carrito),
                       ("checkout.html", render_checkout),
                       ("ticket.html", render_ticket),
+                      ("privacidad.html", render_privacidad),
                       ("404.html", render_404)):
         (ROOT / fname).write_text(fn(cats), encoding="utf-8")
         written += 1
