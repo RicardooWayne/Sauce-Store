@@ -34,6 +34,7 @@ CATEGORIES = [
     ("jordan6.html",          "Jordan 6",              "tenis",      "img/Jordan-6"),
     ("jordan10.html",         "Jordan 10",             "tenis",      "img/Jordan-10"),
     ("jordan11.html",         "Jordan 11",             "tenis",      "img/Jordan-11"),
+    ("RickOwens.html",        "Rick Owens",            "tenis",      "img/Rick-Owens"),
     ("Amiri.html",            "Amiri",                 "ropa",       "img/Amiri"),
     ("Balenciaga.html",       "Balenciaga",            "ropa",       "img/Balenciaga"),
     ("Bape.html",             "Bape",                  "ropa",       "img/Bape"),
@@ -55,6 +56,7 @@ BRAND_ALIASES = {
     "Jordan 6": "jordan jordans jordanes air jordan aj6 aj 6 jordan6 tenis",
     "Jordan 10": "jordan jordans jordanes air jordan aj10 aj 10 jordan10 tenis",
     "Jordan 11": "jordan jordans jordanes air jordan aj11 aj 11 jordan11 tenis",
+    "Rick Owens": "rick owens rickowens rick owen ricowens geobasket ramones drkshdw tenis botas",
     "Amiri": "amiri amirii amiry ammiri amiris ropa",
     "Balenciaga": "balenciaga balensiaga valenciaga balen balencia balensiaga ropa",
     "Bape": "bape bathing ape baep bapee a bathing ape ropa",
@@ -112,22 +114,28 @@ def _norm_size(tok):
 ROPA_SIZES = ["S", "M", "L", "XL", "XXL"]
 
 
-def default_sizes(category):
-    """Tallas que se usan cuando el producto nuevo no las especifica."""
-    if "Jordan" in category:
+def default_sizes(category, group=""):
+    """Tallas por defecto cuando el producto no las especifica.
+
+    Se decide por el menu al que pertenece (tenis / ropa / accesorios), no por
+    el nombre de la marca: asi cualquier marca de calzado nueva toma numeros
+    mexicanos sin tener que tocar el codigo.
+    """
+    if group == "tenis" or "Jordan" in category:
         return SNEAKER_SIZES[:]
-    if "Cadenas" in category or category == "Stock":
+    if group == "accesorios" or "Cadenas" in category or category == "Stock":
         return UNITALLA[:]
     return ROPA_SIZES[:]
 
 
-def parse_sizes(meta, category):
+def parse_sizes(meta, category, group=""):
     """Convierte el texto de tallas del catalogo en una lista de opciones."""
     raw = (meta or "").strip()
 
-    # Sin dato: tenis -> escalera MX; lo demas -> unitalla
+    # Sin dato: calzado -> escalera MX; lo demas -> unitalla
     if not raw:
-        return SNEAKER_SIZES[:] if "Jordan" in category else UNITALLA[:]
+        return (SNEAKER_SIZES[:] if (group == "tenis" or "Jordan" in category)
+                else UNITALLA[:])
 
     low = raw.lower()
 
@@ -263,10 +271,9 @@ def build_catalog():
     seen_ids = {}
     for slug, title, group, folder in CATEGORIES:
         path = SRC / slug
-        if not path.exists():
-            print(f"  !! falta {slug}")
-            continue
-        products = parse_category(path)
+        # Una marca nueva (dada de alta con tools/importar.py) no tiene HTML
+        # original: arranca vacia y se llena desde productos-extra.json.
+        products = parse_category(path) if path.exists() else []
         for p in products:
             if p["detail"]:
                 p["gallery"] = parse_gallery(SRC / p["detail"])
@@ -283,7 +290,7 @@ def build_catalog():
             seen_ids[base_id] = seen_ids.get(base_id, 0) + 1
             p["id"] = base_id if seen_ids[base_id] == 1 else f"{base_id}-{seen_ids[base_id]}"
             p["price_num"] = parse_price(p["price"])
-            p["size_options"] = parse_sizes(p["sizes"], title)
+            p["size_options"] = parse_sizes(p["sizes"], title, group)
         cats.append({"slug": slug, "title": title, "group": group,
                      "folder": folder, "products": products})
 
@@ -327,7 +334,8 @@ def merge_extra(cats):
                 "category": titulo,
                 "category_slug": cat["slug"],
                 "id": product_id(it["detail"], it["name"]),
-                "size_options": parse_sizes(tallas, titulo) or default_sizes(titulo),
+                "size_options": (parse_sizes(tallas, titulo, cat["group"])
+                                 or default_sizes(titulo, cat["group"])),
             })
             agregados += 1
 

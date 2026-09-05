@@ -52,7 +52,8 @@ EXTS = {".jpg", ".jpeg", ".png", ".webp", ".bmp"}
 CARPETAS = {
     "Jordan 1": "Jordan-1", "Jordan 3": "Jordan-3", "Jordan 4": "Jordan-4",
     "Jordan 5": "Jordan-5", "Jordan 6": "Jordan-6", "Jordan 10": "Jordan-10",
-    "Jordan 11": "Jordan-11", "Amiri": "Amiri", "Balenciaga": "Balenciaga",
+    "Jordan 11": "Jordan-11", "Rick Owens": "Rick-Owens",
+    "Amiri": "Amiri", "Balenciaga": "Balenciaga",
     "Bape": "Bape", "Burberry": "Burberry", "Supreme": "Supreme",
     "Chrome Hearts": "Chrome-Hearts-Ropa",
     "Chrome Hearts Cadenas": "Chrome-Hearts-Cadenas",
@@ -112,7 +113,106 @@ def leer_carpeta_producto(carpeta):
     return (nombre, precio, tallas) if nombre else (None, None, None)
 
 
+
+# ---------------------------------------------------------------------------
+# Modo "archivos sueltos": una carpeta con las fotos nombradas
+#     NOMBRE DEL MODELO<numero>-$PRECIO.png
+# ejemplo:  RICK OWENS GEOBASKET1-$3600.png
+# El numero indica el orden de la galeria; el 1 es la portada.
+# ---------------------------------------------------------------------------
+RE_PLANO = re.compile(r"^(.+?)\s*(\d+)\s*[-–]\s*\$?\s*([\d,]+)$")
+
+
+def leer_nombre_plano(archivo):
+    """'RICK OWENS GEOBASKET1-$3600.png' -> ('RICK OWENS GEOBASKET', 1, 3600)"""
+    m = RE_PLANO.match(archivo.stem.strip())
+    if not m:
+        return None, None, None
+    nombre = re.sub(r"\s+", " ", m.group(1)).strip(" -")
+    return nombre, int(m.group(2)), int(m.group(3).replace(",", ""))
+
+
+# Siglas que deben quedarse en mayusculas al formatear un nombre
+SIGLAS = {"LJR", "OG", "QC", "SB", "GG", "NY", "LA", "XL", "TS", "OVO", "AJ"}
+
+
+def bonito(nombre):
+    """'RICK OWENS LOW NEGROS' -> 'Rick Owens Low Negros' (respeta siglas)."""
+    return " ".join(w if w.upper() in SIGLAS else w.capitalize()
+                    for w in nombre.split())
+
+
+def importar_plano(carpeta, marca, extra):
+    """Procesa una carpeta con fotos sueltas y las agrupa por modelo."""
+    carpeta_img = CARPETAS.get(marca)
+    if not carpeta_img:
+        print(f"  !! marca desconocida: '{marca}'")
+        return 0, 0
+
+    grupos, problemas = {}, []
+    for f in sorted(carpeta.iterdir()):
+        if not f.is_file() or f.suffix.lower() not in EXTS:
+            continue
+        nombre, orden, precio = leer_nombre_plano(f)
+        if not nombre:
+            problemas.append(f.name)
+            continue
+        g = grupos.setdefault(nombre, {"precio": precio, "fotos": []})
+        g["fotos"].append((orden, f))
+
+    destino_dir = ROOT / "img" / carpeta_img
+    destino_dir.mkdir(parents=True, exist_ok=True)
+
+    nuevos = actualizados = 0
+    for nombre, datos in sorted(grupos.items()):
+        titulo = bonito(nombre)
+        base = slug(titulo)
+        fotos = [f for _, f in sorted(datos["fotos"], key=lambda x: x[0])]
+
+        galeria = []
+        for i, foto in enumerate(fotos):
+            sufijo = "portada" if i == 0 else str(i)
+            salida = destino_dir / f"{base}-{sufijo}.webp"
+            procesar_foto(foto, salida)
+            galeria.append(f"img/{carpeta_img}/{salida.name}")
+
+        registro = {
+            "name": titulo,
+            "price": datos["precio"],
+            "portada": galeria[0],
+            "gallery": galeria,
+            "detail": f"p-{base}.html",
+            "sizes_raw": "",
+        }
+        lista = extra.setdefault(marca, [])
+        previo = next((x for x in lista if x["name"] == titulo), None)
+        if previo:
+            previo.update(registro); actualizados += 1
+        else:
+            lista.append(registro); nuevos += 1
+        print(f"  {marca:14} {titulo:34} ${datos['precio']:>6,}  {len(galeria)} fotos")
+
+    for p in problemas:
+        print(f"  !! nombre no entendido, se omite: {p}")
+    return nuevos, actualizados
+
+
 def main():
+    # Modo directo:  python tools/importar.py --desde "img/RICK OWENS" --marca "Rick Owens"
+    if "--desde" in sys.argv:
+        carpeta = Path(sys.argv[sys.argv.index("--desde") + 1])
+        if not carpeta.is_absolute():
+            carpeta = ROOT / carpeta
+        marca = sys.argv[sys.argv.index("--marca") + 1]
+        extra = json.loads(EXTRA.read_text(encoding="utf-8")) if EXTRA.exists() else {}
+        n, a = importar_plano(carpeta, marca, extra)
+        EXTRA.write_text(json.dumps(extra, ensure_ascii=False, indent=1), encoding="utf-8")
+        print("")
+        print(f"Nuevos: {n} | Actualizados: {a}")
+        print("")
+        print("Ahora corre:  python tools/build.py")
+        return
+
     if not NUEVOS.exists():
         NUEVOS.mkdir()
         print(f"Se creo la carpeta {NUEVOS.name}/ . Mete ahi tus productos y")

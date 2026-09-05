@@ -3254,6 +3254,173 @@
   ]
  },
  {
+  "slug": "RickOwens.html",
+  "title": "Rick Owens",
+  "group": "tenis",
+  "folder": "img/Rick-Owens",
+  "products": [
+   {
+    "name": "Rick Owens Geobasket",
+    "detail": "p-rick-owens-geobasket.html",
+    "portada": "img/Rick-Owens/rick-owens-geobasket-portada.webp",
+    "price": "$3,600 MXN",
+    "price_num": 3600,
+    "sizes": "",
+    "quality": "",
+    "gallery": [
+     "img/Rick-Owens/rick-owens-geobasket-portada.webp",
+     "img/Rick-Owens/rick-owens-geobasket-1.webp",
+     "img/Rick-Owens/rick-owens-geobasket-2.webp",
+     "img/Rick-Owens/rick-owens-geobasket-3.webp",
+     "img/Rick-Owens/rick-owens-geobasket-4.webp"
+    ],
+    "category": "Rick Owens",
+    "category_slug": "RickOwens.html",
+    "id": "p-rick-owens-geobasket",
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
+   },
+   {
+    "name": "Rick Owens Low",
+    "detail": "p-rick-owens-low.html",
+    "portada": "img/Rick-Owens/rick-owens-low-portada.webp",
+    "price": "$2,700 MXN",
+    "price_num": 2700,
+    "sizes": "",
+    "quality": "",
+    "gallery": [
+     "img/Rick-Owens/rick-owens-low-portada.webp",
+     "img/Rick-Owens/rick-owens-low-1.webp",
+     "img/Rick-Owens/rick-owens-low-2.webp",
+     "img/Rick-Owens/rick-owens-low-3.webp",
+     "img/Rick-Owens/rick-owens-low-4.webp"
+    ],
+    "category": "Rick Owens",
+    "category_slug": "RickOwens.html",
+    "id": "p-rick-owens-low",
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
+   },
+   {
+    "name": "Rick Owens Low Negros",
+    "detail": "p-rick-owens-low-negros.html",
+    "portada": "img/Rick-Owens/rick-owens-low-negros-portada.webp",
+    "price": "$2,700 MXN",
+    "price_num": 2700,
+    "sizes": "",
+    "quality": "",
+    "gallery": [
+     "img/Rick-Owens/rick-owens-low-negros-portada.webp",
+     "img/Rick-Owens/rick-owens-low-negros-1.webp",
+     "img/Rick-Owens/rick-owens-low-negros-2.webp",
+     "img/Rick-Owens/rick-owens-low-negros-3.webp"
+    ],
+    "category": "Rick Owens",
+    "category_slug": "RickOwens.html",
+    "id": "p-rick-owens-low-negros",
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
+   },
+   {
+    "name": "Rick Owens Vintage",
+    "detail": "p-rick-owens-vintage.html",
+    "portada": "img/Rick-Owens/rick-owens-vintage-portada.webp",
+    "price": "$2,700 MXN",
+    "price_num": 2700,
+    "sizes": "",
+    "quality": "",
+    "gallery": [
+     "img/Rick-Owens/rick-owens-vintage-portada.webp",
+     "img/Rick-Owens/rick-owens-vintage-1.webp",
+     "img/Rick-Owens/rick-owens-vintage-2.webp",
+     "img/Rick-Owens/rick-owens-vintage-3.webp",
+     "img/Rick-Owens/rick-owens-vintage-4.webp"
+    ],
+    "category": "Rick Owens",
+    "category_slug": "RickOwens.html",
+    "id": "p-rick-owens-vintage",
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
+   },
+   {
+    "name": "Rick Owens Vintage Negros",
+    "detail": "p-rick-owens-vintage-negros.html",
+    "portada": "img/Rick-Owens/rick-owens-vintage-negros-portada.webp",
+    "price": "$2,700 MXN",
+    "price_num": 2700,
+    "sizes": "",
+    "quality": "",
+    "gallery": [
+     "img/Rick-Owens/rick-owens-vintage-negros-portada.webp",
+     "img/Rick-Owens/rick-owens-vintage-negros-1.webp",
+     "img/Rick-Owens/rick-owens-vintage-negros-2.webp",
+     "img/Rick-Owens/rick-owens-vintage-negros-3.webp",
+     "img/Rick-Owens/rick-owens-vintage-negros-4.webp"
+    ],
+    "category": "Rick Owens",
+    "category_slug": "RickOwens.html",
+    "id": "p-rick-owens-vintage-negros",
+    "size_options": [
+     "25",
+     "25.5",
+     "26",
+     "26.5",
+     "27",
+     "27.5",
+     "28",
+     "28.5",
+     "29",
+     "29.5",
+     "30"
+    ]
+   }
+  ]
+ },
+ {
   "slug": "Amiri.html",
   "title": "Amiri",
   "group": "ropa",

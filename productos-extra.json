@@ -1,1 +1,73 @@
-{}
+{
+ "Rick Owens": [
+  {
+   "name": "Rick Owens Geobasket",
+   "price": 3600,
+   "portada": "img/Rick-Owens/rick-owens-geobasket-portada.webp",
+   "gallery": [
+    "img/Rick-Owens/rick-owens-geobasket-portada.webp",
+    "img/Rick-Owens/rick-owens-geobasket-1.webp",
+    "img/Rick-Owens/rick-owens-geobasket-2.webp",
+    "img/Rick-Owens/rick-owens-geobasket-3.webp",
+    "img/Rick-Owens/rick-owens-geobasket-4.webp"
+   ],
+   "detail": "p-rick-owens-geobasket.html",
+   "sizes_raw": ""
+  },
+  {
+   "name": "Rick Owens Low",
+   "price": 2700,
+   "portada": "img/Rick-Owens/rick-owens-low-portada.webp",
+   "gallery": [
+    "img/Rick-Owens/rick-owens-low-portada.webp",
+    "img/Rick-Owens/rick-owens-low-1.webp",
+    "img/Rick-Owens/rick-owens-low-2.webp",
+    "img/Rick-Owens/rick-owens-low-3.webp",
+    "img/Rick-Owens/rick-owens-low-4.webp"
+   ],
+   "detail": "p-rick-owens-low.html",
+   "sizes_raw": ""
+  },
+  {
+   "name": "Rick Owens Low Negros",
+   "price": 2700,
+   "portada": "img/Rick-Owens/rick-owens-low-negros-portada.webp",
+   "gallery": [
+    "img/Rick-Owens/rick-owens-low-negros-portada.webp",
+    "img/Rick-Owens/rick-owens-low-negros-1.webp",
+    "img/Rick-Owens/rick-owens-low-negros-2.webp",
+    "img/Rick-Owens/rick-owens-low-negros-3.webp"
+   ],
+   "detail": "p-rick-owens-low-negros.html",
+   "sizes_raw": ""
+  },
+  {
+   "name": "Rick Owens Vintage",
+   "price": 2700,
+   "portada": "img/Rick-Owens/rick-owens-vintage-portada.webp",
+   "gallery": [
+    "img/Rick-Owens/rick-owens-vintage-portada.webp",
+    "img/Rick-Owens/rick-owens-vintage-1.webp",
+    "img/Rick-Owens/rick-owens-vintage-2.webp",
+    "img/Rick-Owens/rick-owens-vintage-3.webp",
+    "img/Rick-Owens/rick-owens-vintage-4.webp"
+   ],
+   "detail": "p-rick-owens-vintage.html",
+   "sizes_raw": ""
+  },
+  {
+   "name": "Rick Owens Vintage Negros",
+   "price": 2700,
+   "portada": "img/Rick-Owens/rick-owens-vintage-negros-portada.webp",
+   "gallery": [
+    "img/Rick-Owens/rick-owens-vintage-negros-portada.webp",
+    "img/Rick-Owens/rick-owens-vintage-negros-1.webp",
+    "img/Rick-Owens/rick-owens-vintage-negros-2.webp",
+    "img/Rick-Owens/rick-owens-vintage-negros-3.webp",
+    "img/Rick-Owens/rick-owens-vintage-negros-4.webp"
+   ],
+   "detail": "p-rick-owens-vintage-negros.html",
+   "sizes_raw": ""
+  }
+ ]
+}
