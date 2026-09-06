@@ -184,10 +184,28 @@ def leer_precio_yuan(titulo, pagina):
     return None
 
 
+def redondear(p):
+    """Redondeo del usuario (confirmado 2026-09-05):
+
+        termina en 01-30  -> baja a  ...00
+        termina en 31-69  -> queda   ...50
+        termina en 70-99  -> sube a  ...00 del siguiente
+
+    Ej: 2018->2000, 2045->2050, 2090->2100.
+    """
+    p = int(round(p))
+    base = p - (p % 100)
+    d = p % 100
+    if d <= 30:
+        return base
+    if d <= 69:
+        return base + 50
+    return base + 100
+
+
 def precio_venta(yuan, tc, envio):
     costo = (yuan + envio) * COMISION * tc
-    venta = costo * MARGEN
-    return int(round(venta / REDONDEO) * REDONDEO), round(costo)
+    return redondear(costo * MARGEN), round(costo)
 
 
 def bajar(url, reintentos=3):
@@ -259,6 +277,7 @@ def main():
     ap.add_argument("--envio", type=int, default=ENVIO_YUAN)
     ap.add_argument("--tc", type=float, default=2.60)
     ap.add_argument("--limite", type=int, default=0)
+    ap.add_argument("--solo-precios", dest="solo_precios", action="store_true")
     args = ap.parse_args()
 
     carpeta_img = CARPETAS.get(args.marca)
@@ -294,7 +313,7 @@ def main():
         print("  %d modelos encontrados\n" % len(albums))
         trabajos = [(aid, t, None) for aid, t in albums]
 
-    usados = {x["name"] for x in lista}
+    seen_base = {}
     nuevos = actualizados = omitidos = 0
 
     for i, (aid, titulo, filtro) in enumerate(trabajos, 1):
@@ -312,33 +331,39 @@ def main():
             print("  !! sin precio, se omite: %s" % (titulo or aid)); omitidos += 1; continue
 
         if args.nombre:
-            nombre = args.nombre
+            base_nombre = args.nombre
         elif args.nombre_fijo:
-            nombre = args.nombre_fijo
+            base_nombre = args.nombre_fijo
         else:
-            nombre = nombre_producto(args.modelo, titulo, args.solo_color)
-        base_nombre, n = nombre, 2
-        while nombre in usados:
-            nombre = "%s %d" % (base_nombre, n); n += 1
-        usados.add(nombre)
+            base_nombre = nombre_producto(args.modelo, titulo, args.solo_color)
+        # Numeracion determinista por orden de album: el 1o queda sin numero,
+        # el 2o " 2", etc. Asi el mismo album produce siempre el mismo nombre
+        # (importante para --solo-precios, que re-identifica por nombre).
+        seen_base[base_nombre] = seen_base.get(base_nombre, 0) + 1
+        k = seen_base[base_nombre]
+        nombre = base_nombre if k == 1 else "%s %d" % (base_nombre, k)
 
         if tallas_fijas:
             tallas = tallas_fijas[:]
         else:
             tallas = convertir_tallas(tallas_de_pagina(pagina)) or TALLAS_MX[:]
 
-        cuenta, fotos = fotos_del_album(pagina)
-        if filtro:
+        if args.solo_precios:
+            fotos, cuenta, galeria, base_slug = [], "x", ["_"], "x"
+        else:
+            cuenta, fotos = fotos_del_album(pagina)
+        if filtro and not args.solo_precios:
             pornombre = {nm: h for nm, h in fotos}
             faltan = [f for f in filtro if f not in pornombre]
             if faltan:
                 print("  !! fotos no encontradas: %s" % ", ".join(faltan))
             fotos = [(f, pornombre[f]) for f in filtro if f in pornombre]
-        if not fotos or not cuenta:
+        if not args.solo_precios and (not fotos or not cuenta):
             print("  !! sin fotos: %s" % nombre); omitidos += 1; continue
 
-        base_slug = slug(nombre) or ("prod-%s" % aid)
-        galeria = []
+        if not args.solo_precios:
+            base_slug = slug(nombre) or ("prod-%s" % aid)
+            galeria = []
         for k, (nm, h) in enumerate(fotos):
             crudo = tmp / ("%s.jpg" % h)
             try:
@@ -350,14 +375,31 @@ def main():
             procesar_foto(crudo, salida)
             galeria.append("img/%s/%s" % (carpeta_img, salida.name))
             crudo.unlink(missing_ok=True)
-        if not galeria:
+        if not args.solo_precios and not galeria:
             print("  !! no se pudo bajar ninguna foto: %s" % nombre); omitidos += 1; continue
 
         venta, costo = precio_venta(yuan, args.tc, args.envio)
+
+        # --solo-precios: no baja fotos, solo actualiza el precio del producto
+        # que ya existe (para recalcular con otra formula/redondeo).
+        if args.solo_precios:
+            previo = next((x for x in lista if x["name"] == nombre), None)
+            if previo:
+                antes = previo.get("price")
+                previo["price"] = venta
+                previo["yuan"] = yuan
+                previo["envio"] = args.envio
+                actualizados += 1
+                if antes != venta:
+                    print("  %-42s $%s -> $%s  (%dY)" % (nombre[:42], antes, venta, yuan))
+            else:
+                print("  ?? no existe (nombre no coincide): %s" % nombre)
+            continue
+
         registro = {
-            "name": nombre, "price": venta, "portada": galeria[0],
-            "gallery": galeria, "detail": "p-%s.html" % base_slug,
-            "sizes_raw": "", "sizes": tallas,
+            "name": nombre, "price": venta, "yuan": yuan, "envio": args.envio,
+            "portada": galeria[0], "gallery": galeria,
+            "detail": "p-%s.html" % base_slug, "sizes_raw": "", "sizes": tallas,
         }
         if CENSURA.search(json.dumps(registro, ensure_ascii=False)):
             print("  !! omitido por dato del proveedor: %s" % nombre); omitidos += 1; continue
