@@ -988,7 +988,7 @@
  "Prada": [
   {
    "name": "Prada Charol Rojo Gris",
-   "price": 2800,
+   "price": 2600,
    "portada": "img/Prada/prada-charol-rojo-gris-portada.webp",
    "gallery": [
     "img/Prada/prada-charol-rojo-gris-portada.webp",
@@ -1018,7 +1018,7 @@
   },
   {
    "name": "Prada Charol Negro Cafe",
-   "price": 2800,
+   "price": 2600,
    "portada": "img/Prada/prada-charol-negro-cafe-portada.webp",
    "gallery": [
     "img/Prada/prada-charol-negro-cafe-portada.webp",
@@ -1048,7 +1048,7 @@
   },
   {
    "name": "Prada Charol Blanco Negro Rojo",
-   "price": 2800,
+   "price": 2600,
    "portada": "img/Prada/prada-charol-blanco-negro-rojo-portada.webp",
    "gallery": [
     "img/Prada/prada-charol-blanco-negro-rojo-portada.webp",
@@ -1078,7 +1078,7 @@
   },
   {
    "name": "Prada Gamuza Vino",
-   "price": 2800,
+   "price": 2600,
    "portada": "img/Prada/prada-gamuza-vino-portada.webp",
    "gallery": [
     "img/Prada/prada-gamuza-vino-portada.webp",
@@ -1108,7 +1108,7 @@
   },
   {
    "name": "Prada Gamuza Negro",
-   "price": 2800,
+   "price": 2600,
    "portada": "img/Prada/prada-gamuza-negro-portada.webp",
    "gallery": [
     "img/Prada/prada-gamuza-negro-portada.webp",
@@ -1138,7 +1138,7 @@
   },
   {
    "name": "Prada Charol Gris Azul",
-   "price": 2800,
+   "price": 2600,
    "portada": "img/Prada/prada-charol-gris-azul-portada.webp",
    "gallery": [
     "img/Prada/prada-charol-gris-azul-portada.webp",
@@ -1168,7 +1168,7 @@
   },
   {
    "name": "Prada Gamuza Verde Neon",
-   "price": 2800,
+   "price": 2600,
    "portada": "img/Prada/prada-gamuza-verde-neon-portada.webp",
    "gallery": [
     "img/Prada/prada-gamuza-verde-neon-portada.webp",
@@ -1198,7 +1198,7 @@
   },
   {
    "name": "Prada Charol Vino",
-   "price": 2800,
+   "price": 2600,
    "portada": "img/Prada/prada-charol-vino-portada.webp",
    "gallery": [
     "img/Prada/prada-charol-vino-portada.webp",
@@ -1228,7 +1228,7 @@
   },
   {
    "name": "Prada Charol Azul Claro",
-   "price": 2800,
+   "price": 2600,
    "portada": "img/Prada/prada-charol-azul-claro-portada.webp",
    "gallery": [
     "img/Prada/prada-charol-azul-claro-portada.webp",
@@ -1258,7 +1258,7 @@
   },
   {
    "name": "Prada Charol Negro Blanco",
-   "price": 2800,
+   "price": 2600,
    "portada": "img/Prada/prada-charol-negro-blanco-portada.webp",
    "gallery": [
     "img/Prada/prada-charol-negro-blanco-portada.webp",
@@ -1288,7 +1288,7 @@
   },
   {
    "name": "Prada Gamuza Blanco Gris",
-   "price": 2800,
+   "price": 2600,
    "portada": "img/Prada/prada-gamuza-blanco-gris-portada.webp",
    "gallery": [
     "img/Prada/prada-gamuza-blanco-gris-portada.webp",
@@ -1318,7 +1318,7 @@
   },
   {
    "name": "Prada Gamuza Azul Claro",
-   "price": 2800,
+   "price": 2600,
    "portada": "img/Prada/prada-gamuza-azul-claro-portada.webp",
    "gallery": [
     "img/Prada/prada-gamuza-azul-claro-portada.webp",
@@ -1348,7 +1348,7 @@
   },
   {
    "name": "Prada Gamuza Rojo",
-   "price": 2800,
+   "price": 2600,
    "portada": "img/Prada/prada-gamuza-rojo-portada.webp",
    "gallery": [
     "img/Prada/prada-gamuza-rojo-portada.webp",
@@ -1378,7 +1378,7 @@
   },
   {
    "name": "Prada Charol Amarillo",
-   "price": 2800,
+   "price": 2600,
    "portada": "img/Prada/prada-charol-amarillo-portada.webp",
    "gallery": [
     "img/Prada/prada-charol-amarillo-portada.webp",
@@ -1408,7 +1408,7 @@
   },
   {
    "name": "Prada Charol Morado",
-   "price": 2800,
+   "price": 2600,
    "portada": "img/Prada/prada-charol-morado-portada.webp",
    "gallery": [
     "img/Prada/prada-charol-morado-portada.webp",
@@ -1438,7 +1438,7 @@
   },
   {
    "name": "Prada Charol Naranja",
-   "price": 2800,
+   "price": 2600,
    "portada": "img/Prada/prada-charol-naranja-portada.webp",
    "gallery": [
     "img/Prada/prada-charol-naranja-portada.webp",
@@ -1468,7 +1468,7 @@
   },
   {
    "name": "Prada Gamuza Rosa",
-   "price": 2800,
+   "price": 2600,
    "portada": "img/Prada/prada-gamuza-rosa-portada.webp",
    "gallery": [
     "img/Prada/prada-gamuza-rosa-portada.webp",
@@ -1498,7 +1498,7 @@
   },
   {
    "name": "Prada Charol Gris Blanco",
-   "price": 2800,
+   "price": 2600,
    "portada": "img/Prada/prada-charol-gris-blanco-portada.webp",
    "gallery": [
     "img/Prada/prada-charol-gris-blanco-portada.webp",
@@ -1528,7 +1528,7 @@
   },
   {
    "name": "Prada Charol Verde Claro",
-   "price": 2800,
+   "price": 2600,
    "portada": "img/Prada/prada-charol-verde-claro-portada.webp",
    "gallery": [
     "img/Prada/prada-charol-verde-claro-portada.webp",
@@ -1558,7 +1558,7 @@
   },
   {
    "name": "Prada Charol Rojo",
-   "price": 2800,
+   "price": 2600,
    "portada": "img/Prada/prada-charol-rojo-portada.webp",
    "gallery": [
     "img/Prada/prada-charol-rojo-portada.webp",
@@ -1588,7 +1588,7 @@
   },
   {
    "name": "Prada Charol Verde",
-   "price": 2800,
+   "price": 2600,
    "portada": "img/Prada/prada-charol-verde-portada.webp",
    "gallery": [
     "img/Prada/prada-charol-verde-portada.webp",
@@ -1618,7 +1618,7 @@
   },
   {
    "name": "Prada Charol Blanco Negro",
-   "price": 2800,
+   "price": 2600,
    "portada": "img/Prada/prada-charol-blanco-negro-portada.webp",
    "gallery": [
     "img/Prada/prada-charol-blanco-negro-portada.webp",
@@ -1648,7 +1648,7 @@
   },
   {
    "name": "Prada Charol Todo Negro",
-   "price": 2800,
+   "price": 2600,
    "portada": "img/Prada/prada-charol-todo-negro-portada.webp",
    "gallery": [
     "img/Prada/prada-charol-todo-negro-portada.webp",
@@ -1678,7 +1678,7 @@
   },
   {
    "name": "Prada Charol Azul",
-   "price": 2800,
+   "price": 2600,
    "portada": "img/Prada/prada-charol-azul-portada.webp",
    "gallery": [
     "img/Prada/prada-charol-azul-portada.webp",
@@ -1708,7 +1708,7 @@
   },
   {
    "name": "Prada Charol Azul Marino",
-   "price": 2800,
+   "price": 2600,
    "portada": "img/Prada/prada-charol-azul-marino-portada.webp",
    "gallery": [
     "img/Prada/prada-charol-azul-marino-portada.webp",
@@ -1738,7 +1738,7 @@
   },
   {
    "name": "Prada Gamuza Azul Marino",
-   "price": 2800,
+   "price": 2600,
    "portada": "img/Prada/prada-gamuza-azul-marino-portada.webp",
    "gallery": [
     "img/Prada/prada-gamuza-azul-marino-portada.webp",
@@ -1768,7 +1768,7 @@
   },
   {
    "name": "Prada Gamuza Gris",
-   "price": 2800,
+   "price": 2600,
    "portada": "img/Prada/prada-gamuza-gris-portada.webp",
    "gallery": [
     "img/Prada/prada-gamuza-gris-portada.webp",
@@ -1798,7 +1798,7 @@
   },
   {
    "name": "Prada Charol Rojo Negro",
-   "price": 2800,
+   "price": 2600,
    "portada": "img/Prada/prada-charol-rojo-negro-portada.webp",
    "gallery": [
     "img/Prada/prada-charol-rojo-negro-portada.webp",
@@ -1828,7 +1828,7 @@
   },
   {
    "name": "Prada Gamuza Azul",
-   "price": 2800,
+   "price": 2600,
    "portada": "img/Prada/prada-gamuza-azul-portada.webp",
    "gallery": [
     "img/Prada/prada-gamuza-azul-portada.webp",
@@ -1858,7 +1858,7 @@
   },
   {
    "name": "Prada Charol Blanco Gris",
-   "price": 2800,
+   "price": 2600,
    "portada": "img/Prada/prada-charol-blanco-gris-portada.webp",
    "gallery": [
     "img/Prada/prada-charol-blanco-gris-portada.webp",
@@ -1888,7 +1888,7 @@
   },
   {
    "name": "Prada Charol Negro Rojo",
-   "price": 2800,
+   "price": 2600,
    "portada": "img/Prada/prada-charol-negro-rojo-portada.webp",
    "gallery": [
     "img/Prada/prada-charol-negro-rojo-portada.webp",
@@ -1918,7 +1918,7 @@
   },
   {
    "name": "Prada Gamuza Verde",
-   "price": 2800,
+   "price": 2600,
    "portada": "img/Prada/prada-gamuza-verde-portada.webp",
    "gallery": [
     "img/Prada/prada-gamuza-verde-portada.webp",
@@ -1948,7 +1948,7 @@
   },
   {
    "name": "Prada Charol Gris",
-   "price": 2800,
+   "price": 2600,
    "portada": "img/Prada/prada-charol-gris-portada.webp",
    "gallery": [
     "img/Prada/prada-charol-gris-portada.webp",
@@ -1978,7 +1978,7 @@
   },
   {
    "name": "Prada Gamuza Amarillo",
-   "price": 2800,
+   "price": 2600,
    "portada": "img/Prada/prada-gamuza-amarillo-portada.webp",
    "gallery": [
     "img/Prada/prada-gamuza-amarillo-portada.webp",
@@ -6124,21 +6124,21 @@
  ],
  "Balenciaga Runner": [
   {
-   "name": "Balenciaga Runner 7.5 Blanco Negro",
-   "price": 2700,
-   "portada": "img/Balenciaga-Runner/balenciaga-runner-75-blanco-negro-portada.webp",
+   "name": "Balenciaga Runner Blanco Negro",
+   "price": 2600,
+   "portada": "img/Balenciaga-Runner/balenciaga-runner-blanco-negro-portada.webp",
    "gallery": [
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-negro-portada.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-negro-1.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-negro-2.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-negro-3.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-negro-4.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-negro-5.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-negro-6.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-negro-7.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-negro-8.webp"
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-negro-portada.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-negro-1.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-negro-2.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-negro-3.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-negro-4.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-negro-5.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-negro-6.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-negro-7.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-negro-8.webp"
    ],
-   "detail": "p-balenciaga-runner-75-blanco-negro.html",
+   "detail": "p-balenciaga-runner-blanco-negro.html",
    "sizes_raw": "",
    "sizes": [
     "22 MX (35 EU)",
@@ -6151,21 +6151,21 @@
    ]
   },
   {
-   "name": "Balenciaga Runner 7 Cafe",
-   "price": 2700,
-   "portada": "img/Balenciaga-Runner/balenciaga-runner-7-cafe-1.webp",
+   "name": "Balenciaga Runner Cafe",
+   "price": 2600,
+   "portada": "img/Balenciaga-Runner/balenciaga-runner-cafe-1.webp",
    "gallery": [
-    "img/Balenciaga-Runner/balenciaga-runner-7-cafe-1.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-cafe-portada.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-cafe-2.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-cafe-3.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-cafe-4.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-cafe-5.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-cafe-6.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-cafe-7.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-cafe-8.webp"
+    "img/Balenciaga-Runner/balenciaga-runner-cafe-1.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-cafe-portada.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-cafe-2.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-cafe-3.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-cafe-4.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-cafe-5.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-cafe-6.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-cafe-7.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-cafe-8.webp"
    ],
-   "detail": "p-balenciaga-runner-7-cafe.html",
+   "detail": "p-balenciaga-runner-cafe.html",
    "sizes_raw": "",
    "sizes": [
     "22 MX (35 EU)",
@@ -6178,21 +6178,21 @@
    ]
   },
   {
-   "name": "Balenciaga Runner 7.5 Azul",
-   "price": 2700,
-   "portada": "img/Balenciaga-Runner/balenciaga-runner-75-azul-1.webp",
+   "name": "Balenciaga Runner Azul",
+   "price": 2600,
+   "portada": "img/Balenciaga-Runner/balenciaga-runner-azul-1.webp",
    "gallery": [
-    "img/Balenciaga-Runner/balenciaga-runner-75-azul-1.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-azul-portada.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-azul-2.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-azul-3.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-azul-4.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-azul-5.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-azul-6.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-azul-7.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-azul-8.webp"
+    "img/Balenciaga-Runner/balenciaga-runner-azul-1.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-azul-portada.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-azul-2.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-azul-3.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-azul-4.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-azul-5.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-azul-6.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-azul-7.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-azul-8.webp"
    ],
-   "detail": "p-balenciaga-runner-75-azul.html",
+   "detail": "p-balenciaga-runner-azul.html",
    "sizes_raw": "",
    "sizes": [
     "22 MX (35 EU)",
@@ -6205,21 +6205,21 @@
    ]
   },
   {
-   "name": "Balenciaga Runner 7.5",
-   "price": 2700,
-   "portada": "img/Balenciaga-Runner/balenciaga-runner-75-portada.webp",
+   "name": "Balenciaga Runner",
+   "price": 2600,
+   "portada": "img/Balenciaga-Runner/balenciaga-runner-portada.webp",
    "gallery": [
-    "img/Balenciaga-Runner/balenciaga-runner-75-portada.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-1.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-2.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-3.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-4.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-5.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-6.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-7.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-8.webp"
+    "img/Balenciaga-Runner/balenciaga-runner-portada.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-1.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-2.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-3.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-4.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-5.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-6.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-7.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-8.webp"
    ],
-   "detail": "p-balenciaga-runner-75.html",
+   "detail": "p-balenciaga-runner.html",
    "sizes_raw": "",
    "sizes": [
     "22 MX (35 EU)",
@@ -6232,21 +6232,21 @@
    ]
   },
   {
-   "name": "Balenciaga Runner 7.5 Blanco Azul Amarillo",
-   "price": 2700,
-   "portada": "img/Balenciaga-Runner/balenciaga-runner-75-blanco-azul-amarillo-portada.webp",
+   "name": "Balenciaga Runner Blanco Azul Amarillo",
+   "price": 2600,
+   "portada": "img/Balenciaga-Runner/balenciaga-runner-blanco-azul-amarillo-portada.webp",
    "gallery": [
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-azul-amarillo-portada.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-azul-amarillo-1.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-azul-amarillo-2.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-azul-amarillo-3.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-azul-amarillo-4.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-azul-amarillo-5.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-azul-amarillo-6.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-azul-amarillo-7.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-azul-amarillo-8.webp"
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-azul-amarillo-portada.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-azul-amarillo-1.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-azul-amarillo-2.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-azul-amarillo-3.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-azul-amarillo-4.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-azul-amarillo-5.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-azul-amarillo-6.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-azul-amarillo-7.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-azul-amarillo-8.webp"
    ],
-   "detail": "p-balenciaga-runner-75-blanco-azul-amarillo.html",
+   "detail": "p-balenciaga-runner-blanco-azul-amarillo.html",
    "sizes_raw": "",
    "sizes": [
     "22 MX (35 EU)",
@@ -6259,21 +6259,21 @@
    ]
   },
   {
-   "name": "Balenciaga Runner 7.5 Plata Rojo",
-   "price": 2700,
-   "portada": "img/Balenciaga-Runner/balenciaga-runner-75-plata-rojo-portada.webp",
+   "name": "Balenciaga Runner Plata Rojo",
+   "price": 2600,
+   "portada": "img/Balenciaga-Runner/balenciaga-runner-plata-rojo-portada.webp",
    "gallery": [
-    "img/Balenciaga-Runner/balenciaga-runner-75-plata-rojo-portada.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-plata-rojo-1.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-plata-rojo-2.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-plata-rojo-3.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-plata-rojo-4.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-plata-rojo-5.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-plata-rojo-6.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-plata-rojo-7.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-plata-rojo-8.webp"
+    "img/Balenciaga-Runner/balenciaga-runner-plata-rojo-portada.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-plata-rojo-1.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-plata-rojo-2.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-plata-rojo-3.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-plata-rojo-4.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-plata-rojo-5.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-plata-rojo-6.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-plata-rojo-7.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-plata-rojo-8.webp"
    ],
-   "detail": "p-balenciaga-runner-75-plata-rojo.html",
+   "detail": "p-balenciaga-runner-plata-rojo.html",
    "sizes_raw": "",
    "sizes": [
     "22 MX (35 EU)",
@@ -6286,21 +6286,21 @@
    ]
   },
   {
-   "name": "Balenciaga Runner 7.5 Verde Esmeralda",
-   "price": 2700,
-   "portada": "img/Balenciaga-Runner/balenciaga-runner-75-verde-esmeralda-portada.webp",
+   "name": "Balenciaga Runner Verde Esmeralda",
+   "price": 2600,
+   "portada": "img/Balenciaga-Runner/balenciaga-runner-verde-esmeralda-portada.webp",
    "gallery": [
-    "img/Balenciaga-Runner/balenciaga-runner-75-verde-esmeralda-portada.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-verde-esmeralda-1.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-verde-esmeralda-2.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-verde-esmeralda-3.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-verde-esmeralda-4.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-verde-esmeralda-5.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-verde-esmeralda-6.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-verde-esmeralda-7.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-verde-esmeralda-8.webp"
+    "img/Balenciaga-Runner/balenciaga-runner-verde-esmeralda-portada.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-verde-esmeralda-1.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-verde-esmeralda-2.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-verde-esmeralda-3.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-verde-esmeralda-4.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-verde-esmeralda-5.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-verde-esmeralda-6.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-verde-esmeralda-7.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-verde-esmeralda-8.webp"
    ],
-   "detail": "p-balenciaga-runner-75-verde-esmeralda.html",
+   "detail": "p-balenciaga-runner-verde-esmeralda.html",
    "sizes_raw": "",
    "sizes": [
     "22 MX (35 EU)",
@@ -6313,21 +6313,21 @@
    ]
   },
   {
-   "name": "Balenciaga Runner 7 Negro",
-   "price": 2700,
-   "portada": "img/Balenciaga-Runner/balenciaga-runner-7-negro-1.webp",
+   "name": "Balenciaga Runner Negro",
+   "price": 2600,
+   "portada": "img/Balenciaga-Runner/balenciaga-runner-negro-1.webp",
    "gallery": [
-    "img/Balenciaga-Runner/balenciaga-runner-7-negro-1.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-negro-portada.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-negro-2.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-negro-3.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-negro-4.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-negro-5.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-negro-6.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-negro-7.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-negro-8.webp"
+    "img/Balenciaga-Runner/balenciaga-runner-negro-1.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-negro-portada.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-negro-2.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-negro-3.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-negro-4.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-negro-5.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-negro-6.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-negro-7.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-negro-8.webp"
    ],
-   "detail": "p-balenciaga-runner-7-negro.html",
+   "detail": "p-balenciaga-runner-negro.html",
    "sizes_raw": "",
    "sizes": [
     "22 MX (35 EU)",
@@ -6340,21 +6340,21 @@
    ]
   },
   {
-   "name": "Balenciaga Runner 7.5 Blanco Azul",
-   "price": 2700,
-   "portada": "img/Balenciaga-Runner/balenciaga-runner-75-blanco-azul-portada.webp",
+   "name": "Balenciaga Runner Blanco Azul",
+   "price": 2600,
+   "portada": "img/Balenciaga-Runner/balenciaga-runner-blanco-azul-portada.webp",
    "gallery": [
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-azul-portada.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-azul-1.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-azul-2.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-azul-3.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-azul-4.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-azul-5.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-azul-6.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-azul-7.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-azul-8.webp"
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-azul-portada.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-azul-1.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-azul-2.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-azul-3.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-azul-4.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-azul-5.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-azul-6.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-azul-7.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-azul-8.webp"
    ],
-   "detail": "p-balenciaga-runner-75-blanco-azul.html",
+   "detail": "p-balenciaga-runner-blanco-azul.html",
    "sizes_raw": "",
    "sizes": [
     "22 MX (35 EU)",
@@ -6367,21 +6367,21 @@
    ]
   },
   {
-   "name": "Balenciaga Runner 7.5 Blanco Multicolor",
-   "price": 2700,
-   "portada": "img/Balenciaga-Runner/balenciaga-runner-75-blanco-multicolor-portada.webp",
+   "name": "Balenciaga Runner Blanco Multicolor",
+   "price": 2600,
+   "portada": "img/Balenciaga-Runner/balenciaga-runner-blanco-multicolor-portada.webp",
    "gallery": [
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-multicolor-portada.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-multicolor-1.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-multicolor-2.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-multicolor-3.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-multicolor-4.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-multicolor-5.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-multicolor-6.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-multicolor-7.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-multicolor-8.webp"
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-multicolor-portada.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-multicolor-1.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-multicolor-2.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-multicolor-3.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-multicolor-4.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-multicolor-5.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-multicolor-6.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-multicolor-7.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-multicolor-8.webp"
    ],
-   "detail": "p-balenciaga-runner-75-blanco-multicolor.html",
+   "detail": "p-balenciaga-runner-blanco-multicolor.html",
    "sizes_raw": "",
    "sizes": [
     "22 MX (35 EU)",
@@ -6394,21 +6394,21 @@
    ]
   },
   {
-   "name": "Balenciaga Runner 7 Multicolor",
-   "price": 2700,
-   "portada": "img/Balenciaga-Runner/balenciaga-runner-7-multicolor-portada.webp",
+   "name": "Balenciaga Runner Multicolor",
+   "price": 2600,
+   "portada": "img/Balenciaga-Runner/balenciaga-runner-multicolor-portada.webp",
    "gallery": [
-    "img/Balenciaga-Runner/balenciaga-runner-7-multicolor-portada.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-multicolor-1.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-multicolor-2.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-multicolor-3.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-multicolor-4.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-multicolor-5.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-multicolor-6.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-multicolor-7.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-multicolor-8.webp"
+    "img/Balenciaga-Runner/balenciaga-runner-multicolor-portada.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-multicolor-1.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-multicolor-2.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-multicolor-3.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-multicolor-4.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-multicolor-5.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-multicolor-6.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-multicolor-7.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-multicolor-8.webp"
    ],
-   "detail": "p-balenciaga-runner-7-multicolor.html",
+   "detail": "p-balenciaga-runner-multicolor.html",
    "sizes_raw": "",
    "sizes": [
     "22 MX (35 EU)",
@@ -6421,21 +6421,21 @@
    ]
   },
   {
-   "name": "Balenciaga Runner 7 Blanco Morado",
-   "price": 2700,
-   "portada": "img/Balenciaga-Runner/balenciaga-runner-7-blanco-morado-portada.webp",
+   "name": "Balenciaga Runner Blanco Morado",
+   "price": 2600,
+   "portada": "img/Balenciaga-Runner/balenciaga-runner-blanco-morado-portada.webp",
    "gallery": [
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-morado-portada.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-morado-1.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-morado-2.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-morado-3.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-morado-4.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-morado-5.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-morado-6.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-morado-7.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-morado-8.webp"
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-morado-portada.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-morado-1.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-morado-2.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-morado-3.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-morado-4.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-morado-5.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-morado-6.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-morado-7.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-morado-8.webp"
    ],
-   "detail": "p-balenciaga-runner-7-blanco-morado.html",
+   "detail": "p-balenciaga-runner-blanco-morado.html",
    "sizes_raw": "",
    "sizes": [
     "22 MX (35 EU)",
@@ -6448,21 +6448,21 @@
    ]
   },
   {
-   "name": "Balenciaga Runner 7 Blanco Naranja",
-   "price": 2700,
-   "portada": "img/Balenciaga-Runner/balenciaga-runner-7-blanco-naranja-portada.webp",
+   "name": "Balenciaga Runner Blanco Naranja",
+   "price": 2600,
+   "portada": "img/Balenciaga-Runner/balenciaga-runner-blanco-naranja-portada.webp",
    "gallery": [
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-naranja-portada.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-naranja-1.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-naranja-2.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-naranja-3.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-naranja-4.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-naranja-5.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-naranja-6.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-naranja-7.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-naranja-8.webp"
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-naranja-portada.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-naranja-1.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-naranja-2.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-naranja-3.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-naranja-4.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-naranja-5.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-naranja-6.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-naranja-7.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-naranja-8.webp"
    ],
-   "detail": "p-balenciaga-runner-7-blanco-naranja.html",
+   "detail": "p-balenciaga-runner-blanco-naranja.html",
    "sizes_raw": "",
    "sizes": [
     "22 MX (35 EU)",
@@ -6475,21 +6475,21 @@
    ]
   },
   {
-   "name": "Balenciaga Runner 7.5 Gris Marron",
-   "price": 2700,
-   "portada": "img/Balenciaga-Runner/balenciaga-runner-75-gris-marron-portada.webp",
+   "name": "Balenciaga Runner Gris Marron",
+   "price": 2600,
+   "portada": "img/Balenciaga-Runner/balenciaga-runner-gris-marron-portada.webp",
    "gallery": [
-    "img/Balenciaga-Runner/balenciaga-runner-75-gris-marron-portada.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-gris-marron-1.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-gris-marron-2.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-gris-marron-3.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-gris-marron-4.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-gris-marron-5.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-gris-marron-6.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-gris-marron-7.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-gris-marron-8.webp"
+    "img/Balenciaga-Runner/balenciaga-runner-gris-marron-portada.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-gris-marron-1.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-gris-marron-2.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-gris-marron-3.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-gris-marron-4.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-gris-marron-5.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-gris-marron-6.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-gris-marron-7.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-gris-marron-8.webp"
    ],
-   "detail": "p-balenciaga-runner-75-gris-marron.html",
+   "detail": "p-balenciaga-runner-gris-marron.html",
    "sizes_raw": "",
    "sizes": [
     "22 MX (35 EU)",
@@ -6502,21 +6502,21 @@
    ]
   },
   {
-   "name": "Balenciaga Runner 7.5 Todo Negro",
-   "price": 2700,
-   "portada": "img/Balenciaga-Runner/balenciaga-runner-75-todo-negro-portada.webp",
+   "name": "Balenciaga Runner Todo Negro",
+   "price": 2600,
+   "portada": "img/Balenciaga-Runner/balenciaga-runner-todo-negro-portada.webp",
    "gallery": [
-    "img/Balenciaga-Runner/balenciaga-runner-75-todo-negro-portada.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-todo-negro-1.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-todo-negro-2.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-todo-negro-3.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-todo-negro-4.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-todo-negro-5.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-todo-negro-6.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-todo-negro-7.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-todo-negro-8.webp"
+    "img/Balenciaga-Runner/balenciaga-runner-todo-negro-portada.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-todo-negro-1.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-todo-negro-2.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-todo-negro-3.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-todo-negro-4.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-todo-negro-5.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-todo-negro-6.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-todo-negro-7.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-todo-negro-8.webp"
    ],
-   "detail": "p-balenciaga-runner-75-todo-negro.html",
+   "detail": "p-balenciaga-runner-todo-negro.html",
    "sizes_raw": "",
    "sizes": [
     "22 MX (35 EU)",
@@ -6529,21 +6529,21 @@
    ]
   },
   {
-   "name": "Balenciaga Runner 7 Morado Negro",
-   "price": 2700,
-   "portada": "img/Balenciaga-Runner/balenciaga-runner-7-morado-negro-1.webp",
+   "name": "Balenciaga Runner Morado Negro",
+   "price": 2600,
+   "portada": "img/Balenciaga-Runner/balenciaga-runner-morado-negro-1.webp",
    "gallery": [
-    "img/Balenciaga-Runner/balenciaga-runner-7-morado-negro-1.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-morado-negro-portada.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-morado-negro-2.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-morado-negro-3.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-morado-negro-4.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-morado-negro-5.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-morado-negro-6.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-morado-negro-7.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-morado-negro-8.webp"
+    "img/Balenciaga-Runner/balenciaga-runner-morado-negro-1.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-morado-negro-portada.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-morado-negro-2.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-morado-negro-3.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-morado-negro-4.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-morado-negro-5.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-morado-negro-6.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-morado-negro-7.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-morado-negro-8.webp"
    ],
-   "detail": "p-balenciaga-runner-7-morado-negro.html",
+   "detail": "p-balenciaga-runner-morado-negro.html",
    "sizes_raw": "",
    "sizes": [
     "22 MX (35 EU)",
@@ -6556,21 +6556,21 @@
    ]
   },
   {
-   "name": "Balenciaga Runner 7 Gris Azul Rojo",
-   "price": 2700,
-   "portada": "img/Balenciaga-Runner/balenciaga-runner-7-gris-azul-rojo-portada.webp",
+   "name": "Balenciaga Runner Gris Azul Rojo",
+   "price": 2600,
+   "portada": "img/Balenciaga-Runner/balenciaga-runner-gris-azul-rojo-portada.webp",
    "gallery": [
-    "img/Balenciaga-Runner/balenciaga-runner-7-gris-azul-rojo-portada.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-gris-azul-rojo-1.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-gris-azul-rojo-2.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-gris-azul-rojo-3.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-gris-azul-rojo-4.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-gris-azul-rojo-5.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-gris-azul-rojo-6.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-gris-azul-rojo-7.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-gris-azul-rojo-8.webp"
+    "img/Balenciaga-Runner/balenciaga-runner-gris-azul-rojo-portada.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-gris-azul-rojo-1.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-gris-azul-rojo-2.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-gris-azul-rojo-3.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-gris-azul-rojo-4.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-gris-azul-rojo-5.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-gris-azul-rojo-6.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-gris-azul-rojo-7.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-gris-azul-rojo-8.webp"
    ],
-   "detail": "p-balenciaga-runner-7-gris-azul-rojo.html",
+   "detail": "p-balenciaga-runner-gris-azul-rojo.html",
    "sizes_raw": "",
    "sizes": [
     "22 MX (35 EU)",
@@ -6583,21 +6583,21 @@
    ]
   },
   {
-   "name": "Balenciaga Runner 7 Blanco Azul Rojo",
-   "price": 2700,
-   "portada": "img/Balenciaga-Runner/balenciaga-runner-7-blanco-azul-rojo-portada.webp",
+   "name": "Balenciaga Runner Blanco Azul Rojo",
+   "price": 2600,
+   "portada": "img/Balenciaga-Runner/balenciaga-runner-blanco-azul-rojo-portada.webp",
    "gallery": [
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-azul-rojo-portada.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-azul-rojo-1.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-azul-rojo-2.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-azul-rojo-3.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-azul-rojo-4.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-azul-rojo-5.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-azul-rojo-6.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-azul-rojo-7.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-azul-rojo-8.webp"
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-azul-rojo-portada.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-azul-rojo-1.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-azul-rojo-2.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-azul-rojo-3.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-azul-rojo-4.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-azul-rojo-5.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-azul-rojo-6.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-azul-rojo-7.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-azul-rojo-8.webp"
    ],
-   "detail": "p-balenciaga-runner-7-blanco-azul-rojo.html",
+   "detail": "p-balenciaga-runner-blanco-azul-rojo.html",
    "sizes_raw": "",
    "sizes": [
     "22 MX (35 EU)",
@@ -6610,21 +6610,21 @@
    ]
   },
   {
-   "name": "Balenciaga Runner 7 Gris",
-   "price": 2700,
-   "portada": "img/Balenciaga-Runner/balenciaga-runner-7-gris-portada.webp",
+   "name": "Balenciaga Runner Gris",
+   "price": 2600,
+   "portada": "img/Balenciaga-Runner/balenciaga-runner-gris-portada.webp",
    "gallery": [
-    "img/Balenciaga-Runner/balenciaga-runner-7-gris-portada.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-gris-1.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-gris-2.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-gris-3.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-gris-4.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-gris-5.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-gris-6.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-gris-7.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-gris-8.webp"
+    "img/Balenciaga-Runner/balenciaga-runner-gris-portada.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-gris-1.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-gris-2.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-gris-3.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-gris-4.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-gris-5.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-gris-6.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-gris-7.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-gris-8.webp"
    ],
-   "detail": "p-balenciaga-runner-7-gris.html",
+   "detail": "p-balenciaga-runner-gris.html",
    "sizes_raw": "",
    "sizes": [
     "22 MX (35 EU)",
@@ -6637,21 +6637,21 @@
    ]
   },
   {
-   "name": "Balenciaga Runner 7.5 Blanco Amarillo",
-   "price": 2700,
-   "portada": "img/Balenciaga-Runner/balenciaga-runner-75-blanco-amarillo-portada.webp",
+   "name": "Balenciaga Runner Blanco Amarillo",
+   "price": 2600,
+   "portada": "img/Balenciaga-Runner/balenciaga-runner-blanco-amarillo-portada.webp",
    "gallery": [
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-amarillo-portada.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-amarillo-1.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-amarillo-2.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-amarillo-3.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-amarillo-4.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-amarillo-5.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-amarillo-6.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-amarillo-7.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-amarillo-8.webp"
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-amarillo-portada.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-amarillo-1.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-amarillo-2.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-amarillo-3.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-amarillo-4.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-amarillo-5.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-amarillo-6.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-amarillo-7.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-amarillo-8.webp"
    ],
-   "detail": "p-balenciaga-runner-75-blanco-amarillo.html",
+   "detail": "p-balenciaga-runner-blanco-amarillo.html",
    "sizes_raw": "",
    "sizes": [
     "22 MX (35 EU)",
@@ -6664,21 +6664,21 @@
    ]
   },
   {
-   "name": "Balenciaga Runner 7.5 Negro Gris Naranja",
-   "price": 2700,
-   "portada": "img/Balenciaga-Runner/balenciaga-runner-75-negro-gris-naranja-portada.webp",
+   "name": "Balenciaga Runner Negro Gris Naranja",
+   "price": 2600,
+   "portada": "img/Balenciaga-Runner/balenciaga-runner-negro-gris-naranja-portada.webp",
    "gallery": [
-    "img/Balenciaga-Runner/balenciaga-runner-75-negro-gris-naranja-portada.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-negro-gris-naranja-1.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-negro-gris-naranja-2.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-negro-gris-naranja-3.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-negro-gris-naranja-4.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-negro-gris-naranja-5.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-negro-gris-naranja-6.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-negro-gris-naranja-7.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-negro-gris-naranja-8.webp"
+    "img/Balenciaga-Runner/balenciaga-runner-negro-gris-naranja-portada.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-negro-gris-naranja-1.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-negro-gris-naranja-2.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-negro-gris-naranja-3.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-negro-gris-naranja-4.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-negro-gris-naranja-5.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-negro-gris-naranja-6.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-negro-gris-naranja-7.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-negro-gris-naranja-8.webp"
    ],
-   "detail": "p-balenciaga-runner-75-negro-gris-naranja.html",
+   "detail": "p-balenciaga-runner-negro-gris-naranja.html",
    "sizes_raw": "",
    "sizes": [
     "22 MX (35 EU)",
@@ -6691,21 +6691,21 @@
    ]
   },
   {
-   "name": "Balenciaga Runner 7.5 Blanco Negro Azul",
-   "price": 2700,
-   "portada": "img/Balenciaga-Runner/balenciaga-runner-75-blanco-negro-azul-portada.webp",
+   "name": "Balenciaga Runner Blanco Negro Azul",
+   "price": 2600,
+   "portada": "img/Balenciaga-Runner/balenciaga-runner-blanco-negro-azul-portada.webp",
    "gallery": [
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-negro-azul-portada.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-negro-azul-1.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-negro-azul-2.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-negro-azul-3.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-negro-azul-4.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-negro-azul-5.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-negro-azul-6.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-negro-azul-7.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-blanco-negro-azul-8.webp"
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-negro-azul-portada.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-negro-azul-1.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-negro-azul-2.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-negro-azul-3.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-negro-azul-4.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-negro-azul-5.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-negro-azul-6.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-negro-azul-7.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-negro-azul-8.webp"
    ],
-   "detail": "p-balenciaga-runner-75-blanco-negro-azul.html",
+   "detail": "p-balenciaga-runner-blanco-negro-azul.html",
    "sizes_raw": "",
    "sizes": [
     "22 MX (35 EU)",
@@ -6718,21 +6718,21 @@
    ]
   },
   {
-   "name": "Balenciaga Runner 7.5 Negro Blanco",
-   "price": 2700,
-   "portada": "img/Balenciaga-Runner/balenciaga-runner-75-negro-blanco-portada.webp",
+   "name": "Balenciaga Runner Negro Blanco",
+   "price": 2600,
+   "portada": "img/Balenciaga-Runner/balenciaga-runner-negro-blanco-portada.webp",
    "gallery": [
-    "img/Balenciaga-Runner/balenciaga-runner-75-negro-blanco-portada.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-negro-blanco-1.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-negro-blanco-2.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-negro-blanco-3.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-negro-blanco-4.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-negro-blanco-5.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-negro-blanco-6.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-negro-blanco-7.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-75-negro-blanco-8.webp"
+    "img/Balenciaga-Runner/balenciaga-runner-negro-blanco-portada.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-negro-blanco-1.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-negro-blanco-2.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-negro-blanco-3.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-negro-blanco-4.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-negro-blanco-5.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-negro-blanco-6.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-negro-blanco-7.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-negro-blanco-8.webp"
    ],
-   "detail": "p-balenciaga-runner-75-negro-blanco.html",
+   "detail": "p-balenciaga-runner-negro-blanco.html",
    "sizes_raw": "",
    "sizes": [
     "22 MX (35 EU)",
@@ -6745,21 +6745,21 @@
    ]
   },
   {
-   "name": "Balenciaga Runner 7 Gris Negro",
-   "price": 2700,
-   "portada": "img/Balenciaga-Runner/balenciaga-runner-7-gris-negro-portada.webp",
+   "name": "Balenciaga Runner Gris Negro",
+   "price": 2600,
+   "portada": "img/Balenciaga-Runner/balenciaga-runner-gris-negro-portada.webp",
    "gallery": [
-    "img/Balenciaga-Runner/balenciaga-runner-7-gris-negro-portada.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-gris-negro-1.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-gris-negro-2.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-gris-negro-3.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-gris-negro-4.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-gris-negro-5.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-gris-negro-6.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-gris-negro-7.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-gris-negro-8.webp"
+    "img/Balenciaga-Runner/balenciaga-runner-gris-negro-portada.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-gris-negro-1.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-gris-negro-2.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-gris-negro-3.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-gris-negro-4.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-gris-negro-5.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-gris-negro-6.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-gris-negro-7.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-gris-negro-8.webp"
    ],
-   "detail": "p-balenciaga-runner-7-gris-negro.html",
+   "detail": "p-balenciaga-runner-gris-negro.html",
    "sizes_raw": "",
    "sizes": [
     "22 MX (35 EU)",
@@ -6772,21 +6772,21 @@
    ]
   },
   {
-   "name": "Balenciaga Runner 7 Negro Azul Naranja",
-   "price": 2700,
-   "portada": "img/Balenciaga-Runner/balenciaga-runner-7-negro-azul-naranja-portada.webp",
+   "name": "Balenciaga Runner Negro Azul Naranja",
+   "price": 2600,
+   "portada": "img/Balenciaga-Runner/balenciaga-runner-negro-azul-naranja-portada.webp",
    "gallery": [
-    "img/Balenciaga-Runner/balenciaga-runner-7-negro-azul-naranja-portada.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-negro-azul-naranja-1.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-negro-azul-naranja-2.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-negro-azul-naranja-3.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-negro-azul-naranja-4.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-negro-azul-naranja-5.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-negro-azul-naranja-6.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-negro-azul-naranja-7.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-negro-azul-naranja-8.webp"
+    "img/Balenciaga-Runner/balenciaga-runner-negro-azul-naranja-portada.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-negro-azul-naranja-1.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-negro-azul-naranja-2.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-negro-azul-naranja-3.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-negro-azul-naranja-4.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-negro-azul-naranja-5.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-negro-azul-naranja-6.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-negro-azul-naranja-7.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-negro-azul-naranja-8.webp"
    ],
-   "detail": "p-balenciaga-runner-7-negro-azul-naranja.html",
+   "detail": "p-balenciaga-runner-negro-azul-naranja.html",
    "sizes_raw": "",
    "sizes": [
     "22 MX (35 EU)",
@@ -6799,21 +6799,21 @@
    ]
   },
   {
-   "name": "Balenciaga Runner 7 Plata Rosa",
-   "price": 2700,
-   "portada": "img/Balenciaga-Runner/balenciaga-runner-7-plata-rosa-portada.webp",
+   "name": "Balenciaga Runner Plata Rosa",
+   "price": 2600,
+   "portada": "img/Balenciaga-Runner/balenciaga-runner-plata-rosa-portada.webp",
    "gallery": [
-    "img/Balenciaga-Runner/balenciaga-runner-7-plata-rosa-portada.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-plata-rosa-1.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-plata-rosa-2.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-plata-rosa-3.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-plata-rosa-4.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-plata-rosa-5.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-plata-rosa-6.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-plata-rosa-7.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-plata-rosa-8.webp"
+    "img/Balenciaga-Runner/balenciaga-runner-plata-rosa-portada.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-plata-rosa-1.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-plata-rosa-2.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-plata-rosa-3.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-plata-rosa-4.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-plata-rosa-5.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-plata-rosa-6.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-plata-rosa-7.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-plata-rosa-8.webp"
    ],
-   "detail": "p-balenciaga-runner-7-plata-rosa.html",
+   "detail": "p-balenciaga-runner-plata-rosa.html",
    "sizes_raw": "",
    "sizes": [
     "22 MX (35 EU)",
@@ -6826,21 +6826,21 @@
    ]
   },
   {
-   "name": "Balenciaga Runner 7 Gris Azul",
-   "price": 2700,
-   "portada": "img/Balenciaga-Runner/balenciaga-runner-7-gris-azul-portada.webp",
+   "name": "Balenciaga Runner Gris Azul",
+   "price": 2600,
+   "portada": "img/Balenciaga-Runner/balenciaga-runner-gris-azul-portada.webp",
    "gallery": [
-    "img/Balenciaga-Runner/balenciaga-runner-7-gris-azul-portada.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-gris-azul-1.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-gris-azul-2.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-gris-azul-3.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-gris-azul-4.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-gris-azul-5.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-gris-azul-6.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-gris-azul-7.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-gris-azul-8.webp"
+    "img/Balenciaga-Runner/balenciaga-runner-gris-azul-portada.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-gris-azul-1.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-gris-azul-2.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-gris-azul-3.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-gris-azul-4.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-gris-azul-5.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-gris-azul-6.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-gris-azul-7.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-gris-azul-8.webp"
    ],
-   "detail": "p-balenciaga-runner-7-gris-azul.html",
+   "detail": "p-balenciaga-runner-gris-azul.html",
    "sizes_raw": "",
    "sizes": [
     "22 MX (35 EU)",
@@ -6853,21 +6853,21 @@
    ]
   },
   {
-   "name": "Balenciaga Runner 7 Blanco Dorado",
-   "price": 2700,
-   "portada": "img/Balenciaga-Runner/balenciaga-runner-7-blanco-dorado-portada.webp",
+   "name": "Balenciaga Runner Blanco Dorado",
+   "price": 2600,
+   "portada": "img/Balenciaga-Runner/balenciaga-runner-blanco-dorado-portada.webp",
    "gallery": [
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-dorado-portada.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-dorado-1.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-dorado-2.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-dorado-3.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-dorado-4.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-dorado-5.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-dorado-6.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-dorado-7.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-dorado-8.webp"
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-dorado-portada.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-dorado-1.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-dorado-2.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-dorado-3.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-dorado-4.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-dorado-5.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-dorado-6.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-dorado-7.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-dorado-8.webp"
    ],
-   "detail": "p-balenciaga-runner-7-blanco-dorado.html",
+   "detail": "p-balenciaga-runner-blanco-dorado.html",
    "sizes_raw": "",
    "sizes": [
     "22 MX (35 EU)",
@@ -6880,21 +6880,21 @@
    ]
   },
   {
-   "name": "Balenciaga Runner 7 Rosa",
-   "price": 2700,
-   "portada": "img/Balenciaga-Runner/balenciaga-runner-7-rosa-portada.webp",
+   "name": "Balenciaga Runner Rosa",
+   "price": 2600,
+   "portada": "img/Balenciaga-Runner/balenciaga-runner-rosa-portada.webp",
    "gallery": [
-    "img/Balenciaga-Runner/balenciaga-runner-7-rosa-portada.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-rosa-1.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-rosa-2.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-rosa-3.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-rosa-4.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-rosa-5.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-rosa-6.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-rosa-7.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-rosa-8.webp"
+    "img/Balenciaga-Runner/balenciaga-runner-rosa-portada.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-rosa-1.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-rosa-2.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-rosa-3.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-rosa-4.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-rosa-5.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-rosa-6.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-rosa-7.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-rosa-8.webp"
    ],
-   "detail": "p-balenciaga-runner-7-rosa.html",
+   "detail": "p-balenciaga-runner-rosa.html",
    "sizes_raw": "",
    "sizes": [
     "22 MX (35 EU)",
@@ -6907,21 +6907,21 @@
    ]
   },
   {
-   "name": "Balenciaga Runner 7 Blanco Azul Claro",
-   "price": 2700,
-   "portada": "img/Balenciaga-Runner/balenciaga-runner-7-blanco-azul-claro-portada.webp",
+   "name": "Balenciaga Runner Blanco Azul Claro",
+   "price": 2600,
+   "portada": "img/Balenciaga-Runner/balenciaga-runner-blanco-azul-claro-portada.webp",
    "gallery": [
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-azul-claro-portada.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-azul-claro-1.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-azul-claro-2.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-azul-claro-3.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-azul-claro-4.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-azul-claro-5.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-azul-claro-6.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-azul-claro-7.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-azul-claro-8.webp"
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-azul-claro-portada.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-azul-claro-1.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-azul-claro-2.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-azul-claro-3.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-azul-claro-4.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-azul-claro-5.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-azul-claro-6.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-azul-claro-7.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-azul-claro-8.webp"
    ],
-   "detail": "p-balenciaga-runner-7-blanco-azul-claro.html",
+   "detail": "p-balenciaga-runner-blanco-azul-claro.html",
    "sizes_raw": "",
    "sizes": [
     "22 MX (35 EU)",
@@ -6934,21 +6934,21 @@
    ]
   },
   {
-   "name": "Balenciaga Runner 7 Blanco Rojo",
-   "price": 2700,
-   "portada": "img/Balenciaga-Runner/balenciaga-runner-7-blanco-rojo-portada.webp",
+   "name": "Balenciaga Runner Blanco Rojo",
+   "price": 2600,
+   "portada": "img/Balenciaga-Runner/balenciaga-runner-blanco-rojo-portada.webp",
    "gallery": [
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-rojo-portada.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-rojo-1.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-rojo-2.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-rojo-3.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-rojo-4.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-rojo-5.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-rojo-6.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-rojo-7.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-rojo-8.webp"
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-rojo-portada.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-rojo-1.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-rojo-2.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-rojo-3.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-rojo-4.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-rojo-5.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-rojo-6.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-rojo-7.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-rojo-8.webp"
    ],
-   "detail": "p-balenciaga-runner-7-blanco-rojo.html",
+   "detail": "p-balenciaga-runner-blanco-rojo.html",
    "sizes_raw": "",
    "sizes": [
     "22 MX (35 EU)",
@@ -6961,21 +6961,21 @@
    ]
   },
   {
-   "name": "Balenciaga Runner 7 Blanco Rosa",
-   "price": 2700,
-   "portada": "img/Balenciaga-Runner/balenciaga-runner-7-blanco-rosa-portada.webp",
+   "name": "Balenciaga Runner Blanco Rosa",
+   "price": 2600,
+   "portada": "img/Balenciaga-Runner/balenciaga-runner-blanco-rosa-portada.webp",
    "gallery": [
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-rosa-portada.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-rosa-1.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-rosa-2.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-rosa-3.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-rosa-4.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-rosa-5.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-rosa-6.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-rosa-7.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-rosa-8.webp"
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-rosa-portada.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-rosa-1.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-rosa-2.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-rosa-3.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-rosa-4.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-rosa-5.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-rosa-6.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-rosa-7.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-rosa-8.webp"
    ],
-   "detail": "p-balenciaga-runner-7-blanco-rosa.html",
+   "detail": "p-balenciaga-runner-blanco-rosa.html",
    "sizes_raw": "",
    "sizes": [
     "22 MX (35 EU)",
@@ -6988,21 +6988,21 @@
    ]
   },
   {
-   "name": "Balenciaga Runner 7 Blanco Vino",
-   "price": 2700,
-   "portada": "img/Balenciaga-Runner/balenciaga-runner-7-blanco-vino-portada.webp",
+   "name": "Balenciaga Runner Blanco Vino",
+   "price": 2600,
+   "portada": "img/Balenciaga-Runner/balenciaga-runner-blanco-vino-portada.webp",
    "gallery": [
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-vino-portada.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-vino-1.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-vino-2.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-vino-3.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-vino-4.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-vino-5.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-vino-6.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-vino-7.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-vino-8.webp"
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-vino-portada.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-vino-1.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-vino-2.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-vino-3.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-vino-4.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-vino-5.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-vino-6.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-vino-7.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-vino-8.webp"
    ],
-   "detail": "p-balenciaga-runner-7-blanco-vino.html",
+   "detail": "p-balenciaga-runner-blanco-vino.html",
    "sizes_raw": "",
    "sizes": [
     "22 MX (35 EU)",
@@ -7015,21 +7015,21 @@
    ]
   },
   {
-   "name": "Balenciaga Runner 7 Blanco Azul",
-   "price": 2700,
-   "portada": "img/Balenciaga-Runner/balenciaga-runner-7-blanco-azul-portada.webp",
+   "name": "Balenciaga Runner Blanco Azul 2",
+   "price": 2600,
+   "portada": "img/Balenciaga-Runner/balenciaga-runner-blanco-azul-2-portada.webp",
    "gallery": [
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-azul-portada.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-azul-1.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-azul-2.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-azul-3.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-azul-4.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-azul-5.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-azul-6.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-azul-7.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-azul-8.webp"
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-azul-2-portada.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-azul-2-1.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-azul-2-2.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-azul-2-3.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-azul-2-4.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-azul-2-5.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-azul-2-6.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-azul-2-7.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-azul-2-8.webp"
    ],
-   "detail": "p-balenciaga-runner-7-blanco-azul.html",
+   "detail": "p-balenciaga-runner-blanco-azul-2.html",
    "sizes_raw": "",
    "sizes": [
     "22 MX (35 EU)",
@@ -7042,21 +7042,21 @@
    ]
   },
   {
-   "name": "Balenciaga Runner 7 Negro 2",
-   "price": 2700,
-   "portada": "img/Balenciaga-Runner/balenciaga-runner-7-negro-2-portada.webp",
+   "name": "Balenciaga Runner Negro 2",
+   "price": 2600,
+   "portada": "img/Balenciaga-Runner/balenciaga-runner-negro-2-portada.webp",
    "gallery": [
-    "img/Balenciaga-Runner/balenciaga-runner-7-negro-2-portada.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-negro-2-1.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-negro-2-2.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-negro-2-3.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-negro-2-4.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-negro-2-5.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-negro-2-6.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-negro-2-7.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-negro-2-8.webp"
+    "img/Balenciaga-Runner/balenciaga-runner-negro-2-portada.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-negro-2-1.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-negro-2-2.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-negro-2-3.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-negro-2-4.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-negro-2-5.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-negro-2-6.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-negro-2-7.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-negro-2-8.webp"
    ],
-   "detail": "p-balenciaga-runner-7-negro-2.html",
+   "detail": "p-balenciaga-runner-negro-2.html",
    "sizes_raw": "",
    "sizes": [
     "22 MX (35 EU)",
@@ -7069,21 +7069,21 @@
    ]
   },
   {
-   "name": "Balenciaga Runner 7 Blanco",
-   "price": 2700,
-   "portada": "img/Balenciaga-Runner/balenciaga-runner-7-blanco-1.webp",
+   "name": "Balenciaga Runner Blanco",
+   "price": 2600,
+   "portada": "img/Balenciaga-Runner/balenciaga-runner-blanco-1.webp",
    "gallery": [
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-1.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-portada.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-2.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-3.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-4.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-5.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-6.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-7.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-8.webp"
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-1.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-portada.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-2.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-3.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-4.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-5.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-6.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-7.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-8.webp"
    ],
-   "detail": "p-balenciaga-runner-7-blanco.html",
+   "detail": "p-balenciaga-runner-blanco.html",
    "sizes_raw": "",
    "sizes": [
     "22 MX (35 EU)",
@@ -7096,21 +7096,21 @@
    ]
   },
   {
-   "name": "Balenciaga Runner 7 Negro Blanco",
-   "price": 2700,
-   "portada": "img/Balenciaga-Runner/balenciaga-runner-7-negro-blanco-portada.webp",
+   "name": "Balenciaga Runner Negro Blanco 2",
+   "price": 2600,
+   "portada": "img/Balenciaga-Runner/balenciaga-runner-negro-blanco-2-portada.webp",
    "gallery": [
-    "img/Balenciaga-Runner/balenciaga-runner-7-negro-blanco-portada.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-negro-blanco-1.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-negro-blanco-2.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-negro-blanco-3.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-negro-blanco-4.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-negro-blanco-5.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-negro-blanco-6.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-negro-blanco-7.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-negro-blanco-8.webp"
+    "img/Balenciaga-Runner/balenciaga-runner-negro-blanco-2-portada.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-negro-blanco-2-1.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-negro-blanco-2-2.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-negro-blanco-2-3.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-negro-blanco-2-4.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-negro-blanco-2-5.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-negro-blanco-2-6.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-negro-blanco-2-7.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-negro-blanco-2-8.webp"
    ],
-   "detail": "p-balenciaga-runner-7-negro-blanco.html",
+   "detail": "p-balenciaga-runner-negro-blanco-2.html",
    "sizes_raw": "",
    "sizes": [
     "22 MX (35 EU)",
@@ -7123,21 +7123,21 @@
    ]
   },
   {
-   "name": "Balenciaga Runner 7 Blanco 2",
-   "price": 2700,
-   "portada": "img/Balenciaga-Runner/balenciaga-runner-7-blanco-2-portada.webp",
+   "name": "Balenciaga Runner Blanco 2",
+   "price": 2600,
+   "portada": "img/Balenciaga-Runner/balenciaga-runner-blanco-2-portada.webp",
    "gallery": [
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-2-portada.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-2-1.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-2-2.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-2-3.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-2-4.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-2-5.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-2-6.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-2-7.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-blanco-2-8.webp"
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-2-portada.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-2-1.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-2-2.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-2-3.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-2-4.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-2-5.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-2-6.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-2-7.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-blanco-2-8.webp"
    ],
-   "detail": "p-balenciaga-runner-7-blanco-2.html",
+   "detail": "p-balenciaga-runner-blanco-2.html",
    "sizes_raw": "",
    "sizes": [
     "22 MX (35 EU)",
@@ -7150,21 +7150,21 @@
    ]
   },
   {
-   "name": "Balenciaga Runner 7 Gris Multicolor",
-   "price": 2700,
-   "portada": "img/Balenciaga-Runner/balenciaga-runner-7-gris-multicolor-portada.webp",
+   "name": "Balenciaga Runner Gris Multicolor",
+   "price": 2600,
+   "portada": "img/Balenciaga-Runner/balenciaga-runner-gris-multicolor-portada.webp",
    "gallery": [
-    "img/Balenciaga-Runner/balenciaga-runner-7-gris-multicolor-portada.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-gris-multicolor-1.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-gris-multicolor-2.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-gris-multicolor-3.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-gris-multicolor-4.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-gris-multicolor-5.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-gris-multicolor-6.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-gris-multicolor-7.webp",
-    "img/Balenciaga-Runner/balenciaga-runner-7-gris-multicolor-8.webp"
+    "img/Balenciaga-Runner/balenciaga-runner-gris-multicolor-portada.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-gris-multicolor-1.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-gris-multicolor-2.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-gris-multicolor-3.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-gris-multicolor-4.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-gris-multicolor-5.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-gris-multicolor-6.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-gris-multicolor-7.webp",
+    "img/Balenciaga-Runner/balenciaga-runner-gris-multicolor-8.webp"
    ],
-   "detail": "p-balenciaga-runner-7-gris-multicolor.html",
+   "detail": "p-balenciaga-runner-gris-multicolor.html",
    "sizes_raw": "",
    "sizes": [
     "22 MX (35 EU)",
@@ -7180,7 +7180,7 @@
  "Uggs": [
   {
    "name": "Uggs Color Rosa Tropical",
-   "price": 1950,
+   "price": 1900,
    "portada": "img/Uggs/uggs-color-rosa-tropical-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-rosa-tropical-portada.webp",
@@ -7206,7 +7206,7 @@
   },
   {
    "name": "Uggs Color Rosa",
-   "price": 1950,
+   "price": 1900,
    "portada": "img/Uggs/uggs-color-rosa-7.webp",
    "gallery": [
     "img/Uggs/uggs-color-rosa-7.webp",
@@ -7232,7 +7232,7 @@
   },
   {
    "name": "Uggs Color Blanco Hueso",
-   "price": 1950,
+   "price": 1900,
    "portada": "img/Uggs/uggs-color-blanco-hueso-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-blanco-hueso-portada.webp",
@@ -7258,7 +7258,7 @@
   },
   {
    "name": "Uggs Color Gris",
-   "price": 1950,
+   "price": 1900,
    "portada": "img/Uggs/uggs-color-gris-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-gris-portada.webp",
@@ -7284,7 +7284,7 @@
   },
   {
    "name": "Uggs Color Cafe Claro",
-   "price": 2000,
+   "price": 1950,
    "portada": "img/Uggs/uggs-color-cafe-claro-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-cafe-claro-portada.webp",
@@ -7310,7 +7310,7 @@
   },
   {
    "name": "Uggs Color Cafe",
-   "price": 2000,
+   "price": 1950,
    "portada": "img/Uggs/uggs-color-cafe-3.webp",
    "gallery": [
     "img/Uggs/uggs-color-cafe-3.webp",
@@ -7336,7 +7336,7 @@
   },
   {
    "name": "Uggs Color Cafe 2",
-   "price": 1950,
+   "price": 1900,
    "portada": "img/Uggs/uggs-color-cafe-2-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-cafe-2-portada.webp",
@@ -7367,7 +7367,7 @@
   },
   {
    "name": "Uggs Color Castano",
-   "price": 1950,
+   "price": 1900,
    "portada": "img/Uggs/uggs-color-castano-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-castano-portada.webp",
@@ -7398,7 +7398,7 @@
   },
   {
    "name": "Uggs Color Negro",
-   "price": 1950,
+   "price": 1900,
    "portada": "img/Uggs/uggs-color-negro-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-negro-portada.webp",
@@ -7429,7 +7429,7 @@
   },
   {
    "name": "Uggs Color Negro 2",
-   "price": 1900,
+   "price": 1850,
    "portada": "img/Uggs/uggs-color-negro-2-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-negro-2-portada.webp",
@@ -7459,7 +7459,7 @@
   },
   {
    "name": "Uggs Color Gris 2",
-   "price": 1900,
+   "price": 1850,
    "portada": "img/Uggs/uggs-color-gris-2-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-gris-2-portada.webp",
@@ -7489,7 +7489,7 @@
   },
   {
    "name": "Uggs Color Castano 2",
-   "price": 1900,
+   "price": 1850,
    "portada": "img/Uggs/uggs-color-castano-2-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-castano-2-portada.webp",
@@ -7519,7 +7519,7 @@
   },
   {
    "name": "Uggs Color Cafe 3",
-   "price": 1900,
+   "price": 1850,
    "portada": "img/Uggs/uggs-color-cafe-3-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-cafe-3-portada.webp",
@@ -7549,7 +7549,7 @@
   },
   {
    "name": "Uggs Color Arena",
-   "price": 1900,
+   "price": 1850,
    "portada": "img/Uggs/uggs-color-arena-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-arena-portada.webp",
@@ -7579,7 +7579,7 @@
   },
   {
    "name": "Uggs Color Negro 3",
-   "price": 1950,
+   "price": 1900,
    "portada": "img/Uggs/uggs-color-negro-3-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-negro-3-portada.webp",
@@ -7609,7 +7609,7 @@
   },
   {
    "name": "Uggs Color Gris 3",
-   "price": 1950,
+   "price": 1900,
    "portada": "img/Uggs/uggs-color-gris-3-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-gris-3-portada.webp",
@@ -7639,7 +7639,7 @@
   },
   {
    "name": "Uggs Color Castano 3",
-   "price": 1950,
+   "price": 1900,
    "portada": "img/Uggs/uggs-color-castano-3-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-castano-3-portada.webp",
@@ -7669,7 +7669,7 @@
   },
   {
    "name": "Uggs Color Arena 2",
-   "price": 1950,
+   "price": 1900,
    "portada": "img/Uggs/uggs-color-arena-2-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-arena-2-portada.webp",
@@ -7699,7 +7699,7 @@
   },
   {
    "name": "Uggs Color Cafe 4",
-   "price": 1950,
+   "price": 1900,
    "portada": "img/Uggs/uggs-color-cafe-4-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-cafe-4-portada.webp",
@@ -7729,7 +7729,7 @@
   },
   {
    "name": "Uggs Color Negro 4",
-   "price": 2000,
+   "price": 1950,
    "portada": "img/Uggs/uggs-color-negro-4-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-negro-4-portada.webp",
@@ -7755,7 +7755,7 @@
   },
   {
    "name": "Uggs Color Castano 4",
-   "price": 2000,
+   "price": 1950,
    "portada": "img/Uggs/uggs-color-castano-4-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-castano-4-portada.webp",
@@ -7781,7 +7781,7 @@
   },
   {
    "name": "Uggs Color Arena 3",
-   "price": 2000,
+   "price": 1950,
    "portada": "img/Uggs/uggs-color-arena-3-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-arena-3-portada.webp",
@@ -7807,7 +7807,7 @@
   },
   {
    "name": "Uggs Color Negro 5",
-   "price": 2000,
+   "price": 1950,
    "portada": "img/Uggs/uggs-color-negro-5-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-negro-5-portada.webp",
@@ -7833,7 +7833,7 @@
   },
   {
    "name": "Uggs Color Gris 4",
-   "price": 2000,
+   "price": 1950,
    "portada": "img/Uggs/uggs-color-gris-4-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-gris-4-portada.webp",
@@ -7859,7 +7859,7 @@
   },
   {
    "name": "Uggs Color Arena 4",
-   "price": 2000,
+   "price": 1950,
    "portada": "img/Uggs/uggs-color-arena-4-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-arena-4-portada.webp",
@@ -7885,7 +7885,7 @@
   },
   {
    "name": "Uggs Color Castano 5",
-   "price": 2000,
+   "price": 1950,
    "portada": "img/Uggs/uggs-color-castano-5-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-castano-5-portada.webp",
@@ -7911,7 +7911,7 @@
   },
   {
    "name": "Uggs Color Castano 6",
-   "price": 2100,
+   "price": 2050,
    "portada": "img/Uggs/uggs-color-castano-6-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-castano-6-portada.webp",
@@ -7937,7 +7937,7 @@
   },
   {
    "name": "Uggs Color",
-   "price": 2200,
+   "price": 2150,
    "portada": "img/Uggs/uggs-color-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-portada.webp",
@@ -7963,7 +7963,7 @@
   },
   {
    "name": "Uggs Color Negro 6",
-   "price": 2000,
+   "price": 1950,
    "portada": "img/Uggs/uggs-color-negro-6-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-negro-6-portada.webp",
@@ -7989,7 +7989,7 @@
   },
   {
    "name": "Uggs Color Gris 5",
-   "price": 2000,
+   "price": 1950,
    "portada": "img/Uggs/uggs-color-gris-5-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-gris-5-portada.webp",
@@ -8015,7 +8015,7 @@
   },
   {
    "name": "Uggs Color Arena 5",
-   "price": 2000,
+   "price": 1950,
    "portada": "img/Uggs/uggs-color-arena-5-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-arena-5-portada.webp",
@@ -8041,7 +8041,7 @@
   },
   {
    "name": "Uggs Color Castano 7",
-   "price": 2000,
+   "price": 1950,
    "portada": "img/Uggs/uggs-color-castano-7-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-castano-7-portada.webp",
@@ -8067,7 +8067,7 @@
   },
   {
    "name": "Uggs Color Negro 7",
-   "price": 2000,
+   "price": 1950,
    "portada": "img/Uggs/uggs-color-negro-7-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-negro-7-portada.webp",
@@ -8093,7 +8093,7 @@
   },
   {
    "name": "Uggs Color Gris 6",
-   "price": 2000,
+   "price": 1950,
    "portada": "img/Uggs/uggs-color-gris-6-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-gris-6-portada.webp",
@@ -8119,7 +8119,7 @@
   },
   {
    "name": "Uggs Color Arena 6",
-   "price": 2000,
+   "price": 1950,
    "portada": "img/Uggs/uggs-color-arena-6-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-arena-6-portada.webp",
@@ -8145,7 +8145,7 @@
   },
   {
    "name": "Uggs Color Cafe Claro 2",
-   "price": 2000,
+   "price": 1950,
    "portada": "img/Uggs/uggs-color-cafe-claro-2-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-cafe-claro-2-portada.webp",
@@ -8171,7 +8171,7 @@
   },
   {
    "name": "Uggs Color Castano 8",
-   "price": 2000,
+   "price": 1950,
    "portada": "img/Uggs/uggs-color-castano-8-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-castano-8-portada.webp",
@@ -8197,7 +8197,7 @@
   },
   {
    "name": "Uggs Color Cafe 5",
-   "price": 2050,
+   "price": 2000,
    "portada": "img/Uggs/uggs-color-cafe-5-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-cafe-5-portada.webp",
@@ -8223,7 +8223,7 @@
   },
   {
    "name": "Uggs Color Negro 8",
-   "price": 2050,
+   "price": 2000,
    "portada": "img/Uggs/uggs-color-negro-8-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-negro-8-portada.webp",
@@ -8249,7 +8249,7 @@
   },
   {
    "name": "Uggs Color Gris 7",
-   "price": 2050,
+   "price": 2000,
    "portada": "img/Uggs/uggs-color-gris-7-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-gris-7-portada.webp",
@@ -8275,7 +8275,7 @@
   },
   {
    "name": "Uggs Color Castano 9",
-   "price": 2050,
+   "price": 2000,
    "portada": "img/Uggs/uggs-color-castano-9-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-castano-9-portada.webp",
@@ -8301,7 +8301,7 @@
   },
   {
    "name": "Uggs Color Gris 8",
-   "price": 2050,
+   "price": 2000,
    "portada": "img/Uggs/uggs-color-gris-8-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-gris-8-portada.webp",
@@ -8327,7 +8327,7 @@
   },
   {
    "name": "Uggs Color Arena 7",
-   "price": 2050,
+   "price": 2000,
    "portada": "img/Uggs/uggs-color-arena-7-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-arena-7-portada.webp",
@@ -8353,7 +8353,7 @@
   },
   {
    "name": "Uggs Color Castano 10",
-   "price": 2050,
+   "price": 2000,
    "portada": "img/Uggs/uggs-color-castano-10-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-castano-10-portada.webp",
@@ -8379,7 +8379,7 @@
   },
   {
    "name": "Uggs Color Negro 9",
-   "price": 2050,
+   "price": 2000,
    "portada": "img/Uggs/uggs-color-negro-9-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-negro-9-portada.webp",
@@ -8405,7 +8405,7 @@
   },
   {
    "name": "Uggs Color Negro 10",
-   "price": 1950,
+   "price": 1900,
    "portada": "img/Uggs/uggs-color-negro-10-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-negro-10-portada.webp",
@@ -8431,7 +8431,7 @@
   },
   {
    "name": "Uggs Color Nogal",
-   "price": 1950,
+   "price": 1900,
    "portada": "img/Uggs/uggs-color-nogal-4.webp",
    "gallery": [
     "img/Uggs/uggs-color-nogal-4.webp",
@@ -8457,7 +8457,7 @@
   },
   {
    "name": "Uggs Color Arena 8",
-   "price": 1950,
+   "price": 1900,
    "portada": "img/Uggs/uggs-color-arena-8-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-arena-8-portada.webp",
@@ -8483,7 +8483,7 @@
   },
   {
    "name": "Uggs Color Castano 11",
-   "price": 1950,
+   "price": 1900,
    "portada": "img/Uggs/uggs-color-castano-11-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-castano-11-portada.webp",
@@ -8509,7 +8509,7 @@
   },
   {
    "name": "Uggs Color Castano 12",
-   "price": 2150,
+   "price": 2100,
    "portada": "img/Uggs/uggs-color-castano-12-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-castano-12-portada.webp",
@@ -8535,7 +8535,7 @@
   },
   {
    "name": "Uggs Color Castano 13",
-   "price": 2050,
+   "price": 2000,
    "portada": "img/Uggs/uggs-color-castano-13-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-castano-13-portada.webp",
@@ -8561,7 +8561,7 @@
   },
   {
    "name": "Uggs Color Negro 11",
-   "price": 1900,
+   "price": 1850,
    "portada": "img/Uggs/uggs-color-negro-11-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-negro-11-portada.webp",
@@ -8587,7 +8587,7 @@
   },
   {
    "name": "Uggs Color Castano 14",
-   "price": 1900,
+   "price": 1850,
    "portada": "img/Uggs/uggs-color-castano-14-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-castano-14-portada.webp",
@@ -8613,7 +8613,7 @@
   },
   {
    "name": "Uggs Color Gris 9",
-   "price": 1900,
+   "price": 1850,
    "portada": "img/Uggs/uggs-color-gris-9-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-gris-9-portada.webp",
@@ -8639,7 +8639,7 @@
   },
   {
    "name": "Uggs Color Castano 15",
-   "price": 1800,
+   "price": 1750,
    "portada": "img/Uggs/uggs-color-castano-15-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-castano-15-portada.webp",
@@ -8665,7 +8665,7 @@
   },
   {
    "name": "Uggs Color Negro 12",
-   "price": 2000,
+   "price": 1950,
    "portada": "img/Uggs/uggs-color-negro-12-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-negro-12-portada.webp",
@@ -8691,7 +8691,7 @@
   },
   {
    "name": "Uggs Color Castano 16",
-   "price": 2000,
+   "price": 1950,
    "portada": "img/Uggs/uggs-color-castano-16-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-castano-16-portada.webp",
@@ -8717,7 +8717,7 @@
   },
   {
    "name": "Uggs Color Cafe 6",
-   "price": 2000,
+   "price": 1950,
    "portada": "img/Uggs/uggs-color-cafe-6-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-cafe-6-portada.webp",
@@ -8743,7 +8743,7 @@
   },
   {
    "name": "Uggs Color Negro 13",
-   "price": 1900,
+   "price": 1850,
    "portada": "img/Uggs/uggs-color-negro-13-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-negro-13-portada.webp",
@@ -8769,7 +8769,7 @@
   },
   {
    "name": "Uggs Color Gris 10",
-   "price": 1900,
+   "price": 1850,
    "portada": "img/Uggs/uggs-color-gris-10-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-gris-10-portada.webp",
@@ -8795,7 +8795,7 @@
   },
   {
    "name": "Uggs Color Castano 17",
-   "price": 1900,
+   "price": 1850,
    "portada": "img/Uggs/uggs-color-castano-17-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-castano-17-portada.webp",
@@ -8821,7 +8821,7 @@
   },
   {
    "name": "Uggs Color Castano 18",
-   "price": 1950,
+   "price": 1900,
    "portada": "img/Uggs/uggs-color-castano-18-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-castano-18-portada.webp",
@@ -8847,7 +8847,7 @@
   },
   {
    "name": "Uggs Color Negro 14",
-   "price": 1950,
+   "price": 1900,
    "portada": "img/Uggs/uggs-color-negro-14-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-negro-14-portada.webp",
@@ -8873,7 +8873,7 @@
   },
   {
    "name": "Uggs Color Castano 19",
-   "price": 1950,
+   "price": 1900,
    "portada": "img/Uggs/uggs-color-castano-19-4.webp",
    "gallery": [
     "img/Uggs/uggs-color-castano-19-4.webp",
@@ -8899,7 +8899,7 @@
   },
   {
    "name": "Uggs Color Arena 9",
-   "price": 1950,
+   "price": 1900,
    "portada": "img/Uggs/uggs-color-arena-9-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-arena-9-portada.webp",
@@ -8925,7 +8925,7 @@
   },
   {
    "name": "Uggs Color Arena 10",
-   "price": 2050,
+   "price": 2000,
    "portada": "img/Uggs/uggs-color-arena-10-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-arena-10-portada.webp",
@@ -8951,7 +8951,7 @@
   },
   {
    "name": "Uggs Color Castano 20",
-   "price": 2050,
+   "price": 2000,
    "portada": "img/Uggs/uggs-color-castano-20-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-castano-20-portada.webp",
@@ -8977,7 +8977,7 @@
   },
   {
    "name": "Uggs Color Castano 21",
-   "price": 2000,
+   "price": 1950,
    "portada": "img/Uggs/uggs-color-castano-21-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-castano-21-portada.webp",
@@ -9003,7 +9003,7 @@
   },
   {
    "name": "Uggs Color Nogal 2",
-   "price": 2000,
+   "price": 1950,
    "portada": "img/Uggs/uggs-color-nogal-2-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-nogal-2-portada.webp",
@@ -9029,7 +9029,7 @@
   },
   {
    "name": "Uggs Color Arena 11",
-   "price": 2000,
+   "price": 1950,
    "portada": "img/Uggs/uggs-color-arena-11-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-arena-11-portada.webp",
@@ -9055,7 +9055,7 @@
   },
   {
    "name": "Uggs Color Nogal 3",
-   "price": 2250,
+   "price": 2200,
    "portada": "img/Uggs/uggs-color-nogal-3-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-nogal-3-portada.webp",
@@ -9081,7 +9081,7 @@
   },
   {
    "name": "Uggs Color Castano 22",
-   "price": 2250,
+   "price": 2200,
    "portada": "img/Uggs/uggs-color-castano-22-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-castano-22-portada.webp",
@@ -9107,7 +9107,7 @@
   },
   {
    "name": "Uggs Color Negro 15",
-   "price": 2250,
+   "price": 2200,
    "portada": "img/Uggs/uggs-color-negro-15-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-negro-15-portada.webp",
@@ -9133,7 +9133,7 @@
   },
   {
    "name": "Uggs Color Castano 23",
-   "price": 2100,
+   "price": 2050,
    "portada": "img/Uggs/uggs-color-castano-23-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-castano-23-portada.webp",
@@ -9159,7 +9159,7 @@
   },
   {
    "name": "Uggs Color Arena 12",
-   "price": 2100,
+   "price": 2050,
    "portada": "img/Uggs/uggs-color-arena-12-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-arena-12-portada.webp",
@@ -9185,7 +9185,7 @@
   },
   {
    "name": "Uggs Color Castano 24",
-   "price": 2100,
+   "price": 2050,
    "portada": "img/Uggs/uggs-color-castano-24-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-castano-24-portada.webp",
@@ -9211,7 +9211,7 @@
   },
   {
    "name": "Uggs Color Castano 25",
-   "price": 2150,
+   "price": 2100,
    "portada": "img/Uggs/uggs-color-castano-25-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-castano-25-portada.webp",
@@ -9237,7 +9237,7 @@
   },
   {
    "name": "Uggs Color Castano 26",
-   "price": 2150,
+   "price": 2100,
    "portada": "img/Uggs/uggs-color-castano-26-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-castano-26-portada.webp",
@@ -9263,7 +9263,7 @@
   },
   {
    "name": "Uggs Color Negro 16",
-   "price": 2150,
+   "price": 2100,
    "portada": "img/Uggs/uggs-color-negro-16-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-negro-16-portada.webp",
@@ -9289,7 +9289,7 @@
   },
   {
    "name": "Uggs Color Castano 27",
-   "price": 2150,
+   "price": 2100,
    "portada": "img/Uggs/uggs-color-castano-27-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-castano-27-portada.webp",
@@ -9315,7 +9315,7 @@
   },
   {
    "name": "Uggs Color Nogal 4",
-   "price": 2150,
+   "price": 2100,
    "portada": "img/Uggs/uggs-color-nogal-4-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-nogal-4-portada.webp",
@@ -9341,7 +9341,7 @@
   },
   {
    "name": "Uggs Color Nogal 5",
-   "price": 2000,
+   "price": 1950,
    "portada": "img/Uggs/uggs-color-nogal-5-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-nogal-5-portada.webp",
@@ -9367,7 +9367,7 @@
   },
   {
    "name": "Uggs Color Castano 28",
-   "price": 2000,
+   "price": 1950,
    "portada": "img/Uggs/uggs-color-castano-28-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-castano-28-portada.webp",
@@ -9393,7 +9393,7 @@
   },
   {
    "name": "Uggs Color Arena 13",
-   "price": 2000,
+   "price": 1950,
    "portada": "img/Uggs/uggs-color-arena-13-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-arena-13-portada.webp",
@@ -9419,7 +9419,7 @@
   },
   {
    "name": "Uggs Color Castano 29",
-   "price": 2000,
+   "price": 1950,
    "portada": "img/Uggs/uggs-color-castano-29-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-castano-29-portada.webp",
@@ -9445,7 +9445,7 @@
   },
   {
    "name": "Uggs Color Negro 17",
-   "price": 2000,
+   "price": 1950,
    "portada": "img/Uggs/uggs-color-negro-17-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-negro-17-portada.webp",
@@ -9471,7 +9471,7 @@
   },
   {
    "name": "Uggs Color Negro 18",
-   "price": 2150,
+   "price": 2100,
    "portada": "img/Uggs/uggs-color-negro-18-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-negro-18-portada.webp",
@@ -9497,7 +9497,7 @@
   },
   {
    "name": "Uggs Color Castano 30",
-   "price": 2150,
+   "price": 2100,
    "portada": "img/Uggs/uggs-color-castano-30-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-castano-30-portada.webp",
@@ -9523,7 +9523,7 @@
   },
   {
    "name": "Uggs Color Cafe Claro 3",
-   "price": 2150,
+   "price": 2100,
    "portada": "img/Uggs/uggs-color-cafe-claro-3-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-cafe-claro-3-portada.webp",
@@ -9549,7 +9549,7 @@
   },
   {
    "name": "Uggs Color Castano 31",
-   "price": 2250,
+   "price": 2200,
    "portada": "img/Uggs/uggs-color-castano-31-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-castano-31-portada.webp",
@@ -9575,7 +9575,7 @@
   },
   {
    "name": "Uggs Color Negro 19",
-   "price": 2100,
+   "price": 2050,
    "portada": "img/Uggs/uggs-color-negro-19-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-negro-19-portada.webp",
@@ -9600,7 +9600,7 @@
   },
   {
    "name": "Uggs Color Arena 14",
-   "price": 2100,
+   "price": 2050,
    "portada": "img/Uggs/uggs-color-arena-14-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-arena-14-portada.webp",
@@ -9630,7 +9630,7 @@
   },
   {
    "name": "Uggs Color Castano 32",
-   "price": 2100,
+   "price": 2050,
    "portada": "img/Uggs/uggs-color-castano-32-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-castano-32-portada.webp",
@@ -9660,7 +9660,7 @@
   },
   {
    "name": "Uggs Color Arena 15",
-   "price": 2000,
+   "price": 1950,
    "portada": "img/Uggs/uggs-color-arena-15-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-arena-15-portada.webp",
@@ -9690,7 +9690,7 @@
   },
   {
    "name": "Uggs Color Castano 33",
-   "price": 2000,
+   "price": 1950,
    "portada": "img/Uggs/uggs-color-castano-33-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-castano-33-portada.webp",
@@ -9720,7 +9720,7 @@
   },
   {
    "name": "Uggs Color Cafe Claro 4",
-   "price": 2000,
+   "price": 1950,
    "portada": "img/Uggs/uggs-color-cafe-claro-4-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-cafe-claro-4-portada.webp",
@@ -9750,7 +9750,7 @@
   },
   {
    "name": "Uggs Color Cafe 7",
-   "price": 2000,
+   "price": 1950,
    "portada": "img/Uggs/uggs-color-cafe-7-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-cafe-7-portada.webp",
@@ -9780,7 +9780,7 @@
   },
   {
    "name": "Uggs Color Gris 11",
-   "price": 2000,
+   "price": 1950,
    "portada": "img/Uggs/uggs-color-gris-11-4.webp",
    "gallery": [
     "img/Uggs/uggs-color-gris-11-4.webp",
@@ -9810,7 +9810,7 @@
   },
   {
    "name": "Uggs Color Negro 20",
-   "price": 1800,
+   "price": 1750,
    "portada": "img/Uggs/uggs-color-negro-20-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-negro-20-portada.webp",
@@ -9836,7 +9836,7 @@
   },
   {
    "name": "Uggs Color Arena 16",
-   "price": 1800,
+   "price": 1750,
    "portada": "img/Uggs/uggs-color-arena-16-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-arena-16-portada.webp",
@@ -9862,7 +9862,7 @@
   },
   {
    "name": "Uggs Color Castano 34",
-   "price": 1800,
+   "price": 1750,
    "portada": "img/Uggs/uggs-color-castano-34-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-castano-34-portada.webp",
@@ -9888,7 +9888,7 @@
   },
   {
    "name": "Uggs Color Azul",
-   "price": 1900,
+   "price": 1850,
    "portada": "img/Uggs/uggs-color-azul-4.webp",
    "gallery": [
     "img/Uggs/uggs-color-azul-4.webp",
@@ -9914,7 +9914,7 @@
   },
   {
    "name": "Uggs Color Arena 17",
-   "price": 1900,
+   "price": 1850,
    "portada": "img/Uggs/uggs-color-arena-17-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-arena-17-portada.webp",
@@ -9940,7 +9940,7 @@
   },
   {
    "name": "Uggs Color Castano 35",
-   "price": 1900,
+   "price": 1850,
    "portada": "img/Uggs/uggs-color-castano-35-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-castano-35-portada.webp",
@@ -9966,7 +9966,7 @@
   },
   {
    "name": "Uggs Color Gris 12",
-   "price": 2150,
+   "price": 2100,
    "portada": "img/Uggs/uggs-color-gris-12-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-gris-12-portada.webp",
@@ -9996,7 +9996,7 @@
   },
   {
    "name": "Uggs Color Cafe Azul",
-   "price": 2150,
+   "price": 2100,
    "portada": "img/Uggs/uggs-color-cafe-azul-4.webp",
    "gallery": [
     "img/Uggs/uggs-color-cafe-azul-4.webp",
@@ -10026,7 +10026,7 @@
   },
   {
    "name": "Uggs Color Negro 21",
-   "price": 2150,
+   "price": 2100,
    "portada": "img/Uggs/uggs-color-negro-21-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-negro-21-portada.webp",
@@ -10056,7 +10056,7 @@
   },
   {
    "name": "Uggs Color Cafe Naranja",
-   "price": 2150,
+   "price": 2100,
    "portada": "img/Uggs/uggs-color-cafe-naranja-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-cafe-naranja-portada.webp",
@@ -10086,7 +10086,7 @@
   },
   {
    "name": "Uggs Color Cafe 8",
-   "price": 2150,
+   "price": 2100,
    "portada": "img/Uggs/uggs-color-cafe-8-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-cafe-8-portada.webp",
@@ -10116,7 +10116,7 @@
   },
   {
    "name": "Uggs Color Cafe Azul 2",
-   "price": 2150,
+   "price": 2100,
    "portada": "img/Uggs/uggs-color-cafe-azul-2-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-cafe-azul-2-portada.webp",
@@ -10146,7 +10146,7 @@
   },
   {
    "name": "Uggs Color Cafe 9",
-   "price": 2150,
+   "price": 2100,
    "portada": "img/Uggs/uggs-color-cafe-9-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-cafe-9-portada.webp",
@@ -10176,7 +10176,7 @@
   },
   {
    "name": "Uggs Color Verde",
-   "price": 2150,
+   "price": 2100,
    "portada": "img/Uggs/uggs-color-verde-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-verde-portada.webp",
@@ -10201,7 +10201,7 @@
   },
   {
    "name": "Uggs Color 2",
-   "price": 2150,
+   "price": 2100,
    "portada": "img/Uggs/uggs-color-2-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-2-portada.webp",
@@ -10231,7 +10231,7 @@
   },
   {
    "name": "Uggs Color Gris 13",
-   "price": 2150,
+   "price": 2100,
    "portada": "img/Uggs/uggs-color-gris-13-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-gris-13-portada.webp",
@@ -10256,7 +10256,7 @@
   },
   {
    "name": "Uggs Color Cafe Naranja 2",
-   "price": 2150,
+   "price": 2100,
    "portada": "img/Uggs/uggs-color-cafe-naranja-2-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-cafe-naranja-2-portada.webp",
@@ -10286,7 +10286,7 @@
   },
   {
    "name": "Uggs Color Negro 22",
-   "price": 2150,
+   "price": 2100,
    "portada": "img/Uggs/uggs-color-negro-22-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-negro-22-portada.webp",
@@ -10316,7 +10316,7 @@
   },
   {
    "name": "Uggs Color Negro 23",
-   "price": 2150,
+   "price": 2100,
    "portada": "img/Uggs/uggs-color-negro-23-portada.webp",
    "gallery": [
     "img/Uggs/uggs-color-negro-23-portada.webp",
@@ -10348,7 +10348,7 @@
  "Timberland": [
   {
    "name": "Timberland",
-   "price": 2800,
+   "price": 2600,
    "portada": "img/Timberland/timberland-8.webp",
    "gallery": [
     "img/Timberland/timberland-8.webp",
@@ -10380,7 +10380,7 @@
   },
   {
    "name": "LV X Timberland Negro",
-   "price": 3600,
+   "price": 3400,
    "portada": "img/Timberland/lv-x-timberland-negro-8.webp",
    "gallery": [
     "img/Timberland/lv-x-timberland-negro-8.webp",
@@ -10412,7 +10412,7 @@
   },
   {
    "name": "LV X Timberland Amarillo",
-   "price": 3600,
+   "price": 3400,
    "portada": "img/Timberland/lv-x-timberland-amarillo-21.webp",
    "gallery": [
     "img/Timberland/lv-x-timberland-amarillo-21.webp",
@@ -10444,7 +10444,7 @@
   },
   {
    "name": "Timberland Negro",
-   "price": 2700,
+   "price": 2600,
    "portada": "img/Timberland/timberland-negro-8.webp",
    "gallery": [
     "img/Timberland/timberland-negro-8.webp",
@@ -10480,7 +10480,7 @@
   },
   {
    "name": "Timberland Amarillo",
-   "price": 2700,
+   "price": 2600,
    "portada": "img/Timberland/timberland-amarillo-21.webp",
    "gallery": [
     "img/Timberland/timberland-amarillo-21.webp",
@@ -10516,7 +10516,7 @@
   },
   {
    "name": "Timberland Negro 2",
-   "price": 2500,
+   "price": 2600,
    "portada": "img/Timberland/timberland-negro-2-3.webp",
    "gallery": [
     "img/Timberland/timberland-negro-2-3.webp",
@@ -10552,7 +10552,7 @@
   },
   {
    "name": "Timberland Amarillo 2",
-   "price": 2500,
+   "price": 2600,
    "portada": "img/Timberland/timberland-amarillo-2-3.webp",
    "gallery": [
     "img/Timberland/timberland-amarillo-2-3.webp",
@@ -10588,7 +10588,7 @@
   },
   {
    "name": "Timberland Negro 3",
-   "price": 2500,
+   "price": 2600,
    "portada": "img/Timberland/timberland-negro-3-3.webp",
    "gallery": [
     "img/Timberland/timberland-negro-3-3.webp",
@@ -10624,7 +10624,7 @@
   },
   {
    "name": "Timberland Amarillo 3",
-   "price": 2500,
+   "price": 2600,
    "portada": "img/Timberland/timberland-amarillo-3-8.webp",
    "gallery": [
     "img/Timberland/timberland-amarillo-3-8.webp",
@@ -10662,7 +10662,7 @@
  "Nocta": [
   {
    "name": "Nocta Morado Negro",
-   "price": 2400,
+   "price": 2250,
    "portada": "img/Nocta/nocta-morado-negro-portada.webp",
    "gallery": [
     "img/Nocta/nocta-morado-negro-portada.webp",
@@ -10695,7 +10695,7 @@
   },
   {
    "name": "Nocta Amarillo",
-   "price": 2400,
+   "price": 2250,
    "portada": "img/Nocta/nocta-amarillo-portada.webp",
    "gallery": [
     "img/Nocta/nocta-amarillo-portada.webp",
@@ -10728,7 +10728,7 @@
   },
   {
    "name": "Nocta Naranja",
-   "price": 2400,
+   "price": 2250,
    "portada": "img/Nocta/nocta-naranja-3.webp",
    "gallery": [
     "img/Nocta/nocta-naranja-3.webp",
@@ -10761,7 +10761,7 @@
   },
   {
    "name": "Nocta Negro",
-   "price": 2400,
+   "price": 2250,
    "portada": "img/Nocta/nocta-negro-3.webp",
    "gallery": [
     "img/Nocta/nocta-negro-3.webp",
@@ -10794,7 +10794,7 @@
   },
   {
    "name": "Nocta Verde",
-   "price": 2400,
+   "price": 2250,
    "portada": "img/Nocta/nocta-verde-3.webp",
    "gallery": [
     "img/Nocta/nocta-verde-3.webp",
@@ -10827,7 +10827,7 @@
   },
   {
    "name": "Nocta Blanco",
-   "price": 2400,
+   "price": 2250,
    "portada": "img/Nocta/nocta-blanco-portada.webp",
    "gallery": [
     "img/Nocta/nocta-blanco-portada.webp",
@@ -10862,7 +10862,7 @@
  "Nike Dunk": [
   {
    "name": "Nike Dunk Blanco",
-   "price": 2500,
+   "price": 2400,
    "portada": "img/Nike-Dunk/nike-dunk-blanco-portada.webp",
    "gallery": [
     "img/Nike-Dunk/nike-dunk-blanco-portada.webp",
@@ -10899,7 +10899,7 @@
   },
   {
    "name": "Nike Dunk Naranja",
-   "price": 2500,
+   "price": 2400,
    "portada": "img/Nike-Dunk/nike-dunk-naranja-portada.webp",
    "gallery": [
     "img/Nike-Dunk/nike-dunk-naranja-portada.webp",
@@ -10936,7 +10936,7 @@
   },
   {
    "name": "Nike Dunk Verde",
-   "price": 2350,
+   "price": 2250,
    "portada": "img/Nike-Dunk/nike-dunk-verde-portada.webp",
    "gallery": [
     "img/Nike-Dunk/nike-dunk-verde-portada.webp",
@@ -10973,7 +10973,7 @@
   },
   {
    "name": "Nike Dunk Naranja 2",
-   "price": 2350,
+   "price": 2250,
    "portada": "img/Nike-Dunk/nike-dunk-naranja-2-portada.webp",
    "gallery": [
     "img/Nike-Dunk/nike-dunk-naranja-2-portada.webp",
@@ -11010,7 +11010,7 @@
   },
   {
    "name": "Nike Dunk Amarillo",
-   "price": 2350,
+   "price": 2250,
    "portada": "img/Nike-Dunk/nike-dunk-amarillo-portada.webp",
    "gallery": [
     "img/Nike-Dunk/nike-dunk-amarillo-portada.webp",
@@ -11044,7 +11044,7 @@
   },
   {
    "name": "Nike Dunk Azul",
-   "price": 2500,
+   "price": 2400,
    "portada": "img/Nike-Dunk/nike-dunk-azul-portada.webp",
    "gallery": [
     "img/Nike-Dunk/nike-dunk-azul-portada.webp",
@@ -11081,7 +11081,7 @@
   },
   {
    "name": "Nike Dunk Rojo",
-   "price": 2500,
+   "price": 2400,
    "portada": "img/Nike-Dunk/nike-dunk-rojo-portada.webp",
    "gallery": [
     "img/Nike-Dunk/nike-dunk-rojo-portada.webp",
@@ -11118,7 +11118,7 @@
   },
   {
    "name": "Nike Dunk Verde 2",
-   "price": 2500,
+   "price": 2400,
    "portada": "img/Nike-Dunk/nike-dunk-verde-2-portada.webp",
    "gallery": [
     "img/Nike-Dunk/nike-dunk-verde-2-portada.webp",
@@ -11155,7 +11155,7 @@
   },
   {
    "name": "Nike Dunk Morado",
-   "price": 2500,
+   "price": 2400,
    "portada": "img/Nike-Dunk/nike-dunk-morado-portada.webp",
    "gallery": [
     "img/Nike-Dunk/nike-dunk-morado-portada.webp",
@@ -11192,7 +11192,7 @@
   },
   {
    "name": "Nike Dunk Dunk",
-   "price": 2550,
+   "price": 2450,
    "portada": "img/Nike-Dunk/nike-dunk-dunk-portada.webp",
    "gallery": [
     "img/Nike-Dunk/nike-dunk-dunk-portada.webp",
@@ -11229,7 +11229,7 @@
   },
   {
    "name": "Nike Dunk Dunk 2",
-   "price": 2550,
+   "price": 2450,
    "portada": "img/Nike-Dunk/nike-dunk-dunk-2-portada.webp",
    "gallery": [
     "img/Nike-Dunk/nike-dunk-dunk-2-portada.webp",
@@ -13563,7 +13563,7 @@
  "Alexander McQueen": [
   {
    "name": "Alexander McQueen",
-   "price": 2850,
+   "price": 2700,
    "portada": "img/Alexander-McQueen/alexander-mcqueen-portada.webp",
    "gallery": [
     "img/Alexander-McQueen/alexander-mcqueen-portada.webp",
@@ -13591,7 +13591,7 @@
   },
   {
    "name": "Alexander McQueen Talon Azul",
-   "price": 2850,
+   "price": 2700,
    "portada": "img/Alexander-McQueen/alexander-mcqueen-talon-azul-portada.webp",
    "gallery": [
     "img/Alexander-McQueen/alexander-mcqueen-talon-azul-portada.webp",
@@ -13619,7 +13619,7 @@
   },
   {
    "name": "Alexander McQueen Talon Gris",
-   "price": 2850,
+   "price": 2700,
    "portada": "img/Alexander-McQueen/alexander-mcqueen-talon-gris-portada.webp",
    "gallery": [
     "img/Alexander-McQueen/alexander-mcqueen-talon-gris-portada.webp",
@@ -13647,7 +13647,7 @@
   },
   {
    "name": "Alexander McQueen Piedras Negras",
-   "price": 2850,
+   "price": 2700,
    "portada": "img/Alexander-McQueen/alexander-mcqueen-piedras-negras-portada.webp",
    "gallery": [
     "img/Alexander-McQueen/alexander-mcqueen-piedras-negras-portada.webp",
@@ -13668,7 +13668,7 @@
   },
   {
    "name": "Alexander McQueen Full Black",
-   "price": 2850,
+   "price": 2700,
    "portada": "img/Alexander-McQueen/alexander-mcqueen-full-black-portada.webp",
    "gallery": [
     "img/Alexander-McQueen/alexander-mcqueen-full-black-portada.webp",
@@ -13701,7 +13701,7 @@
   },
   {
    "name": "Alexander McQueen Oversized White",
-   "price": 2850,
+   "price": 2700,
    "portada": "img/Alexander-McQueen/alexander-mcqueen-oversized-white-portada.webp",
    "gallery": [
     "img/Alexander-McQueen/alexander-mcqueen-oversized-white-portada.webp",
@@ -13734,7 +13734,7 @@
   },
   {
    "name": "Alexander McQueen Tread Slick",
-   "price": 2850,
+   "price": 2700,
    "portada": "img/Alexander-McQueen/alexander-mcqueen-tread-slick-portada.webp",
    "gallery": [
     "img/Alexander-McQueen/alexander-mcqueen-tread-slick-portada.webp",
@@ -13767,7 +13767,7 @@
   },
   {
    "name": "Alexander McQueen Tread Slick White",
-   "price": 2850,
+   "price": 2700,
    "portada": "img/Alexander-McQueen/alexander-mcqueen-tread-slick-white-portada.webp",
    "gallery": [
     "img/Alexander-McQueen/alexander-mcqueen-tread-slick-white-portada.webp",
@@ -13802,7 +13802,7 @@
  "Amiri": [
   {
    "name": "Amiri Skeleton Black White Belt",
-   "price": 2850,
+   "price": 2700,
    "portada": "img/Amiri-Tenis/amiri-skeleton-black-white-belt-portada.webp",
    "gallery": [
     "img/Amiri-Tenis/amiri-skeleton-black-white-belt-portada.webp",
@@ -13830,7 +13830,7 @@
   },
   {
    "name": "Amiri Skeleton Black Belt",
-   "price": 2850,
+   "price": 2700,
    "portada": "img/Amiri-Tenis/amiri-skeleton-black-belt-portada.webp",
    "gallery": [
     "img/Amiri-Tenis/amiri-skeleton-black-belt-portada.webp",
@@ -13857,7 +13857,7 @@
   },
   {
    "name": "Amiri Skeleton Black White",
-   "price": 2850,
+   "price": 2700,
    "portada": "img/Amiri-Tenis/amiri-skeleton-black-white-portada.webp",
    "gallery": [
     "img/Amiri-Tenis/amiri-skeleton-black-white-portada.webp",
@@ -13884,7 +13884,7 @@
   },
   {
    "name": "Amiri Skeleton White Green",
-   "price": 2850,
+   "price": 2700,
    "portada": "img/Amiri-Tenis/amiri-skeleton-white-green-portada.webp",
    "gallery": [
     "img/Amiri-Tenis/amiri-skeleton-white-green-portada.webp",
@@ -13910,7 +13910,7 @@
   },
   {
    "name": "Amiri Skeleton White Pink",
-   "price": 2850,
+   "price": 2700,
    "portada": "img/Amiri-Tenis/amiri-skeleton-white-pink-portada.webp",
    "gallery": [
     "img/Amiri-Tenis/amiri-skeleton-white-pink-portada.webp",
@@ -13936,7 +13936,7 @@
   },
   {
    "name": "Amiri Skeleton White Red",
-   "price": 2850,
+   "price": 2700,
    "portada": "img/Amiri-Tenis/amiri-skeleton-white-red-portada.webp",
    "gallery": [
     "img/Amiri-Tenis/amiri-skeleton-white-red-portada.webp",
