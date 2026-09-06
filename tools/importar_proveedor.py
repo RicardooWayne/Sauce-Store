@@ -286,7 +286,23 @@ def main():
                     help="modo album: nombre de archivo que sera la portada")
     ap.add_argument("--sizes-raw", dest="sizes_raw", default="",
                     help="texto de talla literal, ej 'S a XL' o 'Unitalla'")
+    ap.add_argument("--spec", default="",
+                    help="JSON UTF-8 con {portada, fotos:[...], omitir:[...], final:[...]}"
+                         " para nombres de archivo no-ASCII (chino)")
     args = ap.parse_args()
+
+    # --spec: sobreescribe --portada / --fotos / --omitir desde un archivo
+    # (asi los nombres en chino no pasan por argv, que en Windows los rompe).
+    spec_final = []
+    if args.spec:
+        _sp = json.loads(Path(args.spec).read_text(encoding="utf-8"))
+        if _sp.get("portada"):
+            args.portada = _sp["portada"]
+        if _sp.get("fotos"):
+            args.fotos = ",".join(_sp["fotos"])
+        if _sp.get("omitir"):
+            args.omitir = ",".join(_sp["omitir"])
+        spec_final = _sp.get("final") or []
 
     carpeta_img = CARPETAS.get(args.marca)
     if not carpeta_img:
@@ -393,6 +409,14 @@ def main():
                 print("  !! portada '%s' no esta en el album (%s)" % (pv, nombre))
             else:
                 fotos.insert(0, fotos.pop(idx))
+        # --spec "final": estas fotos van al final de la galeria
+        if spec_final and not args.solo_precios:
+            fin_base = {re.sub(r"\.\w+$", "", f).lower() for f in spec_final}
+            cabeza = [t for t in fotos
+                      if re.sub(r"\.\w+$", "", t[0]).lower() not in fin_base]
+            cola = [t for t in fotos
+                    if re.sub(r"\.\w+$", "", t[0]).lower() in fin_base]
+            fotos = cabeza + cola
         # sin duplicados conservando orden
         _vis, _fu = set(), []
         for nm, h in fotos:

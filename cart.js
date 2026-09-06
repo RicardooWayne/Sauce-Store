@@ -42,6 +42,12 @@
     return "$" + Math.round(n).toLocaleString("es-MX") + " MXN";
   }
 
+  /* options puede venir como 1 grupo {label,choices} o como lista de grupos */
+  function normOpts(o) {
+    if (!o) return [];
+    return Array.isArray(o) ? o : [o];
+  }
+
   /* Une el carrito con el catalogo. Descarta lo que ya no exista. */
   function resolve() {
     return loadCatalog().then(function (cat) {
@@ -50,14 +56,15 @@
         var p = cat[it.id];
         if (!p) return;
         var qty = Math.min(Math.max(parseInt(it.qty, 10) || 1, 1), 10);
-        var opt = it.opt || "";
+        var optArr = Array.isArray(it.opt) ? it.opt : (it.opt ? [it.opt] : []);
         var price = p.price;
-        if (opt && p.options && p.options.choices) {
-          var ch = p.options.choices.filter(function (c) { return c.name === opt; })[0];
-          if (ch && typeof ch.price === "number") price = ch.price;
-        }
+        normOpts(p.options).forEach(function (g) {
+          (g.choices || []).forEach(function (c) {
+            if (optArr.indexOf(c.name) !== -1 && typeof c.price === "number") price = c.price;
+          });
+        });
         out.push({
-          id: it.id, size: it.size || "", opt: opt, qty: qty,
+          id: it.id, size: it.size || "", opt: optArr, qty: qty,
           name: p.name, cat: p.cat, price: price, img: p.img, url: p.url,
           line: price * qty
         });
@@ -103,13 +110,15 @@
   }
 
   function addItem(id, size, opt, qty) {
-    opt = opt || "";
+    var optArr = Array.isArray(opt) ? opt : (opt ? [opt] : []);
+    var key = JSON.stringify(optArr);
     var items = read();
     var found = items.filter(function (i) {
-      return i.id === id && i.size === size && (i.opt || "") === opt;
+      var a = Array.isArray(i.opt) ? i.opt : (i.opt ? [i.opt] : []);
+      return i.id === id && i.size === size && JSON.stringify(a) === key;
     })[0];
     if (found) { found.qty = Math.min((found.qty || 1) + (qty || 1), 10); }
-    else { items.push({ id: id, size: size, opt: opt, qty: qty || 1 }); }
+    else { items.push({ id: id, size: size, opt: optArr, qty: qty || 1 }); }
     write(items);
   }
 
@@ -121,10 +130,10 @@
     if (!btn) return;
     var chips = document.getElementById("sizeChips");
     var free = document.getElementById("sizeFree");
-    var optChips = document.getElementById("optChips");
+    var optGroups = [].slice.call(document.querySelectorAll(".opt-chips"));
     var dPrice = document.getElementById("dPrice");
     var picked = "";
-    var pickedOpt = "";
+    var pickedOpts = optGroups.map(function () { return ""; });
 
     if (chips) {
       chips.addEventListener("click", function (e) {
@@ -139,28 +148,28 @@
       });
     }
 
-    if (optChips) {
-      optChips.addEventListener("click", function (e) {
+    optGroups.forEach(function (grp, gi) {
+      grp.addEventListener("click", function (e) {
         var c = e.target.closest(".size-chip");
         if (!c) return;
-        optChips.querySelectorAll(".size-chip").forEach(function (x) {
+        grp.querySelectorAll(".size-chip").forEach(function (x) {
           x.classList.remove("is-active");
         });
         c.classList.add("is-active");
-        pickedOpt = c.dataset.opt;
-        optChips.classList.remove("needs-pick");
+        pickedOpts[gi] = c.dataset.opt;
+        grp.classList.remove("needs-pick");
         if (dPrice && c.dataset.optPrice) {
           dPrice.textContent = money(parseInt(c.dataset.optPrice, 10));
         }
       });
-    }
+    });
 
     btn.addEventListener("click", function () {
-      if (optChips && !pickedOpt) {
-        optChips.classList.add("needs-pick");
-        toast("Primero elige una opcion");
-        return;
-      }
+      var falta = false;
+      optGroups.forEach(function (grp, gi) {
+        if (!pickedOpts[gi]) { grp.classList.add("needs-pick"); falta = true; }
+      });
+      if (falta) { toast("Primero elige todas las opciones"); return; }
       var size = chips ? picked : (free ? free.value.trim() : "");
       if (!size) {
         if (chips) chips.classList.add("needs-pick");
@@ -168,8 +177,9 @@
         toast("Primero elige tu talla");
         return;
       }
-      addItem(btn.dataset.id, size, pickedOpt, 1);
-      toast("Agregado al carrito" + (pickedOpt ? " — " + pickedOpt : "") + " — talla " + size);
+      addItem(btn.dataset.id, size, pickedOpts.slice(), 1);
+      toast("Agregado al carrito" +
+            (pickedOpts.length ? " — " + pickedOpts.join(" · ") : "") + " — talla " + size);
     });
   }
 
@@ -216,7 +226,7 @@
             '<div class="ci-info">' +
               '<p class="ci-name">' + esc(i.name) + '</p>' +
               '<p class="ci-meta">' + esc(i.cat) +
-                (i.opt ? ' &#8226; ' + esc(i.opt) : '') +
+                ((i.opt && i.opt.length) ? ' &#8226; ' + esc([].concat(i.opt).join(' · ')) : '') +
                 ' &#8226; Talla ' + esc(i.size) + '</p>' +
               '<p class="ci-price">' + money(i.price) + '</p>' +
             '</div>' +
@@ -293,7 +303,7 @@
 
         linesEl.innerHTML = items.map(function (i) {
           return '<div class="co-line"><span>' + i.qty + '&times; ' + esc(i.name) +
-                 (i.opt ? ' (' + esc(i.opt) + ')' : '') +
+                 ((i.opt && i.opt.length) ? ' (' + esc([].concat(i.opt).join(', ')) + ')' : '') +
                  ' <i>Talla ' + esc(i.size) + '</i></span><b>' + money(i.line) + '</b></div>';
         }).join("");
 
@@ -396,7 +406,7 @@
 
     document.getElementById("tkLines").innerHTML = (data.items || []).map(function (i) {
       return '<div class="co-line"><span>' + i.qty + '&times; ' + esc(i.name) +
-             (i.opt ? ' (' + esc(i.opt) + ')' : '') +
+             ((i.opt && i.opt.length) ? ' (' + esc([].concat(i.opt).join(', ')) + ')' : '') +
              ' <i>Talla ' + esc(i.size) + '</i></span><b>' + money(i.line) + '</b></div>';
     }).join("");
 

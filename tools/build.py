@@ -59,6 +59,7 @@ CATEGORIES = [
     ("Bape.html",             "Bape",                  "ropa",       "img/Bape"),
     ("Burberry.html",         "Burberry",              "ropa",       "img/Burberry"),
     ("Supreme.html",          "Supreme",               "ropa",       "img/Supreme"),
+    ("NikeRopa.html",         "Nike",                  "ropa",       "img/Nike-Ropa"),
     ("ChromeHeartsRopa.html", "Chrome Hearts",         "ropa",       "img/Chrome-Hearts-Ropa"),
     ("ChromeHearts.html",     "Chrome Hearts Cadenas", "accesorios", "img/Chrome-Hearts-Cadenas"),
     ("Stock.html",            "Stock",                 "stock",      "img/Stock"),
@@ -99,6 +100,7 @@ BRAND_ALIASES = {
     "Bape": "bape bathing ape baep bapee a bathing ape ropa",
     "Burberry": "burberry burberi barberry burbery burverry ropa",
     "Supreme": "supreme suprem supremo supremme sup ropa",
+    "Nike": "nike nayk naik tech fleece tracksuit nocta swoosh ropa conjunto pants",
     "Chrome Hearts": "chrome hearts chromehearts cromo cross ch sudadera ropa",
     "Chrome Hearts Cadenas": "chrome hearts cadenas chromehearts cadena cross ch joyeria plata collar accesorio",
     "Stock": "stock disponible inmediato entrega gorras cachuchas",
@@ -584,8 +586,10 @@ def render_detail(p, cat, cats):
         for i, src in enumerate(gallery))
     slides = "\n".join(
         f'    <a class="glink" href="{src}" data-gallery="prod"></a>' for src in gallery)
-    op = p.get("options") or None
-    op_prices = [c["price"] for c in op["choices"] if c.get("price")] if op else []
+    # opciones: se admite 1 grupo {label, choices} o varios [{...}, {...}]
+    _op = p.get("options")
+    groups = _op if isinstance(_op, list) else ([_op] if _op else [])
+    op_prices = [c["price"] for g in groups for c in g["choices"] if c.get("price")]
     meta_rows = ""
     if op_prices and len(set(op_prices)) > 1:
         meta_rows += (f'<div class="d-row"><span>Precio</span>'
@@ -622,18 +626,18 @@ def render_detail(p, cat, cats):
       </div>"""
 
     opt_block = ""
-    if op:
+    for gi, g in enumerate(groups):
         ochips = "".join(
-            f'<button type="button" class="size-chip" data-opt="{c["name"]}"'
+            f'<button type="button" class="size-chip" data-optg="{gi}" data-opt="{c["name"]}"'
             + (f' data-opt-price="{c["price"]}"' if c.get("price") else "")
             + f'>{c["name"]}' + (f' — ${c["price"]:,}' if c.get("price") else "") + '</button>'
-            for c in op["choices"])
-        opt_block = f"""      <div class="d-sizes">
-        <p class="d-sizes-label">{op["label"]} <b class="size-req">*</b></p>
-        <div class="size-chips" id="optChips">{ochips}</div>
+            for c in g["choices"])
+        opt_block += f"""      <div class="d-sizes">
+        <p class="d-sizes-label">{g["label"]} <b class="size-req">*</b></p>
+        <div class="size-chips opt-chips" data-optg="{gi}">{ochips}</div>
       </div>
 """
-    opt_json = json.dumps(op["choices"], ensure_ascii=False) if op else ""
+    opt_json = json.dumps(groups, ensure_ascii=False) if groups else "[]"
     cart_block = f"""{opt_block}{size_block}
       <button class="d-cta" id="addToCart"
               data-id="{p['id']}" data-name="{p['name']}"
