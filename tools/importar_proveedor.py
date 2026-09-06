@@ -270,7 +270,8 @@ def main():
     ap.add_argument("--modelo", default="", help="prefijo del nombre")
     ap.add_argument("--nombre", default="", help="nombre exacto (modo album)")
     ap.add_argument("--nombre-fijo", dest="nombre_fijo", default="")
-    ap.add_argument("--fotos", default="", help="modo album: archivos separados por coma")
+    ap.add_argument("--fotos", default="", help="modo album: SOLO estos archivos (coma)")
+    ap.add_argument("--omitir", default="", help="modo album: excluir estos archivos (coma)")
     ap.add_argument("--solo-color", dest="solo_color", action="store_true")
     ap.add_argument("--tallas", default="", help="tallas EU fijas, ej '35 36 37 46'")
     ap.add_argument("--tallas-mx", dest="tallas_mx", action="store_true")
@@ -278,6 +279,13 @@ def main():
     ap.add_argument("--tc", type=float, default=2.60)
     ap.add_argument("--limite", type=int, default=0)
     ap.add_argument("--solo-precios", dest="solo_precios", action="store_true")
+    # --- ropa: precio de venta directo (sin yuanes) + portada por nombre ---
+    ap.add_argument("--precio-fijo", dest="precio_fijo", type=int, default=0,
+                    help="ropa: precio de venta directo, no lee yuanes")
+    ap.add_argument("--portada", default="",
+                    help="modo album: nombre de archivo que sera la portada")
+    ap.add_argument("--sizes-raw", dest="sizes_raw", default="",
+                    help="texto de talla literal, ej 'S a XL' o 'Unitalla'")
     args = ap.parse_args()
 
     carpeta_img = CARPETAS.get(args.marca)
@@ -291,6 +299,11 @@ def main():
     tmp.mkdir(exist_ok=True)
     extra = json.loads(EXTRA.read_text(encoding="utf-8")) if EXTRA.exists() else {}
     lista = extra.setdefault(args.marca, [])
+    # Los costos (yuan/envio) NO van en productos-extra.json porque el repo es
+    # publico. Se guardan aparte en tools/_costos.json (gitignored).
+    COSTOS = ROOT / "tools" / "_costos.json"
+    costos = json.loads(COSTOS.read_text(encoding="utf-8")) if COSTOS.exists() else {}
+    costos_marca = costos.setdefault(args.marca, {})
 
     tallas_fijas = []
     if args.tallas_mx:
@@ -326,9 +339,12 @@ def main():
             mt = re.search(r"<title>([^<|]*)", pagina)
             titulo = mt.group(1).strip() if mt else ""
 
-        yuan = leer_precio_yuan(titulo, pagina)
-        if not yuan:
-            print("  !! sin precio, se omite: %s" % (titulo or aid)); omitidos += 1; continue
+        if args.precio_fijo:
+            yuan = 0
+        else:
+            yuan = leer_precio_yuan(titulo, pagina)
+            if not yuan:
+                print("  !! sin precio, se omite: %s" % (titulo or aid)); omitidos += 1; continue
 
         if args.nombre:
             base_nombre = args.nombre
@@ -358,6 +374,31 @@ def main():
             if faltan:
                 print("  !! fotos no encontradas: %s" % ", ".join(faltan))
             fotos = [(f, pornombre[f]) for f in filtro if f in pornombre]
+        # descarta videos/animaciones que el album pueda traer
+        fotos = [(nm, h) for nm, h in fotos
+                 if not re.search(r"\.(mp4|mov|webm|gif)$", nm, re.I)]
+        # --omitir: excluye archivos concretos (match exacto o sin extension)
+        if args.omitir and not args.solo_precios:
+            om = {o.strip() for o in args.omitir.split(",") if o.strip()}
+            om_base = {re.sub(r"\.\w+$", "", o).lower() for o in om}
+            fotos = [(nm, h) for nm, h in fotos
+                     if nm not in om and re.sub(r"\.\w+$", "", nm).lower() not in om_base]
+        # --portada: mueve esa foto al frente (match exacto o sin extension)
+        if args.portada and not args.solo_precios:
+            pv = args.portada.strip()
+            pv_base = re.sub(r"\.\w+$", "", pv).lower()
+            idx = next((i for i, (nm, _) in enumerate(fotos)
+                        if nm == pv or re.sub(r"\.\w+$", "", nm).lower() == pv_base), None)
+            if idx is None:
+                print("  !! portada '%s' no esta en el album (%s)" % (pv, nombre))
+            else:
+                fotos.insert(0, fotos.pop(idx))
+        # sin duplicados conservando orden
+        _vis, _fu = set(), []
+        for nm, h in fotos:
+            if h not in _vis:
+                _vis.add(h); _fu.append((nm, h))
+        fotos = _fu
         if not args.solo_precios and (not fotos or not cuenta):
             print("  !! sin fotos: %s" % nombre); omitidos += 1; continue
 
@@ -378,7 +419,10 @@ def main():
         if not args.solo_precios and not galeria:
             print("  !! no se pudo bajar ninguna foto: %s" % nombre); omitidos += 1; continue
 
-        venta, costo = precio_venta(yuan, args.tc, args.envio)
+        if args.precio_fijo:
+            venta, costo = args.precio_fijo, 0
+        else:
+            venta, costo = precio_venta(yuan, args.tc, args.envio)
 
         # --solo-precios: no baja fotos, solo actualiza el precio del producto
         # que ya existe (para recalcular con otra formula/redondeo).
@@ -387,8 +431,7 @@ def main():
             if previo:
                 antes = previo.get("price")
                 previo["price"] = venta
-                previo["yuan"] = yuan
-                previo["envio"] = args.envio
+                costos_marca[nombre] = {"yuan": yuan, "envio": args.envio}
                 actualizados += 1
                 if antes != venta:
                     print("  %-42s $%s -> $%s  (%dY)" % (nombre[:42], antes, venta, yuan))
@@ -397,10 +440,13 @@ def main():
             continue
 
         registro = {
-            "name": nombre, "price": venta, "yuan": yuan, "envio": args.envio,
+            "name": nombre, "price": venta,
             "portada": galeria[0], "gallery": galeria,
-            "detail": "p-%s.html" % base_slug, "sizes_raw": "", "sizes": tallas,
+            "detail": "p-%s.html" % base_slug,
+            "sizes_raw": args.sizes_raw, "sizes": [] if args.sizes_raw else tallas,
         }
+        if not args.precio_fijo:
+            costos_marca[nombre] = {"yuan": yuan, "envio": args.envio}
         if CENSURA.search(json.dumps(registro, ensure_ascii=False)):
             print("  !! omitido por dato del proveedor: %s" % nombre); omitidos += 1; continue
 
@@ -414,6 +460,7 @@ def main():
                  len(galeria), len(tallas)))
 
     EXTRA.write_text(json.dumps(extra, ensure_ascii=False, indent=1), encoding="utf-8")
+    COSTOS.write_text(json.dumps(costos, ensure_ascii=False, indent=1), encoding="utf-8")
     try:
         for f in tmp.iterdir():
             f.unlink(missing_ok=True)

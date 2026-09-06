@@ -8,3 +8,5 @@ NUEVOS/
 
 __pycache__/
 *.pyc
+
+tools/_costos.json

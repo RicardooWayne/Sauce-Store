@@ -7,4 +7,6 @@
 /tools/*     /404.html   404
 /_source/*   /404.html   404
 /_archivo/*  /404.html   404
-/catalog.json  /404.html 404
+/catalog.json         /404.html 404
+/productos-extra.json  /404.html 404
+/NUEVOS/*    /404.html   404
