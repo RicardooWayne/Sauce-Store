@@ -328,6 +328,7 @@ def build_catalog():
             p["id"] = base_id if seen_ids[base_id] == 1 else f"{base_id}-{seen_ids[base_id]}"
             p["price_num"] = parse_price(p["price"])
             p["size_options"] = parse_sizes(p["sizes"], title, group)
+            p["options"] = None
         cats.append({"slug": slug, "title": title, "group": group,
                      "folder": folder, "products": products})
 
@@ -383,6 +384,11 @@ def merge_extra(cats):
                 "size_options": (it.get("sizes")
                                  or parse_sizes(tallas, titulo, cat["group"])
                                  or default_sizes(titulo, cat["group"])),
+                # Opciones extra dentro del mismo producto (color, o "solo hoodie
+                # / solo pants" con precio propio). Formato:
+                #   {"label": "Color", "choices": [{"name": "Negro"}, ...]}
+                # Si una choice trae "price", ese precio manda al elegirla.
+                "options": it.get("options"),
             })
             agregados += 1
 
@@ -578,9 +584,14 @@ def render_detail(p, cat, cats):
         for i, src in enumerate(gallery))
     slides = "\n".join(
         f'    <a class="glink" href="{src}" data-gallery="prod"></a>' for src in gallery)
+    op = p.get("options") or None
+    op_prices = [c["price"] for c in op["choices"] if c.get("price")] if op else []
     meta_rows = ""
-    if p["price"]:
-        meta_rows += f'<div class="d-row"><span>Precio</span><b>{p["price"]}</b></div>'
+    if op_prices and len(set(op_prices)) > 1:
+        meta_rows += (f'<div class="d-row"><span>Precio</span>'
+                      f'<b id="dPrice">desde ${min(op_prices):,} MXN</b></div>')
+    elif p["price"]:
+        meta_rows += f'<div class="d-row"><span>Precio</span><b id="dPrice">{p["price"]}</b></div>'
     if p["sizes"]:
         meta_rows += f'<div class="d-row"><span>Tallas</span><b>{p["sizes"]}</b></div>'
     if p["quality"]:
@@ -610,10 +621,24 @@ def render_detail(p, cat, cats):
         <input class="size-free" id="sizeFree" type="text" maxlength="40" placeholder="{hint}">
       </div>"""
 
-    cart_block = f"""{size_block}
+    opt_block = ""
+    if op:
+        ochips = "".join(
+            f'<button type="button" class="size-chip" data-opt="{c["name"]}"'
+            + (f' data-opt-price="{c["price"]}"' if c.get("price") else "")
+            + f'>{c["name"]}' + (f' — ${c["price"]:,}' if c.get("price") else "") + '</button>'
+            for c in op["choices"])
+        opt_block = f"""      <div class="d-sizes">
+        <p class="d-sizes-label">{op["label"]} <b class="size-req">*</b></p>
+        <div class="size-chips" id="optChips">{ochips}</div>
+      </div>
+"""
+    opt_json = json.dumps(op["choices"], ensure_ascii=False) if op else ""
+    cart_block = f"""{opt_block}{size_block}
       <button class="d-cta" id="addToCart"
               data-id="{p['id']}" data-name="{p['name']}"
-              data-price="{p['price_num']}" data-img="{main_img}">Agregar al carrito</button>
+              data-price="{p['price_num']}" data-img="{main_img}"
+              data-options='{opt_json}'>Agregar al carrito</button>
       <a class="d-cta d-cta-alt" href="{WA}" target="_blank" rel="noopener">Preguntar por este modelo</a>"""
 
     return f"""{head(p['name'] + " — Sauce Store", p['name'] + " — " + cat['title'] + " en Sauce Store.")}
@@ -1165,7 +1190,7 @@ def main():
     productos = {}
     for c in cats:
         for p in c["products"]:
-            productos[p["id"]] = {
+            entry = {
                 "name": p["name"],
                 "cat": c["title"],
                 "price": p["price_num"],
@@ -1173,6 +1198,9 @@ def main():
                 "img": p["portada"] or (p["gallery"][0] if p["gallery"] else ""),
                 "url": p["detail"],
             }
+            if p.get("options"):
+                entry["options"] = p["options"]
+            productos[p["id"]] = entry
     (ROOT / "productos.json").write_text(
         json.dumps(productos, ensure_ascii=False), encoding="utf-8")
     sin_talla = [k for k, v in productos.items() if not v["sizes"]]

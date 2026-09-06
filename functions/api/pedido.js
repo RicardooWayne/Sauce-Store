@@ -146,13 +146,25 @@ export async function onRequestPost(context) {
     if (Array.isArray(p.sizes) && p.sizes.length && !p.sizes.includes(size))
       return bad(`Talla no valida para ${p.name}.`);
 
+    // Opcion dentro del producto (color, o "solo hoodie / solo pants").
+    // Si el producto tiene opciones, hay que elegir una; el precio sale de ahi.
+    let price = p.price;
+    let opt = "";
+    if (p.options && Array.isArray(p.options.choices) && p.options.choices.length) {
+      opt = clean(raw.opt, 60);
+      const ch = p.options.choices.find((c) => c.name === opt);
+      if (!ch) return bad(`Falta elegir una opcion de ${p.name}.`);
+      if (typeof ch.price === "number") price = ch.price;
+    }
+
     items.push({
       name: p.name,
       cat: p.cat,
       size,
+      opt,
       qty,
-      price: p.price,      // <- precio del catalogo, no el del navegador
-      line: p.price * qty,
+      price,              // <- precio del catalogo, no el del navegador
+      line: price * qty,
     });
   }
 
@@ -220,7 +232,7 @@ async function notifyTelegram(env, t) {
   if (!env.TELEGRAM_BOT_TOKEN || !env.TELEGRAM_CHAT_ID) return;
 
   const lineas = t.items
-    .map((i) => `• ${i.qty}× ${esc(i.name)} — <b>talla ${esc(i.size)}</b> — ${money(i.line)}`)
+    .map((i) => `• ${i.qty}× ${esc(i.name)}${i.opt ? ` <i>(${esc(i.opt)})</i>` : ""} — <b>talla ${esc(i.size)}</b> — ${money(i.line)}`)
     .join("\n");
 
   const dir = t.direccion
@@ -279,7 +291,7 @@ async function saveToSheet(env, t) {
       entrega: t.entrega === "envio" ? "Envio" : "Guadalajara",
       pago: t.pago,
       productos: t.items
-        .map((i) => `${i.qty}x ${i.name} (talla ${i.size})`)
+        .map((i) => `${i.qty}x ${i.name}${i.opt ? ` [${i.opt}]` : ""} (talla ${i.size})`)
         .join(" | "),
       subtotal: t.totales.subtotal,
       reenvio: t.totales.reenvio,

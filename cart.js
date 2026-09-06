@@ -50,10 +50,16 @@
         var p = cat[it.id];
         if (!p) return;
         var qty = Math.min(Math.max(parseInt(it.qty, 10) || 1, 1), 10);
+        var opt = it.opt || "";
+        var price = p.price;
+        if (opt && p.options && p.options.choices) {
+          var ch = p.options.choices.filter(function (c) { return c.name === opt; })[0];
+          if (ch && typeof ch.price === "number") price = ch.price;
+        }
         out.push({
-          id: it.id, size: it.size || "", qty: qty,
-          name: p.name, cat: p.cat, price: p.price, img: p.img, url: p.url,
-          line: p.price * qty
+          id: it.id, size: it.size || "", opt: opt, qty: qty,
+          name: p.name, cat: p.cat, price: price, img: p.img, url: p.url,
+          line: price * qty
         });
       });
       return out;
@@ -96,11 +102,14 @@
     }, 2200);
   }
 
-  function addItem(id, size, qty) {
+  function addItem(id, size, opt, qty) {
+    opt = opt || "";
     var items = read();
-    var found = items.filter(function (i) { return i.id === id && i.size === size; })[0];
+    var found = items.filter(function (i) {
+      return i.id === id && i.size === size && (i.opt || "") === opt;
+    })[0];
     if (found) { found.qty = Math.min((found.qty || 1) + (qty || 1), 10); }
-    else { items.push({ id: id, size: size, qty: qty || 1 }); }
+    else { items.push({ id: id, size: size, opt: opt, qty: qty || 1 }); }
     write(items);
   }
 
@@ -112,7 +121,10 @@
     if (!btn) return;
     var chips = document.getElementById("sizeChips");
     var free = document.getElementById("sizeFree");
+    var optChips = document.getElementById("optChips");
+    var dPrice = document.getElementById("dPrice");
     var picked = "";
+    var pickedOpt = "";
 
     if (chips) {
       chips.addEventListener("click", function (e) {
@@ -127,7 +139,28 @@
       });
     }
 
+    if (optChips) {
+      optChips.addEventListener("click", function (e) {
+        var c = e.target.closest(".size-chip");
+        if (!c) return;
+        optChips.querySelectorAll(".size-chip").forEach(function (x) {
+          x.classList.remove("is-active");
+        });
+        c.classList.add("is-active");
+        pickedOpt = c.dataset.opt;
+        optChips.classList.remove("needs-pick");
+        if (dPrice && c.dataset.optPrice) {
+          dPrice.textContent = money(parseInt(c.dataset.optPrice, 10));
+        }
+      });
+    }
+
     btn.addEventListener("click", function () {
+      if (optChips && !pickedOpt) {
+        optChips.classList.add("needs-pick");
+        toast("Primero elige una opcion");
+        return;
+      }
       var size = chips ? picked : (free ? free.value.trim() : "");
       if (!size) {
         if (chips) chips.classList.add("needs-pick");
@@ -135,8 +168,8 @@
         toast("Primero elige tu talla");
         return;
       }
-      addItem(btn.dataset.id, size, 1);
-      toast("Agregado al carrito — talla " + size);
+      addItem(btn.dataset.id, size, pickedOpt, 1);
+      toast("Agregado al carrito" + (pickedOpt ? " — " + pickedOpt : "") + " — talla " + size);
     });
   }
 
@@ -145,7 +178,7 @@
     document.querySelectorAll(".pc-add").forEach(function (b) {
       b.addEventListener("click", function (e) {
         e.preventDefault();
-        addItem(b.dataset.id, b.dataset.size || "Unitalla", 1);
+        addItem(b.dataset.id, b.dataset.size || "Unitalla", "", 1);
         toast("Agregado al carrito");
       });
     });
@@ -182,7 +215,9 @@
             '<div class="ci-media"><img loading="lazy" src="' + i.img + '" alt=""></div>' +
             '<div class="ci-info">' +
               '<p class="ci-name">' + esc(i.name) + '</p>' +
-              '<p class="ci-meta">' + esc(i.cat) + ' &#8226; Talla ' + esc(i.size) + '</p>' +
+              '<p class="ci-meta">' + esc(i.cat) +
+                (i.opt ? ' &#8226; ' + esc(i.opt) : '') +
+                ' &#8226; Talla ' + esc(i.size) + '</p>' +
               '<p class="ci-price">' + money(i.price) + '</p>' +
             '</div>' +
             '<div class="ci-qty">' +
@@ -258,6 +293,7 @@
 
         linesEl.innerHTML = items.map(function (i) {
           return '<div class="co-line"><span>' + i.qty + '&times; ' + esc(i.name) +
+                 (i.opt ? ' (' + esc(i.opt) + ')' : '') +
                  ' <i>Talla ' + esc(i.size) + '</i></span><b>' + money(i.line) + '</b></div>';
         }).join("");
 
@@ -360,6 +396,7 @@
 
     document.getElementById("tkLines").innerHTML = (data.items || []).map(function (i) {
       return '<div class="co-line"><span>' + i.qty + '&times; ' + esc(i.name) +
+             (i.opt ? ' (' + esc(i.opt) + ')' : '') +
              ' <i>Talla ' + esc(i.size) + '</i></span><b>' + money(i.line) + '</b></div>';
     }).join("");
 

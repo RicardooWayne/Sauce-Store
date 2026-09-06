@@ -15695,7 +15695,21 @@
    ],
    "detail": "p-supreme-big-logo.html",
    "sizes_raw": "S a XL",
-   "sizes": []
+   "sizes": [],
+   "options": {
+    "label": "Color",
+    "choices": [
+     {
+      "name": "Negro"
+     },
+     {
+      "name": "Camo"
+     },
+     {
+      "name": "Rosa"
+     }
+    ]
+   }
   },
   {
    "name": "Supreme Big Navy",
@@ -15811,7 +15825,21 @@
    ],
    "detail": "p-supreme-mm6-hoodie.html",
    "sizes_raw": "S a XL",
-   "sizes": []
+   "sizes": [],
+   "options": {
+    "label": "Color",
+    "choices": [
+     {
+      "name": "Azul marino"
+     },
+     {
+      "name": "Negro"
+     },
+     {
+      "name": "Blanco"
+     }
+    ]
+   }
   },
   {
    "name": "Supreme BB Simon Zip Up Camo",
@@ -15876,7 +15904,65 @@
    ],
    "detail": "p-supreme-x-true-religion-conjunto.html",
    "sizes_raw": "S a XL",
-   "sizes": []
+   "sizes": [],
+   "options": {
+    "label": "Qué llevas",
+    "choices": [
+     {
+      "name": "Conjunto completo (hoodie + pants)",
+      "price": 2800
+     },
+     {
+      "name": "Solo hoodie",
+      "price": 1800
+     },
+     {
+      "name": "Solo pants",
+      "price": 1700
+     }
+    ]
+   }
+  },
+  {
+   "name": "Supreme Jacket Reversible",
+   "price": 3200,
+   "portada": "img/Supreme/supreme-jacket-reversible-portada.webp",
+   "gallery": [
+    "img/Supreme/supreme-jacket-reversible-portada.webp",
+    "img/Supreme/supreme-jacket-reversible-1.webp",
+    "img/Supreme/supreme-jacket-reversible-2.webp",
+    "img/Supreme/supreme-jacket-reversible-3.webp",
+    "img/Supreme/supreme-jacket-reversible-4.webp",
+    "img/Supreme/supreme-jacket-reversible-5.webp",
+    "img/Supreme/supreme-jacket-reversible-6.webp",
+    "img/Supreme/supreme-jacket-reversible-7.webp",
+    "img/Supreme/supreme-jacket-reversible-8.webp",
+    "img/Supreme/supreme-jacket-reversible-9.webp",
+    "img/Supreme/supreme-jacket-reversible-10.webp",
+    "img/Supreme/supreme-jacket-reversible-11.webp",
+    "img/Supreme/supreme-jacket-reversible-12.webp",
+    "img/Supreme/supreme-jacket-reversible-13.webp",
+    "img/Supreme/supreme-jacket-reversible-14.webp",
+    "img/Supreme/supreme-jacket-reversible-15.webp",
+    "img/Supreme/supreme-jacket-reversible-16.webp",
+    "img/Supreme/supreme-jacket-reversible-17.webp",
+    "img/Supreme/supreme-jacket-reversible-18.webp",
+    "img/Supreme/supreme-jacket-reversible-19.webp"
+   ],
+   "detail": "p-supreme-jacket-reversible.html",
+   "sizes_raw": "S a XL",
+   "sizes": [],
+   "options": {
+    "label": "Color",
+    "choices": [
+     {
+      "name": "Rojo"
+     },
+     {
+      "name": "Negro"
+     }
+    ]
+   }
   }
  ]
 }
