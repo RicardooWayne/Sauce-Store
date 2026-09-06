@@ -39,6 +39,21 @@ CATEGORIES = [
     ("MaisonMargiela.html",   "Maison Margiela",       "tenis",      "img/Maison-Margiela"),
     ("GoldenGoose.html",      "Golden Goose",          "tenis",      "img/Golden-Goose"),
     ("Prada.html",            "Prada",                 "tenis",      "img/Prada"),
+    ("BalDefender.html",    "Balenciaga Defender",   "tenis",      "img/Balenciaga-Defender"),
+    ("Bal3XL.html",         "Balenciaga 3XL",        "tenis",      "img/Balenciaga-3XL"),
+    ("Bal6XL.html",         "Balenciaga 6XL",        "tenis",      "img/Balenciaga-6XL"),
+    ("Bal10XL.html",        "Balenciaga 10XL",       "tenis",      "img/Balenciaga-10XL"),
+    ("BalBasketball.html",  "Balenciaga Basketball", "tenis",      "img/Balenciaga-Basketball"),
+    ("BalRunner.html",      "Balenciaga Runner",     "tenis",      "img/Balenciaga-Runner"),
+    ("Nocta.html",          "Nocta",                 "tenis",      "img/Nocta"),
+    ("Uggs.html",           "Uggs",                  "tenis",      "img/Uggs"),
+    ("NikeDunk.html",       "Nike Dunk",             "tenis",      "img/Nike-Dunk"),
+    ("Bapesta.html",        "Bapesta",               "tenis",      "img/Bapesta"),
+    ("Timberland.html",     "Timberland",            "tenis",      "img/Timberland"),
+    ("OffWhite.html",       "Off White",             "tenis",      "img/Off-White"),
+    ("AmiriTenis.html",     "Amiri",                 "tenis",      "img/Amiri-Tenis"),
+    ("Dior.html",           "Dior",                  "tenis",      "img/Dior"),
+    ("AlexMcQueen.html",    "Alexander McQueen",     "tenis",      "img/Alexander-McQueen"),
     ("Amiri.html",            "Amiri",                 "ropa",       "img/Amiri"),
     ("Balenciaga.html",       "Balenciaga",            "ropa",       "img/Balenciaga"),
     ("Bape.html",             "Bape",                  "ropa",       "img/Bape"),
@@ -65,7 +80,21 @@ BRAND_ALIASES = {
     "Maison Margiela": "maison margiela margiela mm replica maison marguiela tabi tenis",
     "Golden Goose": "golden goose goldengoose golden gose superstar super star true star tenis",
     "Prada": "prada americas cup america cup linea rossa charol gamuza tenis",
-    "Amiri": "amiri amirii amiry ammiri amiris ropa",
+    "Balenciaga Defender": "balenciaga defender neumatico llanta tenis bota tenis",
+    "Balenciaga 3XL": "balenciaga 3xl triple xl tenis tenis",
+    "Balenciaga 6XL": "balenciaga 6xl tenis tenis",
+    "Balenciaga 10XL": "balenciaga 10xl tenis tenis",
+    "Balenciaga Basketball": "balenciaga basketball basket tenis tenis",
+    "Balenciaga Runner": "balenciaga runner tenis tenis",
+    "Nocta": "nocta nike drake hot step glide tenis tenis",
+    "Uggs": "ugg uggs botas peluche invierno pantufla tasman tenis",
+    "Nike Dunk": "nike dunk low sb panda tenis tenis",
+    "Bapesta": "bapesta bape sta a bathing ape tenis tenis",
+    "Timberland": "timberland tims botas construccion lv timbs tenis",
+    "Off White": "off white offwhite virgil out of office tenis tenis",
+    "Amiri": "amiri amirii amiry ammiri amiris skeleton skel top esqueleto hueso ropa tenis",
+    "Dior": "dior b23 oblique daniel arsham high top low tenis",
+    "Alexander McQueen": "alexander mcqueen mc queen mcqueen oversized tread slick tenis",
     "Balenciaga": "balenciaga balensiaga valenciaga balen balencia balensiaga ropa",
     "Bape": "bape bathing ape baep bapee a bathing ape ropa",
     "Burberry": "burberry burberi barberry burbery burverry ropa",
@@ -316,7 +345,14 @@ def merge_extra(cats):
     if not archivo.exists():
         return
     extra = json.loads(archivo.read_text(encoding="utf-8"))
-    por_titulo = {c["title"]: c for c in cats}
+    # Puede haber dos categorias con el mismo titulo (p.ej. "Amiri" en ropa y en
+    # tenis). Los productos importados van a la que este vacia -- la nueva --,
+    # no a la que ya se lleno desde su HTML.
+    por_titulo = {}
+    for c in cats:
+        prev = por_titulo.get(c["title"])
+        if prev is None or len(c["products"]) < len(prev["products"]):
+            por_titulo[c["title"]] = c
     agregados = 0
 
     for titulo, items in extra.items():
@@ -1097,6 +1133,23 @@ def main():
 
     (ROOT / "index.html").write_text(render_index(cats), encoding="utf-8")
     written += 1
+
+    # Borra paginas de detalle huerfanas: p-*.html que ya no corresponden a
+    # ningun producto (quedan cuando un producto se renombra o se re-importa
+    # con otro nombre). Solo toca archivos "p-...": las paginas hechas a mano
+    # del catalogo viejo no llevan ese prefijo.
+    vivos = {p["detail"] for c in cats for p in c["products"] if p["detail"]}
+    borrados = 0
+    for f in ROOT.glob("p-*.html"):
+        if f.name not in vivos:
+            f.unlink()
+            borrados += 1
+    # Paginas de categoria de un slug que ya no esta en CATEGORIES
+    slugs_vivos = {c["slug"] for c in cats}
+    for slug, *_ in []:  # (placeholder, ver limpieza manual de renombres)
+        pass
+    if borrados:
+        print(f"  {borrados} paginas de detalle huerfanas eliminadas")
 
     # Paginas del sistema de tickets
     for fname, fn in (("carrito.html", render_carrito),

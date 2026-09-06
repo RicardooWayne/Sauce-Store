@@ -77,7 +77,8 @@ h1,h2,h3{font-family:"Anton",sans-serif;font-weight:400;text-transform:uppercase
 .nav-group:hover .nav-panel,
 .nav-panel.force-open{opacity:1;visibility:visible}
 .nav-panel-inner{background:var(--surface);border:1px solid var(--line);
-  display:flex;flex-direction:column}
+  display:flex;flex-direction:column;max-height:min(70vh,560px);overflow-y:auto;
+  scrollbar-width:thin}
 .nav-panel a{padding:12px 18px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;
   color:var(--ink-dim);border-bottom:1px solid var(--line-soft)}
 .nav-panel a:last-child{border-bottom:0}
