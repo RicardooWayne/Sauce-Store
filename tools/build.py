@@ -459,8 +459,11 @@ def nav(cats):
         links = "".join(
             f'<a href="{c["slug"]}">{c["title"]}</a>' for c in groups[g])
         mobile_sections.append(
-            f'<div class="m-group"><span>{MENU_LABELS[g]}</span>{links}</div>')
-    mobile_sections.append('<div class="m-group"><a href="Stock.html">Stock</a></div>')
+            f'<div class="m-group">'
+            f'<button type="button" class="m-trigger" aria-expanded="false">{MENU_LABELS[g]}</button>'
+            f'<div class="m-links">{links}</div></div>')
+    mobile_sections.append(
+        '<div class="m-group m-group-flat"><a href="Stock.html">Stock</a></div>')
     mobile_html = "\n".join(mobile_sections)
 
     return f"""<header class="site-header" id="siteHeader">

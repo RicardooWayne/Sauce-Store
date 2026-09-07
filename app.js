@@ -24,6 +24,14 @@
         document.body.classList.remove("menu-open");
       });
     });
+    /* cada grupo (Tenis, Ropa...) se abre/cierra al tocarlo */
+    document.querySelectorAll(".m-trigger").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var g = btn.parentElement;
+        var open = g.classList.toggle("open");
+        btn.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+    });
   }
 
   /* Dropdowns de nav en táctil (en desktop ya abren solos con :hover) */

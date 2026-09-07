@@ -143,12 +143,22 @@ body.menu-open .burger span:nth-child(3){transform:translateY(-8px) rotate(-45de
   padding:calc(var(--nav-h) + 20px) var(--pad) 40px;
   transform:translateY(-100%);transition:transform .45s var(--ease);overflow-y:auto}
 body.menu-open .mobile-menu{transform:translateY(0)}
-.m-group{display:flex;flex-direction:column;border-bottom:1px solid var(--line);padding:22px 0}
-.m-group span{font-family:"Anton",sans-serif;text-transform:uppercase;font-size:13px;
-  letter-spacing:.2em;color:var(--ink-faint);margin-bottom:10px}
-.m-group a{font-family:"Anton",sans-serif;text-transform:uppercase;font-size:26px;
-  padding:6px 0;letter-spacing:.02em}
-.m-group a:hover{color:var(--accent)}
+.m-group{border-bottom:1px solid var(--line)}
+.m-trigger{width:100%;display:flex;align-items:center;justify-content:space-between;
+  background:none;border:0;cursor:pointer;padding:22px 0;color:var(--ink);
+  font-family:"Anton",sans-serif;text-transform:uppercase;font-size:26px;letter-spacing:.02em}
+.m-trigger::after{content:"+";font-size:24px;line-height:1;color:var(--ink-faint);
+  transition:transform .3s var(--ease)}
+.m-group.open .m-trigger::after{content:"\2013"}
+.m-links{display:none;flex-direction:column}
+.m-group.open .m-links{display:flex}
+.m-links a{font-family:"Anton",sans-serif;text-transform:uppercase;font-size:19px;
+  padding:9px 0 9px 16px;letter-spacing:.02em;color:var(--ink-soft)}
+.m-links a:first-child{padding-top:2px}
+.m-links a:last-child{padding-bottom:22px}
+.m-links a:hover,.m-links a:active{color:var(--accent)}
+.m-group-flat a{display:block;padding:22px 0;font-family:"Anton",sans-serif;
+  text-transform:uppercase;font-size:26px;letter-spacing:.02em}
 .m-social{display:flex;gap:24px;padding-top:26px;text-transform:uppercase;
   letter-spacing:.14em;font-size:13px}
 
