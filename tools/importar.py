@@ -69,7 +69,7 @@ CARPETAS = {
     "Off White": "Off-White",
     "Amiri": "Amiri-Tenis", "Dior": "Dior",
     "Alexander McQueen": "Alexander-McQueen", "Balenciaga": "Balenciaga",
-    "Bape": "Bape", "Burberry": "Burberry", "Supreme": "Supreme", "Nike": "Nike-Ropa", "Alo Yoga": "Alo-Yoga",
+    "Bape": "Bape", "Burberry": "Burberry", "Supreme": "Supreme", "Nike": "Nike-Ropa", "Alo Yoga": "Alo-Yoga", "Acne Studios": "Acne-Studios",
     "Chrome Hearts": "Chrome-Hearts-Ropa",
     "Chrome Hearts Cadenas": "Chrome-Hearts-Cadenas",
     "Stock": "Stock",
