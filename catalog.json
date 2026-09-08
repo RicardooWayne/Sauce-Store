@@ -25300,55 +25300,72 @@
       "label": "Estampado",
       "choices": [
        {
-        "name": "Modelo 1"
+        "name": "Modelo 1",
+        "img": "img/Burberry/short-burberry-portada.webp"
        },
        {
-        "name": "Modelo 2"
+        "name": "Modelo 2",
+        "img": "img/Burberry/short-burberry-1.webp"
        },
        {
-        "name": "Modelo 3"
+        "name": "Modelo 3",
+        "img": "img/Burberry/short-burberry-2.webp"
        },
        {
-        "name": "Modelo 4"
+        "name": "Modelo 4",
+        "img": "img/Burberry/short-burberry-3.webp"
        },
        {
-        "name": "Modelo 5"
+        "name": "Modelo 5",
+        "img": "img/Burberry/short-burberry-4.webp"
        },
        {
-        "name": "Modelo 6"
+        "name": "Modelo 6",
+        "img": "img/Burberry/short-burberry-5.webp"
        },
        {
-        "name": "Modelo 7"
+        "name": "Modelo 7",
+        "img": "img/Burberry/short-burberry-6.webp"
        },
        {
-        "name": "Modelo 8"
+        "name": "Modelo 8",
+        "img": "img/Burberry/short-burberry-7.webp"
        },
        {
-        "name": "Modelo 9"
+        "name": "Modelo 9",
+        "img": "img/Burberry/short-burberry-8.webp"
        },
        {
-        "name": "Modelo 10"
+        "name": "Modelo 10",
+        "img": "img/Burberry/short-burberry-9.webp"
        },
        {
-        "name": "Modelo 11"
+        "name": "Modelo 11",
+        "img": "img/Burberry/short-burberry-10.webp"
        },
        {
-        "name": "Modelo 12"
+        "name": "Modelo 12",
+        "img": "img/Burberry/short-burberry-11.webp"
        },
        {
-        "name": "Modelo 13"
+        "name": "Modelo 13",
+        "img": "img/Burberry/short-burberry-12.webp"
        },
        {
-        "name": "Modelo 14"
+        "name": "Modelo 14",
+        "img": "img/Burberry/short-burberry-13.webp"
        },
        {
-        "name": "Modelo 15"
+        "name": "Modelo 15",
+        "img": "img/Burberry/short-burberry-14.webp"
        },
        {
-        "name": "Modelo 16"
+        "name": "Modelo 16",
+        "img": "img/Burberry/short-burberry-15.webp"
        },
        {
-        "name": "Modelo 17"
+        "name": "Modelo 17",
+        "img": "img/Burberry/short-burberry-16.webp"
        }
       ]
      }

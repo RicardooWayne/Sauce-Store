@@ -636,6 +636,7 @@ def render_detail(p, cat, cats):
         ochips = "".join(
             f'<button type="button" class="size-chip" data-optg="{gi}" data-opt="{c["name"]}"'
             + (f' data-opt-price="{c["price"]}"' if c.get("price") else "")
+            + (f' data-opt-img="{webp(c["img"])}"' if c.get("img") else "")
             + f'>{c["name"]}' + (f' — ${c["price"]:,}' if c.get("price") else "") + '</button>'
             for c in g["choices"])
         opt_block += f"""      <div class="d-sizes">

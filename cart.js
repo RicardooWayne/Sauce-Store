@@ -161,6 +161,14 @@
         if (dPrice && c.dataset.optPrice) {
           dPrice.textContent = money(parseInt(c.dataset.optPrice, 10));
         }
+        // si la opcion trae foto (p.ej. "Modelo 5" del short), cambia la principal
+        if (c.dataset.optImg) {
+          var gm = document.getElementById("gMain");
+          if (gm) gm.src = c.dataset.optImg;
+          document.querySelectorAll(".g-thumb").forEach(function (th) {
+            th.classList.toggle("is-active", th.dataset.src === c.dataset.optImg);
+          });
+        }
       });
     });
 
