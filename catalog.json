@@ -24755,339 +24755,155 @@
   "folder": "img/Burberry",
   "products": [
    {
-    "name": "Burberry Short Negro Y Blanco",
-    "detail": "Burberry-Short-Negro-Blanco.html",
-    "portada": "img/Burberry/Burberry-Short-Negro-Blanco.portada.webp",
-    "price": "$1,250 MXN C/U",
-    "sizes": "Talla M a XXL",
+    "name": "Burberry Hoodie",
+    "detail": "p-burberry-hoodie.html",
+    "portada": "img/Burberry/burberry-hoodie-portada.webp",
+    "price": "$1,600 MXN",
+    "price_num": 1600,
+    "sizes": "S a XL",
     "quality": "",
     "gallery": [
-     "img/Burberry/Burberry-SNB1.webp",
-     "img/Burberry/Burberry-SNB2.webp",
-     "img/Burberry/Burberry-SNB3.webp",
-     "img/Burberry/Burberry-SNB4.webp",
-     "img/Burberry/Burberry-SNB5.webp",
-     "img/Burberry/Burberry-SNB6.webp",
-     "img/Burberry/Burberry-SNB7.webp",
-     "img/Burberry/Burberry-SNB8.webp"
+     "img/Burberry/burberry-hoodie-portada.webp",
+     "img/Burberry/burberry-hoodie-1.webp",
+     "img/Burberry/burberry-hoodie-2.webp",
+     "img/Burberry/burberry-hoodie-3.webp",
+     "img/Burberry/burberry-hoodie-4.webp",
+     "img/Burberry/burberry-hoodie-5.webp"
     ],
     "category": "Burberry",
     "category_slug": "Burberry.html",
-    "id": "burberry-short-negro-blanco",
-    "price_num": 1250,
-    "size_options": [
-     "M",
-     "L",
-     "XL",
-     "XXL"
-    ],
-    "options": null
-   },
-   {
-    "name": "Burberry Short Blanco Y Negro",
-    "detail": "Burberry-Short-Blanco-Negro.html",
-    "portada": "img/Burberry/Burberry-Short-Blanco-Negro.portada.webp",
-    "price": "$1,250 MXN C/U",
-    "sizes": "Talla M a XXL",
-    "quality": "",
-    "gallery": [
-     "img/Burberry/Burberry-SBN1.webp",
-     "img/Burberry/Burberry-SBN2.webp",
-     "img/Burberry/Burberry-SBN3.webp",
-     "img/Burberry/Burberry-SBN4.webp",
-     "img/Burberry/Burberry-SBN5.webp",
-     "img/Burberry/Burberry-SBN6.webp",
-     "img/Burberry/Burberry-SBN7.webp",
-     "img/Burberry/Burberry-SBN8.webp"
-    ],
-    "category": "Burberry",
-    "category_slug": "Burberry.html",
-    "id": "burberry-short-blanco-negro",
-    "price_num": 1250,
-    "size_options": [
-     "M",
-     "L",
-     "XL",
-     "XXL"
-    ],
-    "options": null
-   },
-   {
-    "name": "Burberry Bermuda Cafe Y Azul",
-    "detail": "Burberry-Bermuda-Cafe-Azul..html",
-    "portada": "img/Burberry/Burberry-Bermuda-Cafe-Azul.portada.webp",
-    "price": "$1,250 MXN C/U",
-    "sizes": "Talla M a XXL",
-    "quality": "",
-    "gallery": [
-     "img/Burberry/Burberry-BBCA1.webp",
-     "img/Burberry/Burberry-BBCA2.webp",
-     "img/Burberry/Burberry-BBCA3.webp",
-     "img/Burberry/Burberry-BBCA4.webp",
-     "img/Burberry/Burberry-BBCA5.webp",
-     "img/Burberry/Burberry-BBCA6.webp",
-     "img/Burberry/Burberry-BBCA7.webp",
-     "img/Burberry/Burberry-BBCA8.webp"
-    ],
-    "category": "Burberry",
-    "category_slug": "Burberry.html",
-    "id": "burberry-bermuda-cafe-azul",
-    "price_num": 1250,
-    "size_options": [
-     "M",
-     "L",
-     "XL",
-     "XXL"
-    ],
-    "options": null
-   },
-   {
-    "name": "Burberry Polo Blanca",
-    "detail": "Burberry-Polo-Blanca.html",
-    "portada": "img/Burberry/Burberry-Polo-Blanca.portada.webp",
-    "price": "$1,250 MXN",
-    "sizes": "Talla M a 3XL",
-    "quality": "",
-    "gallery": [
-     "img/Burberry/Burberry-PB1.webp",
-     "img/Burberry/Burberry-PB2.webp",
-     "img/Burberry/Burberry-PB3.webp",
-     "img/Burberry/Burberry-PB4.webp",
-     "img/Burberry/Burberry-PB5.webp",
-     "img/Burberry/Burberry-PB6.webp",
-     "img/Burberry/Burberry-PB7.webp",
-     "img/Burberry/Burberry-PB8.webp"
-    ],
-    "category": "Burberry",
-    "category_slug": "Burberry.html",
-    "id": "burberry-polo-blanca",
-    "price_num": 1250,
-    "size_options": [
-     "M",
-     "L",
-     "XL",
-     "XXL",
-     "3XL"
-    ],
-    "options": null
-   },
-   {
-    "name": "Burberry Polo Negro",
-    "detail": "Burberry-Polo-Negra.html",
-    "portada": "img/Burberry/Burberry-Polo-Negra.portada.webp",
-    "price": "$1,250 MXN",
-    "sizes": "Talla M a 3XL",
-    "quality": "",
-    "gallery": [
-     "img/Burberry/Burberry-PN1.webp",
-     "img/Burberry/Burberry-PN2.webp",
-     "img/Burberry/Burberry-PN3.webp",
-     "img/Burberry/Burberry-PN4.webp",
-     "img/Burberry/Burberry-PN5.webp",
-     "img/Burberry/Burberry-PN6.webp",
-     "img/Burberry/Burberry-PN7.webp",
-     "img/Burberry/Burberry-PN8.webp"
-    ],
-    "category": "Burberry",
-    "category_slug": "Burberry.html",
-    "id": "burberry-polo-negra",
-    "price_num": 1250,
-    "size_options": [
-     "M",
-     "L",
-     "XL",
-     "XXL",
-     "3XL"
-    ],
-    "options": null
-   },
-   {
-    "name": "Burberry Cuadros Blancos Polo",
-    "detail": "Burberry-Cuadros-Blancos-Polo.html",
-    "portada": "img/Burberry/Burberry-Cuadros-Blancos-Polo.portada.webp",
-    "price": "$1,250 MXN",
-    "sizes": "Talla M a 3XL",
-    "quality": "",
-    "gallery": [
-     "img/Burberry/Burberry-CBP1.webp",
-     "img/Burberry/Burberry-CBP2.webp",
-     "img/Burberry/Burberry-CBP3.webp",
-     "img/Burberry/Burberry-CBP4.webp",
-     "img/Burberry/Burberry-CBP5.webp",
-     "img/Burberry/Burberry-CBP6.webp",
-     "img/Burberry/Burberry-CBP7.webp",
-     "img/Burberry/Burberry-CBP8.webp"
-    ],
-    "category": "Burberry",
-    "category_slug": "Burberry.html",
-    "id": "burberry-cuadros-blancos-polo",
-    "price_num": 1250,
-    "size_options": [
-     "M",
-     "L",
-     "XL",
-     "XXL",
-     "3XL"
-    ],
-    "options": null
-   },
-   {
-    "name": "Burberry Sueter",
-    "detail": "Burberry-Sueter.html",
-    "portada": "img/Burberry/Burberry-Sueter.portada.webp",
-    "price": "$1500 MXN",
-    "sizes": "Talla S a XL",
-    "quality": "",
-    "gallery": [
-     "img/Burberry/Burberry-S1.webp",
-     "img/Burberry/Burberry-S2.webp",
-     "img/Burberry/Burberry-S3.webp",
-     "img/Burberry/Burberry-S4.webp",
-     "img/Burberry/Burberry-S5.webp",
-     "img/Burberry/Burberry-S6.webp",
-     "img/Burberry/Burberry-S7.webp",
-     "img/Burberry/Burberry-S8.webp"
-    ],
-    "category": "Burberry",
-    "category_slug": "Burberry.html",
-    "id": "burberry-sueter",
-    "price_num": 1500,
+    "id": "p-burberry-hoodie",
     "size_options": [
      "S",
      "M",
      "L",
      "XL"
     ],
-    "options": null
+    "options": [
+     {
+      "label": "Color",
+      "choices": [
+       {
+        "name": "Negro"
+       },
+       {
+        "name": "Blanco"
+       }
+      ]
+     }
+    ]
    },
    {
-    "name": "Burberry Cardigan",
-    "detail": "Burberry-Cardigan.html",
-    "portada": "img/Burberry/Burberry-Cardigan.portada.webp",
-    "price": "$1550 MXN",
-    "sizes": "Talla S a XXL",
+    "name": "Burberry Hoodie Con Gorro",
+    "detail": "p-burberry-hoodie-con-gorro.html",
+    "portada": "img/Burberry/burberry-hoodie-con-gorro-portada.webp",
+    "price": "$1,600 MXN",
+    "price_num": 1600,
+    "sizes": "S a XL",
     "quality": "",
     "gallery": [
-     "img/Burberry/Burberry-C1.webp",
-     "img/Burberry/Burberry-C2.webp",
-     "img/Burberry/Burberry-C3.webp",
-     "img/Burberry/Burberry-C4.webp",
-     "img/Burberry/Burberry-C5.webp",
-     "img/Burberry/Burberry-C6.webp",
-     "img/Burberry/Burberry-C7.webp",
-     "img/Burberry/Burberry-C8.webp"
+     "img/Burberry/burberry-hoodie-con-gorro-portada.webp",
+     "img/Burberry/burberry-hoodie-con-gorro-1.webp",
+     "img/Burberry/burberry-hoodie-con-gorro-2.webp",
+     "img/Burberry/burberry-hoodie-con-gorro-3.webp",
+     "img/Burberry/burberry-hoodie-con-gorro-4.webp",
+     "img/Burberry/burberry-hoodie-con-gorro-5.webp",
+     "img/Burberry/burberry-hoodie-con-gorro-7.webp"
     ],
     "category": "Burberry",
     "category_slug": "Burberry.html",
-    "id": "burberry-cardigan",
-    "price_num": 1550,
+    "id": "p-burberry-hoodie-con-gorro",
     "size_options": [
      "S",
      "M",
      "L",
-     "XL",
-     "XXL"
+     "XL"
     ],
-    "options": null
+    "options": [
+     {
+      "label": "Color",
+      "choices": [
+       {
+        "name": "Marron"
+       },
+       {
+        "name": "Blanco"
+       },
+       {
+        "name": "Negro"
+       }
+      ]
+     }
+    ]
    },
    {
-    "name": "Burberry Sueter Negro",
-    "detail": "Burberry-Sueter-Negro.html",
-    "portada": "img/Burberry/Burberry-Sueter-Negro.portada.webp",
-    "price": "$1500 MXN",
-    "sizes": "Talla s a XXL",
+    "name": "Burberry Hoodie Con Gorro 2",
+    "detail": "p-burberry-hoodie-con-gorro-2.html",
+    "portada": "img/Burberry/burberry-hoodie-con-gorro-2-portada.webp",
+    "price": "$1,600 MXN",
+    "price_num": 1600,
+    "sizes": "S a XL",
     "quality": "",
     "gallery": [
-     "img/Burberry/Burberry-SN1.webp",
-     "img/Burberry/Burberry-SN2.webp",
-     "img/Burberry/Burberry-SN3.webp",
-     "img/Burberry/Burberry-SN4.webp",
-     "img/Burberry/Burberry-SN5.webp",
-     "img/Burberry/Burberry-SN6.webp",
-     "img/Burberry/Burberry-SN7.webp"
+     "img/Burberry/burberry-hoodie-con-gorro-2-portada.webp",
+     "img/Burberry/burberry-hoodie-con-gorro-2-1.webp",
+     "img/Burberry/burberry-hoodie-con-gorro-2-2.webp",
+     "img/Burberry/burberry-hoodie-con-gorro-2-3.webp",
+     "img/Burberry/burberry-hoodie-con-gorro-2-4.webp",
+     "img/Burberry/burberry-hoodie-con-gorro-2-5.webp",
+     "img/Burberry/burberry-hoodie-con-gorro-2-7.webp"
     ],
     "category": "Burberry",
     "category_slug": "Burberry.html",
-    "id": "burberry-sueter-negro",
-    "price_num": 1500,
+    "id": "p-burberry-hoodie-con-gorro-2",
     "size_options": [
      "S",
      "M",
      "L",
-     "XL",
-     "XXL"
+     "XL"
     ],
-    "options": null
+    "options": [
+     {
+      "label": "Color",
+      "choices": [
+       {
+        "name": "Azul marino"
+       },
+       {
+        "name": "Gris"
+       },
+       {
+        "name": "Negro"
+       }
+      ]
+     }
+    ]
    },
    {
-    "name": "Burberry Conjunto",
-    "detail": "Burberry-Conjunto1.html",
-    "portada": "img/Burberry/Burberry-Conjunto1.portada.webp",
-    "price": "$1480 MXN",
-    "sizes": "Talla M a XXXL",
+    "name": "Burberry Jeans",
+    "detail": "p-burberry-jeans.html",
+    "portada": "img/Burberry/burberry-jeans-portada.webp",
+    "price": "$1,600 MXN",
+    "price_num": 1600,
+    "sizes": "S a XL",
     "quality": "",
     "gallery": [
-     "img/Burberry/Burberry-C01.webp",
-     "img/Burberry/Burberry-C02.webp",
-     "img/Burberry/Burberry-C03.webp",
-     "img/Burberry/Burberry-C04.webp",
-     "img/Burberry/Burberry-C05.webp",
-     "img/Burberry/Burberry-C06.webp",
-     "img/Burberry/Burberry-C07.webp",
-     "img/Burberry/Burberry-C08.webp",
-     "img/Burberry/Burberry-C09.webp",
-     "img/Burberry/Burberry-C010.webp"
+     "img/Burberry/burberry-jeans-portada.webp",
+     "img/Burberry/burberry-jeans-1.webp",
+     "img/Burberry/burberry-jeans-2.webp",
+     "img/Burberry/burberry-jeans-3.webp",
+     "img/Burberry/burberry-jeans-4.webp",
+     "img/Burberry/burberry-jeans-5.webp",
+     "img/Burberry/burberry-jeans-6.webp"
     ],
     "category": "Burberry",
     "category_slug": "Burberry.html",
-    "id": "burberry-conjunto1",
-    "price_num": 1480,
-    "size_options": [],
-    "options": null
-   },
-   {
-    "name": "Burberry Camisa Manga Larga",
-    "detail": "Burberry-Camisa-Manga-Larga.html",
-    "portada": "img/Burberry/Burberry-Camisa-Manga-Larga.portada.webp",
-    "price": "$1,250 MXN",
-    "sizes": "Talla M a XXXL",
-    "quality": "",
-    "gallery": [
-     "img/Burberry/Burberry-CML1.webp",
-     "img/Burberry/Burberry-CML2.webp",
-     "img/Burberry/Burberry-CML3.webp",
-     "img/Burberry/Burberry-CML4.webp",
-     "img/Burberry/Burberry-CML5.webp",
-     "img/Burberry/Burberry-CML6.webp",
-     "img/Burberry/Burberry-CML7.webp"
-    ],
-    "category": "Burberry",
-    "category_slug": "Burberry.html",
-    "id": "burberry-camisa-manga-larga",
-    "price_num": 1250,
-    "size_options": [],
-    "options": null
-   },
-   {
-    "name": "Burberry Pants Blanco Negro",
-    "detail": "",
-    "portada": "img/Burberry/Burberry-Pants.portada.webp",
-    "price": "$1,260 MXN C/U",
-    "sizes": "Talla S a XXL",
-    "quality": "",
-    "gallery": [
-     "img/Burberry/Burberry-Pants.portada.webp"
-    ],
-    "category": "Burberry",
-    "category_slug": "Burberry.html",
-    "id": "burberry-pants-blanco-negro",
-    "price_num": 1260,
+    "id": "p-burberry-jeans",
     "size_options": [
      "S",
      "M",
      "L",
-     "XL",
-     "XXL"
+     "XL"
     ],
     "options": null
    }
@@ -26865,6 +26681,286 @@
      "XL"
     ],
     "options": null
+   }
+  ]
+ },
+ {
+  "slug": "AloYoga.html",
+  "title": "Alo Yoga",
+  "group": "ropa",
+  "folder": "img/Alo-Yoga",
+  "products": [
+   {
+    "name": "Conjunto Alo",
+    "detail": "p-conjunto-alo.html",
+    "portada": "img/Alo-Yoga/conjunto-alo-portada.webp",
+    "price": "$2,100 MXN",
+    "price_num": 2100,
+    "sizes": "S a XL",
+    "quality": "",
+    "gallery": [
+     "img/Alo-Yoga/conjunto-alo-portada.webp",
+     "img/Alo-Yoga/conjunto-alo-1.webp",
+     "img/Alo-Yoga/conjunto-alo-2.webp",
+     "img/Alo-Yoga/conjunto-alo-3.webp",
+     "img/Alo-Yoga/conjunto-alo-4.webp",
+     "img/Alo-Yoga/conjunto-alo-5.webp",
+     "img/Alo-Yoga/conjunto-alo-6.webp",
+     "img/Alo-Yoga/conjunto-alo-7.webp",
+     "img/Alo-Yoga/conjunto-alo-8.webp",
+     "img/Alo-Yoga/conjunto-alo-9.webp",
+     "img/Alo-Yoga/conjunto-alo-10.webp",
+     "img/Alo-Yoga/conjunto-alo-11.webp",
+     "img/Alo-Yoga/conjunto-alo-12.webp",
+     "img/Alo-Yoga/conjunto-alo-13.webp",
+     "img/Alo-Yoga/conjunto-alo-14.webp",
+     "img/Alo-Yoga/conjunto-alo-15.webp"
+    ],
+    "category": "Alo Yoga",
+    "category_slug": "AloYoga.html",
+    "id": "p-conjunto-alo",
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL"
+    ],
+    "options": [
+     {
+      "label": "Color",
+      "choices": [
+       {
+        "name": "Cafe"
+       },
+       {
+        "name": "Azul marino"
+       },
+       {
+        "name": "Negro"
+       },
+       {
+        "name": "Gris"
+       }
+      ]
+     },
+     {
+      "label": "Que llevas",
+      "choices": [
+       {
+        "name": "Conjunto completo",
+        "price": 2100
+       },
+       {
+        "name": "Solo hoodie",
+        "price": 1500
+       },
+       {
+        "name": "Solo pants",
+        "price": 1500
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "Conjunto Alo Zipper Capucha",
+    "detail": "p-conjunto-alo-zipper-capucha.html",
+    "portada": "img/Alo-Yoga/conjunto-alo-zipper-capucha-portada.webp",
+    "price": "$2,200 MXN",
+    "price_num": 2200,
+    "sizes": "S a XL",
+    "quality": "",
+    "gallery": [
+     "img/Alo-Yoga/conjunto-alo-zipper-capucha-portada.webp",
+     "img/Alo-Yoga/conjunto-alo-zipper-capucha-1.webp",
+     "img/Alo-Yoga/conjunto-alo-zipper-capucha-2.webp",
+     "img/Alo-Yoga/conjunto-alo-zipper-capucha-3.webp",
+     "img/Alo-Yoga/conjunto-alo-zipper-capucha-4.webp",
+     "img/Alo-Yoga/conjunto-alo-zipper-capucha-5.webp",
+     "img/Alo-Yoga/conjunto-alo-zipper-capucha-6.webp",
+     "img/Alo-Yoga/conjunto-alo-zipper-capucha-7.webp",
+     "img/Alo-Yoga/conjunto-alo-zipper-capucha-8.webp",
+     "img/Alo-Yoga/conjunto-alo-zipper-capucha-9.webp"
+    ],
+    "category": "Alo Yoga",
+    "category_slug": "AloYoga.html",
+    "id": "p-conjunto-alo-zipper-capucha",
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL"
+    ],
+    "options": [
+     {
+      "label": "Color",
+      "choices": [
+       {
+        "name": "Azul marino"
+       },
+       {
+        "name": "Negro"
+       },
+       {
+        "name": "Gris"
+       }
+      ]
+     },
+     {
+      "label": "Que llevas",
+      "choices": [
+       {
+        "name": "Conjunto completo",
+        "price": 2200
+       },
+       {
+        "name": "Solo hoodie",
+        "price": 1600
+       },
+       {
+        "name": "Solo pants",
+        "price": 1500
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "Alo Jeans Jacket",
+    "detail": "p-alo-jeans-jacket.html",
+    "portada": "img/Alo-Yoga/alo-jeans-jacket-portada.webp",
+    "price": "$2,700 MXN",
+    "price_num": 2700,
+    "sizes": "S a XL",
+    "quality": "",
+    "gallery": [
+     "img/Alo-Yoga/alo-jeans-jacket-portada.webp",
+     "img/Alo-Yoga/alo-jeans-jacket-1.webp",
+     "img/Alo-Yoga/alo-jeans-jacket-2.webp",
+     "img/Alo-Yoga/alo-jeans-jacket-3.webp",
+     "img/Alo-Yoga/alo-jeans-jacket-4.webp",
+     "img/Alo-Yoga/alo-jeans-jacket-5.webp",
+     "img/Alo-Yoga/alo-jeans-jacket-6.webp",
+     "img/Alo-Yoga/alo-jeans-jacket-7.webp"
+    ],
+    "category": "Alo Yoga",
+    "category_slug": "AloYoga.html",
+    "id": "p-alo-jeans-jacket",
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL"
+    ],
+    "options": [
+     {
+      "label": "Que llevas",
+      "choices": [
+       {
+        "name": "Conjunto (jacket + jeans)",
+        "price": 2700
+       },
+       {
+        "name": "Solo jacket",
+        "price": 1900
+       },
+       {
+        "name": "Solo jeans",
+        "price": 1800
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "Alo Longsleeve",
+    "detail": "p-alo-longsleeve.html",
+    "portada": "img/Alo-Yoga/alo-longsleeve-portada.webp",
+    "price": "$1,250 MXN",
+    "price_num": 1250,
+    "sizes": "S a XL",
+    "quality": "",
+    "gallery": [
+     "img/Alo-Yoga/alo-longsleeve-portada.webp",
+     "img/Alo-Yoga/alo-longsleeve-1.webp",
+     "img/Alo-Yoga/alo-longsleeve-2.webp",
+     "img/Alo-Yoga/alo-longsleeve-3.webp",
+     "img/Alo-Yoga/alo-longsleeve-4.webp",
+     "img/Alo-Yoga/alo-longsleeve-5.webp",
+     "img/Alo-Yoga/alo-longsleeve-6.webp",
+     "img/Alo-Yoga/alo-longsleeve-7.webp",
+     "img/Alo-Yoga/alo-longsleeve-8.webp"
+    ],
+    "category": "Alo Yoga",
+    "category_slug": "AloYoga.html",
+    "id": "p-alo-longsleeve",
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL"
+    ],
+    "options": [
+     {
+      "label": "Color",
+      "choices": [
+       {
+        "name": "Rojo"
+       },
+       {
+        "name": "Azul marino"
+       },
+       {
+        "name": "Blanco"
+       },
+       {
+        "name": "Negro"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "Short Alo",
+    "detail": "p-short-alo.html",
+    "portada": "img/Alo-Yoga/short-alo-portada.webp",
+    "price": "$1,200 MXN",
+    "price_num": 1200,
+    "sizes": "S a XL",
+    "quality": "",
+    "gallery": [
+     "img/Alo-Yoga/short-alo-portada.webp",
+     "img/Alo-Yoga/short-alo-1.webp",
+     "img/Alo-Yoga/short-alo-2.webp",
+     "img/Alo-Yoga/short-alo-3.webp",
+     "img/Alo-Yoga/short-alo-4.webp",
+     "img/Alo-Yoga/short-alo-5.webp"
+    ],
+    "category": "Alo Yoga",
+    "category_slug": "AloYoga.html",
+    "id": "p-short-alo",
+    "size_options": [
+     "S",
+     "M",
+     "L",
+     "XL"
+    ],
+    "options": [
+     {
+      "label": "Color",
+      "choices": [
+       {
+        "name": "Gris"
+       },
+       {
+        "name": "Azul marino"
+       },
+       {
+        "name": "Negro"
+       }
+      ]
+     }
+    ]
    }
   ]
  },

@@ -60,6 +60,7 @@ CATEGORIES = [
     ("Burberry.html",         "Burberry",              "ropa",       "img/Burberry"),
     ("Supreme.html",          "Supreme",               "ropa",       "img/Supreme"),
     ("NikeRopa.html",         "Nike",                  "ropa",       "img/Nike-Ropa"),
+    ("AloYoga.html",          "Alo Yoga",              "ropa",       "img/Alo-Yoga"),
     ("ChromeHeartsRopa.html", "Chrome Hearts",         "ropa",       "img/Chrome-Hearts-Ropa"),
     ("ChromeHearts.html",     "Chrome Hearts Cadenas", "accesorios", "img/Chrome-Hearts-Cadenas"),
     ("Stock.html",            "Stock",                 "stock",      "img/Stock"),
@@ -101,6 +102,7 @@ BRAND_ALIASES = {
     "Burberry": "burberry burberi barberry burbery burverry ropa",
     "Supreme": "supreme suprem supremo supremme sup ropa",
     "Nike": "nike nayk naik tech fleece tracksuit nocta swoosh ropa conjunto pants",
+    "Alo Yoga": "alo yoga aloyoga alo-yoga conjunto set legging deportivo gym ropa",
     "Chrome Hearts": "chrome hearts chromehearts cromo cross ch sudadera ropa",
     "Chrome Hearts Cadenas": "chrome hearts cadenas chromehearts cadena cross ch joyeria plata collar accesorio",
     "Stock": "stock disponible inmediato entrega gorras cachuchas",
@@ -109,6 +111,7 @@ BRAND_ALIASES = {
 # Archivos a mover a _archivo/ (marcas descartadas + placeholders vacios)
 ARCHIVE_GLOBS = [
     "Gucci*.html", "GucciOffTheGrid.html", "NewEra.html", "New-Era-*.html",
+    "Burberry-*.html",
     "Dandy-*.html", "Barbas*.html", "Crocs.html",
 ]
 ARCHIVE_EXACT = [
