@@ -160,4 +160,60 @@
       m.addEventListener("click", function () { lb.openAt(0); });
     });
   }
+
+  /* ================= La prenda del dia (-10%) =================
+     Se sortea un producto por la FECHA de hoy en hora de Mexico: todos
+     los visitantes ven el mismo ese dia y a las 00:00 (MX) cambia solo.
+     El mismo calculo lo hacen cart.js y el servidor (pedido.js), asi el
+     descuento del carrito y del ticket siempre coinciden. */
+  window.SauceDeal = {
+    mxDate: function () {
+      try {
+        return new Intl.DateTimeFormat("en-CA", {
+          timeZone: "America/Mexico_City",
+          year: "numeric", month: "2-digit", day: "2-digit"
+        }).format(new Date());
+      } catch (e) {
+        return new Date().toISOString().slice(0, 10);
+      }
+    },
+    hash: function (s) {
+      var h = 5381;
+      for (var i = 0; i < s.length; i++) h = ((h << 5) + h + s.charCodeAt(i)) >>> 0;
+      return h;
+    },
+    idFor: function (catalog) {
+      var ids = Object.keys(catalog || {});
+      if (!ids.length) return null;
+      return ids[this.hash(this.mxDate()) % ids.length];
+    },
+    OFF: 0.10
+  };
+
+  var dealBox = document.getElementById("dealDay");
+  if (dealBox) {
+    fetch("productos.json").then(function (r) { return r.json(); }).then(function (cat) {
+      var id = window.SauceDeal.idFor(cat);
+      var p = id && cat[id];
+      if (!p) return;
+      var base = p.price;
+      var lows = [];
+      (Array.isArray(p.options) ? p.options : p.options ? [p.options] : []).forEach(function (g) {
+        (g.choices || []).forEach(function (c) {
+          if (typeof c.price === "number") lows.push(c.price);
+        });
+      });
+      if (lows.length) base = Math.min.apply(null, lows);
+      var nuevo = Math.round(base * (1 - window.SauceDeal.OFF));
+      var money = function (n) { return "$" + Number(n).toLocaleString("es-MX") + " MXN"; };
+      document.getElementById("dealImg").src = p.img;
+      document.getElementById("dealImg").alt = p.name;
+      document.getElementById("dealCat").textContent = p.cat;
+      document.getElementById("dealName").textContent = p.name;
+      document.getElementById("dealOld").textContent = money(base);
+      document.getElementById("dealNew").textContent = money(nuevo);
+      document.getElementById("dealCard").href = p.url;
+      dealBox.hidden = false;
+    }).catch(function () {});
+  }
 })();

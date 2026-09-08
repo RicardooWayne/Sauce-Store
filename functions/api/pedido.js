@@ -57,6 +57,31 @@ function esc(s) {
 
 const money = (n) => "$" + Math.round(n).toLocaleString("es-MX") + " MXN";
 
+/* ---------- La prenda del dia (-10%) ----------
+   El mismo calculo que hace el navegador (app.js / cart.js): la fecha de
+   hoy en hora de Mexico decide que producto del catalogo lleva el 10%.
+   Se recalcula aqui para que nadie pueda "marcar" un producto como oferta. */
+const DEAL_OFF = 0.10;
+function mxDate() {
+  try {
+    return new Intl.DateTimeFormat("en-CA", {
+      timeZone: "America/Mexico_City",
+      year: "numeric", month: "2-digit", day: "2-digit",
+    }).format(new Date());
+  } catch {
+    return new Date().toISOString().slice(0, 10);
+  }
+}
+function dealHash(s) {
+  let h = 5381;
+  for (let i = 0; i < s.length; i++) h = ((h << 5) + h + s.charCodeAt(i)) >>> 0;
+  return h;
+}
+function dealIdOf(catalogo) {
+  const ids = Object.keys(catalogo || {});
+  return ids.length ? ids[dealHash(mxDate()) % ids.length] : null;
+}
+
 function folio() {
   const d = new Date();
   const ymd =
@@ -134,9 +159,12 @@ export async function onRequestPost(context) {
     return json({ error: "No se pudo leer el catalogo." }, 500);
   }
 
+  const dealId = dealIdOf(catalogo);
+
   const items = [];
   for (const raw of body.items) {
-    const p = catalogo[clean(raw.id, 120)];
+    const pid = clean(raw.id, 120);
+    const p = catalogo[pid];
     if (!p) return bad("Uno de los productos ya no esta disponible.");
 
     const qty = Math.min(Math.max(parseInt(raw.qty, 10) || 1, 1), MAX_QTY);
@@ -166,12 +194,16 @@ export async function onRequestPost(context) {
       if (typeof ch.price === "number") price = ch.price;
     }
 
+    const deal = pid === dealId;
+    if (deal) price = Math.round(price * (1 - DEAL_OFF));
+
     items.push({
       name: p.name,
       cat: p.cat,
       size,
       opt,                // array (vacio si el producto no tiene opciones)
       qty,
+      deal,               // true = lleva el -10% de la prenda del dia
       price,              // <- precio del catalogo, no el del navegador
       line: price * qty,
     });
@@ -241,7 +273,7 @@ async function notifyTelegram(env, t) {
   if (!env.TELEGRAM_BOT_TOKEN || !env.TELEGRAM_CHAT_ID) return;
 
   const lineas = t.items
-    .map((i) => `• ${i.qty}× ${esc(i.name)}${(i.opt && i.opt.length) ? ` <i>(${esc([].concat(i.opt).join(", "))})</i>` : ""} — <b>talla ${esc(i.size)}</b> — ${money(i.line)}`)
+    .map((i) => `• ${i.qty}× ${esc(i.name)}${(i.opt && i.opt.length) ? ` <i>(${esc([].concat(i.opt).join(", "))})</i>` : ""} — <b>talla ${esc(i.size)}</b>${i.deal ? " — <i>-10% del dia</i>" : ""} — ${money(i.line)}`)
     .join("\n");
 
   const dir = t.direccion
@@ -300,7 +332,7 @@ async function saveToSheet(env, t) {
       entrega: t.entrega === "envio" ? "Envio" : "Guadalajara",
       pago: t.pago,
       productos: t.items
-        .map((i) => `${i.qty}x ${i.name}${(i.opt && i.opt.length) ? ` [${[].concat(i.opt).join(", ")}]` : ""} (talla ${i.size})`)
+        .map((i) => `${i.qty}x ${i.name}${(i.opt && i.opt.length) ? ` [${[].concat(i.opt).join(", ")}]` : ""} (talla ${i.size})${i.deal ? " -10%" : ""}`)
         .join(" | "),
       subtotal: t.totales.subtotal,
       reenvio: t.totales.reenvio,

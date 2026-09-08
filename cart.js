@@ -49,9 +49,17 @@
   }
 
   /* Une el carrito con el catalogo. Descarta lo que ya no exista. */
+  function dealId(cat) {
+    return (window.SauceDeal && window.SauceDeal.idFor) ? window.SauceDeal.idFor(cat) : null;
+  }
+  function dealOff() {
+    return (window.SauceDeal && window.SauceDeal.OFF) || 0.10;
+  }
+
   function resolve() {
     return loadCatalog().then(function (cat) {
       var out = [];
+      var did = dealId(cat);
       read().forEach(function (it) {
         var p = cat[it.id];
         if (!p) return;
@@ -63,10 +71,12 @@
             if (optArr.indexOf(c.name) !== -1 && typeof c.price === "number") price = c.price;
           });
         });
+        var deal = it.id === did;
+        if (deal) price = Math.round(price * (1 - dealOff()));
         out.push({
           id: it.id, size: it.size || "", opt: optArr, qty: qty,
           name: p.name, cat: p.cat, price: price, img: p.img, url: p.url,
-          line: price * qty
+          deal: deal, line: price * qty
         });
       });
       return out;
@@ -235,7 +245,8 @@
               '<p class="ci-name">' + esc(i.name) + '</p>' +
               '<p class="ci-meta">' + esc(i.cat) +
                 ((i.opt && i.opt.length) ? ' &#8226; ' + esc([].concat(i.opt).join(' · ')) : '') +
-                ' &#8226; Talla ' + esc(i.size) + '</p>' +
+                ' &#8226; Talla ' + esc(i.size) +
+                (i.deal ? ' &#8226; <span class="ci-deal">&minus;10% prenda del d&iacute;a</span>' : '') + '</p>' +
               '<p class="ci-price">' + money(i.price) + '</p>' +
             '</div>' +
             '<div class="ci-qty">' +
@@ -312,7 +323,9 @@
         linesEl.innerHTML = items.map(function (i) {
           return '<div class="co-line"><span>' + i.qty + '&times; ' + esc(i.name) +
                  ((i.opt && i.opt.length) ? ' (' + esc([].concat(i.opt).join(', ')) + ')' : '') +
-                 ' <i>Talla ' + esc(i.size) + '</i></span><b>' + money(i.line) + '</b></div>';
+                 ' <i>Talla ' + esc(i.size) + '</i>' +
+                 (i.deal ? ' <i class="co-deal">&minus;10% del d&iacute;a</i>' : '') +
+                 '</span><b>' + money(i.line) + '</b></div>';
         }).join("");
 
         var t = totals(items, modo, entrega, pago);
@@ -415,7 +428,9 @@
     document.getElementById("tkLines").innerHTML = (data.items || []).map(function (i) {
       return '<div class="co-line"><span>' + i.qty + '&times; ' + esc(i.name) +
              ((i.opt && i.opt.length) ? ' (' + esc([].concat(i.opt).join(', ')) + ')' : '') +
-             ' <i>Talla ' + esc(i.size) + '</i></span><b>' + money(i.line) + '</b></div>';
+             ' <i>Talla ' + esc(i.size) + '</i>' +
+             (i.deal ? ' <i class="co-deal">&minus;10% del d&iacute;a</i>' : '') +
+             '</span><b>' + money(i.line) + '</b></div>';
     }).join("");
 
     var t = data.totales || {};

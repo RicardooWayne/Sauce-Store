@@ -1068,6 +1068,19 @@ def render_index(cats):
     </div>
   </section>
 
+  <section class="deal reveal" id="dealDay" hidden>
+    <div class="sec-head"><h2>La prenda del d&iacute;a</h2><span>&minus;10% hoy</span></div>
+    <a class="deal-card" id="dealCard" href="#">
+      <div class="deal-media"><img id="dealImg" loading="lazy" src="" alt=""></div>
+      <div class="deal-info">
+        <p class="deal-cat" id="dealCat"></p>
+        <h3 class="deal-name" id="dealName"></h3>
+        <p class="deal-price"><s id="dealOld"></s><b id="dealNew"></b></p>
+        <span class="deal-go">La ves hoy, ma&ntilde;ana cambia &#8594;</span>
+      </div>
+    </a>
+  </section>
+
   <section class="saludo reveal">
     <div class="saludo-video">
       <video autoplay muted loop playsinline poster="img/video/saludo.jpg">

@@ -232,6 +232,29 @@ body.menu-open .mobile-menu{transform:translateY(0)}
 @media (max-width:900px){.rail-arrow{display:none}}
 
 /* =====================================================================
+   LA PRENDA DEL DIA
+   ===================================================================== */
+.deal{max-width:var(--maxw);margin:0 auto;padding:0 var(--pad) clamp(60px,10vh,120px)}
+.deal .sec-head span{color:var(--accent)}
+.deal-card{display:grid;grid-template-columns:minmax(0,360px) 1fr;gap:clamp(20px,4vw,50px);
+  align-items:center;border:1px solid var(--line);padding:clamp(16px,3vw,32px);
+  text-decoration:none;color:var(--ink);transition:border-color .25s var(--ease)}
+.deal-card:hover{border-color:var(--accent)}
+.deal-media{aspect-ratio:3/4;overflow:hidden;background:var(--bg)}
+.deal-media img{width:100%;height:100%;object-fit:cover;
+  filter:grayscale(.15) contrast(1.03);transition:transform .8s var(--ease),filter .5s var(--ease)}
+.deal-card:hover .deal-media img{transform:scale(1.05);filter:none}
+.deal-cat{color:var(--ink-faint);font-size:13px;letter-spacing:.2em;text-transform:uppercase}
+.deal-name{font-family:"Anton",sans-serif;text-transform:uppercase;letter-spacing:.03em;
+  font-size:clamp(24px,4vw,44px);margin:10px 0 16px}
+.deal-price{display:flex;align-items:baseline;gap:14px;margin-bottom:20px}
+.deal-price s{color:var(--ink-faint);font-size:clamp(15px,2vw,20px)}
+.deal-price b{color:var(--accent);font-size:clamp(22px,3.4vw,34px);font-family:"Anton",sans-serif}
+.deal-go{color:var(--accent);text-transform:uppercase;letter-spacing:.05em;font-size:13px}
+@media (max-width:720px){.deal-card{grid-template-columns:1fr}
+  .deal-media{max-width:320px;margin:0 auto}}
+
+/* =====================================================================
    SALUDO
    ===================================================================== */
 .saludo{background:var(--cream-2);color:var(--cream-ink);
@@ -395,6 +418,8 @@ main{padding-top:0}
 .ci-meta{font-size:11px;color:var(--ink-faint);margin-top:4px;
   text-transform:uppercase;letter-spacing:.08em}
 .ci-price{font-size:12px;color:var(--ink-dim);margin-top:4px}
+.ci-deal{color:var(--accent)}
+.co-line i.co-deal{color:var(--accent)}
 .ci-qty{display:flex;align-items:center;gap:2px;border:1px solid var(--line)}
 .ci-qty button{background:none;border:0;color:var(--ink-dim);font:inherit;
   font-size:16px;width:32px;height:32px;cursor:pointer}
