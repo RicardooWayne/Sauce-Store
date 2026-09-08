@@ -214,6 +214,43 @@
       document.getElementById("dealNew").textContent = money(nuevo);
       document.getElementById("dealCard").href = p.url;
       dealBox.hidden = false;
+      startDealTimer();
     }).catch(function () {});
+  }
+
+  /* Cuenta regresiva hasta las 00:00 hora de Mexico. Cuando llega a cero
+     recarga para traer la prenda del dia nueva. */
+  function mxSecondsToday() {
+    try {
+      var parts = new Intl.DateTimeFormat("en-GB", {
+        timeZone: "America/Mexico_City", hour12: false,
+        hour: "2-digit", minute: "2-digit", second: "2-digit"
+      }).formatToParts(new Date());
+      var h = 0, m = 0, s = 0;
+      parts.forEach(function (p) {
+        if (p.type === "hour") h = parseInt(p.value, 10) % 24;
+        if (p.type === "minute") m = parseInt(p.value, 10);
+        if (p.type === "second") s = parseInt(p.value, 10);
+      });
+      return h * 3600 + m * 60 + s;
+    } catch (e) {
+      var d = new Date();
+      return d.getHours() * 3600 + d.getMinutes() * 60 + d.getSeconds();
+    }
+  }
+  function startDealTimer() {
+    var el = document.getElementById("dealTimer");
+    if (!el) return;
+    var tick = function () {
+      var rem = 86400 - mxSecondsToday();
+      if (rem <= 0) { location.reload(); return; }
+      var h = Math.floor(rem / 3600);
+      var m = Math.floor((rem % 3600) / 60);
+      var s = rem % 60;
+      var pad = function (n) { return n < 10 ? "0" + n : "" + n; };
+      el.textContent = pad(h) + ":" + pad(m) + ":" + pad(s);
+    };
+    tick();
+    setInterval(tick, 1000);
   }
 })();

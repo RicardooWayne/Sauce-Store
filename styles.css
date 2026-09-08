@@ -236,6 +236,10 @@ body.menu-open .mobile-menu{transform:translateY(0)}
    ===================================================================== */
 .deal{max-width:var(--maxw);margin:0 auto;padding:0 var(--pad) clamp(60px,10vh,120px)}
 .deal .sec-head span{color:var(--accent)}
+.deal-timer{margin:-18px 0 26px;color:var(--ink-faint);font-size:13px;
+  letter-spacing:.14em;text-transform:uppercase}
+.deal-timer b{color:var(--ink);font-family:"Anton",sans-serif;letter-spacing:.06em;
+  font-size:16px;font-variant-numeric:tabular-nums}
 .deal-card{display:grid;grid-template-columns:minmax(0,360px) 1fr;gap:clamp(20px,4vw,50px);
   align-items:center;border:1px solid var(--line);padding:clamp(16px,3vw,32px);
   text-decoration:none;color:var(--ink);transition:border-color .25s var(--ease)}
