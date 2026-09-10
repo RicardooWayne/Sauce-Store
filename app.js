@@ -165,7 +165,13 @@
      Se sortea un producto por la FECHA de hoy en hora de Mexico: todos
      los visitantes ven el mismo ese dia y a las 00:00 (MX) cambia solo.
      El mismo calculo lo hacen cart.js y el servidor (pedido.js), asi el
-     descuento del carrito y del ticket siempre coinciden. */
+     descuento del carrito y del ticket siempre coinciden.
+
+     El sorteo es en 2 pasos para que NO se quede pegado en una categoria
+     (Balenciaga tiene cientos de modelos seguidos en la lista): 1) elige
+     categoria del dia, todas con el mismo peso; 2) elige un modelo dentro
+     de esa categoria. El "mix32" revuelve los bits para que dos fechas
+     seguidas caigan en categorias muy distintas. */
   window.SauceDeal = {
     mxDate: function () {
       try {
@@ -180,12 +186,28 @@
     hash: function (s) {
       var h = 5381;
       for (var i = 0; i < s.length; i++) h = ((h << 5) + h + s.charCodeAt(i)) >>> 0;
-      return h;
+      return h >>> 0;
+    },
+    mix32: function (x) {
+      x = x >>> 0;
+      x = Math.imul(x ^ (x >>> 16), 2246822507) >>> 0;
+      x = Math.imul(x ^ (x >>> 13), 3266489909) >>> 0;
+      x = (x ^ (x >>> 16)) >>> 0;
+      return x;
     },
     idFor: function (catalog) {
       var ids = Object.keys(catalog || {});
       if (!ids.length) return null;
-      return ids[this.hash(this.mxDate()) % ids.length];
+      var day = this.mxDate();
+      var seen = {}, cats = [];
+      for (var i = 0; i < ids.length; i++) {
+        var c = catalog[ids[i]].cat;
+        if (c && !seen[c]) { seen[c] = 1; cats.push(c); }
+      }
+      var cat = cats.length ? cats[this.mix32(this.hash(day)) % cats.length] : null;
+      var pool = cat ? ids.filter(function (id) { return catalog[id].cat === cat; }) : ids;
+      if (!pool.length) pool = ids;
+      return pool[this.mix32(this.hash(day + "|" + cat)) % pool.length];
     },
     OFF: 0.10
   };

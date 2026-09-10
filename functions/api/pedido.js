@@ -58,9 +58,11 @@ function esc(s) {
 const money = (n) => "$" + Math.round(n).toLocaleString("es-MX") + " MXN";
 
 /* ---------- La prenda del dia (-10%) ----------
-   El mismo calculo que hace el navegador (app.js / cart.js): la fecha de
-   hoy en hora de Mexico decide que producto del catalogo lleva el 10%.
-   Se recalcula aqui para que nadie pueda "marcar" un producto como oferta. */
+   El mismo calculo que hace el navegador (app.js): la fecha de hoy en hora
+   de Mexico decide que producto del catalogo lleva el 10%. Se recalcula
+   aqui para que nadie pueda "marcar" un producto como oferta.
+   Sorteo en 2 pasos (1: categoria del dia, 2: modelo dentro de ella) para
+   no quedarse pegado en Balenciaga, que ocupa cientos de filas seguidas. */
 const DEAL_OFF = 0.10;
 function mxDate() {
   try {
@@ -75,11 +77,28 @@ function mxDate() {
 function dealHash(s) {
   let h = 5381;
   for (let i = 0; i < s.length; i++) h = ((h << 5) + h + s.charCodeAt(i)) >>> 0;
-  return h;
+  return h >>> 0;
+}
+function mix32(x) {
+  x = x >>> 0;
+  x = Math.imul(x ^ (x >>> 16), 2246822507) >>> 0;
+  x = Math.imul(x ^ (x >>> 13), 3266489909) >>> 0;
+  x = (x ^ (x >>> 16)) >>> 0;
+  return x;
 }
 function dealIdOf(catalogo) {
   const ids = Object.keys(catalogo || {});
-  return ids.length ? ids[dealHash(mxDate()) % ids.length] : null;
+  if (!ids.length) return null;
+  const day = mxDate();
+  const seen = {}, cats = [];
+  for (const id of ids) {
+    const c = catalogo[id].cat;
+    if (c && !seen[c]) { seen[c] = 1; cats.push(c); }
+  }
+  const cat = cats.length ? cats[mix32(dealHash(day)) % cats.length] : null;
+  let pool = cat ? ids.filter((id) => catalogo[id].cat === cat) : ids;
+  if (!pool.length) pool = ids;
+  return pool[mix32(dealHash(day + "|" + cat)) % pool.length];
 }
 
 function folio() {
