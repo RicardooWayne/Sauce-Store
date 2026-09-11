@@ -12,6 +12,7 @@ portada) y las galerias de las paginas de detalle, arma catalog.json y regenera:
 Solo stdlib. Ejecutar desde la carpeta Sauce-Store/ o desde cualquier lado:
     python tools/build.py
 """
+import hashlib
 import json
 import re
 import sys
@@ -409,6 +410,22 @@ def merge_extra(cats):
 SITIO = "https://sauce-store-86z.pages.dev"
 
 
+def _asset_ver():
+    """Hash de styles.css/app.js/search.js/cart.js: se pega como ?v= en sus
+    <link>/<script> para que el celular del cliente no se quede con la version
+    vieja en cache cuando se sube un cambio (el problema del carrito que no
+    salia hasta forzar recarga)."""
+    h = hashlib.sha1()
+    for name in ("styles.css", "app.js", "search.js", "cart.js"):
+        p = ROOT / name
+        if p.exists():
+            h.update(p.read_bytes())
+    return h.hexdigest()[:10]
+
+
+ASSET_VER = _asset_ver()
+
+
 def head(title, desc="", og_img="img/og-sauce-store.jpg"):
     d = desc or "Sauce Store — tenis y ropa seleccionada, con fotos reales."
     return f"""<!DOCTYPE html>
@@ -434,7 +451,7 @@ def head(title, desc="", og_img="img/og-sauce-store.jpg"):
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css?v={ASSET_VER}">
 </head>
 <body>"""
 
@@ -527,9 +544,9 @@ def footer():
 </a>
 <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.6.2/fuse.min.js"></script>
-<script src="app.js"></script>
-<script src="search.js"></script>
-<script src="cart.js"></script>
+<script src="app.js?v={ASSET_VER}"></script>
+<script src="search.js?v={ASSET_VER}"></script>
+<script src="cart.js?v={ASSET_VER}"></script>
 </body>
 </html>"""
 
