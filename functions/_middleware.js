@@ -6,7 +6,7 @@
  *
  * Para volver a prender el sitio: cambia ACTIVO a false y sube el cambio.
  */
-const ACTIVO = false;
+const ACTIVO = true;
 
 const HTML = `<!doctype html>
 <html lang="es">
