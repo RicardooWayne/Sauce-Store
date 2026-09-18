@@ -17,7 +17,7 @@
   },
   {
    "name": "Rick Owens Low",
-   "price": 3300,
+   "price": 2950,
    "portada": "img/Rick-Owens/rick-owens-low-portada.webp",
    "gallery": [
     "img/Rick-Owens/rick-owens-low-portada.webp",
@@ -32,7 +32,7 @@
   },
   {
    "name": "Rick Owens Low Negros",
-   "price": 3300,
+   "price": 2950,
    "portada": "img/Rick-Owens/rick-owens-low-negros-portada.webp",
    "gallery": [
     "img/Rick-Owens/rick-owens-low-negros-portada.webp",
@@ -45,7 +45,7 @@
   },
   {
    "name": "Rick Owens Vintage",
-   "price": 3300,
+   "price": 2950,
    "portada": "img/Rick-Owens/rick-owens-vintage-portada.webp",
    "gallery": [
     "img/Rick-Owens/rick-owens-vintage-portada.webp",
@@ -60,7 +60,7 @@
   },
   {
    "name": "Rick Owens Vintage Negros",
-   "price": 3300,
+   "price": 2950,
    "portada": "img/Rick-Owens/rick-owens-vintage-negros-portada.webp",
    "gallery": [
     "img/Rick-Owens/rick-owens-vintage-negros-portada.webp",
@@ -522,7 +522,7 @@
  "Maison Margiela": [
   {
    "name": "Maison Margiela Replica Cafe",
-   "price": 3000,
+   "price": 2700,
    "portada": "img/Maison-Margiela/maison-margiela-replica-cafe-portada.webp",
    "gallery": [
     "img/Maison-Margiela/maison-margiela-replica-cafe-portada.webp",
@@ -546,7 +546,7 @@
   },
   {
    "name": "Maison Margiela Replica Gris",
-   "price": 3000,
+   "price": 2700,
    "portada": "img/Maison-Margiela/maison-margiela-replica-gris-portada.webp",
    "gallery": [
     "img/Maison-Margiela/maison-margiela-replica-gris-portada.webp",
@@ -570,7 +570,7 @@
   },
   {
    "name": "Maison Margiela Replica Negros",
-   "price": 3000,
+   "price": 2700,
    "portada": "img/Maison-Margiela/maison-margiela-replica-negros-portada.webp",
    "gallery": [
     "img/Maison-Margiela/maison-margiela-replica-negros-portada.webp",
@@ -594,7 +594,7 @@
   },
   {
    "name": "Maison Margiela Replica Negros con Gamuza Café",
-   "price": 3000,
+   "price": 2700,
    "portada": "img/Maison-Margiela/maison-margiela-replica-negros-con-gamuza-café-portada.webp",
    "gallery": [
     "img/Maison-Margiela/maison-margiela-replica-negros-con-gamuza-café-portada.webp",
@@ -618,7 +618,7 @@
   },
   {
    "name": "Maison Margiela Replica Negros Suela de Goma",
-   "price": 3000,
+   "price": 2700,
    "portada": "img/Maison-Margiela/maison-margiela-replica-negros-suela-de-goma-portada.webp",
    "gallery": [
     "img/Maison-Margiela/maison-margiela-replica-negros-suela-de-goma-portada.webp",
@@ -642,7 +642,7 @@
   },
   {
    "name": "Maison Margiela Replica Blanco",
-   "price": 3000,
+   "price": 2700,
    "portada": "img/Maison-Margiela/maison-margiela-replica-blanco-portada.webp",
    "gallery": [
     "img/Maison-Margiela/maison-margiela-replica-blanco-portada.webp",
@@ -666,7 +666,7 @@
   },
   {
    "name": "Maison Margiela Replica Marron Oscuro",
-   "price": 3000,
+   "price": 2700,
    "portada": "img/Maison-Margiela/maison-margiela-replica-marron-oscuro-portada.webp",
    "gallery": [
     "img/Maison-Margiela/maison-margiela-replica-marron-oscuro-portada.webp",
