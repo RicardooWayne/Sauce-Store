@@ -61,11 +61,21 @@ CATEGORIES = [
     ("AloYoga.html",          "Alo Yoga",              "ropa",       "img/Alo-Yoga"),
     ("AcneStudios.html",      "Acne Studios",          "ropa",       "img/Acne-Studios"),
     ("ChromeHeartsRopa.html", "Chrome Hearts",         "ropa",       "img/Chrome-Hearts-Ropa"),
+    ("LouisVuittonRopa.html", "Louis Vuitton",         "ropa",       "img/Louis-Vuitton-Ropa"),
     ("ChromeHearts.html",     "Chrome Hearts Cadenas", "accesorios", "img/Chrome-Hearts-Cadenas"),
     ("Stock.html",            "Stock",                 "stock",      "img/Stock"),
 ]
 
 MENU_LABELS = {"tenis": "Tenis", "ropa": "Ropa", "accesorios": "Accesorios", "stock": "Stock"}
+
+# Cuando dos categorias comparten titulo (p.ej. "Louis Vuitton" en tenis Y en
+# ropa) pero cada una tiene su PROPIA lista en productos-extra.json, el titulo
+# solo ya no alcanza para saber a cual va cada lista -- se usa el slug para
+# darle a esa categoria una llave distinta ("extra_key") con la que buscar en
+# productos-extra.json, sin que choque con la otra categoria del mismo nombre.
+EXTRA_KEY_OVERRIDES = {
+    "LouisVuittonRopa.html": "Louis Vuitton Ropa",
+}
 
 # Alias/variantes por categoria para que el buscador tolere errores de escritura
 BRAND_ALIASES = {
@@ -76,7 +86,7 @@ BRAND_ALIASES = {
     "Jordan 6": "jordan jordans jordanes air jordan aj6 aj 6 jordan6 tenis",
     "Jordan 11": "jordan jordans jordanes air jordan aj11 aj 11 jordan11 tenis",
     "Rick Owens": "rick owens rickowens rick owen ricowens geobasket ramones drkshdw tenis botas",
-    "Louis Vuitton": "louis vuitton lv luis vuitton luisvuitton lv trainer buttersoft skate mules tenis",
+    "Louis Vuitton": "louis vuitton lv luis vuitton luisvuitton lv trainer buttersoft skate mules sueter cardigan chamarra tenis ropa",
     "Maison Margiela": "maison margiela margiela mm replica maison marguiela tabi tenis",
     "Golden Goose": "golden goose goldengoose golden gose superstar super star true star tenis",
     "Prada": "prada americas cup america cup linea rossa charol gamuza tenis",
@@ -332,7 +342,8 @@ def build_catalog():
             p["size_options"] = parse_sizes(p["sizes"], title, group)
             p["options"] = None
         cats.append({"slug": slug, "title": title, "group": group,
-                     "folder": folder, "products": products})
+                     "folder": folder, "products": products,
+                     "extra_key": EXTRA_KEY_OVERRIDES.get(slug, title)})
 
     merge_extra(cats)
     return cats
@@ -353,9 +364,9 @@ def merge_extra(cats):
     # no a la que ya se lleno desde su HTML.
     por_titulo = {}
     for c in cats:
-        prev = por_titulo.get(c["title"])
+        prev = por_titulo.get(c["extra_key"])
         if prev is None or len(c["products"]) < len(prev["products"]):
-            por_titulo[c["title"]] = c
+            por_titulo[c["extra_key"]] = c
     agregados = 0
 
     for titulo, items in extra.items():
