@@ -63,10 +63,9 @@ CATEGORIES = [
     ("ChromeHeartsRopa.html", "Chrome Hearts",         "ropa",       "img/Chrome-Hearts-Ropa"),
     ("LouisVuittonRopa.html", "Louis Vuitton",         "ropa",       "img/Louis-Vuitton-Ropa"),
     ("ChromeHearts.html",     "Chrome Hearts Cadenas", "accesorios", "img/Chrome-Hearts-Cadenas"),
-    ("Stock.html",            "Stock",                 "stock",      "img/Stock"),
 ]
 
-MENU_LABELS = {"tenis": "Tenis", "ropa": "Ropa", "accesorios": "Accesorios", "stock": "Stock"}
+MENU_LABELS = {"tenis": "Tenis", "ropa": "Ropa", "accesorios": "Accesorios"}
 
 # Cuando dos categorias comparten titulo (p.ej. "Louis Vuitton" en tenis Y en
 # ropa) pero cada una tiene su PROPIA lista en productos-extra.json, el titulo
@@ -112,7 +111,6 @@ BRAND_ALIASES = {
     "Acne Studios": "acne studios acnestudios acne face jeans jacket ropa camiseta",
     "Chrome Hearts": "chrome hearts chromehearts cromo cross ch sudadera ropa",
     "Chrome Hearts Cadenas": "chrome hearts cadenas chromehearts cadena cross ch joyeria plata collar accesorio",
-    "Stock": "stock disponible inmediato entrega gorras cachuchas",
 }
 
 # Archivos a mover a _archivo/ (marcas descartadas + placeholders vacios)
@@ -172,7 +170,7 @@ def default_sizes(category, group=""):
     """
     if group == "tenis" or "Jordan" in category:
         return SNEAKER_SIZES[:]
-    if group == "accesorios" or "Cadenas" in category or category == "Stock":
+    if group == "accesorios" or "Cadenas" in category:
         return UNITALLA[:]
     return ROPA_SIZES[:]
 
@@ -476,7 +474,6 @@ def nav(cats):
         <button class="nav-trigger" aria-expanded="false">{MENU_LABELS[g]}</button>
         <div class="nav-panel"><div class="nav-panel-inner">{links}</div></div>
       </div>""")
-    blocks.append('      <a class="nav-flat" href="Stock.html">Stock</a>')
     nav_html = "\n".join(blocks)
 
     mobile_sections = []
@@ -489,8 +486,6 @@ def nav(cats):
             f'<div class="m-group">'
             f'<button type="button" class="m-trigger" aria-expanded="false">{MENU_LABELS[g]}</button>'
             f'<div class="m-links">{links}</div></div>')
-    mobile_sections.append(
-        '<div class="m-group m-group-flat"><a href="Stock.html">Stock</a></div>')
     mobile_html = "\n".join(mobile_sections)
 
     return f"""<header class="site-header" id="siteHeader">

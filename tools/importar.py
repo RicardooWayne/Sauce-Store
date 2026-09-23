@@ -73,7 +73,6 @@ CARPETAS = {
     "Chrome Hearts": "Chrome-Hearts-Ropa",
     "Louis Vuitton Ropa": "Louis-Vuitton-Ropa",
     "Chrome Hearts Cadenas": "Chrome-Hearts-Cadenas",
-    "Stock": "Stock",
 }
 
 
