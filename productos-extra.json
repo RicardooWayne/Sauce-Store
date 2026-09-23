@@ -15435,5 +15435,189 @@
    "sizes_raw": "S M L XL",
    "sizes": []
   }
+ ],
+ "Cinturones": [
+  {
+   "name": "Cinturon Loewe",
+   "price": 2100,
+   "portada": "img/Cinturones/cinturon-loewe-portada.webp",
+   "gallery": [
+    "img/Cinturones/cinturon-loewe-portada.webp",
+    "img/Cinturones/cinturon-loewe-1.webp",
+    "img/Cinturones/cinturon-loewe-2.webp",
+    "img/Cinturones/cinturon-loewe-3.webp",
+    "img/Cinturones/cinturon-loewe-4.webp",
+    "img/Cinturones/cinturon-loewe-5.webp",
+    "img/Cinturones/cinturon-loewe-6.webp",
+    "img/Cinturones/cinturon-loewe-7.webp",
+    "img/Cinturones/cinturon-loewe-8.webp"
+   ],
+   "detail": "p-cinturon-loewe.html",
+   "sizes_raw": "1 2 3 4 5 6 7",
+   "sizes": []
+  },
+  {
+   "name": "Cinturon Loewe 2",
+   "price": 2100,
+   "portada": "img/Cinturones/cinturon-loewe-2-portada.webp",
+   "gallery": [
+    "img/Cinturones/cinturon-loewe-2-portada.webp",
+    "img/Cinturones/cinturon-loewe-2-1.webp",
+    "img/Cinturones/cinturon-loewe-2-2.webp",
+    "img/Cinturones/cinturon-loewe-2-3.webp",
+    "img/Cinturones/cinturon-loewe-2-4.webp",
+    "img/Cinturones/cinturon-loewe-2-5.webp",
+    "img/Cinturones/cinturon-loewe-2-6.webp",
+    "img/Cinturones/cinturon-loewe-2-7.webp",
+    "img/Cinturones/cinturon-loewe-2-8.webp"
+   ],
+   "detail": "p-cinturon-loewe-2.html",
+   "sizes_raw": "1 2 3 4 5 6 7",
+   "sizes": []
+  },
+  {
+   "name": "Cinturon Loewe 3",
+   "price": 2100,
+   "portada": "img/Cinturones/cinturon-loewe-3-portada.webp",
+   "gallery": [
+    "img/Cinturones/cinturon-loewe-3-portada.webp",
+    "img/Cinturones/cinturon-loewe-3-1.webp",
+    "img/Cinturones/cinturon-loewe-3-2.webp",
+    "img/Cinturones/cinturon-loewe-3-3.webp",
+    "img/Cinturones/cinturon-loewe-3-4.webp",
+    "img/Cinturones/cinturon-loewe-3-5.webp",
+    "img/Cinturones/cinturon-loewe-3-6.webp",
+    "img/Cinturones/cinturon-loewe-3-7.webp",
+    "img/Cinturones/cinturon-loewe-3-8.webp"
+   ],
+   "detail": "p-cinturon-loewe-3.html",
+   "sizes_raw": "1 2 3 4 5 6 7",
+   "sizes": []
+  },
+  {
+   "name": "Cinturon Ferragamo",
+   "price": 2100,
+   "portada": "img/Cinturones/cinturon-ferragamo-portada.webp",
+   "gallery": [
+    "img/Cinturones/cinturon-ferragamo-portada.webp",
+    "img/Cinturones/cinturon-ferragamo-1.webp",
+    "img/Cinturones/cinturon-ferragamo-2.webp",
+    "img/Cinturones/cinturon-ferragamo-3.webp",
+    "img/Cinturones/cinturon-ferragamo-4.webp",
+    "img/Cinturones/cinturon-ferragamo-5.webp",
+    "img/Cinturones/cinturon-ferragamo-6.webp",
+    "img/Cinturones/cinturon-ferragamo-7.webp",
+    "img/Cinturones/cinturon-ferragamo-8.webp"
+   ],
+   "detail": "p-cinturon-ferragamo.html",
+   "sizes_raw": "1 2 3 4 5 6 7",
+   "sizes": []
+  },
+  {
+   "name": "Cinturon Gucci",
+   "price": 2100,
+   "portada": "img/Cinturones/cinturon-gucci-portada.webp",
+   "gallery": [
+    "img/Cinturones/cinturon-gucci-portada.webp",
+    "img/Cinturones/cinturon-gucci-1.webp",
+    "img/Cinturones/cinturon-gucci-2.webp",
+    "img/Cinturones/cinturon-gucci-3.webp",
+    "img/Cinturones/cinturon-gucci-4.webp",
+    "img/Cinturones/cinturon-gucci-5.webp",
+    "img/Cinturones/cinturon-gucci-6.webp",
+    "img/Cinturones/cinturon-gucci-7.webp",
+    "img/Cinturones/cinturon-gucci-8.webp",
+    "img/Cinturones/cinturon-gucci-9.webp"
+   ],
+   "detail": "p-cinturon-gucci.html",
+   "sizes_raw": "1 2 3 4 5 6 7",
+   "sizes": []
+  },
+  {
+   "name": "Cinturon Hermes",
+   "price": 2100,
+   "portada": "img/Cinturones/cinturon-hermes-portada.webp",
+   "gallery": [
+    "img/Cinturones/cinturon-hermes-portada.webp",
+    "img/Cinturones/cinturon-hermes-1.webp",
+    "img/Cinturones/cinturon-hermes-2.webp",
+    "img/Cinturones/cinturon-hermes-3.webp",
+    "img/Cinturones/cinturon-hermes-4.webp",
+    "img/Cinturones/cinturon-hermes-5.webp",
+    "img/Cinturones/cinturon-hermes-6.webp",
+    "img/Cinturones/cinturon-hermes-7.webp",
+    "img/Cinturones/cinturon-hermes-8.webp"
+   ],
+   "detail": "p-cinturon-hermes.html",
+   "sizes_raw": "1 2 3 4 5 6 7",
+   "sizes": []
+  },
+  {
+   "name": "Cinturon LV",
+   "price": 2100,
+   "portada": "img/Cinturones/cinturon-lv-portada.webp",
+   "gallery": [
+    "img/Cinturones/cinturon-lv-portada.webp",
+    "img/Cinturones/cinturon-lv-1.webp",
+    "img/Cinturones/cinturon-lv-2.webp",
+    "img/Cinturones/cinturon-lv-3.webp",
+    "img/Cinturones/cinturon-lv-4.webp",
+    "img/Cinturones/cinturon-lv-5.webp",
+    "img/Cinturones/cinturon-lv-6.webp",
+    "img/Cinturones/cinturon-lv-7.webp"
+   ],
+   "detail": "p-cinturon-lv.html",
+   "sizes_raw": "1 2 3 4 5 6 7",
+   "sizes": []
+  },
+  {
+   "name": "Cinturon Loewe 4",
+   "price": 2050,
+   "portada": "img/Cinturones/cinturon-loewe-4-portada.webp",
+   "gallery": [
+    "img/Cinturones/cinturon-loewe-4-portada.webp",
+    "img/Cinturones/cinturon-loewe-4-1.webp",
+    "img/Cinturones/cinturon-loewe-4-2.webp",
+    "img/Cinturones/cinturon-loewe-4-3.webp",
+    "img/Cinturones/cinturon-loewe-4-4.webp",
+    "img/Cinturones/cinturon-loewe-4-5.webp",
+    "img/Cinturones/cinturon-loewe-4-6.webp"
+   ],
+   "detail": "p-cinturon-loewe-4.html",
+   "sizes_raw": "1 2 3 4 5 6 7",
+   "sizes": []
+  },
+  {
+   "name": "Cinturon LV 2",
+   "price": 2200,
+   "portada": "img/Cinturones/cinturon-lv-2-portada.webp",
+   "gallery": [
+    "img/Cinturones/cinturon-lv-2-portada.webp",
+    "img/Cinturones/cinturon-lv-2-1.webp",
+    "img/Cinturones/cinturon-lv-2-2.webp",
+    "img/Cinturones/cinturon-lv-2-3.webp",
+    "img/Cinturones/cinturon-lv-2-4.webp",
+    "img/Cinturones/cinturon-lv-2-5.webp"
+   ],
+   "detail": "p-cinturon-lv-2.html",
+   "sizes_raw": "1 2 3 4 5 6 7",
+   "sizes": []
+  },
+  {
+   "name": "Cinturon Dior",
+   "price": 2200,
+   "portada": "img/Cinturones/cinturon-dior-portada.webp",
+   "gallery": [
+    "img/Cinturones/cinturon-dior-portada.webp",
+    "img/Cinturones/cinturon-dior-1.webp",
+    "img/Cinturones/cinturon-dior-2.webp",
+    "img/Cinturones/cinturon-dior-3.webp",
+    "img/Cinturones/cinturon-dior-4.webp",
+    "img/Cinturones/cinturon-dior-5.webp"
+   ],
+   "detail": "p-cinturon-dior.html",
+   "sizes_raw": "1 2 3 4 5 6 7",
+   "sizes": []
+  }
  ]
 }

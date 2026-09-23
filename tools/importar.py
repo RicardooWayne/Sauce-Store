@@ -75,6 +75,7 @@ CARPETAS = {
     "Dior Ropa": "Dior-Ropa",
     "Louis Vuitton Lentes": "Louis-Vuitton-Lentes",
     "Chrome Hearts Cadenas": "Chrome-Hearts-Cadenas",
+    "Cinturones": "Cinturones",
 }
 
 

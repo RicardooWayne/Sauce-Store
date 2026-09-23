@@ -65,6 +65,7 @@ CATEGORIES = [
     ("DiorRopa.html",         "Dior",                  "ropa",       "img/Dior-Ropa"),
     ("ChromeHearts.html",     "Chrome Hearts Cadenas", "accesorios", "img/Chrome-Hearts-Cadenas"),
     ("LouisVuittonLentes.html", "Louis Vuitton",        "accesorios", "img/Louis-Vuitton-Lentes"),
+    ("Cinturones.html",       "Cinturones",            "accesorios", "img/Cinturones"),
 ]
 
 MENU_LABELS = {"tenis": "Tenis", "ropa": "Ropa", "accesorios": "Accesorios"}
@@ -115,6 +116,7 @@ BRAND_ALIASES = {
     "Acne Studios": "acne studios acnestudios acne face jeans jacket ropa camiseta",
     "Chrome Hearts": "chrome hearts chromehearts cromo cross ch sudadera ropa",
     "Chrome Hearts Cadenas": "chrome hearts cadenas chromehearts cadena cross ch joyeria plata collar accesorio",
+    "Cinturones": "cinturones cinturon fajo fajos cinto belt loewe ferragamo gucci hermes dior lv louis vuitton accesorio",
 }
 
 # Archivos a mover a _archivo/ (marcas descartadas + placeholders vacios)
