@@ -62,7 +62,9 @@ CATEGORIES = [
     ("AcneStudios.html",      "Acne Studios",          "ropa",       "img/Acne-Studios"),
     ("ChromeHeartsRopa.html", "Chrome Hearts",         "ropa",       "img/Chrome-Hearts-Ropa"),
     ("LouisVuittonRopa.html", "Louis Vuitton",         "ropa",       "img/Louis-Vuitton-Ropa"),
+    ("DiorRopa.html",         "Dior",                  "ropa",       "img/Dior-Ropa"),
     ("ChromeHearts.html",     "Chrome Hearts Cadenas", "accesorios", "img/Chrome-Hearts-Cadenas"),
+    ("LouisVuittonLentes.html", "Louis Vuitton",        "accesorios", "img/Louis-Vuitton-Lentes"),
 ]
 
 MENU_LABELS = {"tenis": "Tenis", "ropa": "Ropa", "accesorios": "Accesorios"}
@@ -74,6 +76,8 @@ MENU_LABELS = {"tenis": "Tenis", "ropa": "Ropa", "accesorios": "Accesorios"}
 # productos-extra.json, sin que choque con la otra categoria del mismo nombre.
 EXTRA_KEY_OVERRIDES = {
     "LouisVuittonRopa.html": "Louis Vuitton Ropa",
+    "DiorRopa.html": "Dior Ropa",
+    "LouisVuittonLentes.html": "Louis Vuitton Lentes",
 }
 
 # Alias/variantes por categoria para que el buscador tolere errores de escritura
@@ -85,7 +89,7 @@ BRAND_ALIASES = {
     "Jordan 6": "jordan jordans jordanes air jordan aj6 aj 6 jordan6 tenis",
     "Jordan 11": "jordan jordans jordanes air jordan aj11 aj 11 jordan11 tenis",
     "Rick Owens": "rick owens rickowens rick owen ricowens geobasket ramones drkshdw tenis botas",
-    "Louis Vuitton": "louis vuitton lv luis vuitton luisvuitton lv trainer buttersoft skate mules sueter cardigan chamarra tenis ropa",
+    "Louis Vuitton": "louis vuitton lv luis vuitton luisvuitton lv trainer buttersoft skate mules sueter cardigan chamarra playera camisa pantalon lentes gafas tenis ropa accesorio",
     "Maison Margiela": "maison margiela margiela mm replica maison marguiela tabi tenis",
     "Golden Goose": "golden goose goldengoose golden gose superstar super star true star tenis",
     "Prada": "prada americas cup america cup linea rossa charol gamuza tenis",
@@ -100,7 +104,7 @@ BRAND_ALIASES = {
     "Timberland": "timberland tims botas construccion lv timbs tenis",
     "Off White": "off white offwhite virgil out of office tenis tenis",
     "Amiri": "amiri amirii amiry ammiri amiris skeleton skel top esqueleto hueso ropa tenis",
-    "Dior": "dior b23 oblique daniel arsham high top low tenis",
+    "Dior": "dior b23 oblique daniel arsham high top low hoodie sudadera tenis ropa",
     "Alexander McQueen": "alexander mcqueen mc queen mcqueen oversized tread slick tenis",
     "Balenciaga": "balenciaga balensiaga valenciaga balen balencia balensiaga ropa",
     "Bape": "bape bathing ape baep bapee a bathing ape ropa",

@@ -72,6 +72,8 @@ CARPETAS = {
     "Bape": "Bape", "Burberry": "Burberry", "Supreme": "Supreme", "Nike": "Nike-Ropa", "Alo Yoga": "Alo-Yoga", "Acne Studios": "Acne-Studios",
     "Chrome Hearts": "Chrome-Hearts-Ropa",
     "Louis Vuitton Ropa": "Louis-Vuitton-Ropa",
+    "Dior Ropa": "Dior-Ropa",
+    "Louis Vuitton Lentes": "Louis-Vuitton-Lentes",
     "Chrome Hearts Cadenas": "Chrome-Hearts-Cadenas",
 }
 
