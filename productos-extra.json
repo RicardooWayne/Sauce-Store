@@ -707,6 +707,74 @@
     "30 MX (46 EU)",
     "30.5 MX (47 EU)"
    ]
+  },
+  {
+   "name": "Maison Margiela Gats Rojos",
+   "price": 3000,
+   "portada": "img/Maison-Margiela/maison-margiela-gats-rojos-portada.webp",
+   "gallery": [
+    "img/Maison-Margiela/maison-margiela-gats-rojos-portada.webp",
+    "img/Maison-Margiela/maison-margiela-gats-rojos-1.webp",
+    "img/Maison-Margiela/maison-margiela-gats-rojos-2.webp",
+    "img/Maison-Margiela/maison-margiela-gats-rojos-3.webp",
+    "img/Maison-Margiela/maison-margiela-gats-rojos-4.webp",
+    "img/Maison-Margiela/maison-margiela-gats-rojos-5.webp"
+   ],
+   "detail": "p-maison-margiela-gats-rojos.html",
+   "sizes_raw": "24 25 26 27 28 29",
+   "sizes": []
+  },
+  {
+   "name": "Maison Margiela Gats Oreo",
+   "price": 2550,
+   "portada": "img/Maison-Margiela/maison-margiela-gats-oreo-portada.webp",
+   "gallery": [
+    "img/Maison-Margiela/maison-margiela-gats-oreo-portada.webp",
+    "img/Maison-Margiela/maison-margiela-gats-oreo-1.webp",
+    "img/Maison-Margiela/maison-margiela-gats-oreo-2.webp",
+    "img/Maison-Margiela/maison-margiela-gats-oreo-3.webp",
+    "img/Maison-Margiela/maison-margiela-gats-oreo-4.webp",
+    "img/Maison-Margiela/maison-margiela-gats-oreo-5.webp",
+    "img/Maison-Margiela/maison-margiela-gats-oreo-6.webp",
+    "img/Maison-Margiela/maison-margiela-gats-oreo-7.webp"
+   ],
+   "detail": "p-maison-margiela-gats-oreo.html",
+   "sizes_raw": "24 25 26 27 28 29",
+   "sizes": []
+  },
+  {
+   "name": "Maison Margiela Black Paint",
+   "price": 3100,
+   "portada": "img/Maison-Margiela/maison-margiela-black-paint-portada.webp",
+   "gallery": [
+    "img/Maison-Margiela/maison-margiela-black-paint-portada.webp",
+    "img/Maison-Margiela/maison-margiela-black-paint-1.webp",
+    "img/Maison-Margiela/maison-margiela-black-paint-2.webp",
+    "img/Maison-Margiela/maison-margiela-black-paint-3.webp",
+    "img/Maison-Margiela/maison-margiela-black-paint-4.webp",
+    "img/Maison-Margiela/maison-margiela-black-paint-5.webp",
+    "img/Maison-Margiela/maison-margiela-black-paint-6.webp"
+   ],
+   "detail": "p-maison-margiela-black-paint.html",
+   "sizes_raw": "24 25 26 27 28 29",
+   "sizes": []
+  },
+  {
+   "name": "Maison Margiela Black Paint 2",
+   "price": 3100,
+   "portada": "img/Maison-Margiela/maison-margiela-black-paint-2-portada.webp",
+   "gallery": [
+    "img/Maison-Margiela/maison-margiela-black-paint-2-portada.webp",
+    "img/Maison-Margiela/maison-margiela-black-paint-2-1.webp",
+    "img/Maison-Margiela/maison-margiela-black-paint-2-2.webp",
+    "img/Maison-Margiela/maison-margiela-black-paint-2-3.webp",
+    "img/Maison-Margiela/maison-margiela-black-paint-2-4.webp",
+    "img/Maison-Margiela/maison-margiela-black-paint-2-5.webp",
+    "img/Maison-Margiela/maison-margiela-black-paint-2-6.webp"
+   ],
+   "detail": "p-maison-margiela-black-paint-2.html",
+   "sizes_raw": "24 25 26 27 28 29",
+   "sizes": []
   }
  ],
  "Golden Goose": [
@@ -12355,6 +12423,55 @@
      }
     ]
    }
+  },
+  {
+   "name": "Supreme Long Sleeve Playboy Black",
+   "price": 1550,
+   "portada": "img/Supreme/supreme-long-sleeve-playboy-black-portada.webp",
+   "gallery": [
+    "img/Supreme/supreme-long-sleeve-playboy-black-portada.webp",
+    "img/Supreme/supreme-long-sleeve-playboy-black-1.webp",
+    "img/Supreme/supreme-long-sleeve-playboy-black-2.webp",
+    "img/Supreme/supreme-long-sleeve-playboy-black-3.webp",
+    "img/Supreme/supreme-long-sleeve-playboy-black-4.webp"
+   ],
+   "detail": "p-supreme-long-sleeve-playboy-black.html",
+   "sizes_raw": "S a XL",
+   "sizes": []
+  },
+  {
+   "name": "Supreme Long Sleeve Playboy White",
+   "price": 1550,
+   "portada": "img/Supreme/supreme-long-sleeve-playboy-white-portada.webp",
+   "gallery": [
+    "img/Supreme/supreme-long-sleeve-playboy-white-portada.webp",
+    "img/Supreme/supreme-long-sleeve-playboy-white-1.webp",
+    "img/Supreme/supreme-long-sleeve-playboy-white-2.webp",
+    "img/Supreme/supreme-long-sleeve-playboy-white-3.webp",
+    "img/Supreme/supreme-long-sleeve-playboy-white-4.webp"
+   ],
+   "detail": "p-supreme-long-sleeve-playboy-white.html",
+   "sizes_raw": "S a XL",
+   "sizes": []
+  },
+  {
+   "name": "Supreme X Jordan Jacket",
+   "price": 2800,
+   "portada": "img/Supreme/supreme-x-jordan-jacket-portada.webp",
+   "gallery": [
+    "img/Supreme/supreme-x-jordan-jacket-portada.webp",
+    "img/Supreme/supreme-x-jordan-jacket-1.webp",
+    "img/Supreme/supreme-x-jordan-jacket-2.webp",
+    "img/Supreme/supreme-x-jordan-jacket-3.webp",
+    "img/Supreme/supreme-x-jordan-jacket-4.webp",
+    "img/Supreme/supreme-x-jordan-jacket-5.webp",
+    "img/Supreme/supreme-x-jordan-jacket-6.webp",
+    "img/Supreme/supreme-x-jordan-jacket-7.webp",
+    "img/Supreme/supreme-x-jordan-jacket-8.webp"
+   ],
+   "detail": "p-supreme-x-jordan-jacket.html",
+   "sizes_raw": "S a XL",
+   "sizes": []
   }
  ],
  "Nike": [
@@ -15617,6 +15734,577 @@
    ],
    "detail": "p-cinturon-dior.html",
    "sizes_raw": "1 2 3 4 5 6 7",
+   "sizes": []
+  }
+ ],
+ "Christian Louboutin": [
+  {
+   "name": "Christian Louboutin Louis Junior Spikes",
+   "price": 2200,
+   "portada": "img/Christian-Louboutin/christian-louboutin-louis-junior-spikes-portada.webp",
+   "gallery": [
+    "img/Christian-Louboutin/christian-louboutin-louis-junior-spikes-portada.webp",
+    "img/Christian-Louboutin/christian-louboutin-louis-junior-spikes-1.webp",
+    "img/Christian-Louboutin/christian-louboutin-louis-junior-spikes-2.webp",
+    "img/Christian-Louboutin/christian-louboutin-louis-junior-spikes-3.webp",
+    "img/Christian-Louboutin/christian-louboutin-louis-junior-spikes-4.webp",
+    "img/Christian-Louboutin/christian-louboutin-louis-junior-spikes-5.webp",
+    "img/Christian-Louboutin/christian-louboutin-louis-junior-spikes-6.webp"
+   ],
+   "detail": "p-christian-louboutin-louis-junior-spikes.html",
+   "sizes_raw": "24 25 26 27 28 29",
+   "sizes": []
+  },
+  {
+   "name": "Christian Louboutin Louis Junior Spikes Flat",
+   "price": 2200,
+   "portada": "img/Christian-Louboutin/christian-louboutin-louis-junior-spikes-flat-portada.webp",
+   "gallery": [
+    "img/Christian-Louboutin/christian-louboutin-louis-junior-spikes-flat-portada.webp",
+    "img/Christian-Louboutin/christian-louboutin-louis-junior-spikes-flat-1.webp",
+    "img/Christian-Louboutin/christian-louboutin-louis-junior-spikes-flat-2.webp",
+    "img/Christian-Louboutin/christian-louboutin-louis-junior-spikes-flat-3.webp",
+    "img/Christian-Louboutin/christian-louboutin-louis-junior-spikes-flat-4.webp",
+    "img/Christian-Louboutin/christian-louboutin-louis-junior-spikes-flat-5.webp",
+    "img/Christian-Louboutin/christian-louboutin-louis-junior-spikes-flat-6.webp"
+   ],
+   "detail": "p-christian-louboutin-louis-junior-spikes-flat.html",
+   "sizes_raw": "24 25 26 27 28 29",
+   "sizes": []
+  },
+  {
+   "name": "Christian Louboutin Louis Junior",
+   "price": 2200,
+   "portada": "img/Christian-Louboutin/christian-louboutin-louis-junior-portada.webp",
+   "gallery": [
+    "img/Christian-Louboutin/christian-louboutin-louis-junior-portada.webp",
+    "img/Christian-Louboutin/christian-louboutin-louis-junior-1.webp",
+    "img/Christian-Louboutin/christian-louboutin-louis-junior-2.webp",
+    "img/Christian-Louboutin/christian-louboutin-louis-junior-3.webp",
+    "img/Christian-Louboutin/christian-louboutin-louis-junior-4.webp",
+    "img/Christian-Louboutin/christian-louboutin-louis-junior-5.webp",
+    "img/Christian-Louboutin/christian-louboutin-louis-junior-6.webp"
+   ],
+   "detail": "p-christian-louboutin-louis-junior.html",
+   "sizes_raw": "24 25 26 27 28 29",
+   "sizes": []
+  },
+  {
+   "name": "Christian Louboutin Louis Junior Spikes Picos Detras",
+   "price": 2200,
+   "portada": "img/Christian-Louboutin/christian-louboutin-louis-junior-spikes-picos-detras-portada.webp",
+   "gallery": [
+    "img/Christian-Louboutin/christian-louboutin-louis-junior-spikes-picos-detras-portada.webp",
+    "img/Christian-Louboutin/christian-louboutin-louis-junior-spikes-picos-detras-1.webp",
+    "img/Christian-Louboutin/christian-louboutin-louis-junior-spikes-picos-detras-2.webp",
+    "img/Christian-Louboutin/christian-louboutin-louis-junior-spikes-picos-detras-3.webp",
+    "img/Christian-Louboutin/christian-louboutin-louis-junior-spikes-picos-detras-4.webp",
+    "img/Christian-Louboutin/christian-louboutin-louis-junior-spikes-picos-detras-5.webp",
+    "img/Christian-Louboutin/christian-louboutin-louis-junior-spikes-picos-detras-6.webp",
+    "img/Christian-Louboutin/christian-louboutin-louis-junior-spikes-picos-detras-7.webp"
+   ],
+   "detail": "p-christian-louboutin-louis-junior-spikes-picos-detras.html",
+   "sizes_raw": "24 25 26 27 28 29",
+   "sizes": []
+  },
+  {
+   "name": "Christian Louboutin Louis Junior Strass",
+   "price": 2200,
+   "portada": "img/Christian-Louboutin/christian-louboutin-louis-junior-strass-portada.webp",
+   "gallery": [
+    "img/Christian-Louboutin/christian-louboutin-louis-junior-strass-portada.webp",
+    "img/Christian-Louboutin/christian-louboutin-louis-junior-strass-1.webp",
+    "img/Christian-Louboutin/christian-louboutin-louis-junior-strass-2.webp",
+    "img/Christian-Louboutin/christian-louboutin-louis-junior-strass-3.webp",
+    "img/Christian-Louboutin/christian-louboutin-louis-junior-strass-4.webp",
+    "img/Christian-Louboutin/christian-louboutin-louis-junior-strass-5.webp",
+    "img/Christian-Louboutin/christian-louboutin-louis-junior-strass-6.webp"
+   ],
+   "detail": "p-christian-louboutin-louis-junior-strass.html",
+   "sizes_raw": "24 25 26 27 28 29",
+   "sizes": []
+  }
+ ],
+ "Valley Dreams": [
+  {
+   "name": "Hoodie Valley Dreams 13",
+   "price": 1700,
+   "portada": "img/Valley-Dreams/hoodie-valley-dreams-13-portada.webp",
+   "gallery": [
+    "img/Valley-Dreams/hoodie-valley-dreams-13-portada.webp",
+    "img/Valley-Dreams/hoodie-valley-dreams-13-1.webp",
+    "img/Valley-Dreams/hoodie-valley-dreams-13-2.webp",
+    "img/Valley-Dreams/hoodie-valley-dreams-13-3.webp",
+    "img/Valley-Dreams/hoodie-valley-dreams-13-4.webp",
+    "img/Valley-Dreams/hoodie-valley-dreams-13-5.webp",
+    "img/Valley-Dreams/hoodie-valley-dreams-13-6.webp",
+    "img/Valley-Dreams/hoodie-valley-dreams-13-7.webp",
+    "img/Valley-Dreams/hoodie-valley-dreams-13-8.webp",
+    "img/Valley-Dreams/hoodie-valley-dreams-13-9.webp",
+    "img/Valley-Dreams/hoodie-valley-dreams-13-10.webp"
+   ],
+   "detail": "p-hoodie-valley-dreams-13.html",
+   "sizes_raw": "S a XL",
+   "sizes": []
+  },
+  {
+   "name": "Hoodie Valley Dreams 14",
+   "price": 1700,
+   "portada": "img/Valley-Dreams/hoodie-valley-dreams-14-portada.webp",
+   "gallery": [
+    "img/Valley-Dreams/hoodie-valley-dreams-14-portada.webp",
+    "img/Valley-Dreams/hoodie-valley-dreams-14-1.webp",
+    "img/Valley-Dreams/hoodie-valley-dreams-14-2.webp",
+    "img/Valley-Dreams/hoodie-valley-dreams-14-3.webp",
+    "img/Valley-Dreams/hoodie-valley-dreams-14-4.webp",
+    "img/Valley-Dreams/hoodie-valley-dreams-14-5.webp",
+    "img/Valley-Dreams/hoodie-valley-dreams-14-6.webp",
+    "img/Valley-Dreams/hoodie-valley-dreams-14-7.webp",
+    "img/Valley-Dreams/hoodie-valley-dreams-14-8.webp",
+    "img/Valley-Dreams/hoodie-valley-dreams-14-9.webp"
+   ],
+   "detail": "p-hoodie-valley-dreams-14.html",
+   "sizes_raw": "S a XL",
+   "sizes": []
+  },
+  {
+   "name": "Hoodie Valley Dreams 15",
+   "price": 1700,
+   "portada": "img/Valley-Dreams/hoodie-valley-dreams-15-portada.webp",
+   "gallery": [
+    "img/Valley-Dreams/hoodie-valley-dreams-15-portada.webp",
+    "img/Valley-Dreams/hoodie-valley-dreams-15-1.webp",
+    "img/Valley-Dreams/hoodie-valley-dreams-15-2.webp",
+    "img/Valley-Dreams/hoodie-valley-dreams-15-3.webp",
+    "img/Valley-Dreams/hoodie-valley-dreams-15-4.webp",
+    "img/Valley-Dreams/hoodie-valley-dreams-15-5.webp",
+    "img/Valley-Dreams/hoodie-valley-dreams-15-6.webp",
+    "img/Valley-Dreams/hoodie-valley-dreams-15-7.webp"
+   ],
+   "detail": "p-hoodie-valley-dreams-15.html",
+   "sizes_raw": "S a XL",
+   "sizes": []
+  },
+  {
+   "name": "Hoodie Valley Dreams 16",
+   "price": 1700,
+   "portada": "img/Valley-Dreams/hoodie-valley-dreams-16-portada.webp",
+   "gallery": [
+    "img/Valley-Dreams/hoodie-valley-dreams-16-portada.webp",
+    "img/Valley-Dreams/hoodie-valley-dreams-16-1.webp",
+    "img/Valley-Dreams/hoodie-valley-dreams-16-2.webp",
+    "img/Valley-Dreams/hoodie-valley-dreams-16-3.webp",
+    "img/Valley-Dreams/hoodie-valley-dreams-16-4.webp",
+    "img/Valley-Dreams/hoodie-valley-dreams-16-5.webp",
+    "img/Valley-Dreams/hoodie-valley-dreams-16-6.webp",
+    "img/Valley-Dreams/hoodie-valley-dreams-16-7.webp",
+    "img/Valley-Dreams/hoodie-valley-dreams-16-8.webp",
+    "img/Valley-Dreams/hoodie-valley-dreams-16-9.webp",
+    "img/Valley-Dreams/hoodie-valley-dreams-16-10.webp"
+   ],
+   "detail": "p-hoodie-valley-dreams-16.html",
+   "sizes_raw": "S a XL",
+   "sizes": []
+  },
+  {
+   "name": "Playera Valley Dreams",
+   "price": 1300,
+   "portada": "img/Valley-Dreams/playera-valley-dreams-portada.webp",
+   "gallery": [
+    "img/Valley-Dreams/playera-valley-dreams-portada.webp",
+    "img/Valley-Dreams/playera-valley-dreams-1.webp",
+    "img/Valley-Dreams/playera-valley-dreams-2.webp",
+    "img/Valley-Dreams/playera-valley-dreams-3.webp",
+    "img/Valley-Dreams/playera-valley-dreams-4.webp",
+    "img/Valley-Dreams/playera-valley-dreams-5.webp",
+    "img/Valley-Dreams/playera-valley-dreams-6.webp"
+   ],
+   "detail": "p-playera-valley-dreams.html",
+   "sizes_raw": "S a XL",
+   "sizes": []
+  },
+  {
+   "name": "Playera Valley Dreams 2",
+   "price": 1300,
+   "portada": "img/Valley-Dreams/playera-valley-dreams-2-portada.webp",
+   "gallery": [
+    "img/Valley-Dreams/playera-valley-dreams-2-portada.webp",
+    "img/Valley-Dreams/playera-valley-dreams-2-1.webp",
+    "img/Valley-Dreams/playera-valley-dreams-2-2.webp",
+    "img/Valley-Dreams/playera-valley-dreams-2-3.webp",
+    "img/Valley-Dreams/playera-valley-dreams-2-4.webp",
+    "img/Valley-Dreams/playera-valley-dreams-2-5.webp",
+    "img/Valley-Dreams/playera-valley-dreams-2-6.webp",
+    "img/Valley-Dreams/playera-valley-dreams-2-7.webp"
+   ],
+   "detail": "p-playera-valley-dreams-2.html",
+   "sizes_raw": "S a XL",
+   "sizes": []
+  },
+  {
+   "name": "Playera Valley Dreams 3",
+   "price": 1300,
+   "portada": "img/Valley-Dreams/playera-valley-dreams-3-portada.webp",
+   "gallery": [
+    "img/Valley-Dreams/playera-valley-dreams-3-portada.webp",
+    "img/Valley-Dreams/playera-valley-dreams-3-1.webp",
+    "img/Valley-Dreams/playera-valley-dreams-3-2.webp",
+    "img/Valley-Dreams/playera-valley-dreams-3-3.webp",
+    "img/Valley-Dreams/playera-valley-dreams-3-4.webp",
+    "img/Valley-Dreams/playera-valley-dreams-3-5.webp",
+    "img/Valley-Dreams/playera-valley-dreams-3-6.webp"
+   ],
+   "detail": "p-playera-valley-dreams-3.html",
+   "sizes_raw": "S a XL",
+   "sizes": []
+  },
+  {
+   "name": "Playera Valley Dreams 4",
+   "price": 1300,
+   "portada": "img/Valley-Dreams/playera-valley-dreams-4-portada.webp",
+   "gallery": [
+    "img/Valley-Dreams/playera-valley-dreams-4-portada.webp",
+    "img/Valley-Dreams/playera-valley-dreams-4-1.webp",
+    "img/Valley-Dreams/playera-valley-dreams-4-2.webp",
+    "img/Valley-Dreams/playera-valley-dreams-4-3.webp",
+    "img/Valley-Dreams/playera-valley-dreams-4-4.webp",
+    "img/Valley-Dreams/playera-valley-dreams-4-5.webp",
+    "img/Valley-Dreams/playera-valley-dreams-4-6.webp"
+   ],
+   "detail": "p-playera-valley-dreams-4.html",
+   "sizes_raw": "S a XL",
+   "sizes": []
+  },
+  {
+   "name": "Playera Valley Dreams 5",
+   "price": 1300,
+   "portada": "img/Valley-Dreams/playera-valley-dreams-5-portada.webp",
+   "gallery": [
+    "img/Valley-Dreams/playera-valley-dreams-5-portada.webp",
+    "img/Valley-Dreams/playera-valley-dreams-5-1.webp",
+    "img/Valley-Dreams/playera-valley-dreams-5-2.webp",
+    "img/Valley-Dreams/playera-valley-dreams-5-3.webp",
+    "img/Valley-Dreams/playera-valley-dreams-5-4.webp",
+    "img/Valley-Dreams/playera-valley-dreams-5-5.webp",
+    "img/Valley-Dreams/playera-valley-dreams-5-6.webp"
+   ],
+   "detail": "p-playera-valley-dreams-5.html",
+   "sizes_raw": "S a XL",
+   "sizes": []
+  },
+  {
+   "name": "Playera Valley Dreams 6",
+   "price": 1300,
+   "portada": "img/Valley-Dreams/playera-valley-dreams-6-portada.webp",
+   "gallery": [
+    "img/Valley-Dreams/playera-valley-dreams-6-portada.webp",
+    "img/Valley-Dreams/playera-valley-dreams-6-1.webp",
+    "img/Valley-Dreams/playera-valley-dreams-6-2.webp",
+    "img/Valley-Dreams/playera-valley-dreams-6-3.webp",
+    "img/Valley-Dreams/playera-valley-dreams-6-4.webp",
+    "img/Valley-Dreams/playera-valley-dreams-6-5.webp",
+    "img/Valley-Dreams/playera-valley-dreams-6-6.webp",
+    "img/Valley-Dreams/playera-valley-dreams-6-7.webp"
+   ],
+   "detail": "p-playera-valley-dreams-6.html",
+   "sizes_raw": "S a XL",
+   "sizes": []
+  },
+  {
+   "name": "Playera Valley Dreams 7",
+   "price": 1300,
+   "portada": "img/Valley-Dreams/playera-valley-dreams-7-portada.webp",
+   "gallery": [
+    "img/Valley-Dreams/playera-valley-dreams-7-portada.webp",
+    "img/Valley-Dreams/playera-valley-dreams-7-1.webp",
+    "img/Valley-Dreams/playera-valley-dreams-7-2.webp",
+    "img/Valley-Dreams/playera-valley-dreams-7-3.webp",
+    "img/Valley-Dreams/playera-valley-dreams-7-4.webp",
+    "img/Valley-Dreams/playera-valley-dreams-7-5.webp",
+    "img/Valley-Dreams/playera-valley-dreams-7-6.webp",
+    "img/Valley-Dreams/playera-valley-dreams-7-7.webp",
+    "img/Valley-Dreams/playera-valley-dreams-7-8.webp",
+    "img/Valley-Dreams/playera-valley-dreams-7-9.webp"
+   ],
+   "detail": "p-playera-valley-dreams-7.html",
+   "sizes_raw": "S a XL",
+   "sizes": []
+  },
+  {
+   "name": "Playera Valley Dreams 8",
+   "price": 1300,
+   "portada": "img/Valley-Dreams/playera-valley-dreams-8-portada.webp",
+   "gallery": [
+    "img/Valley-Dreams/playera-valley-dreams-8-portada.webp",
+    "img/Valley-Dreams/playera-valley-dreams-8-1.webp",
+    "img/Valley-Dreams/playera-valley-dreams-8-2.webp",
+    "img/Valley-Dreams/playera-valley-dreams-8-3.webp",
+    "img/Valley-Dreams/playera-valley-dreams-8-4.webp",
+    "img/Valley-Dreams/playera-valley-dreams-8-5.webp",
+    "img/Valley-Dreams/playera-valley-dreams-8-6.webp",
+    "img/Valley-Dreams/playera-valley-dreams-8-7.webp"
+   ],
+   "detail": "p-playera-valley-dreams-8.html",
+   "sizes_raw": "S a XL",
+   "sizes": []
+  },
+  {
+   "name": "Playera Valley Dreams 9",
+   "price": 1300,
+   "portada": "img/Valley-Dreams/playera-valley-dreams-9-portada.webp",
+   "gallery": [
+    "img/Valley-Dreams/playera-valley-dreams-9-portada.webp",
+    "img/Valley-Dreams/playera-valley-dreams-9-1.webp",
+    "img/Valley-Dreams/playera-valley-dreams-9-2.webp",
+    "img/Valley-Dreams/playera-valley-dreams-9-3.webp",
+    "img/Valley-Dreams/playera-valley-dreams-9-4.webp",
+    "img/Valley-Dreams/playera-valley-dreams-9-5.webp",
+    "img/Valley-Dreams/playera-valley-dreams-9-6.webp",
+    "img/Valley-Dreams/playera-valley-dreams-9-7.webp",
+    "img/Valley-Dreams/playera-valley-dreams-9-8.webp"
+   ],
+   "detail": "p-playera-valley-dreams-9.html",
+   "sizes_raw": "S a XL",
+   "sizes": []
+  },
+  {
+   "name": "Playera Valley Dreams 10",
+   "price": 1300,
+   "portada": "img/Valley-Dreams/playera-valley-dreams-10-portada.webp",
+   "gallery": [
+    "img/Valley-Dreams/playera-valley-dreams-10-portada.webp",
+    "img/Valley-Dreams/playera-valley-dreams-10-1.webp",
+    "img/Valley-Dreams/playera-valley-dreams-10-2.webp",
+    "img/Valley-Dreams/playera-valley-dreams-10-3.webp",
+    "img/Valley-Dreams/playera-valley-dreams-10-4.webp",
+    "img/Valley-Dreams/playera-valley-dreams-10-5.webp"
+   ],
+   "detail": "p-playera-valley-dreams-10.html",
+   "sizes_raw": "S a XL",
+   "sizes": []
+  },
+  {
+   "name": "Playera Valley Dreams 11",
+   "price": 1300,
+   "portada": "img/Valley-Dreams/playera-valley-dreams-11-portada.webp",
+   "gallery": [
+    "img/Valley-Dreams/playera-valley-dreams-11-portada.webp",
+    "img/Valley-Dreams/playera-valley-dreams-11-1.webp",
+    "img/Valley-Dreams/playera-valley-dreams-11-2.webp",
+    "img/Valley-Dreams/playera-valley-dreams-11-3.webp",
+    "img/Valley-Dreams/playera-valley-dreams-11-4.webp",
+    "img/Valley-Dreams/playera-valley-dreams-11-5.webp",
+    "img/Valley-Dreams/playera-valley-dreams-11-6.webp"
+   ],
+   "detail": "p-playera-valley-dreams-11.html",
+   "sizes_raw": "S a XL",
+   "sizes": []
+  },
+  {
+   "name": "Camisa Valley Dreams",
+   "price": 2300,
+   "portada": "img/Valley-Dreams/camisa-valley-dreams-portada.webp",
+   "gallery": [
+    "img/Valley-Dreams/camisa-valley-dreams-portada.webp",
+    "img/Valley-Dreams/camisa-valley-dreams-1.webp",
+    "img/Valley-Dreams/camisa-valley-dreams-2.webp",
+    "img/Valley-Dreams/camisa-valley-dreams-3.webp",
+    "img/Valley-Dreams/camisa-valley-dreams-4.webp"
+   ],
+   "detail": "p-camisa-valley-dreams.html",
+   "sizes_raw": "S a XL",
+   "sizes": [],
+   "options": [
+    {
+     "label": "Color",
+     "choices": [
+      {
+       "name": "Rojo con azul",
+       "img": "img/Valley-Dreams/camisa-valley-dreams-portada.webp"
+      },
+      {
+       "name": "Amarillo",
+       "img": "img/Valley-Dreams/camisa-valley-dreams-1.webp"
+      },
+      {
+       "name": "Azul",
+       "img": "img/Valley-Dreams/camisa-valley-dreams-2.webp"
+      },
+      {
+       "name": "Rojo",
+       "img": "img/Valley-Dreams/camisa-valley-dreams-3.webp"
+      },
+      {
+       "name": "Rosa",
+       "img": "img/Valley-Dreams/camisa-valley-dreams-4.webp"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Hoodie Valley Dreams",
+   "price": 2000,
+   "portada": "img/Valley-Dreams/hoodie-valley-dreams-portada.webp",
+   "gallery": [
+    "img/Valley-Dreams/hoodie-valley-dreams-portada.webp"
+   ],
+   "detail": "p-hoodie-valley-dreams.html",
+   "sizes_raw": "S a XL",
+   "sizes": []
+  },
+  {
+   "name": "Hoodie Valley Dreams 2",
+   "price": 2000,
+   "portada": "img/Valley-Dreams/hoodie-valley-dreams-2-portada.webp",
+   "gallery": [
+    "img/Valley-Dreams/hoodie-valley-dreams-2-portada.webp"
+   ],
+   "detail": "p-hoodie-valley-dreams-2.html",
+   "sizes_raw": "S a XL",
+   "sizes": []
+  },
+  {
+   "name": "Hoodie Valley Dreams 3",
+   "price": 2000,
+   "portada": "img/Valley-Dreams/hoodie-valley-dreams-3-portada.webp",
+   "gallery": [
+    "img/Valley-Dreams/hoodie-valley-dreams-3-portada.webp"
+   ],
+   "detail": "p-hoodie-valley-dreams-3.html",
+   "sizes_raw": "S a XL",
+   "sizes": []
+  },
+  {
+   "name": "Hoodie Valley Dreams 4",
+   "price": 1750,
+   "portada": "img/Valley-Dreams/hoodie-valley-dreams-4-portada.webp",
+   "gallery": [
+    "img/Valley-Dreams/hoodie-valley-dreams-4-portada.webp"
+   ],
+   "detail": "p-hoodie-valley-dreams-4.html",
+   "sizes_raw": "S a XL",
+   "sizes": []
+  },
+  {
+   "name": "Hoodie Valley Dreams 5",
+   "price": 1750,
+   "portada": "img/Valley-Dreams/hoodie-valley-dreams-5-portada.webp",
+   "gallery": [
+    "img/Valley-Dreams/hoodie-valley-dreams-5-portada.webp"
+   ],
+   "detail": "p-hoodie-valley-dreams-5.html",
+   "sizes_raw": "S a XL",
+   "sizes": []
+  },
+  {
+   "name": "Hoodie Valley Dreams 6",
+   "price": 1750,
+   "portada": "img/Valley-Dreams/hoodie-valley-dreams-6-portada.webp",
+   "gallery": [
+    "img/Valley-Dreams/hoodie-valley-dreams-6-portada.webp"
+   ],
+   "detail": "p-hoodie-valley-dreams-6.html",
+   "sizes_raw": "S a XL",
+   "sizes": []
+  },
+  {
+   "name": "Hoodie Valley Dreams 7",
+   "price": 1750,
+   "portada": "img/Valley-Dreams/hoodie-valley-dreams-7-portada.webp",
+   "gallery": [
+    "img/Valley-Dreams/hoodie-valley-dreams-7-portada.webp"
+   ],
+   "detail": "p-hoodie-valley-dreams-7.html",
+   "sizes_raw": "S a XL",
+   "sizes": []
+  },
+  {
+   "name": "Hoodie Valley Dreams 8",
+   "price": 1750,
+   "portada": "img/Valley-Dreams/hoodie-valley-dreams-8-portada.webp",
+   "gallery": [
+    "img/Valley-Dreams/hoodie-valley-dreams-8-portada.webp"
+   ],
+   "detail": "p-hoodie-valley-dreams-8.html",
+   "sizes_raw": "S a XL",
+   "sizes": []
+  },
+  {
+   "name": "Hoodie Valley Dreams 9",
+   "price": 1750,
+   "portada": "img/Valley-Dreams/hoodie-valley-dreams-9-portada.webp",
+   "gallery": [
+    "img/Valley-Dreams/hoodie-valley-dreams-9-portada.webp"
+   ],
+   "detail": "p-hoodie-valley-dreams-9.html",
+   "sizes_raw": "S a XL",
+   "sizes": []
+  },
+  {
+   "name": "Hoodie Valley Dreams 10",
+   "price": 1750,
+   "portada": "img/Valley-Dreams/hoodie-valley-dreams-10-portada.webp",
+   "gallery": [
+    "img/Valley-Dreams/hoodie-valley-dreams-10-portada.webp"
+   ],
+   "detail": "p-hoodie-valley-dreams-10.html",
+   "sizes_raw": "S a XL",
+   "sizes": []
+  },
+  {
+   "name": "Hoodie Valley Dreams 11",
+   "price": 2000,
+   "portada": "img/Valley-Dreams/hoodie-valley-dreams-11-portada.webp",
+   "gallery": [
+    "img/Valley-Dreams/hoodie-valley-dreams-11-portada.webp"
+   ],
+   "detail": "p-hoodie-valley-dreams-11.html",
+   "sizes_raw": "S a XL",
+   "sizes": []
+  },
+  {
+   "name": "Hoodie Valley Dreams 12",
+   "price": 2000,
+   "portada": "img/Valley-Dreams/hoodie-valley-dreams-12-portada.webp",
+   "gallery": [
+    "img/Valley-Dreams/hoodie-valley-dreams-12-portada.webp"
+   ],
+   "detail": "p-hoodie-valley-dreams-12.html",
+   "sizes_raw": "S a XL",
+   "sizes": []
+  },
+  {
+   "name": "Hoodie Valley Dreams Portugal Rosa",
+   "price": 2000,
+   "portada": "img/Valley-Dreams/hoodie-valley-dreams-portugal-rosa-portada.webp",
+   "gallery": [
+    "img/Valley-Dreams/hoodie-valley-dreams-portugal-rosa-portada.webp"
+   ],
+   "detail": "p-hoodie-valley-dreams-portugal-rosa.html",
+   "sizes_raw": "S a XL",
+   "sizes": []
+  },
+  {
+   "name": "Hoodie Valley Dreams Portugal Negra",
+   "price": 2000,
+   "portada": "img/Valley-Dreams/hoodie-valley-dreams-portugal-negra-portada.webp",
+   "gallery": [
+    "img/Valley-Dreams/hoodie-valley-dreams-portugal-negra-portada.webp"
+   ],
+   "detail": "p-hoodie-valley-dreams-portugal-negra.html",
+   "sizes_raw": "S a XL",
+   "sizes": []
+  },
+  {
+   "name": "Hoodie Valley Dreams Portugal Azul",
+   "price": 2000,
+   "portada": "img/Valley-Dreams/hoodie-valley-dreams-portugal-azul-portada.webp",
+   "gallery": [
+    "img/Valley-Dreams/hoodie-valley-dreams-portugal-azul-portada.webp"
+   ],
+   "detail": "p-hoodie-valley-dreams-portugal-azul.html",
+   "sizes_raw": "S a XL",
    "sizes": []
   }
  ]

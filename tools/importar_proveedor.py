@@ -233,24 +233,29 @@ def leer_albumes(html):
 
 
 def fotos_del_album(pagina):
-    """[(nombre_archivo, hash)] en el orden de la pagina."""
-    mc = re.search(r"photo\.yupoo\.com/([a-z0-9_]+)/", pagina)
-    if not mc:
-        return "", []
-    cuenta = mc.group(1)
-    out, vistos = [], set()
+    """[(nombre_archivo, hash)] en el orden de la pagina.
+
+    La cuenta (carpeta en photo.yupoo.com) se toma de las propias fotos del
+    album, no de la primera URL de la pagina (que puede ser un icono), y acepta
+    guiones (p.ej. "mvt-shop01")."""
+    out, vistos, cuenta = [], set(), ""
     for m in re.finditer(
             r'<img[^>]*?alt="([^"]*)"[^>]*?data-(?:origin-)?src="'
-            r'https://photo\.yupoo\.com/[a-z0-9_]+/([a-f0-9]{6,})', pagina, re.S):
-        nombre, h = m.group(1), m.group(2)
+            r'https://photo\.yupoo\.com/([a-z0-9_-]+)/([a-f0-9]{6,})', pagina, re.S):
+        nombre, cta, h = m.group(1), m.group(2), m.group(3)
         if h not in vistos:
             vistos.add(h)
             out.append((nombre, h))
+            cuenta = cuenta or cta
     if not out:
-        for h in re.findall(r"photo\.yupoo\.com/[a-z0-9_]+/([a-f0-9]{6,})", pagina):
+        for m in re.finditer(r"photo\.yupoo\.com/([a-z0-9_-]+)/([a-f0-9]{6,})", pagina):
+            cta, h = m.group(1), m.group(2)
+            if cta == "icons":
+                continue
             if h not in vistos:
                 vistos.add(h)
                 out.append(("", h))
+                cuenta = cuenta or cta
     return cuenta, out
 
 

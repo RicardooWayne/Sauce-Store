@@ -52,6 +52,7 @@ CATEGORIES = [
     ("AmiriTenis.html",     "Amiri",                 "tenis",      "img/Amiri-Tenis"),
     ("Dior.html",           "Dior",                  "tenis",      "img/Dior"),
     ("AlexMcQueen.html",    "Alexander McQueen",     "tenis",      "img/Alexander-McQueen"),
+    ("ChristianLouboutin.html", "Christian Louboutin", "tenis",    "img/Christian-Louboutin"),
     ("Amiri.html",            "Amiri",                 "ropa",       "img/Amiri"),
     ("Balenciaga.html",       "Balenciaga",            "ropa",       "img/Balenciaga"),
     ("Bape.html",             "Bape",                  "ropa",       "img/Bape"),
@@ -63,6 +64,7 @@ CATEGORIES = [
     ("ChromeHeartsRopa.html", "Chrome Hearts",         "ropa",       "img/Chrome-Hearts-Ropa"),
     ("LouisVuittonRopa.html", "Louis Vuitton",         "ropa",       "img/Louis-Vuitton-Ropa"),
     ("DiorRopa.html",         "Dior",                  "ropa",       "img/Dior-Ropa"),
+    ("ValleyDreams.html",     "Valley Dreams",         "ropa",       "img/Valley-Dreams"),
     ("ChromeHearts.html",     "Chrome Hearts Cadenas", "accesorios", "img/Chrome-Hearts-Cadenas"),
     ("LouisVuittonLentes.html", "Louis Vuitton",        "accesorios", "img/Louis-Vuitton-Lentes"),
     ("Cinturones.html",       "Cinturones",            "accesorios", "img/Cinturones"),
@@ -116,6 +118,8 @@ BRAND_ALIASES = {
     "Acne Studios": "acne studios acnestudios acne face jeans jacket ropa camiseta",
     "Chrome Hearts": "chrome hearts chromehearts cromo cross ch sudadera ropa",
     "Chrome Hearts Cadenas": "chrome hearts cadenas chromehearts cadena cross ch joyeria plata collar accesorio",
+    "Christian Louboutin": "christian louboutin louboutin loubutin cristian luis junior spikes strass tenis",
+    "Valley Dreams": "valley dreams valle valley fest hoodie playera camisa ropa",
     "Cinturones": "cinturones cinturon fajo fajos cinto belt loewe ferragamo gucci hermes dior lv louis vuitton accesorio",
 }
 
