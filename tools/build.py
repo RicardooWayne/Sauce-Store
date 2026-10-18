@@ -547,7 +547,7 @@ def footer():
     <a href="{IG}" target="_blank" rel="noopener">Instagram</a>
     <a href="{WA}" target="_blank" rel="noopener">WhatsApp</a>
   </div>
-  <p class="foot-copy">&copy; Sauce Store &#183; <a href="privacidad.html">Privacidad</a></p>
+  <p class="foot-copy">&copy; Sauce Store &#183; <a href="privacidad.html">Privacidad</a> &#183; <a href="reembolsos.html">Reembolsos</a></p>
 </footer>
 <a class="wa-float" href="{WA}" target="_blank" rel="noopener" aria-label="WhatsApp">
   <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.9-4.44 9.9-9.9S17.5 2 12.04 2zm5.8 14.01c-.24.68-1.4 1.3-1.94 1.35-.5.05-1.13.24-3.66-.77-3.08-1.22-5.06-4.36-5.22-4.56-.15-.2-1.25-1.66-1.25-3.17 0-1.51.79-2.25 1.07-2.56.28-.31.61-.38.81-.38.2 0 .41 0 .58.01.19.01.44-.07.69.53.24.6.83 2.06.9 2.21.07.15.12.32.02.52-.1.2-.15.32-.3.5-.15.18-.31.4-.44.53-.15.15-.3.31-.13.6.17.29.76 1.25 1.63 2.03 1.12 1 2.06 1.31 2.35 1.46.29.15.46.12.63-.07.17-.2.73-.85.93-1.14.2-.29.39-.24.66-.15.27.1 1.71.81 2 .96.29.15.49.22.56.34.07.12.07.7-.17 1.38z"/></svg>
@@ -1000,6 +1000,35 @@ def render_privacidad(cats):
 {footer()}"""
 
 
+def render_reembolsos(cats):
+    return f"""{head("Reembolsos — Sauce Store", "Politica de reembolsos de Sauce Store.")}
+{nav(cats)}
+<main class="cat-page">
+  <section class="cat-hero">
+    <p class="cat-kicker">Legal</p>
+    <h1 class="cat-title">Reembolsos</h1>
+  </section>
+
+  <article class="legal">
+    <p class="legal-intro">Solo existen reembolsos de productos <b>dañados de fábrica</b>
+       o <b>incorrectos en el modelo</b>.</p>
+
+    <h2>Reembolso extra</h2>
+    <p>En caso de necesitar un reembolso extra, se pondrá a consideración el porqué se
+       solicita, y solo se dará el <b>70%</b> si es un tema como:</p>
+    <ol>
+      <li>Desagrado del cliente.</li>
+      <li>No diste la talla correcta al hacer el pedido.</li>
+      <li>No te gustó el color, tags, zipper, etc.</li>
+    </ol>
+
+    <p class="legal-foot">Sauce Store &#8212; Guadalajara, Jalisco, Mexico.<br>
+       Dudas sobre un pedido: <a href="{WA}" target="_blank" rel="noopener">escríbenos por WhatsApp</a>.</p>
+  </article>
+</main>
+{footer()}"""
+
+
 def render_404(cats):
     return f"""{head("Pagina no encontrada — Sauce Store", "Esta pagina no existe.")}
 {nav(cats)}
@@ -1235,6 +1264,7 @@ def main():
                       ("checkout.html", render_checkout),
                       ("ticket.html", render_ticket),
                       ("privacidad.html", render_privacidad),
+                      ("reembolsos.html", render_reembolsos),
                       ("404.html", render_404)):
         (ROOT / fname).write_text(fn(cats), encoding="utf-8")
         written += 1
