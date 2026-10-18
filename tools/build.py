@@ -1013,6 +1013,14 @@ def render_reembolsos(cats):
     <p class="legal-intro">Solo existen reembolsos de productos <b>dañados de fábrica</b>
        o <b>incorrectos en el modelo</b>.</p>
 
+    <h2>Plazo para reportar</h2>
+    <p>Tienes <b>48 horas</b> después de recibir tu pedido para reportar cualquier
+       problema.</p>
+
+    <h2>Evidencia</h2>
+    <p>Para revisar tu caso es necesario un <b>video de desempaque sin cortes</b>, donde se
+       vea el paquete cerrado y el problema del producto.</p>
+
     <h2>Reembolso extra</h2>
     <p>En caso de necesitar un reembolso extra, se pondrá a consideración el porqué se
        solicita, y solo se dará el <b>70%</b> si es un tema como:</p>
@@ -1021,6 +1029,16 @@ def render_reembolsos(cats):
       <li>No diste la talla correcta al hacer el pedido.</li>
       <li>No te gustó el color, tags, zipper, etc.</li>
     </ol>
+    <p>En estos casos el producto debe estar <b>sin uso</b>, con los <b>tags completos</b>
+       y con el <b>empaque sin daños</b>.</p>
+
+    <h2>Apartado</h2>
+    <p>Si el pedido ya fue realizado, <b>el apartado no se reembolsa</b>.</p>
+
+    <h2>Gastos de envío de la devolución</h2>
+    <p>Si el error es nuestro (producto dañado de fábrica o modelo incorrecto), cubrimos
+       nosotros el envío para regresar el producto. En cualquier otro caso, lo cubre el
+       comprador.</p>
 
     <p class="legal-foot">Sauce Store &#8212; Guadalajara, Jalisco, Mexico.<br>
        Dudas sobre un pedido: <a href="{WA}" target="_blank" rel="noopener">escríbenos por WhatsApp</a>.</p>
