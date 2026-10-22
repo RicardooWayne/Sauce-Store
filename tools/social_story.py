@@ -32,7 +32,8 @@ INK = (14, 14, 14)
 SITE = "sauce-store-86z.pages.dev"
 OFF = 0.10  # mismo descuento que la prenda del dia de la web
 
-FONT_DIR = Path("C:/Windows/Fonts")
+FONT_DIR = Path("C:/Windows/Fonts")           # respaldo (solo en Windows)
+BUNDLED = ROOT / "tools" / "fonts"            # fuentes del repo: Anton (titulares) e Inter (texto)
 FONT_FILES = {
     "head": ["impact.ttf", "ariblk.ttf", "arialbd.ttf"],
     "body": ["arialbd.ttf", "bahnschrift.ttf", "arial.ttf"],
@@ -40,6 +41,17 @@ FONT_FILES = {
 
 
 def font(kind, size):
+    """Anton / Inter Bold incluidas en el repo (iguales en cualquier maquina, incluido
+    el servidor); si faltan, las de Windows; si no, la fuente por defecto."""
+    try:
+        if kind == "head" and (BUNDLED / "Anton-Regular.ttf").exists():
+            return ImageFont.truetype(str(BUNDLED / "Anton-Regular.ttf"), size)
+        if kind == "body" and (BUNDLED / "Inter-Variable.ttf").exists():
+            f = ImageFont.truetype(str(BUNDLED / "Inter-Variable.ttf"), size)
+            f.set_variation_by_axes([14, 700])      # optical size 14, peso Bold
+            return f
+    except Exception:
+        pass
     for name in FONT_FILES[kind]:
         p = FONT_DIR / name
         if p.exists():

@@ -1,0 +1,73 @@
+name: Historias automaticas
+
+# Publica en Instagram (historias), Facebook (pagina) y manda a Telegram el material para grupos.
+# Horarios en UTC (Mexico = UTC-6, sin horario de verano):
+#   06:03 -> 12:00 am (producto del dia)   16:03 -> 10 am   22:03 -> 4 pm   02:03 -> 8 pm
+# Las corridas programadas SOLO funcionan si la variable del repo BOT_ACTIVO vale "true".
+on:
+  schedule:
+    - cron: "3 6 * * *"
+    - cron: "3 16 * * *"
+    - cron: "3 22 * * *"
+    - cron: "3 2 * * *"
+  workflow_dispatch:
+    inputs:
+      slot:
+        description: "Horario a probar (0000, 1000, 1600, 2000). Vacio = el mas cercano a la hora actual"
+        required: false
+        default: ""
+      dry_run:
+        description: "Prueba: genera la imagen y la manda a Telegram, NO publica en IG/FB"
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: social-bot
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    if: github.event_name == 'workflow_dispatch' || vars.BOT_ACTIVO == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            /tools/
+            /productos.json
+            /catalog.json
+            /img/mascota-320.webp
+          sparse-checkout-cone-mode: false
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install Pillow
+
+      - name: Publicar
+        env:
+          META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          IMGBB_KEY: ${{ secrets.IMGBB_KEY }}
+          SOCIAL_TG_TOKEN: ${{ secrets.SOCIAL_TG_TOKEN }}
+          SOCIAL_TG_CHAT_ID: ${{ secrets.SOCIAL_TG_CHAT_ID }}
+          DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run && 'true' || '' }}
+          SLOT: ${{ github.event_name == 'workflow_dispatch' && inputs.slot || '' }}
+        run: |
+          ARGS=""
+          if [ -n "$SLOT" ]; then ARGS="--slot $SLOT"; fi
+          python tools/social_bot.py $ARGS
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: historia
+          path: social_out/
+          retention-days: 3
+          if-no-files-found: ignore
