@@ -208,6 +208,15 @@ def parse_sizes(meta, category, group=""):
     if re.match(r"^\s*7(\s|$|/|\s*\d/\d)", raw):
         return [t.strip(" .") for t in re.split(r"\s+y\s+", raw, flags=re.I) if t.strip(" .")]
 
+    # Lista de tallas separadas por espacio o coma: "S M L", "S, M, L, XL",
+    # "1 2 3 4 5 6 7" (cinturones), "24 24.5 25". Se respeta tal cual, sin rellenar.
+    toks = [t for t in re.split(r"[\s,]+", re.sub(r"talla", "", raw, flags=re.I).strip()) if t]
+    if len(toks) >= 2:
+        if all(_norm_size(t) in SIZE_LADDER for t in toks):
+            return [_norm_size(t) for t in toks]
+        if all(re.fullmatch(r"\d{1,2}(\.5)?", t) for t in toks):
+            return toks
+
     # Lista numerica de pantalon: "30-32-34-36-38" o "30, 32, 34, 36, 38."
     nums = re.findall(r"\b(\d{2})\b", raw)
     if len(nums) >= 2 and not re.search(r"[a-z]", low.replace("talla", "")):
