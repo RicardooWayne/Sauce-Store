@@ -78,6 +78,7 @@ CARPETAS = {
     "Cinturones": "Cinturones",
     "Christian Louboutin": "Christian-Louboutin",
     "Valley Dreams": "Valley-Dreams",
+    "Hellstar": "Hellstar",
 }
 
 

@@ -65,6 +65,7 @@ CATEGORIES = [
     ("LouisVuittonRopa.html", "Louis Vuitton",         "ropa",       "img/Louis-Vuitton-Ropa"),
     ("DiorRopa.html",         "Dior",                  "ropa",       "img/Dior-Ropa"),
     ("ValleyDreams.html",     "Valley Dreams",         "ropa",       "img/Valley-Dreams"),
+    ("Hellstar.html",         "Hellstar",              "ropa",       "img/Hellstar"),
     ("ChromeHearts.html",     "Chrome Hearts Cadenas", "accesorios", "img/Chrome-Hearts-Cadenas"),
     ("LouisVuittonLentes.html", "Louis Vuitton",        "accesorios", "img/Louis-Vuitton-Lentes"),
     ("Cinturones.html",       "Cinturones",            "accesorios", "img/Cinturones"),
@@ -120,6 +121,7 @@ BRAND_ALIASES = {
     "Chrome Hearts Cadenas": "chrome hearts cadenas chromehearts cadena cross ch joyeria plata collar accesorio",
     "Christian Louboutin": "christian louboutin louboutin loubutin cristian luis junior spikes strass tenis",
     "Valley Dreams": "valley dreams valle valley fest hoodie playera camisa ropa",
+    "Hellstar": "hellstar hell star conjunto conjuntos hoodie sudadera playera pants jeans short jersey ropa",
     "Cinturones": "cinturones cinturon fajo fajos cinto belt loewe ferragamo gucci hermes dior lv louis vuitton accesorio",
 }
 
