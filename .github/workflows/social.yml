@@ -3,8 +3,8 @@ name: Historias automaticas
 # Publica en Instagram (historias), Facebook (pagina) y manda a Telegram el material para grupos.
 # Horarios (hora de Mexico): 12:00 am producto del dia | 10:00 am | 4:00 pm | 8:00 pm
 #
-# GitHub atrasa (o se salta) las corridas programadas, asi que en lugar de una por horario se
-# dispara cada ~15 minutos. Cada corrida ve si ya toca algun horario (y no pasan de 4 horas)
+# GitHub atrasa (o directamente no lanza) las corridas programadas. Por eso, ademas del cron,
+# un reloj externo (cron-job.org) llama a este workflow cada ~15 min con modo=auto y dry_run=false. Cada corrida ve si ya toca algun horario (y no pasan de 4 horas)
 # y si no se ha publicado todavia: la primera que llega despues de la hora publica; las demas
 # se saltan. Las corridas programadas SOLO funcionan si la variable del repo BOT_ACTIVO = "true".
 on:
@@ -12,8 +12,13 @@ on:
     - cron: "7,22,37,52 * * * *"
   workflow_dispatch:
     inputs:
+      modo:
+        description: "manual = publica el horario que pongas abajo | auto = publica el horario que ya toca (lo usa el reloj externo)"
+        type: choice
+        options: [manual, auto]
+        default: manual
       slot:
-        description: "Horario a probar (0000, 1000, 1600, 2000). Vacio = el mas cercano a la hora actual"
+        description: "Solo modo manual: horario (0000, 1000, 1600, 2000). Vacio = el mas cercano a la hora actual"
         required: false
         default: ""
       dry_run:
@@ -30,7 +35,7 @@ concurrency:
 
 jobs:
   publicar:
-    if: github.event_name == 'workflow_dispatch' || vars.BOT_ACTIVO == 'true'
+    if: (github.event_name == 'workflow_dispatch' && inputs.modo != 'auto') || vars.BOT_ACTIVO == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -52,13 +57,13 @@ jobs:
       # Programado: ¿que horario toca ahora? (vacio = ninguno)
       - name: Que toca
         id: debido
-        if: github.event_name == 'schedule'
+        if: github.event_name == 'schedule' || inputs.modo == 'auto'
         run: python tools/social_bot.py --debido >> "$GITHUB_OUTPUT"
 
       # ¿Ya se publico ese horario hoy? (la marca vive en la cache de Actions)
       - name: Ya publicado?
         id: marca
-        if: github.event_name == 'schedule' && steps.debido.outputs.slot != ''
+        if: (github.event_name == 'schedule' || inputs.modo == 'auto') && steps.debido.outputs.slot != ''
         uses: actions/cache/restore@v4
         with:
           path: .hecho
@@ -67,7 +72,7 @@ jobs:
 
       - name: Publicar
         id: pub
-        if: github.event_name == 'workflow_dispatch' || (steps.debido.outputs.slot != '' && steps.marca.outputs.cache-hit != 'true')
+        if: (github.event_name == 'workflow_dispatch' && inputs.modo != 'auto') || ((github.event_name == 'schedule' || inputs.modo == 'auto') && steps.debido.outputs.slot != '' && steps.marca.outputs.cache-hit != 'true')
         env:
           META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
@@ -76,7 +81,7 @@ jobs:
           SOCIAL_TG_TOKEN: ${{ secrets.SOCIAL_TG_TOKEN }}
           SOCIAL_TG_CHAT_ID: ${{ secrets.SOCIAL_TG_CHAT_ID }}
           DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run && 'true' || '' }}
-          SLOT: ${{ github.event_name == 'workflow_dispatch' && inputs.slot || steps.debido.outputs.slot }}
+          SLOT: ${{ (github.event_name == 'workflow_dispatch' && inputs.modo != 'auto') && inputs.slot || steps.debido.outputs.slot }}
         run: |
           mkdir -p .hecho && date -u > .hecho/marca.txt
           ARGS=""
@@ -86,7 +91,7 @@ jobs:
       # Se marca como hecho aunque haya fallado una red: reintentar duplicaria lo que si salio.
       # (El aviso de lo que fallo llega a Telegram.)
       - name: Marcar horario como publicado
-        if: always() && github.event_name == 'schedule' && steps.pub.outcome != 'skipped'
+        if: always() && (github.event_name == 'schedule' || inputs.modo == 'auto') && steps.pub.outcome != 'skipped' && !(github.event_name == 'workflow_dispatch' && inputs.dry_run)
         uses: actions/cache/save@v4
         with:
           path: .hecho
