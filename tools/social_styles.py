@@ -170,17 +170,24 @@ IG_HANDLE = "sauceestore"
 FOOT_TXT = "Encarga con el 50% y liquida en la entrega"
 
 
-def fondo_historia(ph):
-    """Fondo a pantalla completa. Devuelve (imagen, modo).
-    - "cover": foto casi tan vertical como la historia -> se recorta para llenarla.
-    - "contain": foto horizontal / cuadrada / 3:4 (tenis, cinturones, lentes...):
-      recortarla esconderia el producto, asi que se muestra COMPLETA, arriba del bloque
-      de texto, sobre una copia borrosa y oscura de la misma foto."""
+def fondo_historia(ph, limite=None):
+    """Fondo a pantalla completa. Devuelve (imagen, modo). La foto SIEMPRE se muestra
+    completa, arriba del bloque de texto, sobre una copia borrosa y oscura de ella misma:
+    recortarla (o dejarla debajo del texto) tapaba el producto en prendas y lentes.
+    - "contain": foto horizontal / cuadrada / 3:4 -> ancho completo, hasta 880 px de alto.
+    - "alto": foto vertical (ratio <= 0.70) -> se achica hasta caber entre la parte de arriba
+      y `limite` (donde arranca el degradado del texto)."""
     r = ph.width / ph.height
-    if r <= 0.70:
-        return cover(ph, W, H, 0.5), "cover"
     bgc = cover(ph, W, H, 0.5).filter(ImageFilter.GaussianBlur(40))
     bgc = ImageEnhance.Brightness(bgc).enhance(0.42)
+    if r <= 0.70:
+        top = 120
+        fh = max(400, min(1500, (limite or 1050) + 25 - top))
+        fw = int(fh * r)
+        if fw > W:
+            fw, fh = W, int(W / r)
+        bgc.paste(ph.resize((fw, fh), Image.LANCZOS), ((W - fw) // 2, top))
+        return bgc, "alto"
     fw, fh = W, int(W / r)
     if fh > 880:
         fw, fh = int(880 * r), 880
@@ -237,10 +244,10 @@ def st_completa(prod, gal, out, deal=False, off=0.10):
     tag_top = name_top - 30 - 62
 
     # --- fondo: foto + degradado que arranca arriba del bloque de texto ---
-    bg, modo = fondo_historia(photo(prod["img"]))
-    # con la foto completa el degradado arranca mas abajo y es mas corto: no tapa el producto
-    largo = 230 if modo == "cover" else 120
-    y0 = max(0, tag_top - (150 if modo == "cover" else 55))
+    # el degradado arranca justo arriba de la etiqueta; la foto no pasa de ahi
+    largo = 120
+    y0 = max(0, tag_top - 55)
+    bg, modo = fondo_historia(photo(prod["img"]), y0)
     mask = Image.new("L", (W, H), 0)
     ramp = Image.linear_gradient("L").resize((W, largo)).point(lambda v: int(v * 242 / 255))
     mask.paste(ramp, (0, y0))
