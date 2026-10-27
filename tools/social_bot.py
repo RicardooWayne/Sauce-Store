@@ -94,6 +94,20 @@ def detectar_slot(ahora):
     return mejor if dist <= MARGEN_MIN else None
 
 
+def slot_debido(ahora, ventana=240):
+    """Horario que ya toca publicar y aun no pasa de `ventana` minutos (el mas reciente).
+    El workflow se dispara cada ~15 min (GitHub atrasa o se salta corridas programadas);
+    con esto la que llegue primero despues de la hora publica, y las demas se saltan porque
+    el horario ya quedo marcado como hecho."""
+    m = ahora.hour * 60 + ahora.minute
+    mejor = None
+    for clave in SLOTS:
+        pasado = m - (int(clave[:2]) * 60 + int(clave[2:]))
+        if 0 <= pasado < ventana and (mejor is None or pasado < mejor[1]):
+            mejor = (clave, pasado)
+    return mejor[0] if mejor else None
+
+
 # --------------------------------------------------------------------------- texto
 def money(n):
     return "${:,} MXN".format(int(round(n)))
@@ -235,7 +249,14 @@ def main():
     ap.add_argument("--slot", default="auto", help="auto | 0000 | 1000 | 1600 | 2000")
     ap.add_argument("--date", default="", help="AAAA-MM-DD (por defecto, hoy en Mexico)")
     ap.add_argument("--out-dir", default=str(ROOT / "social_out"))
+    ap.add_argument("--debido", action="store_true",
+                    help="solo imprime slot=... y dia=... (formato de GITHUB_OUTPUT) y sale")
     a = ap.parse_args()
+    if a.debido:
+        ahora = ahora_mx()
+        print("slot=%s" % (slot_debido(ahora) or ""))
+        print("dia=%s" % ahora.strftime("%Y-%m-%d"))
+        return 0
     dry = a.dry_run or env("DRY_RUN").lower() == "true"
 
     ahora = ahora_mx()

@@ -1,15 +1,15 @@
 name: Historias automaticas
 
 # Publica en Instagram (historias), Facebook (pagina) y manda a Telegram el material para grupos.
-# Horarios en UTC (Mexico = UTC-6, sin horario de verano):
-#   06:03 -> 12:00 am (producto del dia)   16:03 -> 10 am   22:03 -> 4 pm   02:03 -> 8 pm
-# Las corridas programadas SOLO funcionan si la variable del repo BOT_ACTIVO vale "true".
+# Horarios (hora de Mexico): 12:00 am producto del dia | 10:00 am | 4:00 pm | 8:00 pm
+#
+# GitHub atrasa (o se salta) las corridas programadas, asi que en lugar de una por horario se
+# dispara cada ~15 minutos. Cada corrida ve si ya toca algun horario (y no pasan de 4 horas)
+# y si no se ha publicado todavia: la primera que llega despues de la hora publica; las demas
+# se saltan. Las corridas programadas SOLO funcionan si la variable del repo BOT_ACTIVO = "true".
 on:
   schedule:
-    - cron: "3 6 * * *"
-    - cron: "3 16 * * *"
-    - cron: "3 22 * * *"
-    - cron: "3 2 * * *"
+    - cron: "7,22,37,52 * * * *"
   workflow_dispatch:
     inputs:
       slot:
@@ -49,7 +49,25 @@ jobs:
 
       - run: pip install Pillow
 
+      # Programado: ¿que horario toca ahora? (vacio = ninguno)
+      - name: Que toca
+        id: debido
+        if: github.event_name == 'schedule'
+        run: python tools/social_bot.py --debido >> "$GITHUB_OUTPUT"
+
+      # ¿Ya se publico ese horario hoy? (la marca vive en la cache de Actions)
+      - name: Ya publicado?
+        id: marca
+        if: github.event_name == 'schedule' && steps.debido.outputs.slot != ''
+        uses: actions/cache/restore@v4
+        with:
+          path: .hecho
+          key: social-${{ steps.debido.outputs.dia }}-${{ steps.debido.outputs.slot }}
+          lookup-only: true
+
       - name: Publicar
+        id: pub
+        if: github.event_name == 'workflow_dispatch' || (steps.debido.outputs.slot != '' && steps.marca.outputs.cache-hit != 'true')
         env:
           META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
@@ -58,14 +76,24 @@ jobs:
           SOCIAL_TG_TOKEN: ${{ secrets.SOCIAL_TG_TOKEN }}
           SOCIAL_TG_CHAT_ID: ${{ secrets.SOCIAL_TG_CHAT_ID }}
           DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run && 'true' || '' }}
-          SLOT: ${{ github.event_name == 'workflow_dispatch' && inputs.slot || '' }}
+          SLOT: ${{ github.event_name == 'workflow_dispatch' && inputs.slot || steps.debido.outputs.slot }}
         run: |
+          mkdir -p .hecho && date -u > .hecho/marca.txt
           ARGS=""
           if [ -n "$SLOT" ]; then ARGS="--slot $SLOT"; fi
           python tools/social_bot.py $ARGS
 
+      # Se marca como hecho aunque haya fallado una red: reintentar duplicaria lo que si salio.
+      # (El aviso de lo que fallo llega a Telegram.)
+      - name: Marcar horario como publicado
+        if: always() && github.event_name == 'schedule' && steps.pub.outcome != 'skipped'
+        uses: actions/cache/save@v4
+        with:
+          path: .hecho
+          key: social-${{ steps.debido.outputs.dia }}-${{ steps.debido.outputs.slot }}
+
       - uses: actions/upload-artifact@v4
-        if: always()
+        if: always() && steps.pub.outcome != 'skipped'
         with:
           name: historia
           path: social_out/
