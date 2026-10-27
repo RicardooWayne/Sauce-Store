@@ -57,6 +57,7 @@ jobs:
           IMGBB_KEY: ${{ secrets.IMGBB_KEY }}
           SOCIAL_TG_TOKEN: ${{ secrets.SOCIAL_TG_TOKEN }}
           SOCIAL_TG_CHAT_ID: ${{ secrets.SOCIAL_TG_CHAT_ID }}
+          PUBLISH_FB: ${{ vars.PUBLISH_FB || 'false' }}
           DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run && 'true' || '' }}
           SLOT: ${{ github.event_name == 'workflow_dispatch' && inputs.slot || '' }}
         run: |
